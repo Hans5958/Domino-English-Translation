@@ -3,21 +3,21 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
 POPUP "0: output"
 {
-	MENUITEM "???(&C)",  32975
+	MENUITEM "コピー(&C)",  32975
 	MENUITEM SEPARATOR
-	MENUITEM "???(&R)",  33334
+	MENUITEM "クリア(&R)",  33334
 }
 POPUP "1:Curve"
 {
-	MENUITEM "??????(&F)",  32857
-	MENUITEM "??(&L)",  32858
-	MENUITEM "???????(&U)",  32859
-	MENUITEM "?????(&A)",  32861
-	MENUITEM "S???(&D)",  33337
-	MENUITEM "????(&R)",  32862
-	POPUP "????(&Z)"
+	MENUITEM "フリーハンド(&F)",  32857
+	MENUITEM "直線(&L)",  32858
+	MENUITEM "ゆるやかな曲線(&U)",  32859
+	MENUITEM "はやい曲線(&A)",  32861
+	MENUITEM "S字曲線(&D)",  33337
+	MENUITEM "ランダム(&R)",  32862
+	POPUP "カスタム(&Z)"
 	{
-		MENUITEM "??(&E)...",  32863
+		MENUITEM "編集(&E)...",  32863
 		MENUITEM SEPARATOR
 		MENUITEM "0",  32864
 		MENUITEM "1",  32865
@@ -41,132 +41,132 @@ POPUP "1:Curve"
 		MENUITEM "19",  32883
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "????(&I)...",  32884
-	MENUITEM "??????(&N)",  32885
+	MENUITEM "間隔設定(&I)...",  32884
+	MENUITEM "ノートの直前(&N)",  32885
 }
 POPUP "2:file"
 {
 	MENUITEM "00",  32771
 	MENUITEM SEPARATOR
-	MENUITEM "???(&C)",  32791
+	MENUITEM "クリア(&C)",  32791
 }
 POPUP "3:pianoroll"
 {
-	MENUITEM "????(&T)",  57635
-	MENUITEM "???(&C)",  57634
-	MENUITEM "????(&P)",  57637
-	MENUITEM "??????(&I)",  32796
-	MENUITEM "??(&D)",  32795
+	MENUITEM "切り取り(&T)",  57635
+	MENUITEM "コピー(&C)",  57634
+	MENUITEM "貼り付け(&P)",  57637
+	MENUITEM "挿入貼り付け(&I)",  32796
+	MENUITEM "削除(&D)",  32795
 	MENUITEM SEPARATOR
-	MENUITEM "?????????(&F)...",  33045
+	MENUITEM "選択範囲の絞り込み(&F)...",  33045
 	MENUITEM SEPARATOR
-	MENUITEM "????(&N)",  32798
-	MENUITEM "????(&L)",  32799
+	MENUITEM "時間挿入(&N)",  32798
+	MENUITEM "時間削除(&L)",  32799
 	MENUITEM SEPARATOR
-	MENUITEM "Step?????(&O)",  32805
-	MENUITEM "Step?????(&K)",  32806
+	MENUITEM "Stepロック設定(&O)",  32805
+	MENUITEM "Stepロック解除(&K)",  32806
 	MENUITEM SEPARATOR
-	MENUITEM "????(&B)...",  32840
-	MENUITEM "???????(&R)...",  32841
-	MENUITEM "??????(&Q)...",  32842
-	MENUITEM "?????(&T)...",  32844
-	MENUITEM "???????(&H)...",  33097
-	MENUITEM "????(&M)",  33273
+	MENUITEM "一括変更(&B)...",  32840
+	MENUITEM "トランスポーズ(&R)...",  32841
+	MENUITEM "クォンタイズ(&Q)...",  32842
+	MENUITEM "ストローク(&T)...",  32844
+	MENUITEM "ヒューマナイズ(&H)...",  33097
+	MENUITEM "レガート(&M)",  33273
 	MENUITEM SEPARATOR
-	MENUITEM "1????????(&O)",  32845
-	MENUITEM "1????????(&W)",  32846
+	MENUITEM "1オクターブ上げる(&O)",  32845
+	MENUITEM "1オクターブ下げる(&W)",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "??(&P)",  32850
-	MENUITEM "??(&S)",  32851
-	MENUITEM "????(&E)",  32852
+	MENUITEM "ペン(&P)",  32850
+	MENUITEM "選択(&S)",  32851
+	MENUITEM "消しゴム(&E)",  32852
 }
 POPUP "4:eventlist"
 {
-	MENUITEM "????(&T)",  57635
-	MENUITEM "????(???)(&W)",  33290
-	MENUITEM "???(&C)",  57634
-	MENUITEM "????(&P)",  57637
-	MENUITEM "??????(&I)",  32796
-	MENUITEM "??(&D)",  32795
-	MENUITEM "??(???)(&Q)",  33136
+	MENUITEM "切り取り(&T)",  57635
+	MENUITEM "切り取り(詰める)(&W)",  33290
+	MENUITEM "コピー(&C)",  57634
+	MENUITEM "貼り付け(&P)",  57637
+	MENUITEM "挿入貼り付け(&I)",  32796
+	MENUITEM "削除(&D)",  32795
+	MENUITEM "削除(詰める)(&Q)",  33136
 	MENUITEM SEPARATOR
-	MENUITEM "?????(&A)",  57642
-	MENUITEM "?????(&J)...",  33087
-	MENUITEM "?????????(&F)...",  33045
+	MENUITEM "すべて選択(&A)",  57642
+	MENUITEM "範囲の選択(&J)...",  33087
+	MENUITEM "選択範囲の絞り込み(&F)...",  33045
 	MENUITEM SEPARATOR
-	MENUITEM "Step?????(&O)",  32805
-	MENUITEM "Step?????(&K)",  32806
+	MENUITEM "Stepロック設定(&O)",  32805
+	MENUITEM "Stepロック解除(&K)",  32806
 	MENUITEM SEPARATOR
-	MENUITEM "????(&B)...",  32840
-	MENUITEM "???????(&R)...",  32841
-	MENUITEM "??????(&Q)...",  32842
-	MENUITEM "?????(&T)...",  32844
-	MENUITEM "???????(&H)...",  33097
-	MENUITEM "????(&M)",  33273
+	MENUITEM "一括変更(&B)...",  32840
+	MENUITEM "トランスポーズ(&R)...",  32841
+	MENUITEM "クォンタイズ(&Q)...",  32842
+	MENUITEM "ストローク(&T)...",  32844
+	MENUITEM "ヒューマナイズ(&H)...",  33097
+	MENUITEM "レガート(&M)",  33273
 	MENUITEM SEPARATOR
-	MENUITEM "1????????(&O)",  32845
-	MENUITEM "1????????(&W)",  32846
+	MENUITEM "1オクターブ上げる(&O)",  32845
+	MENUITEM "1オクターブ下げる(&W)",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "???????(&E)",  33047
+	MENUITEM "イベントの送信(&E)",  33047
 	MENUITEM SEPARATOR
-	MENUITEM "?????(&P)...",  32848
+	MENUITEM "プロパティ(&P)...",  32848
 }
 POPUP "5:tracklist_roll"
 {
-	MENUITEM "????(&T)",  57635
-	MENUITEM "???(&C)",  57634
-	MENUITEM "????(&P)",  57637
-	MENUITEM "??????(&I)",  32796
-	MENUITEM "??(&D)",  32795
+	MENUITEM "切り取り(&T)",  57635
+	MENUITEM "コピー(&C)",  57634
+	MENUITEM "貼り付け(&P)",  57637
+	MENUITEM "挿入貼り付け(&I)",  32796
+	MENUITEM "削除(&D)",  32795
 	MENUITEM SEPARATOR
-	MENUITEM "?????????(&F)...",  33045
-	MENUITEM "???????(&Z)",  33124
-	MENUITEM "?????(&J)...",  33087
+	MENUITEM "選択範囲の絞り込み(&F)...",  33045
+	MENUITEM "ノートのみ選択(&Z)",  33124
+	MENUITEM "範囲の選択(&J)...",  33087
 	MENUITEM SEPARATOR
-	MENUITEM "????(&N)",  32798
-	MENUITEM "????(&L)",  32799
+	MENUITEM "時間挿入(&N)",  32798
+	MENUITEM "時間削除(&L)",  32799
 	MENUITEM SEPARATOR
-	MENUITEM "????(&B)...",  32840
-	MENUITEM "???????(&R)...",  32841
-	MENUITEM "??????(&Q)...",  32842
-	MENUITEM "?????(&T)...",  32844
-	MENUITEM "???????(&H)...",  33097
-	MENUITEM "????(&M)",  33273
+	MENUITEM "一括変更(&B)...",  32840
+	MENUITEM "トランスポーズ(&R)...",  32841
+	MENUITEM "クォンタイズ(&Q)...",  32842
+	MENUITEM "ストローク(&T)...",  32844
+	MENUITEM "ヒューマナイズ(&H)...",  33097
+	MENUITEM "レガート(&M)",  33273
 	MENUITEM SEPARATOR
-	MENUITEM "1????????(&O)",  32845
-	MENUITEM "1????????(&W)",  32846
+	MENUITEM "1オクターブ上げる(&O)",  32845
+	MENUITEM "1オクターブ下げる(&W)",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "??(&S)",  32851
-	MENUITEM "????(&E)",  32852
+	MENUITEM "選択(&S)",  32851
+	MENUITEM "消しゴム(&E)",  32852
 }
 POPUP "6:tracklist_label"
 {
-	MENUITEM "???????(&T)",  32902
-	MENUITEM "????????????(&A)...",  33094
-	MENUITEM "???????(&R)",  32903
-	MENUITEM "??????????(&P)...",  32904
+	MENUITEM "トラックの追加(&T)",  32902
+	MENUITEM "デフォルトトラックの追加(&A)...",  33094
+	MENUITEM "トラックの削除(&R)",  32903
+	MENUITEM "トラックのプロパティ(&P)...",  32904
 }
 POPUP "7:onionskin"
 {
-	MENUITEM "??????????????????(&U)",  32821
+	MENUITEM "ピアノロールオニオンスキン機能を使う(&U)",  32821
 	MENUITEM SEPARATOR
-	MENUITEM "????????????????(&P)",  32822
-	MENUITEM "????????????????(&N)",  32823
-	MENUITEM "?????????????????(&O)...",  32824
-	MENUITEM "??????????????????(&C)",  33296
+	MENUITEM "ピアノロールに前のトラックを表示(&P)",  32822
+	MENUITEM "ピアノロールに次のトラックを表示(&N)",  32823
+	MENUITEM "ピアノロールに指定のトラックを表示(&O)...",  32824
+	MENUITEM "ピアノロールに同じ色のトラックを表示(&C)",  33296
 	MENUITEM SEPARATOR
-	MENUITEM "?????????????(&S)",  33082
+	MENUITEM "設定をトラック毎に記憶する(&S)",  33082
 }
 POPUP "8;frame"
 {
-	MENUITEM "????????(&T)",  32804
-	MENUITEM "??????????(&O)",  33017
-	MENUITEM "???????????(&1)",  33042
-	MENUITEM "??????(&C)...",  33016
+	MENUITEM "メインツールバー(&T)",  32804
+	MENUITEM "エディットツールバー(&O)",  33017
+	MENUITEM "ユーザー定義ツールバー(&1)",  33042
+	MENUITEM "カスタマイズ(&C)...",  33016
 	MENUITEM SEPARATOR
-	MENUITEM "???????(&S)",  59393
-	MENUITEM "?????(&M)",  32811
-	MENUITEM "??????(&R)",  32812
+	MENUITEM "ステータスバー(&S)",  59393
+	MENUITEM "マークバー(&M)",  32811
+	MENUITEM "トラックバー(&R)",  32812
 }
 POPUP "9:customcurve"
 {
@@ -297,34 +297,31 @@ POPUP "10:chord"
 }
 POPUP "11: trackselect"
 {
-	MENUITEM "???????(&T)",  32902
-	MENUITEM "????????????(&A)...",  33094
-	MENUITEM "???????(&R)",  32903
-	MENUITEM "??????????(&P)...",  32904
+	MENUITEM "トラックの追加(&T)",  32902
+	MENUITEM "デフォルトトラックの追加(&A)...",  33094
+	MENUITEM "トラックの削除(&R)",  32903
+	MENUITEM "トラックのプロパティ(&P)...",  32904
 	MENUITEM SEPARATOR
-	POPUP "?????????(&C)"
+	POPUP "オニオンスキンの色(&C)"
 	{
-		MENUITEM "??(???)(&N)",  33297
+		MENUITEM "自動（未指定）(&N)",  33297
 		MENUITEM SEPARATOR
-		MENUITEM "?(&R)",  33298
-		MENUITEM "?(&O)",  33299
-		MENUITEM "?(&Y)",  33300
-		MENUITEM "?(&G)",  33301
-		MENUITEM "?(&W)",  33302
-		MENUITEM "?(&V)",  33303
-		MENUITEM "?(&P)",  33304
+		MENUITEM "赤(&R)",  33298
+		MENUITEM "橙(&O)",  33299
+		MENUITEM "黄(&Y)",  33300
+		MENUITEM "緑(&G)",  33301
+		MENUITEM "水(&W)",  33302
+		MENUITEM "紫(&V)",  33303
+		MENUITEM "桃(&P)",  33304
 	}
 }
 POPUP "12:markbar"
 {
-	MENUITEM "??????(&E)...",  33356
-	MENUITEM "??????(&D)",  33357
+	MENUITEM "マークの編集(&E)...",  33356
+	MENUITEM "マークの削除(&D)",  33357
 }
 POPUP "dummy"
 {
-	MENUITEM "???",  33312
+	MENUITEM "空っぽ",  33312
 }
 }
-
- 
- 
