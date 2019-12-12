@@ -1,0 +1,7 @@
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+57344, 	"Domino"
+57345, 	" "
+}
+
