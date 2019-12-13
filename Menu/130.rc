@@ -3,21 +3,21 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
 POPUP "0: output"
 {
-	MENUITEM "コピー(&C)",  32975
+	MENUITEM "Copy",  32975
 	MENUITEM SEPARATOR
-	MENUITEM "クリア(&R)",  33334
+	MENUITEM "Clear",  33334
 }
 POPUP "1:Curve"
 {
-	MENUITEM "フリーハンド(&F)",  32857
-	MENUITEM "直線(&L)",  32858
-	MENUITEM "ゆるやかな曲線(&U)",  32859
-	MENUITEM "はやい曲線(&A)",  32861
-	MENUITEM "S字曲線(&D)",  33337
-	MENUITEM "ランダム(&R)",  32862
-	POPUP "カスタム(&Z)"
+	MENUITEM "FreeHand",  32857
+	MENUITEM "Straight Line",  32858
+	MENUITEM "Gentle Curve",  32859
+	MENUITEM "Fast Curve",  32861
+	MENUITEM "S-Shaped Curve",  33337
+	MENUITEM "Random",  32862
+	POPUP "Custom"
 	{
-		MENUITEM "編集(&E)...",  32863
+		MENUITEM "Edit...",  32863
 		MENUITEM SEPARATOR
 		MENUITEM "0",  32864
 		MENUITEM "1",  32865
@@ -41,132 +41,132 @@ POPUP "1:Curve"
 		MENUITEM "19",  32883
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "間隔設定(&I)...",  32884
-	MENUITEM "ノートの直前(&N)",  32885
+	MENUITEM "Interval...",  32884
+	MENUITEM "Previous Note",  32885
 }
 POPUP "2:file"
 {
 	MENUITEM "00",  32771
 	MENUITEM SEPARATOR
-	MENUITEM "クリア(&C)",  32791
+	MENUITEM "Clear",  32791
 }
 POPUP "3:pianoroll"
 {
-	MENUITEM "切り取り(&T)",  57635
-	MENUITEM "コピー(&C)",  57634
-	MENUITEM "貼り付け(&P)",  57637
-	MENUITEM "挿入貼り付け(&I)",  32796
-	MENUITEM "削除(&D)",  32795
+	MENUITEM "Cut",  57635
+	MENUITEM "Copy",  57634
+	MENUITEM "Paste",  57637
+	MENUITEM "Insert Paste",  32796
+	MENUITEM "Delete",  32795
 	MENUITEM SEPARATOR
-	MENUITEM "選択範囲の絞り込み(&F)...",  33045
+	MENUITEM "Refine Range...",  33045
 	MENUITEM SEPARATOR
-	MENUITEM "時間挿入(&N)",  32798
-	MENUITEM "時間削除(&L)",  32799
+	MENUITEM "Insert Time",  32798
+	MENUITEM "Delete Time",  32799
 	MENUITEM SEPARATOR
-	MENUITEM "Stepロック設定(&O)",  32805
-	MENUITEM "Stepロック解除(&K)",  32806
+	MENUITEM "Step Lock",  32805
+	MENUITEM "Step Unlock",  32806
 	MENUITEM SEPARATOR
-	MENUITEM "一括変更(&B)...",  32840
-	MENUITEM "トランスポーズ(&R)...",  32841
-	MENUITEM "クォンタイズ(&Q)...",  32842
-	MENUITEM "ストローク(&T)...",  32844
-	MENUITEM "ヒューマナイズ(&H)...",  33097
-	MENUITEM "レガート(&M)",  33273
+	MENUITEM "Bulk Changes...",  32840
+	MENUITEM "Transpose...",  32841
+	MENUITEM "Quantize...",  32842
+	MENUITEM "Stroke...",  32844
+	MENUITEM "Humanize...",  33097
+	MENUITEM "Legato",  33273
 	MENUITEM SEPARATOR
-	MENUITEM "1オクターブ上げる(&O)",  32845
-	MENUITEM "1オクターブ下げる(&W)",  32846
+	MENUITEM "1 Octave Up",  32845
+	MENUITEM "1 Octave Down",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "ペン(&P)",  32850
-	MENUITEM "選択(&S)",  32851
-	MENUITEM "消しゴム(&E)",  32852
+	MENUITEM "Pen",  32850
+	MENUITEM "Select",  32851
+	MENUITEM "Eraser",  32852
 }
 POPUP "4:eventlist"
 {
-	MENUITEM "切り取り(&T)",  57635
-	MENUITEM "切り取り(詰める)(&W)",  33290
-	MENUITEM "コピー(&C)",  57634
-	MENUITEM "貼り付け(&P)",  57637
-	MENUITEM "挿入貼り付け(&I)",  32796
-	MENUITEM "削除(&D)",  32795
-	MENUITEM "削除(詰める)(&Q)",  33136
+	MENUITEM "Cut",  57635
+	MENUITEM "Batch Cut",  33290
+	MENUITEM "Copy",  57634
+	MENUITEM "Paste",  57637
+	MENUITEM "Insert Paste",  32796
+	MENUITEM "Delete",  32795
+	MENUITEM "Batch Delete",  33136
 	MENUITEM SEPARATOR
-	MENUITEM "すべて選択(&A)",  57642
-	MENUITEM "範囲の選択(&J)...",  33087
-	MENUITEM "選択範囲の絞り込み(&F)...",  33045
+	MENUITEM "Select All",  57642
+	MENUITEM "Selection Range",  33087
+	MENUITEM "Refine Range",  33045
 	MENUITEM SEPARATOR
-	MENUITEM "Stepロック設定(&O)",  32805
-	MENUITEM "Stepロック解除(&K)",  32806
+	MENUITEM "Step Lock",  32805
+	MENUITEM "Step Unlock",  32806
 	MENUITEM SEPARATOR
-	MENUITEM "一括変更(&B)...",  32840
-	MENUITEM "トランスポーズ(&R)...",  32841
-	MENUITEM "クォンタイズ(&Q)...",  32842
-	MENUITEM "ストローク(&T)...",  32844
-	MENUITEM "ヒューマナイズ(&H)...",  33097
-	MENUITEM "レガート(&M)",  33273
+	MENUITEM "Bulk Changes...",  32840
+	MENUITEM "Transpose...",  32841
+	MENUITEM "Quantize...",  32842
+	MENUITEM "Stroke...",  32844
+	MENUITEM "Humanize...",  33097
+	MENUITEM "Legato",  33273
 	MENUITEM SEPARATOR
-	MENUITEM "1オクターブ上げる(&O)",  32845
-	MENUITEM "1オクターブ下げる(&W)",  32846
+	MENUITEM "1 Octave Up",  32845
+	MENUITEM "1 Octave Down",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "イベントの送信(&E)",  33047
+	MENUITEM "Send Events",  33047
 	MENUITEM SEPARATOR
-	MENUITEM "プロパティ(&P)...",  32848
+	MENUITEM "Property...",  32848
 }
 POPUP "5:tracklist_roll"
 {
-	MENUITEM "切り取り(&T)",  57635
-	MENUITEM "コピー(&C)",  57634
-	MENUITEM "貼り付け(&P)",  57637
-	MENUITEM "挿入貼り付け(&I)",  32796
-	MENUITEM "削除(&D)",  32795
+	MENUITEM "Cut",  57635
+	MENUITEM "Copy",  57634
+	MENUITEM "Paste",  57637
+	MENUITEM "Insert Paste",  32796
+	MENUITEM "Delete",  32795
 	MENUITEM SEPARATOR
-	MENUITEM "選択範囲の絞り込み(&F)...",  33045
-	MENUITEM "ノートのみ選択(&Z)",  33124
-	MENUITEM "範囲の選択(&J)...",  33087
+	MENUITEM "Refine Range...",  33045
+	MENUITEM "Specify Note...",  33124
+	MENUITEM "Select...",  33087
 	MENUITEM SEPARATOR
-	MENUITEM "時間挿入(&N)",  32798
-	MENUITEM "時間削除(&L)",  32799
+	MENUITEM "Insert Time",  32798
+	MENUITEM "Delete Time",  32799
 	MENUITEM SEPARATOR
-	MENUITEM "一括変更(&B)...",  32840
-	MENUITEM "トランスポーズ(&R)...",  32841
-	MENUITEM "クォンタイズ(&Q)...",  32842
-	MENUITEM "ストローク(&T)...",  32844
-	MENUITEM "ヒューマナイズ(&H)...",  33097
-	MENUITEM "レガート(&M)",  33273
+	MENUITEM "Bulk Changes...",  32840
+	MENUITEM "Transpose...",  32841
+	MENUITEM "Quantize...",  32842
+	MENUITEM "Stroke...",  32844
+	MENUITEM "Humanize...",  33097
+	MENUITEM "Legato",  33273
 	MENUITEM SEPARATOR
-	MENUITEM "1オクターブ上げる(&O)",  32845
-	MENUITEM "1オクターブ下げる(&W)",  32846
+	MENUITEM "1 Octave Up",  32845
+	MENUITEM "1 Octave Down",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "選択(&S)",  32851
-	MENUITEM "消しゴム(&E)",  32852
+	MENUITEM "Select",  32851
+	MENUITEM "Eraser",  32852
 }
 POPUP "6:tracklist_label"
 {
-	MENUITEM "トラックの追加(&T)",  32902
-	MENUITEM "デフォルトトラックの追加(&A)...",  33094
-	MENUITEM "トラックの削除(&R)",  32903
-	MENUITEM "トラックのプロパティ(&P)...",  32904
+	MENUITEM "Add Track",  32902
+	MENUITEM "Add Default Track",  33094
+	MENUITEM "Delete Track",  32903
+	MENUITEM "Track Property...",  32904
 }
 POPUP "7:onionskin"
 {
-	MENUITEM "ピアノロールオニオンスキン機能を使う(&U)",  32821
+	MENUITEM "Use Onion Skin Function",  32821
 	MENUITEM SEPARATOR
-	MENUITEM "ピアノロールに前のトラックを表示(&P)",  32822
-	MENUITEM "ピアノロールに次のトラックを表示(&N)",  32823
-	MENUITEM "ピアノロールに指定のトラックを表示(&O)...",  32824
-	MENUITEM "ピアノロールに同じ色のトラックを表示(&C)",  33296
+	MENUITEM "Display the Previous Track",  32822
+	MENUITEM "Display the Next Track",  32823
+	MENUITEM "Display the Specified Track...",  32824
+	MENUITEM "Display the Track of the Same Color",  33296
 	MENUITEM SEPARATOR
-	MENUITEM "設定をトラック毎に記憶する(&S)",  33082
+	MENUITEM "Save Preferences",  33082
 }
 POPUP "8;frame"
 {
-	MENUITEM "メインツールバー(&T)",  32804
-	MENUITEM "エディットツールバー(&O)",  33017
-	MENUITEM "ユーザー定義ツールバー(&1)",  33042
-	MENUITEM "カスタマイズ(&C)...",  33016
+	MENUITEM "Main Toolbar",  32804
+	MENUITEM "Edit Toolbar",  33017
+	MENUITEM "User Defined Toolbar",  33042
+	MENUITEM "Customize...",  33016
 	MENUITEM SEPARATOR
-	MENUITEM "ステータスバー(&S)",  59393
-	MENUITEM "マークバー(&M)",  32811
-	MENUITEM "トラックバー(&R)",  32812
+	MENUITEM "Status Bar",  59393
+	MENUITEM "Mark Bar",  32811
+	MENUITEM "Track Bar",  32812
 }
 POPUP "9:customcurve"
 {
@@ -297,31 +297,31 @@ POPUP "10:chord"
 }
 POPUP "11: trackselect"
 {
-	MENUITEM "トラックの追加(&T)",  32902
-	MENUITEM "デフォルトトラックの追加(&A)...",  33094
-	MENUITEM "トラックの削除(&R)",  32903
-	MENUITEM "トラックのプロパティ(&P)...",  32904
+	MENUITEM "Add Track",  32902
+	MENUITEM "Add Default Track",  33094
+	MENUITEM "Delete Track",  32903
+	MENUITEM "Track Property...",  32904
 	MENUITEM SEPARATOR
-	POPUP "オニオンスキンの色(&C)"
+	POPUP "Onion Skin"
 	{
-		MENUITEM "自動（未指定）(&N)",  33297
+		MENUITEM "Automatic",  33297
 		MENUITEM SEPARATOR
-		MENUITEM "赤(&R)",  33298
-		MENUITEM "橙(&O)",  33299
-		MENUITEM "黄(&Y)",  33300
-		MENUITEM "緑(&G)",  33301
-		MENUITEM "水(&W)",  33302
-		MENUITEM "紫(&V)",  33303
-		MENUITEM "桃(&P)",  33304
+		MENUITEM "Red",  33298
+		MENUITEM "Orange",  33299
+		MENUITEM "Yellow",  33300
+		MENUITEM "Green",  33301
+		MENUITEM "Water",  33302
+		MENUITEM "Violet",  33303
+		MENUITEM "Peach",  33304
 	}
 }
 POPUP "12:markbar"
 {
-	MENUITEM "マークの編集(&E)...",  33356
-	MENUITEM "マークの削除(&D)",  33357
+	MENUITEM "Edit Mark...",  33356
+	MENUITEM "Delete Mark",  33357
 }
 POPUP "dummy"
 {
-	MENUITEM "空っぽ",  33312
+	MENUITEM "Empty",  33312
 }
 }

@@ -1,26 +1,26 @@
 128 MENU
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-POPUP "ファイル(&F)"
+POPUP "File"
 {
-	MENUITEM "新規作成(&N)",  57600
-	MENUITEM "開く(&O)...",  57601
-	MENUITEM "上書き保存(&S)",  57603
-	MENUITEM "名前を付けて保存(&A)...",  57604
+	MENUITEM "New...",  57600
+	MENUITEM "Open...",  57601
+	MENUITEM "Save...",  57603
+	MENUITEM "Save As...",  57604
 	MENUITEM SEPARATOR
-	MENUITEM "曲のプロパティ(&P)...",  32792
+	MENUITEM "Song Properties...",  32792
 	MENUITEM SEPARATOR
-	MENUITEM "SMF書き出し(&M)...",  32794
-	MENUITEM "SMF書き出しの再実行(&W)",  33323
+	MENUITEM "Export As SMF (MIDI)...",  32794
+	MENUITEM "Re-Export As SMF (MIDI)...",  33323
 	MENUITEM SEPARATOR
-	MENUITEM "パーツ読み込み(&T)...",  33322
-	MENUITEM "パーツ書き出し(&V)...",  33321
+	MENUITEM "Read Parts...",  33322
+	MENUITEM "Export Parts...",  33321
 	MENUITEM SEPARATOR
-	MENUITEM "環境設定(&E)...",  32793
-	MENUITEM "環境設定のインポート(&I)...",  33310
-	MENUITEM "環境設定のエクスポート(&R)...",  33311
+	MENUITEM "Preferences...",  32793
+	MENUITEM "Import Preferences...",  33310
+	MENUITEM "Export Preferences...",  33311
 	MENUITEM SEPARATOR
-	POPUP "最近使ったファイル(&H)"
+	POPUP "Recent Files..."
 	{
 		MENUITEM "00",  32771
 		MENUITEM "01",  32772
@@ -43,234 +43,234 @@ POPUP "ファイル(&F)"
 		MENUITEM "18",  32789
 		MENUITEM "19",  32790
 		MENUITEM SEPARATOR
-		MENUITEM "クリア(&C)",  32791
+		MENUITEM "Clear",  32791
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "終了(&X)",  57665
+	MENUITEM "Exit",  57665
 }
-POPUP "編集(&E)"
+POPUP "Edit"
 {
-	MENUITEM "元に戻す(&U)",  57643
-	MENUITEM "やり直し(&R)",  57644
+	MENUITEM "Undo",  57643
+	MENUITEM "Redo",  57644
 	MENUITEM SEPARATOR
-	MENUITEM "切り取り(&T)",  57635
-	MENUITEM "切り取り(詰める)(&W)",  33290
+	MENUITEM "Cut",  57635
+	MENUITEM "Batch Cut",  33290
 	MENUITEM SEPARATOR
-	MENUITEM "コピー(&C)",  57634
+	MENUITEM "Copy",  57634
 	MENUITEM SEPARATOR
-	MENUITEM "貼り付け(&P)",  57637
-	MENUITEM "挿入貼り付け(&I)",  32796
-	MENUITEM "置換貼り付け(&B)",  33318
+	MENUITEM "Paste",  57637
+	MENUITEM "Insert Paste",  32796
+	MENUITEM "Substitute Paste",  33318
 	MENUITEM SEPARATOR
-	MENUITEM "削除(&D)",  32795
-	MENUITEM "削除(詰める)(&Q)",  33136
-	MENUITEM "一つ前のイベントを削除(&2)",  33128
-	MENUITEM "一つ前のイベントを削除(詰める)(&3)",  33129
+	MENUITEM "Delete",  32795
+	MENUITEM "Batch Delete",  33136
+	MENUITEM "Delete Previous Event",  33128
+	MENUITEM "Batch Delete Previous Event",  33129
 	MENUITEM SEPARATOR
-	POPUP "選択範囲(&E)"
+	POPUP "Select Range..."
 	{
-		MENUITEM "すべて選択(&A)",  57642
-		MENUITEM "範囲の選択(&S)...",  33087
-		MENUITEM "次の小節まで選択(&X)",  33291
-		MENUITEM "前の小節まで選択(&P)",  33292
+		MENUITEM "Select All",  57642
+		MENUITEM "Selection Range",  33087
+		MENUITEM "Select Until Next Bar",  33291
+		MENUITEM "Select to the Fron of the Bar",  33292
 		MENUITEM SEPARATOR
-		MENUITEM "選択範囲の絞り込み(&F)...",  33045
-		MENUITEM "ノートのみ選択(&N)",  33124
+		MENUITEM "Refine Range...",  33045
+		MENUITEM "Note Selection",  33124
 		MENUITEM SEPARATOR
-		MENUITEM "選択の解除(&D)",  32797
+		MENUITEM "Cancel Selection",  32797
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "時間挿入(&N)",  32798
-	MENUITEM "時間削除(&L)",  32799
+	MENUITEM "Insert Time",  32798
+	MENUITEM "Delete Time",  32799
 	MENUITEM SEPARATOR
-	MENUITEM "リアルタイム録音(&M)...",  32800
-	MENUITEM "ステップ録音(&S)...",  32801
-	MENUITEM "エクスクルーシブ受信(&X)",  32802
+	MENUITEM "Real Time Recording",  32800
+	MENUITEM "Step Recording",  32801
+	MENUITEM "Exclusive Reception",  32802
 	MENUITEM SEPARATOR
-	MENUITEM "変数表(&V)...",  33019
+	MENUITEM "Variable Table",  33019
 	MENUITEM SEPARATOR
-	MENUITEM "Stepロック設定(&O)",  32805
-	MENUITEM "Stepロック解除(&K)",  32806
+	MENUITEM "Step Lock",  32805
+	MENUITEM "Step Unlock",  32806
 	MENUITEM SEPARATOR
-	MENUITEM "検索(&F)...",  33358
+	MENUITEM "Search",  33358
 }
-POPUP "表示(&V)"
+POPUP "View"
 {
-	POPUP "表示倍率(&Z)"
+	POPUP "Zoom"
 	{
-		MENUITEM "X軸 - ズームイン(&I)",  32807
-		MENUITEM "X軸 - ズームアウト(&O)",  32808
+		MENUITEM "X-Axis - In",  32807
+		MENUITEM "X-Axis - Out",  32808
 		MENUITEM SEPARATOR
-		MENUITEM "Y軸 - ズームイン(&T)",  32809
-		MENUITEM "Y軸 - ズームアウト(&B)",  32810
+		MENUITEM "Y-Axis - In",  32809
+		MENUITEM "Y-Axis - Out",  32810
 	}
 	MENUITEM SEPARATOR
-	POPUP "ツールバー(&T)"
+	POPUP "Toolbar"
 	{
-		MENUITEM "メインツールバー(&T)",  32804
-		MENUITEM "エディットツールバー(&O)",  33017
-		MENUITEM "デフォルトGate/Veloツールバー(&D)",  33076
-		MENUITEM "イベントリストフィルターツールバー(&F)",  33120
-		MENUITEM "イベントリストMIDI入力ツールバー(&L)",  33284
+		MENUITEM "Main Toolbar",  32804
+		MENUITEM "Editing Toolbar",  33017
+		MENUITEM "Default Gate/Velocity Toolbar",  33076
+		MENUITEM "Event List Highlight Filter",  33120
+		MENUITEM "Event List MIDI Input",  33284
 		MENUITEM SEPARATOR
-		MENUITEM "ユーザー定義ツールバー(&1)",  33042
-		MENUITEM "ユーザー定義ツールバー(&2)",  33044
+		MENUITEM "User Toolbar 1(1)",  33042
+		MENUITEM "User Toolbar 2(2)",  33044
 		MENUITEM SEPARATOR
-		MENUITEM "カスタマイズ(&C)...",  33016
+		MENUITEM "Customize...",  33016
 	}
-	MENUITEM "マークバー(&M)",  32811
-	MENUITEM "トラックモニターバー(&C)",  33050
-	MENUITEM "トラックモニターバーのカスタマイズ(&X)...",  33051
-	MENUITEM "トラックバー(&R)",  32812
-	MENUITEM "ファンクションキーバー(&K)",  33276
-	MENUITEM "ステータスバー(&S)",  59393
+	MENUITEM "Mark Bar",  32811
+	MENUITEM "Track Monitor Bar",  33050
+	MENUITEM "Customize Track Monitor Bar...",  33051
+	MENUITEM "Track Bar",  32812
+	MENUITEM "Function Key Bar",  33276
+	MENUITEM "Status Bar",  59393
 	MENUITEM SEPARATOR
-	MENUITEM "バー位置の固定(&O)",  33078
+	MENUITEM "Fix Bar Position",  33078
 	MENUITEM SEPARATOR
-	POPUP "ピアノロールペイン(&P)"
+	POPUP "Piano Roll Pane"
 	{
-		POPUP "オニオンスキン(&O)"
+		POPUP "Onion Skin"
 		{
-			MENUITEM "ピアノロールオニオンスキン機能を使う(&U)",  32821
+			MENUITEM "Enable Onion Skin Mode",  32821
 			MENUITEM SEPARATOR
-			MENUITEM "ピアノロールに前のトラックを表示(&P)",  32822
-			MENUITEM "ピアノロールに次のトラックを表示(&N)",  32823
-			MENUITEM "ピアノロールに指定のトラックを表示(&O)...",  32824
-			MENUITEM "ピアノロールに同じ色のトラックを表示(&C)",  33296
+			MENUITEM "View Previous Track",  32822
+			MENUITEM "View Next Track",  32823
+			MENUITEM "View Specified Track(s)...",  32824
 			MENUITEM SEPARATOR
-			MENUITEM "設定をトラック毎に記憶する(&S)",  33082
+			MENUITEM "Per Track Settings",  33082
 		}
-		MENUITEM "スケール/コードを表示(&S)",  33049
-		POPUP "スクロール(&R)"
+		MENUITEM "Scale/Chord Highlight",  33049
+		POPUP "Scroll"
 		{
-			MENUITEM "上へ(&U)",  33132
-			MENUITEM "下へ(&D)",  33133
-			MENUITEM "左へ(&L)",  33134
-			MENUITEM "右へ(&R)",  33135
+			MENUITEM "Up",  33132
+			MENUITEM "Down",  33133
+			MENUITEM "Left",  33134
+			MENUITEM "Right",  33135
 			MENUITEM SEPARATOR
-			MENUITEM "スクロール量の設定(&C)...",  33137
+			MENUITEM "Customize...",  33137
 		}
-		MENUITEM "演奏中に自動で改ページする(&P)",  33333
+		MENUITEM "演奏中に自動で改ページする(P)",  33333
 	}
-	POPUP "イベントリストペイン(&E)"
+	POPUP "Event List Pane"
 	{
-		MENUITEM "イベントリストペイン(&E)",  32816
-		MENUITEM "イベントリストペインにフォーカスを移動(&O)",  33043
+		MENUITEM "Show/Hide",  32816
+		MENUITEM "Focus",  33043
 		MENUITEM SEPARATOR
-		MENUITEM "カーソル位置と演奏位置の同期(&S)",  33079
+		MENUITEM "Auto-Scroll",  33079
 		MENUITEM SEPARATOR
-		POPUP "フィルター(&F)"
+		POPUP "Filters"
 		{
-			MENUITEM "フィルター詳細設定(&P)...",  33098
+			MENUITEM "Custom Filter...",  33098
 			MENUITEM SEPARATOR
-			MENUITEM "フィルター機能を使う(&E)",  33099
-			MENUITEM "リセット(&R)",  33100
+			MENUITEM "Filter All",  33099
+			MENUITEM "Filter None",  33100
 			MENUITEM SEPARATOR
-			MENUITEM "ノートイベント(&N)",  33101
-			MENUITEM "プログラムチェンジイベント(&O)",  33102
-			POPUP "コントロールチェンジイベント(&C)"
+			MENUITEM "Notes",  33101
+			MENUITEM "Program Changes",  33102
+			POPUP "Control Changes"
 			{
-				MENUITEM "全コントロールチェンジイベント(&C)",  33121
+				MENUITEM "Filter All",  33121
 				MENUITEM SEPARATOR
-				MENUITEM "&Pitch Bend",  33105
-				MENUITEM "&Modulation",  33106
-				MENUITEM "&Expression",  33107
-				MENUITEM "V&olume",  33108
-				MENUITEM "Pa&npot",  33109
-				MENUITEM "&Hold",  33110
-				MENUITEM "&LPF Cutoff Frequency",  33111
-				MENUITEM "LPF &Resonance",  33112
-				MENUITEM "Ma&ster Volume",  33113
+				MENUITEM "Pitch Bend",  33105
+				MENUITEM "Modulation",  33106
+				MENUITEM "Expression",  33107
+				MENUITEM "Volume",  33108
+				MENUITEM "Panpot",  33109
+				MENUITEM "Hold",  33110
+				MENUITEM "LPF Cutoff Frequency",  33111
+				MENUITEM "LPF Resonance",  33112
+				MENUITEM "Master Volume",  33113
 			}
-			MENUITEM "エクスクルーシブイベント(&X)",  33114
-			MENUITEM "コメントイベント(&T)",  33115
-			MENUITEM "変数代入式イベント(&F)",  33116
-			MENUITEM "歌詞イベント(&L)",  33118
-			MENUITEM "キューポイントイベント(&U)",  33119
-			MENUITEM "メジャーリンクイベント(&K)",  33316
-			MENUITEM "テンポイベント(&M)",  33117
-			MENUITEM "拍子イベント(&I)",  33351
-			MENUITEM "調号イベント(&Y)",  33352
-			MENUITEM "スケールイベント(&S)",  33353
-			MENUITEM "コードイベント(&D)",  33354
-			MENUITEM "マークイベント(&A)",  33355
+			MENUITEM "Exclusive",  33114
+			MENUITEM "Comments",  33115
+			MENUITEM "Formulas",  33116
+			MENUITEM "Tempo",  33117
+			MENUITEM "Lyrics",  33118
+			MENUITEM "Cue Points",  33119
+			MENUITEM "メジャーリンクイベント(K)",  33316
+			MENUITEM "テンポイベント(M)",  33117
+			MENUITEM "拍子イベント(I)",  33351
+			MENUITEM "調号イベント(Y)",  33352
+			MENUITEM "スケールイベント(S)",  33353
+			MENUITEM "コードイベント(D)",  33354
+			MENUITEM "マークイベント(A)",  33355
 		}
 		MENUITEM SEPARATOR
-		MENUITEM "項目の幅をリセット(&R)",  33086
+		MENUITEM "項目の幅をリセット(R)",  33086
 	}
-	POPUP "イベントグラフペイン1(&N)"
+	POPUP "Event Graph Pane 1"
 	{
-		MENUITEM "イベントグラフペイン1(&C)",  32817
-		MENUITEM "アンカー(&A)",  32973
-		MENUITEM "オニオンスキン(&K)...",  33260
+		MENUITEM "Show/Hide",  32817
+		MENUITEM "Anchor Points",  32973
+		MENUITEM "Onion Skin...",  33260
 		MENUITEM SEPARATOR
-		MENUITEM "&Velocity",  32819
-		MENUITEM "&Pitch Bend",  32988
-		MENUITEM "&Modulation",  32989
-		MENUITEM "&Expression",  32990
-		MENUITEM "V&olume",  32991
-		MENUITEM "Pa&npot",  32992
-		MENUITEM "&Hold",  32993
-		MENUITEM "&LPF Cutoff Frequency",  32994
-		MENUITEM "LPF &Resonance",  32995
-		MENUITEM "Ma&ster Volume",  32996
+		MENUITEM "Velocity",  32819
+		MENUITEM "Pitch Bend",  32988
+		MENUITEM "Modulation",  32989
+		MENUITEM "Expression",  32990
+		MENUITEM "Volume",  32991
+		MENUITEM "Panpot",  32992
+		MENUITEM "Hold",  32993
+		MENUITEM "LPF Cutoff Frequency",  32994
+		MENUITEM "LPF Resonance",  32995
+		MENUITEM "Master Volume",  32996
 	}
-	POPUP "イベントグラフペイン2(&B)"
+	POPUP "Event Graph Pane 2"
 	{
-		MENUITEM "イベントグラフペイン2(&C)",  32818
-		MENUITEM "アンカー(&A)",  32974
-		MENUITEM "オニオンスキン(&K)...",  33261
+		MENUITEM "Show/Hide",  32818
+		MENUITEM "Anchor Points",  32974
+		MENUITEM "Onion Skin...",  33261
 		MENUITEM SEPARATOR
-		MENUITEM "&Velocity",  32820
-		MENUITEM "&Pitch Bend",  32977
-		MENUITEM "&Modulation",  32979
-		MENUITEM "&Expression",  32980
-		MENUITEM "V&olume",  32982
-		MENUITEM "Pa&npot",  32983
-		MENUITEM "&Hold",  32984
-		MENUITEM "&LPF Cutoff Frequency",  32985
-		MENUITEM "LPF &Resonance",  32986
-		MENUITEM "Ma&ster Volume",  32987
+		MENUITEM "Velocity",  32820
+		MENUITEM "Pitch Bend",  32977
+		MENUITEM "Modulation",  32979
+		MENUITEM "Expression",  32980
+		MENUITEM "Volume",  32982
+		MENUITEM "Panpot",  32983
+		MENUITEM "Hold",  32984
+		MENUITEM "LPF Cutoff Frequency",  32985
+		MENUITEM "LPF Resonance",  32986
+		MENUITEM "Master Volume",  32987
 	}
-	MENUITEM "トラックセレクトペイン(&A)",  33122
+	MENUITEM "Track Select Pane",  33122
 	MENUITEM SEPARATOR
-	MENUITEM "トラックリスト(&L)",  32813
+	MENUITEM "Track List",  32813
 	MENUITEM SEPARATOR
-	MENUITEM "演奏モニター(&F)",  33125
-	MENUITEM "演奏モニターをリセット(&J)",  33293
+	MENUITEM "Performance Monitor",  33125
+	MENUITEM "Reset",  33293
 	MENUITEM SEPARATOR
-	MENUITEM "アウトプットペイン(&U)",  32814
+	MENUITEM "Output Pane",  32814
 	MENUITEM SEPARATOR
-	MENUITEM "各ペインのサイズをリセット(&I)",  33018
+	MENUITEM "Reset Pane Sizes",  33018
 }
-POPUP "挿入(&I)"
+POPUP "Insert"
 {
-	MENUITEM "ノート(&N)",  32826
-	MENUITEM "プログラムチェンジ(&P)",  32827
-	MENUITEM "コントロールチェンジ(&C)",  32828
-	MENUITEM "コントロールチェンジ（複数）(&G)",  33046
-	MENUITEM "エクスクルーシブ(&E)",  32829
-	MENUITEM "コメント(&M)",  32830
-	MENUITEM "歌詞(&L)",  33036
-	MENUITEM "キューポイント(&U)",  33037
-	MENUITEM "変数代入式(&F)",  32831
-	MENUITEM "メジャーリンク(&R)",  33314
+	MENUITEM "Notes",  32826
+	MENUITEM "Program Change",  32827
+	MENUITEM "Control Change",  32828
+	MENUITEM "Control Change/s",  33046
+	MENUITEM "Exclude",  32829
+	MENUITEM "Comments",  32830
+	MENUITEM "Lyrics",  33036
+	MENUITEM "Cue Points",  33037
+	MENUITEM "Variable Expression",  32831
+	MENUITEM "Major Link",  33314
 	MENUITEM SEPARATOR
-	MENUITEM "テンポ(&T)",  32997
-	MENUITEM "拍子(&B)",  32803
-	MENUITEM "調号(&K)",  33123
-	MENUITEM "スケール(&S)",  33335
-	MENUITEM "コード(&O)",  33336
+	MENUITEM "Tempo",  32997
+	MENUITEM "Beat",  32803
+	MENUITEM "Tone Number",  33123
+	MENUITEM "Scale",  33335
+	MENUITEM "Code",  33336
 	MENUITEM SEPARATOR
-	MENUITEM "歌詞の流し込み(&Y)...",  33343
+	MENUITEM "Pour Lyrics...",  33343
 	MENUITEM SEPARATOR
-	MENUITEM "MIDI INの情報からノートを挿入(&D)",  33126
+	MENUITEM "Insert from MIDI In...",  33126
 	MENUITEM SEPARATOR
-	MENUITEM "テンプレート(&A)...",  32832
+	MENUITEM "Template",  32832
 	MENUITEM SEPARATOR
-	POPUP "CC / テンポの値(&V)"
+	POPUP "CC / Tempo Value"
 	{
-		POPUP "イベントグラフ1(&1)"
+		POPUP "Event Graph 1"
 		{
 			MENUITEM "4",  33029
 			MENUITEM "3",  33028
@@ -278,7 +278,7 @@ POPUP "挿入(&I)"
 			MENUITEM "1",  33026
 			MENUITEM "0",  33025
 		}
-		POPUP "イベントグラフ2(&2)"
+		POPUP "Event Graph 2"
 		{
 			MENUITEM "4",  33034
 			MENUITEM "3",  33033
@@ -288,108 +288,108 @@ POPUP "挿入(&I)"
 		}
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "選択範囲へ直線・曲線を入力(&I)...",  32843
+	MENUITEM "Curve...",  32843
 	MENUITEM SEPARATOR
-	POPUP "イベントリストMIDI入力(&H)"
+	POPUP "Input Event List"
 	{
-		MENUITEM "イベントリストMIDI入力を有効にする(&E)",  33277
+		MENUITEM "Enable Event List MIDI Input",  33277
 		MENUITEM SEPARATOR
-		MENUITEM "置き換え(&R)",  33278
-		MENUITEM "挿入(&I)",  33279
-		MENUITEM "追加(&A)",  33280
+		MENUITEM "Replace",  33278
+		MENUITEM "Insert",  33279
+		MENUITEM "Add",  33280
 		MENUITEM SEPARATOR
-		MENUITEM "単音ずつ反映(&M)",  33281
-		MENUITEM "Velocityの反映(&V)",  33282
-		MENUITEM "Note番号の反映(&N)",  33283
+		MENUITEM "Reflect Note",  33281
+		MENUITEM "Reflect Velocity",  33282
+		MENUITEM "Reflect Note Nubmer",  33283
 	}
 }
-POPUP "イベント(&N)"
+POPUP "Events"
 {
-	MENUITEM "スライス(&S)",  32838
-	MENUITEM "スライス（切り捨て）(&L)",  32839
-	MENUITEM "パターンスライス(&A)...",  33328
+	MENUITEM "Slice",  32838
+	MENUITEM "Truncated Slice",  32839
+	MENUITEM "Pattern Slice...",  33328
 	MENUITEM SEPARATOR
-	MENUITEM "一括変更(&B)...",  32840
-	MENUITEM "トランスポーズ(&R)...",  32841
-	MENUITEM "クォンタイズ(&Q)...",  32842
-	MENUITEM "ストローク(&T)...",  32844
-	MENUITEM "ヒューマナイズ(&H)...",  33097
-	MENUITEM "レガート(&M)",  33273
-	MENUITEM "結合(&4)",  33329
-	MENUITEM "左右反転(&3)",  33324
-	MENUITEM "ベロシティコンプレッサ(&C)...",  33325
+	MENUITEM "Bulk Changes...",  32840
+	MENUITEM "Tranpose...",  32841
+	MENUITEM "Quantize...",  32842
+	MENUITEM "Stroke...",  32844
+	MENUITEM "Humanize...",  33097
+	MENUITEM "Legato",  33273
+	MENUITEM "Bond",  33329
+	MENUITEM "Left and Right Inversion",  33324
+	MENUITEM "Velocity Compressor",  33325
 	MENUITEM SEPARATOR
-	MENUITEM "1オクターブ上げる(&O)",  32845
-	MENUITEM "1オクターブ下げる(&W)",  32846
+	MENUITEM "1 Octave Up",  32845
+	MENUITEM "1 Octave Down",  32846
 	MENUITEM SEPARATOR
-	MENUITEM "タイムストレッチ(&5)...",  33338
-	MENUITEM "コントロールチェンジの置換(&V)...",  33294
-	MENUITEM "コントロールチェンジの置換（複数）(&Y)...",  33317
-	MENUITEM "オニオンスキンノートの複製(&N)",  33095
-	MENUITEM "タップテンポ＆フィット(&U)...",  33289
-	MENUITEM "重複ノートのGate一括補正(&X)...",  33313
-	MENUITEM "メジャーリンクイベントの復元(&Z)",  33315
-	MENUITEM "ハモリパートの生成(&6)...",  33344
+	MENUITEM "Stretch Time...",  33338
+	MENUITEM "Replace Control Change...",  33294
+	MENUITEM "Replace Control Change/s...",  33317
+	MENUITEM "Replicate Onion Skin...",  33095
+	MENUITEM "Tap Tempo and Fit...",  33289
+	MENUITEM "Batch Correction of Overlapping Notes...",  33313
+	MENUITEM "Restore Major Link Events...",  33315
+	MENUITEM "Generate Harmony Parts...",  33344
 	MENUITEM SEPARATOR
-	POPUP "Vel/Valueの調整(&7)"
+	POPUP "Adjust Velocity Value"
 	{
-		MENUITEM "小単位で加える(&S)",  33345
-		MENUITEM "小単位で引く(&I)",  33346
+		MENUITEM "One Small Unit Up",  33345
+		MENUITEM "One Small Unit Down",  33346
 		MENUITEM SEPARATOR
-		MENUITEM "中単位で加える(&M)",  33347
-		MENUITEM "中単位で引く(&E)",  33348
+		MENUITEM "One Medium Unit Up",  33347
+		MENUITEM "One Medium Unit Down",  33348
 		MENUITEM SEPARATOR
-		MENUITEM "大単位で加える(&L)",  33349
-		MENUITEM "大単位で引く(&A)",  33350
+		MENUITEM "One Large Unit Up",  33349
+		MENUITEM "One Large Unit Down",  33350
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "End of Trackの調節(&D)",  32849
+	MENUITEM "End of Track Adjustment",  32849
 	MENUITEM SEPARATOR
-	POPUP "イベントリストのイベント(&E)"
+	POPUP "Event List"
 	{
-		MENUITEM "プロパティ(&P)...",  32848
+		MENUITEM "プロパティ(P)...",  32848
 		MENUITEM SEPARATOR
-		MENUITEM "イベントグラフペイン1で表示(&1)",  33308
-		MENUITEM "イベントグラフペイン2で表示(&2)",  33309
+		MENUITEM "イベントグラフペイン1で表示(1)",  33308
+		MENUITEM "イベントグラフペイン2で表示(2)",  33309
 		MENUITEM SEPARATOR
-		MENUITEM "イベントの送信(&E)",  33047
-		MENUITEM "ノートイベントの発音(&F)",  33265
-		MENUITEM "ノートイベント（和音）の発音(&G)",  33266
+		MENUITEM "イベントの送信(E)",  33047
+		MENUITEM "ノートイベントの発音(F)",  33265
+		MENUITEM "ノートイベント（和音）の発音(G)",  33266
 		MENUITEM SEPARATOR
-		MENUITEM "値の再編集(&J)",  32847
-		POPUP "値の調整(&K)"
+		MENUITEM "値の再編集(J)",  32847
+		POPUP "値の調整(K)"
 		{
-			MENUITEM "小単位で加える(&S)",  33038
-			MENUITEM "小単位で引く(&I)",  33039
+			MENUITEM "小単位で加える(S)",  33038
+			MENUITEM "小単位で引く(I)",  33039
 			MENUITEM SEPARATOR
-			MENUITEM "中単位で加える(&M)",  33040
-			MENUITEM "中単位で引く(&E)",  33041
+			MENUITEM "中単位で加える(M)",  33040
+			MENUITEM "中単位で引く(E)",  33041
 			MENUITEM SEPARATOR
-			MENUITEM "大単位で加える(&L)",  33274
-			MENUITEM "大単位で引く(&A)",  33275
+			MENUITEM "大単位で加える(L)",  33274
+			MENUITEM "大単位で引く(A)",  33275
 		}
-		POPUP "値の倍入力モード(&I)"
+		POPUP "値の倍入力モード(I)"
 		{
-			MENUITEM "桁を上げる(&U)",  33263
-			MENUITEM "桁を下げる(&D)",  33264
+			MENUITEM "桁を上げる(U)",  33263
+			MENUITEM "桁を下げる(D)",  33264
 		}
 	}
 }
-POPUP "ツール(&T)"
+POPUP "Tools"
 {
-	MENUITEM "ペン(&P)",  32850
-	MENUITEM "選択(&S)",  32851
-	MENUITEM "消しゴム(&E)",  32852
+	MENUITEM "Pen",  32850
+	MENUITEM "Select",  32851
+	MENUITEM "Eraser",  32852
 	MENUITEM SEPARATOR
-	MENUITEM "ペン/選択ツールの切り替え(&W)",  32853
+	MENUITEM "Pen/Selection Tool",  32853
 	MENUITEM SEPARATOR
-	POPUP "コード入力支援(&C)"
+	POPUP "Code Input"
 	{
-		MENUITEM "設定(&C)...",  33139
+		MENUITEM "Setting...",  33139
 		MENUITEM SEPARATOR
-		MENUITEM "通常入力に戻す(&E)",  33138
+		MENUITEM "Return to Default",  33138
 		MENUITEM SEPARATOR
-		POPUP "コード一覧(&L)"
+		POPUP "Code List"
 		{
 			MENUITEM "No.001",  33140
 			MENUITEM "No.002",  33141
@@ -513,80 +513,80 @@ POPUP "ツール(&T)"
 			MENUITEM "No.120",  33259
 		}
 		MENUITEM SEPARATOR
-		MENUITEM "コード一覧を表示(&P)",  33262
+		MENUITEM "Display the Code List",  33262
 	}
 	MENUITEM SEPARATOR
-	POPUP "クォンタイズ(&Q)"
+	POPUP "Quantize"
 	{
-		MENUITEM "小節",  33359
-		MENUITEM "全音符",  33000
-		MENUITEM "付点2分音符",  33001
-		MENUITEM "2分音符",  33002
-		MENUITEM "3連2分音符",  33003
-		MENUITEM "付点4分音符",  33004
-		MENUITEM "4分音符",  33005
-		MENUITEM "3連4分音符",  33006
-		MENUITEM "付点8分音符",  33007
-		MENUITEM "8分音符",  33008
-		MENUITEM "3連8分音符",  33009
-		MENUITEM "付点16分音符",  33010
-		MENUITEM "16分音符",  33011
-		MENUITEM "3連16分音符",  33012
-		MENUITEM "付点32分音符",  33013
-		MENUITEM "32分音符",  33014
-		MENUITEM "3連32分音符",  33015
+                MENUITEM "小節",  33359 
+		MENUITEM "Whole",  33000
+		MENUITEM "3/4",  33001
+		MENUITEM "1/2",  33002
+		MENUITEM "1/3",  33003
+		MENUITEM "3/8",  33004
+		MENUITEM "1/4",  33005
+		MENUITEM "1/6",  33006
+		MENUITEM "3/16",  33007
+		MENUITEM "1/8",  33008
+		MENUITEM "1/12",  33009
+		MENUITEM "3/32",  33010
+		MENUITEM "1/16",  33011
+		MENUITEM "1/24",  33012
+		MENUITEM "3/64",  33013
+		MENUITEM "1/32",  33014
+		MENUITEM "1/48",  33015
 		MENUITEM SEPARATOR
-		MENUITEM "デフォルトGateと連動(&G)",  33295
+		MENUITEM "デフォルトGateと連動(G)",  33295
 	}
-	MENUITEM "Tickクォンタイズ(&T)",  32855
-	MENUITEM "Gateクォンタイズ(&G)",  32856
+	MENUITEM "Tick Quantize",  32855
+	MENUITEM "Gate Quantize",  32856
 	MENUITEM SEPARATOR
-	POPUP "デフォルトGate(&B)"
+	POPUP "Default Gate"
 	{
-		MENUITEM "全音符",  33060
-		MENUITEM "付点2分音符",  33061
-		MENUITEM "2分音符",  33062
-		MENUITEM "3連2分音符",  33063
-		MENUITEM "付点4分音符",  33064
-		MENUITEM "4分音符",  33065
-		MENUITEM "3連4分音符",  33066
-		MENUITEM "付点8分音符",  33067
-		MENUITEM "8分音符",  33068
-		MENUITEM "3連8分音符",  33069
-		MENUITEM "付点16分音符",  33070
-		MENUITEM "16分音符",  33071
-		MENUITEM "3連16分音符",  33072
-		MENUITEM "付点32分音符",  33073
-		MENUITEM "32分音符",  33074
-		MENUITEM "3連32分音符",  33075
+		MENUITEM "1",  33060
+		MENUITEM "3/4",  33061
+		MENUITEM "1/2",  33062
+		MENUITEM "1/3",  33063
+		MENUITEM "3/8",  33064
+		MENUITEM "1/4",  33065
+		MENUITEM "1/6",  33066
+		MENUITEM "3/16",  33067
+		MENUITEM "1/8",  33068
+		MENUITEM "1/12",  33069
+		MENUITEM "3/32",  33070
+		MENUITEM "1/16",  33071
+		MENUITEM "1/24",  33072
+		MENUITEM "3/64",  33073
+		MENUITEM "1/32",  33074
+		MENUITEM "1/48",  33075
 		MENUITEM SEPARATOR
-		MENUITEM "増やす(&A)",  33267
-		MENUITEM "減らす(&M)",  33268
+		MENUITEM "Increase",  33267
+		MENUITEM "Decrease",  33268
 	}
-	POPUP "デフォルトVelocity(&V)"
+	POPUP "Default Velocity"
 	{
-		MENUITEM "フォルティッシシモ",  33059
-		MENUITEM "フォルティッシモ",  33058
-		MENUITEM "フォルテ",  33057
-		MENUITEM "メゾフォルテ",  33056
-		MENUITEM "メゾピアノ",  33055
-		MENUITEM "ピアノ",  33054
-		MENUITEM "ピアニッシモ",  33053
-		MENUITEM "ピアニッシシモ",  33052
+		MENUITEM "Fortississimo",  33059
+		MENUITEM "Fortissimo",  33058
+		MENUITEM "Forte",  33057
+		MENUITEM "Mezzo Forte",  33056
+		MENUITEM "Mezzo Piano",  33055
+		MENUITEM "Piano",  33054
+		MENUITEM "Pianissimo",  33053
+		MENUITEM "Pianississimo",  33052
 		MENUITEM SEPARATOR
-		MENUITEM "増やす(&A)",  33269
-		MENUITEM "減らす(&M)",  33270
+		MENUITEM "Increase",  33269
+		MENUITEM "Decrease",  33270
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "フリーハンド(&F)",  32857
-	MENUITEM "直線(&L)",  32858
-	MENUITEM "ゆるやかな曲線(&U)",  32859
-	MENUITEM "はやい曲線(&A)",  32861
-	MENUITEM "S字曲線(&D)",  33337
-	MENUITEM "ランダム(&R)",  32862
-	POPUP "カスタム(&Z)"
+	MENUITEM "Freehand",  32857
+	MENUITEM "Straight Line",  32858
+	MENUITEM "Gentle Curve",  32859
+	MENUITEM "Fast Curve",  32861
+	MENUITEM "S-Shaped Curve",  33337
+	MENUITEM "Random",  32862
+	POPUP "Custom"
 	{
-		MENUITEM "編集(&E)...",  32863
+		MENUITEM "Edit...",  32863
 		MENUITEM SEPARATOR
 		MENUITEM "0",  32864
 		MENUITEM "1",  32865
@@ -610,102 +610,102 @@ POPUP "ツール(&T)"
 		MENUITEM "19",  32883
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "間隔設定(&I)...",  32884
-	MENUITEM "ノートの直前(&N)",  32885
+	MENUITEM "Interval Setting...",  32884
+	MENUITEM "Previous Note",  32885
 	MENUITEM SEPARATOR
-	POPUP "イベントグラフ1(&1)"
+	POPUP "Event Graph 1"
 	{
-		MENUITEM "アンカー上下移動のみ(&A)",  33320
-		MENUITEM "矩形選択(&Y)",  33331
+		MENUITEM "アンカー上下移動のみ(A)",  33320
+		MENUITEM "矩形選択(Y)",  33331
 	}
-	POPUP "イベントグラフ2(&2)"
+	POPUP "Event Graph 2"
 	{
-		MENUITEM "アンカー上下移動のみ(&A)",  33319
-		MENUITEM "矩形選択(&Y)",  33332
+		MENUITEM "Anchor Up and Down only",  33319
+		MENUITEM "Rectangular Selection",  33332
 	}
 }
-POPUP "演奏(&P)"
+POPUP "Performance"
 {
-	MENUITEM "演奏開始/停止(&P)",  32886
-	MENUITEM "ソロ演奏開始(&K)",  33130
-	MENUITEM "小節ソロ演奏開始(&J)",  33127
-	MENUITEM "小節ソロループ演奏開始(&V)",  33285
-	MENUITEM "一時停止(&E)",  33048
-	MENUITEM "停止(&Q)",  33131
+	MENUITEM "Performance Start/Stop",  32886
+	MENUITEM "Solo Performance",  33130
+	MENUITEM "Bar Solo Start",  33127
+	MENUITEM "Bar Loop Play",  33285
+	MENUITEM "Pause",  33048
+	MENUITEM "Stop",  33131
 	MENUITEM SEPARATOR
-	POPUP "ループ(&L)"
+	POPUP "Loop"
 	{
-		MENUITEM "ループ(&L)",  32887
-		MENUITEM "選択範囲優先(&S)",  33339
+		MENUITEM "Loop",  32887
+		MENUITEM "Selection Priority",  33339
 		MENUITEM SEPARATOR
-		MENUITEM "選択範囲からループマーカーを作成(&M)",  33271
-		MENUITEM "ループマーカーの削除(&D)",  33272
+		MENUITEM "Create a Loop Marker from Selection",  33271
+		MENUITEM "Delete the Loop Markers",  33272
 		MENUITEM SEPARATOR
-		MENUITEM "ループマーカー開始位置へ(&B)",  33286
-		MENUITEM "ループマーカー終了位置へ(&E)",  33288
+		MENUITEM "Loop to Start Position of Marker",  33286
+		MENUITEM "Loop to End Position of Marker",  33288
 	}
-	POPUP "再生速度(&D)"
+	POPUP "Playback Speed"
 	{
-		MENUITEM "50％",  32889
-		MENUITEM "100％",  32890
-		MENUITEM "150％",  32891
-		MENUITEM "200％",  32892
-		MENUITEM "300％",  32893
+		MENUITEM "50%",  32889
+		MENUITEM "100%",  32890
+		MENUITEM "150%",  32891
+		MENUITEM "200%",  32892
+		MENUITEM "300%",  32893
 	}
 	MENUITEM SEPARATOR
-	MENUITEM "曲の先頭へ(&H)",  32894
-	MENUITEM "二つ前の小節へ(&C)",  32998
-	MENUITEM "一つ前の小節へ(&B)",  32895
-	MENUITEM "クォンタイズ単位で前へ(&W)",  33326
-	MENUITEM "クォンタイズ単位で次へ(&X)",  33327
-	MENUITEM "一つ次の小節へ(&N)",  32896
-	MENUITEM "曲の最後尾へ(&F)",  32976
-	MENUITEM "演奏位置の指定(&1)...",  33340
+	MENUITEM "Start of the Song",  32894
+	MENUITEM "Next Two Bars",  32998
+	MENUITEM "Next Bar",  32895
+	MENUITEM "Previous Quantize Unit",  33326
+	MENUITEM "Next Quantize Unit",  33327
+	MENUITEM "Next Bar",  32896
+	MENUITEM "End of the Song",  32976
+	MENUITEM "Playing Position",  33340
 	MENUITEM SEPARATOR
-	MENUITEM "トラックの演奏(&T)",  32897
-	MENUITEM "ソロ演奏(&S)",  32898
-	MENUITEM "全トラック演奏(&A)",  32899
+	MENUITEM "Track Performance",  32897
+	MENUITEM "Solo Performance",  32898
+	MENUITEM "All Track Perfomance",  32899
 	MENUITEM SEPARATOR
-	MENUITEM "MIDI機器の状態を合わせる(&Y)",  32900
-	MENUITEM "MIDI機器の状態を自動的に合わせる(&O)",  33035
-	MENUITEM "トラック個別設定(&R)...",  33096
+	MENUITEM "Match the State of MIDI Equipment",  32900
+	MENUITEM "Automatically Match the State of MIDI Equipment",  33035
+	MENUITEM "Individual Track Settings...",  33096
 	MENUITEM SEPARATOR
-	MENUITEM "GMリセット送信(&G)",  33077
-	MENUITEM "パニック(&Z)",  33330
+	MENUITEM "Send GM Reset Event",  33077
+	MENUITEM "Panic Event, Reset All Channels",  33330
 	MENUITEM SEPARATOR
-	MENUITEM "演奏時間の算出(&M)...",  32901
+	MENUITEM "Calculate Playing Time",  32901
 	MENUITEM SEPARATOR
-	MENUITEM "演奏位置のコードを調べる(&I)",  33090
+	MENUITEM "Examine the Code of Playing Position",  33090
 	MENUITEM SEPARATOR
-	MENUITEM "低負荷演奏(&U)...",  32999
+	MENUITEM "Low Load Performance...",  32999
 }
-POPUP "トラック(&K)"
+POPUP "Track"
 {
-	MENUITEM "トラックの追加(&T)",  32902
-	MENUITEM "デフォルトトラックの追加(&A)...",  33094
-	MENUITEM "トラックの削除(&R)",  32903
-	MENUITEM "トラックのプロパティ(&P)...",  32904
+	MENUITEM "Add Track",  32902
+	MENUITEM "Add Default Track",  33094
+	MENUITEM "Delete Track",  32903
+	MENUITEM "Track Property...",  32904
 	MENUITEM SEPARATOR
-	POPUP "オニオンスキンの色(&C)"
+	POPUP "Onion Skin"
 	{
-		MENUITEM "自動（未指定）(&N)",  33297
+		MENUITEM "Automatic",  33297
 		MENUITEM SEPARATOR
-		MENUITEM "赤(&R)",  33298
-		MENUITEM "橙(&O)",  33299
-		MENUITEM "黄(&Y)",  33300
-		MENUITEM "緑(&G)",  33301
-		MENUITEM "水(&W)",  33302
-		MENUITEM "紫(&V)",  33303
-		MENUITEM "桃(&P)",  33304
+		MENUITEM "Red",  33298
+		MENUITEM "Orange",  33299
+		MENUITEM "Yellow",  33300
+		MENUITEM "Green",  33301
+		MENUITEM "Water",  33302
+		MENUITEM "Violet",  33303
+		MENUITEM "Peach",  33304
 	}
 	MENUITEM SEPARATOR
-	POPUP "表示トラックの変更(&V)"
+	POPUP "Change Display Track"
 	{
-		MENUITEM "前のトラックへ(&B)",  32905
-		MENUITEM "次のトラックへ(&N)",  32906
+		MENUITEM "Previous Track",  32905
+		MENUITEM "Next Track",  32906
 		MENUITEM SEPARATOR
-		MENUITEM "前の同色トラックへ(&A)",  33306
-		MENUITEM "次の同色トラックへ(&E)",  33305
+		MENUITEM "Previous Track of Same Color",  33306
+		MENUITEM "Next Track of Same Color",  33305
 	}
 	MENUITEM SEPARATOR
 	MENUITEM "0",  32907
@@ -743,12 +743,12 @@ POPUP "トラック(&K)"
 	MENUITEM "32",  32939
 	MENUITEM "33",  32940
 }
-POPUP "マーク(&M)"
+POPUP "Mark"
 {
-	MENUITEM "マークの挿入(&A)...",  32941
+	MENUITEM "Insert Mark...",  32941
 	MENUITEM SEPARATOR
-	MENUITEM "前のマークへ(&P)",  33342
-	MENUITEM "次のマークへ(&N)",  33341
+	MENUITEM "Previous Mark",  33342
+	MENUITEM "Next Mark",  33341
 	MENUITEM SEPARATOR
 	MENUITEM "0",  32943
 	MENUITEM "1",  32944
@@ -781,16 +781,16 @@ POPUP "マーク(&M)"
 	MENUITEM "28",  32971
 	MENUITEM "29",  32972
 }
-POPUP "ヘルプ(&H)"
+POPUP "Help"
 {
-	MENUITEM "取扱説明書(&M)...",  33020
+	MENUITEM "Manual...",  33020
 	MENUITEM SEPARATOR
-	MENUITEM "公式サイトへ(&O)...",  33021
+	MENUITEM "Official Site...",  33021
 	MENUITEM SEPARATOR
-	MENUITEM "不具合報告(&B)...",  33022
+	MENUITEM "Report Bugs...",  33022
 	MENUITEM SEPARATOR
-	MENUITEM "音源定義ファイル情報(&X)...",  33024
+	MENUITEM "Sound Source File Info...",  33024
 	MENUITEM SEPARATOR
-	MENUITEM "バージョン情報(&A)...",  57664
+	MENUITEM "About...",  57664
 }
 }

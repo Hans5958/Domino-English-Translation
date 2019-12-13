@@ -1,10 +1,10 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-61440, 	"??"
-61441, 	"????????"
-61442, 	"???????? (*.*)"
-61443, 	"??"
-61446, 	"???????"
+61440, 	"Open"
+61441, 	"Save As"
+61442, 	"All files (*.*)"
+61443, 	"Untitled"
+61446, 	"Untitled file"
 }
 

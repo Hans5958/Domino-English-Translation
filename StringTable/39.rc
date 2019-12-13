@@ -5,8 +5,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 59137, 	"CAP"
 59138, 	"NUM"
 59139, 	"SCRL"
-59140, 	"??"
-59141, 	"??"
-59142, 	"??"
+59140, 	"OVR"
+59141, 	"REC"
+59142, 	"Graphics Card Driver   "
 }
 

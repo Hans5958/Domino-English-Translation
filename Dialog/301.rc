@@ -4,8 +4,7 @@ CAPTION ""
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "MS Sans Serif"
 {
-   CONTROL "ノート操作時にイベントリストの該当するイベントへカーソルを移動させる(&E)", 1394, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 0, 253, 10 
-   CONTROL "マークした小節へ移動する際、その小節が左端へ来るようにスクロールする(&S)", 1412, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 12, 234, 10 
+   CONTROL "Synchronize event list with note operations", 1394, BUTTON, BS_AUTOCHECKBOX |    CONTROL "マークした小節へ移動する際、その小節が左端へ来るようにスクロールする(&S)", 1412, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 12, 234, 10 
    CONTROL "ベロシティによってカレントノートに濃淡を付ける(&N)", 1416, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 24, 257, 10 
    CONTROL "ベロシティによってオニオンスキンノートに濃淡を付ける(&O)", 1417, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 36, 257, 10 
    CONTROL "ノートの左端をドラッグしてGateを調節できるようにする(&R)", 1483, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 48, 206, 10 
