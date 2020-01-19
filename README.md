@@ -1,4 +1,7 @@
+
 # Domino English Translation
+
+<a href="https://travis-ci.org/Hans5958/Domino-English-Translation/"><img src="https://img.shields.io/travis/Hans5958/Domino-English-Translation?style=flat-square" alt="Travis CI passing"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square" alt="Version number"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square" alt="Download counter"></a> <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a> <a href="https://discord.gg/s42aft8"><img src="https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square" alt="Discord"></a>
 
 Domino is MIDI editor that is used for creating MIDI songs/musics. Domino is used by various blackers in the Black MIDI ecosystem.
 

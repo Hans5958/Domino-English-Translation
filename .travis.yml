@@ -1,0 +1,54 @@
+os: windows
+language: bash
+branches: master
+
+install: choco install reshack
+
+before_script: 
+  - cd _compile
+  - echo \[FILENAMES\] >> tmp.txt
+  - echo Exe=    Domino.exe >> tmp.txt
+  - echo SaveAs= Domino.exe >> tmp.txt
+  - echo Log=  CON >> tmp.txt
+  - echo \[COMMANDS\] >> tmp.txt
+  - echo -delete  MENU,, >> tmp.txt
+  - echo -delete  DIALOG,, >> tmp.txt
+  - echo -delete  STRINGTABLE,, >> tmp.txt
+  - echo -add   Menu.res, MENU,, >> tmp.txt
+  - echo -add   Dialog.res, DIALOG,, >> tmp.txt
+  - echo -add   StringTable.res, STRINGTABLE,, >> tmp.txt
+
+script:
+  - cat ../Dialog/* > Dialog.rc
+  - cat ../Menu/* > Menu.rc
+  - cat ../StringTable/* > StringTable.rc
+  - '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Dialog.rc -save Dialog.res -action compile -log CON'
+  - '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Menu.rc -save Menu.res -action compile -log CON'
+  - '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open StringTable.rc -save StringTable.res -action compile -log CON'
+  - '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -script tmp.txt'
+  - touch Domino.exe
+  - rm -rf *.rc
+  - rm -rf *.res
+  - rm -rf tmp.*
+
+before_deploy:
+  # Zipping for publishing
+  - 7z a ../Domino143_Translated_v$TRAVIS_BUILD_NUMBER.zip *
+  - mv -v Domino.exe ../Domino_Translated_v$TRAVIS_BUILD_NUMBER.exe
+  # Tagging commit
+  - git config --local user.name "Hans5958"
+  - git config --local user.email "Hans5958@users.noreply.github.com"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+  - cd ..
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file:
+    - Domino143_Translated_v$TRAVIS_BUILD_NUMBER.zip
+    - Domino_Translated_v$TRAVIS_BUILD_NUMBER.exe
+  skip_cleanup: true
+  tag_name: 1.43+en.$TRAVIS_BUILD_NUMBER
+  name: Build $TRAVIS_BUILD_NUMBER – $(date +'%Y/%m/%d %H:%M:%S')
+  body: $TRAVIS_COMMIT
