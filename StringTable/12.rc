@@ -10,8 +10,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 32902, 	"Add New Track\nAdd New Track"
 32903, 	"Delete Track\nDelete Track"
 32904, 	"Track Properties\nTrack Properties"
-32905, 	"One Track Up\nOne Track Up"
-32906, 	"One Track Down\nOne Track Down"
+32905, 	"Previous Track\nPrevious Track"
+32906, 	"Next Track\nNext Track"
 }
 
 
