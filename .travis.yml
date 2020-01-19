@@ -49,6 +49,6 @@ deploy:
     - Domino143_Translated_v$TRAVIS_BUILD_NUMBER.zip
     - Domino_Translated_v$TRAVIS_BUILD_NUMBER.exe
   skip_cleanup: true
-  tag_name: 1.43+en.$TRAVIS_BUILD_NUMBER
+  tag_name: 1.43-en.$TRAVIS_BUILD_NUMBER
   name: Build $TRAVIS_BUILD_NUMBER – $(date +'%Y/%m/%d %H:%M:%S')
   body: $TRAVIS_COMMIT
