@@ -2,6 +2,14 @@ os: windows
 language: bash
 branches: master
 
+before_install: 
+  - |
+      if ! git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qE '(\.rc$)'
+      then
+        echo "No resource files changed. Aborting!"
+        exit
+      fi
+
 install: choco install reshack
 
 before_script: 
@@ -36,8 +44,6 @@ before_deploy:
   - 7z a ../Domino143_Translated_v$TRAVIS_BUILD_NUMBER.zip *
   - mv -v Domino.exe ../Domino_Translated_v$TRAVIS_BUILD_NUMBER.exe
   # Tagging commit
-  - git config --local user.name "Hans5958"
-  - git config --local user.email "Hans5958@users.noreply.github.com"
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
   - git tag $TRAVIS_TAG
   - cd ..
