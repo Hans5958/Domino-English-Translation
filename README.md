@@ -1,7 +1,7 @@
 
 # Domino English Translation
 
-<a href="https://travis-ci.org/Hans5958/Domino-English-Translation/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square" alt="GitHub Actions build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square" alt="Version number"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square" alt="Download counter"></a> <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a> <a href="https://discord.gg/s42aft8"><img src="https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square" alt="Discord"></a>
+<a href="https://github.com/Hans5958/Domino-English-Translation/actions/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square" alt="GitHub Actions build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square" alt="Version number"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square" alt="Download counter"></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"> <a href="https://discord.gg/s42aft8"><img src="https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square" alt="Discord"></a>
 
 Domino is a MIDI editor that is used for creating MIDI songs/musics. Domino is used by various blackers in the Black MIDI ecosystem.
 
@@ -15,10 +15,7 @@ This repository is made to unify the translations made by community, while tryin
     - The ``.zip`` contains everything you need to run Domino. __Download this if you are not sure or this is your first time using this program.__  
     - You can also download the ``.exe`` if you want to use your configured settings. Place it inside your Domino directly, where "``Domino.exe``" placed.
 
-<a href="https://github.com/Hans5958/Domino-English-Translation/releases/download/1.43-en.2/Domino143_Translated_v2.zip"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download %20.zip&style=flat-square"></a>
-<a href="https://github.com/Hans5958/Domino-English-Translation/releases/download/latest/Domino143_Translated.zip"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download%20.zip&style=flat-square"></a>  
-<a href="https://github.com/Hans5958/Domino-English-Translation/releases/download/1.43-en.2/Domino_Translated_v2.exe"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download %20.exe&style=flat-square"></a>
-<a href="https://github.com/Hans5958/Domino-English-Translation/releases/download/latest/Domino_Translated.exe"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download%20.exe&style=flat-square"></a>
+    <a href="https://github.com/Hans5958/Domino-English-Translation/releases/latest"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square" alt="Download the latest stable release"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square" alt="Download the latest nightly release"></a>
 
 2. Run the executable.
     - If you downloaded the .zip, just run ``Domino.exe``.
