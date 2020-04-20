@@ -1,0 +1,165 @@
+on:
+  push:
+    branches:
+      - master
+
+name: Deploy
+
+jobs:
+  build:
+    name: Deployment
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Calculate depth
+        id: depth
+        run: |
+          echo ::set-output name=DEPTH::$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: ${{steps.depth.outputs.DEPTH}}
+      - name: Check changes
+        run: |
+          git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)')
+          if ! git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)') | grep -E '(\.rc$)'; then
+            echo "No resource files changed. Aborting."
+            echo ::set-env name=RC_CHANGED::false
+          else
+            echo ::set-env name=RC_CHANGED::true
+          fi
+      - name: Set enviroment variables
+        run: |
+          echo ::set-env name=BUILD_DATE::"$(git log -1 --format="%at" | xargs -I{} date -d @{} +%Y%m%d%H%M%S)"
+          echo ::set-env name=BUILD_DATE_TIDY::"$(git log -1 --format="%at" | xargs -I{} date -d @{} +'%Y/%m/%d %H:%M:%S')"
+          echo ::set-env name=VERSION_NUM::"$(cat version.txt)"
+      - name: Set version on executable
+        run: |
+          cd VersionInfo
+          sed -i '2s/.*/FILEVERSION 1,43,${{env.VERSION_NUM}},0/' 1.rc
+          sed -i '3s/.*/PRODUCTVERSION 1,43,${{env.VERSION_NUM}},0/' 1.rc
+          sed -i '12s/.*/		VALUE "FileVersion", "1.43-${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}"/' 1.rc
+          sed -i '17s/.*/		VALUE "ProductVersion", "1.43-${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}"/' 1.rc
+      - name: Install Resource Hacker
+        run: choco install reshack
+      - name: Build (part 1, powershell)
+        shell: powershell
+        run: |
+          cd _compile
+          echo "[FILENAMES] 
+          Exe=  Domino.exe 
+          SaveAs= Domino.exe 
+          Log=  CON 
+          [COMMANDS] 
+          -delete  MENU,, 
+          -delete  DIALOG,, 
+          -delete  STRINGTABLE,, 
+          -delete  VERSIONINFO,, 
+          -add   Menu.res, MENU,, 
+          -add   Dialog.res, DIALOG,, 
+          -add   StringTable.res, STRINGTABLE,,
+          -add   VersionInfo.res, VERSIONINFO,," > tmp.txt
+          cat ../Dialog/* > Dialog.rc
+          cat ../Menu/* > Menu.rc
+          cat ../StringTable/* > StringTable.rc
+          cat ../VersionInfo/* > VersionInfo.rc
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Dialog.rc", "-save Dialog.res", "-action compile", "-log CON" -Wait
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Menu.rc", "-save Menu.res", "-action compile", "-log CON" -Wait
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open StringTable.rc", "-save StringTable.res -action", "compile", "-log CON" -Wait
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open VersionInfo.rc", "-save VersionInfo.res -action", "compile", "-log CON" -Wait
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-script tmp.txt"
+      - name: Build (part 2, bash)
+        run: |
+          cd _compile
+          touch Domino.exe
+          rm -rf *.rc
+          rm -rf *.res
+          rm -rf tmp.*
+      - name: Prepare deployment
+        run: |
+          cd _compile
+          cp ../_deploy/readme-translation.txt readme-translation.txt
+          sed -i '2s/.*/Build ${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}} (1.43-${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}})/' readme-translation.txt
+          7z a ../Domino143_Translated.zip *
+          mv -v Domino.exe ../Domino_Translated.exe
+      - name: Upload artifact 1
+        uses: actions/upload-artifact@v1
+        with:
+          name: Domino143_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.zip
+          path: Domino143_Translated.zip
+      - name: Upload artifact 2
+        uses: actions/upload-artifact@v1
+        with:
+          name: Domino_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.exe
+          path: Domino_Translated.exe
+      - name: Write release body
+        if: env.RC_CHANGED
+        run: |
+          echo "\
+          ### Release Notes 
+          " >> release.txt
+          if [ ! -s _deploy/release-text.md ]; then
+            echo '${{github.event.head_commit.message}}' >> release.txt
+          else
+            cat _deploy/release-notes.md >> release.txt
+          fi
+          echo "\
+
+          ### Commits 
+          " >> release.txt
+          for row in $(echo '${{toJSON(github.event.commits)}}' | jq -r '.[] | @base64'); do
+              _jq() {
+              echo ${row} | base64 --decode | jq -r ${1}
+              }
+            echo - $(_jq '.id') $(_jq '.message' | awk '{gsub(/\\n/,"\n")}1' | head -1) \($(_jq '.committer.username')\) >> release.txt
+          done
+          echo "\
+
+          ----
+
+          *Commit pushed by ${{github.event.head_commit.author.name}} (${{github.event.head_commit.author.username}}) on ${{github.event.head_commit.timestamp}}*  
+          *Built on ${{env.BUILD_DATE_TIDY}}*" >> release.txt
+      - name: Create release
+        if: env.RC_CHANGED
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:
+          tag_name: 1.43-en.${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}
+          name: Build ${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}
+          prerelease: true
+          files: |
+            Domino143_Translated.zip
+            Domino_Translated.exe
+            # Domino143_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.zip
+            # Domino_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.exe
+          body_path: release.txt
+      # - name: Create release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      #   with:
+      #     tag_name: 1.43-en.${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}
+      #     release_name: Build ${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}} – ${{env.BUILD_DATE_TIDY}}
+      #     prerelease: true
+      # - name: Upload 1
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      #   with:
+      #     upload_url: ${{steps.create_release.outputs.upload_url}}
+      #     asset_path: Domino143_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.zip
+      #     asset_name: Domino143_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.zip
+      #     asset_content_type: application/zip
+      # - name: Upload 2
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      #   with:
+      #     upload_url: ${{steps.create_release.outputs.upload_url}}
+      #     asset_path: Domino_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.exe
+      #     asset_name: Domino_Translated_v${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}.exe
+      #     asset_content_type: application/octet-stream
