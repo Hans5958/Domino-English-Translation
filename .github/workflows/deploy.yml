@@ -37,8 +37,8 @@ jobs:
           fetch-depth: 100
       - name: Check changes
         run: |
-          git diff HEAD '@{today.midnight}' --name-only | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)')
-          if ! git diff HEAD '@{today.midnight}' --name-only | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)') | grep -E '(\.rc$)'; then
+          git diff HEAD '@{today.midnight}' --name-only
+          if ! git diff HEAD '@{today.midnight}' --name-only | grep -E '(\.rc$)'; then
             echo "No resource files changed. Won't making new release."
             echo ::set-env name=RC_CHANGED::0
           else
