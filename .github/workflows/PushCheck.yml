@@ -10,24 +10,24 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Calculate depth
-        id: depth
-        run: |
-          echo DEPTH=$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
-          echo ::set-output name=DEPTH::$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
+      # - name: Calculate depth
+      #   id: depth
+      #   run: |
+      #     echo DEPTH=$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
+      #     echo ::set-output name=DEPTH::$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          fetch-depth: ${{steps.depth.outputs.DEPTH}}
-      - name: Check changes
-        run: |
-          git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)')
-          if ! git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)') | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)\/)'; then
-            echo "No files translated. Stopping!"
-            exit 1
-          else
-            echo "Some files translated. Continuing."
-          fi
+      #   with:
+      #     fetch-depth: ${{steps.depth.outputs.DEPTH}}
+      # - name: Check changes
+      #   run: |
+      #     git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)')
+      #     if ! git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)') | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)\/)'; then
+      #       echo "No files translated. Stopping!"
+      #       exit 1
+      #     else
+      #       echo "Some files translated. Continuing."
+      #     fi
       - name: Set enviroment variables
         run: |
           echo BUILD_DATE="$(date +%Y%m%d)"
