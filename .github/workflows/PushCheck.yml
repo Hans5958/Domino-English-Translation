@@ -30,13 +30,9 @@ jobs:
       #     fi
       - name: Set enviroment variables
         run: |
-          echo BUILD_DATE="$(date +%Y%m%d)"
-          echo BUILD_DATE_TIDY="$(date +'%Y/%m/%d')"
-          echo BUILD_DATE_FULL="$(date +'%Y/%m/%d %H:%M:%S')"
+          echo BUILD_DATE="$(date +%Y%m%d%H%M%S)"
           echo VERSION_NUM="$(cat version.txt)"
-          echo ::set-env name=BUILD_DATE::"$(date +%Y%m%d)"
-          echo ::set-env name=BUILD_DATE_TIDY::"$(date +'%Y/%m/%d')"
-          echo ::set-env name=BUILD_DATE_FULL::"$(date +'%Y/%m/%d %H:%M:%S')"
+          echo ::set-env name=BUILD_DATE::"$(date +%Y%m%d%H%M%S)"
           echo ::set-env name=VERSION_NUM::"$(cat version.txt)"
       - name: Set version on executable
         run: |
@@ -47,11 +43,16 @@ jobs:
           sed -i '17s/.*/		VALUE "ProductVersion", "1.43-${{env.VERSION_NUM}}-artifact.${{env.BUILD_DATE}}"/' 1.rc
       - name: Install Resource Hacker
         run: choco install reshack
+      - name: Prepare _compile folder
+        run: |
+          rm -rf _compile
+          mkdir _compile
+          cp -r _deploy/Domino143/* _compile
       - name: Build (part 1, powershell)
         shell: powershell
         run: |
-          7z x -r Domino143.7z -oc:\_compile
           cd _compile
+          dir
           echo "[FILENAMES] 
           Exe=  Domino.exe 
           SaveAs= Domino.exe 
@@ -77,6 +78,8 @@ jobs:
       - name: Build (part 2, bash)
         run: |
           cd _compile
+          ls
+          echo $(ls)
           touch Domino.exe
           rm -rf Manual
           cp -r ../Manual .

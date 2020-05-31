@@ -1,8 +1,10 @@
 VERSION_NUM="$(cat version.txt)"
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
 rm -rf _compile
-7z x -r Domino143.7z -oc:\_compile
+mkdir _compile
+cp -r _deploy/Domino143/* _compile
 cd _compile
+read -n1 -r -p "Press any key to continue..." key
 echo "[FILENAMES]
 Exe=    Domino.exe
 SaveAs= Domino_Translated_$BUILD_DATE.exe
