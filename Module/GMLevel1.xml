@@ -455,25 +455,25 @@
 		
 			<CCM ID="130" Name="PitchBend" Color="#0fa806" Sync="Last">
 				<Value Min="-8192" Max="8191" Offset="8192" />
-				<Memo>音程を変化させます。</Memo>
+				<Memo>Changes the pitch.</Memo>
 				<Data>@PB #VH #VL</Data>
 			</CCM>
 		
 			<CCM ID="140" Name="PitchBend Range" Sync="Last">
 				<Value Default="2" Min="0" Max="24" />
-				<Memo>ピッチベンドで変わる音程の最大値を設定します。12で1オクターブです。</Memo>
+				<Memo>Sets up the maximum value which the pitch bend can be changed.\n12 = 1 octave</Memo>
 				<Data>@RPN 00H 00H #VL #NONE</Data>
 			</CCM>
 			
 			<CCM ID="1" Name="Modulation" Color="#1c1cfb" Sync="Last">
 				<Value />
-				<Memo>音の揺らぐ深さを設定します。</Memo>
+				<Memo>Sets up intensity of sound vibration.</Memo>
 				<Data>@CC 1 #VL</Data>
 			</CCM>
 			
 			<CCM ID="11" Name="Expression" Color="#CA0000" Sync="Last">
 				<Value />
-				<Memo>パートの音量を設定します。主に演奏中の抑揚表現に使用します。</Memo>
+				<Memo>Sets up the volume of one part. Primarily used for sound emphasis during playback.</Memo>
 				<Data>@CC 11 #VL</Data>
 			</CCM>
 			
@@ -482,7 +482,7 @@
 					<Entry Label="Off" Value="0" />
 					<Entry Label="On" Value="127" />
 				</Value>
-				<Memo>音を持続させるかどうかを設定します。</Memo>
+				<Memo>Sets up the sustain pedal.</Memo>
 				<Data>@CC 64 #VL</Data>
 			</CCM>
 			
@@ -491,13 +491,13 @@
 		<Folder Name="PartEdit">
 			<CCM ID="7" Name="Part Level" Color="#CA0000" Sync="Last">
 				<Value Default="100" />
-				<Memo>パートの音量バランスを設定します。</Memo>
+				<Memo>Sets up the volume balance of one part.</Memo>
 				<Data>@CC 7 #VL</Data>
 			</CCM>
 			
-			<CCM ID="10" Name="Part Panpot" Color="#008080" Sync="Last">
+			<CCM ID="10" Name="Part Panning" Color="#008080" Sync="Last">
 				<Value Min="-64" Max="63" Offset="64" />
-				<Memo>音の定位を設定します。</Memo>
+				<Memo>Sets up the position of sound.</Memo>
 				<Data>@CC 10 #VL</Data>
 			</CCM>
 
@@ -519,13 +519,13 @@
 				
 			<CCM ID="6" Name="DataEntryMSB">
 				<Value />
-				<Memo>データエントリMSBを設定します。</Memo>
+				<Memo>Sets up MSB Data Entry.</Memo>
 				<Data>@CC 6 #VL</Data>
 			</CCM>
 			
 			<CCM ID="38" Name="DataEntryLSB">
 				<Value />
-				<Memo>データエントリLSBを設定します。</Memo>
+				<Memo>Sets up LSB Data Entry.</Memo>
 				<Data>@CC 38 #VL</Data>
 			</CCM>
 			
@@ -559,19 +559,19 @@
 			
 			<CCM ID="200" Name="GM System ON">
 				<Data>@SYSEX F0H 7EH 7FH 09H 01H F7H</Data>
-				<Memo>GM音源を初期化します。</Memo>
+				<Memo>Initializes GM Sound Source.</Memo>
 			</CCM>
 
 			<CCM ID="128" Name="Rest" Color="#aaaaaa">
-				<Memo>休符です。</Memo>
+				<Memo>Rest</Memo>
 			</CCM>
 		</Folder>
 
 	</ControlChangeMacroList>
 
 	<TemplateList>
-		<Template ID="0" Name="トラック初期化">
-			<Memo>トラック初期化用テンプレートです。</Memo>
+		<Template ID="0" Name="Track Initialization">
+			<Memo>A template for track initilization.</Memo>
 			<CC ID="7" Value="100" />
 			<CC ID="10" Value="0" />
 			<PC Mode="Auto" />
