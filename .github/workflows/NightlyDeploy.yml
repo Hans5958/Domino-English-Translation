@@ -2,11 +2,11 @@ on:
   schedule:
     - cron: "58 23 * * *"
 
-name: Deploy
+name: Nightly Deployment
 
 jobs:
   build:
-    name: Deployment
+    name: Build/Compile
     runs-on: windows-latest
     defaults:
       run:
@@ -38,11 +38,11 @@ jobs:
       - name: Check changes
         run: |
           git diff HEAD '@{today.midnight}' --name-only
-          if ! git diff HEAD '@{today.midnight}' --name-only | grep -E '(\.rc$)'; then
-            echo "No resource files changed. Won't making new release."
+          if ! git diff HEAD '@{today.midnight}' --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)\/)'; then
+            echo "No files translated. Won't making new release."
             echo ::set-env name=RC_CHANGED::0
           else
-            echo "Changes detected on resource files. Will making new release."
+            echo "Some files translated. Will making new release."
             echo ::set-env name=RC_CHANGED::1
           fi
       - name: Set enviroment variables
@@ -74,6 +74,7 @@ jobs:
       - name: Build (part 1, powershell)
         shell: powershell
         run: |
+          7z x -r Domino143.7z -oc:\_compile
           cd _compile
           echo "[FILENAMES] 
           Exe=  Domino.exe 
@@ -101,9 +102,21 @@ jobs:
         run: |
           cd _compile
           touch Domino.exe
+          rm -rf Manual
+          cp -r ../Manual .
+          cp -r ../Module .
+          cp -r ../System .
+          cp -r ../Other/* .
           rm -rf *.rc
           rm -rf *.res
           rm -rf tmp.*
+  deploy:
+    name: Deployment
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
       - name: Prepare deployment
         run: |
           cd _compile
@@ -169,8 +182,7 @@ jobs:
           ----
 
           *Built on ${{env.BUILD_DATE_FULL}}.*
-          *Commits listed are the ones that modified the ``.rc`` files.*" >> release.txt
-
+          *Commits listed are the ones that translated some files.*" >> release.txt
       - name: Create release
         if: env.RC_CHANGED == true
         uses: softprops/action-gh-release@v1

@@ -1,9 +1,11 @@
 VERSION_NUM="$(cat version.txt)"
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
+rm -rf _compile
+7z x -r Domino143.7z -oc:\_compile
 cd _compile
 echo "[FILENAMES]
 Exe=    Domino.exe
-SaveAs= Domino_Translated_"$BUILD_DATE".exe
+SaveAs= Domino_Translated_$BUILD_DATE.exe
 Log=    CON
 [COMMANDS]
 -delete  MENU,,
@@ -30,7 +32,12 @@ sed -i '12s/.*/		VALUE "FileVersion", "1.43-en.'$VERSION_NUM'-nightly.'$BUILD_DA
 sed -i '17s/.*/		VALUE "ProductVersion", "1.43-en.'$VERSION_NUM'-nightly.'$BUILD_DATE'"/' VersionInfo.rc
 cmd.exe /c tmp.bat
 touch Domino_Translated_$BUILD_DATE.exe
-# read -n1 -r -p "Press any key to continue..." key
+rm -rf Manual
+cp -r ../Manual .
+cp -r ../Module .
+cp -r ../System .
+cp -r ../Other/* .
 rm -rf *.rc
 rm -rf *.res
 rm -rf tmp.*
+read -n1 -r -p "Press any key to continue..." key
