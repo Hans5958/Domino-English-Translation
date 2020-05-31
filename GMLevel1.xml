@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<ModuleData Name="GM Level1" Folder="" Priority="1" FileCreator="Takabo Soft" FileVersion="1.08" WebSite="http://takabosoft.com/">
+	<RhythmTrackDefault Gate="1" />
+
+	<InstrumentList>
+		<Map Name="GM">
+			<PC Name="Acoustic Grand Piano" PC="1">
+				<Bank Name="Acoustic Grand Piano" />
+			</PC>
+			<PC Name="Bright Acoustic Piano" PC="2">
+				<Bank Name="Bright Acoustic Piano" />
+			</PC>
+			<PC Name="Electric Grand Piano" PC="3">
+				<Bank Name="Electric Grand Piano" />
+			</PC>
+			<PC Name="Honky-tonk Piano" PC="4">
+				<Bank Name="Honky-tonk Piano" />
+			</PC>
+			<PC Name="Electric Piano 1" PC="5">
+				<Bank Name="Electric Piano 1" />
+			</PC>
+			<PC Name="Electric Piano 2" PC="6">
+				<Bank Name="Electric Piano 2" />
+			</PC>
+			<PC Name="Harpsichord" PC="7">
+				<Bank Name="Harpsichord" />
+			</PC>
+			<PC Name="Clavi" PC="8">
+				<Bank Name="Clavi" />
+			</PC>
+			<PC Name="Celesta" PC="9">
+				<Bank Name="Celesta" />
+			</PC>
+			<PC Name="Glockenspiel" PC="10">
+				<Bank Name="Glockenspiel" />
+			</PC>
+			<PC Name="Music Box" PC="11">
+				<Bank Name="Music Box" />
+			</PC>
+			<PC Name="Vibraphone" PC="12">
+				<Bank Name="Vibraphone" />
+			</PC>
+			<PC Name="Marimba" PC="13">
+				<Bank Name="Marimba" />
+			</PC>
+			<PC Name="Xylophone" PC="14">
+				<Bank Name="Xylophone" />
+			</PC>
+			<PC Name="Tubular Bells" PC="15">
+				<Bank Name="Tubular Bells" />
+			</PC>
+			<PC Name="Dulcimer" PC="16">
+				<Bank Name="Dulcimer" />
+			</PC>
+			<PC Name="Drawbar Organ" PC="17">
+				<Bank Name="Drawbar Organ" />
+			</PC>
+			<PC Name="Percussive Organ" PC="18">
+				<Bank Name="Percussive Organ" />
+			</PC>
+			<PC Name="Rock Organ" PC="19">
+				<Bank Name="Rock Organ" />
+			</PC>
+			<PC Name="Church Organ" PC="20">
+				<Bank Name="Church Organ" />
+			</PC>
+			<PC Name="Reed Organ" PC="21">
+				<Bank Name="Reed Organ" />
+			</PC>
+			<PC Name="Accordion" PC="22">
+				<Bank Name="Accordion" />
+			</PC>
+			<PC Name="Harmonica" PC="23">
+				<Bank Name="Harmonica" />
+			</PC>
+			<PC Name="Tango Accordion" PC="24">
+				<Bank Name="Tango Accordion" />
+			</PC>
+			<PC Name="Acoustic Guitar (nylon)" PC="25">
+				<Bank Name="Acoustic Guitar (nylon)" />
+			</PC>
+			<PC Name="Acoustic Guitar (steel)" PC="26">
+				<Bank Name="Acoustic Guitar (steel)" />
+			</PC>
+			<PC Name="Electric Guitar (jazz)" PC="27">
+				<Bank Name="Electric Guitar (jazz)" />
+			</PC>
+			<PC Name="Electric Guitar (clean)" PC="28">
+				<Bank Name="Electric Guitar (clean)" />
+			</PC>
+			<PC Name="Electric Guitar (muted)" PC="29">
+				<Bank Name="Electric Guitar (muted)" />
+			</PC>
+			<PC Name="Overdriven Guitar" PC="30">
+				<Bank Name="Overdriven Guitar" />
+			</PC>
+			<PC Name="Distortion Guitar" PC="31">
+				<Bank Name="Distortion Guitar" />
+			</PC>
+			<PC Name="Guitar Harmonics" PC="32">
+				<Bank Name="Guitar Harmonics" />
+			</PC>
+			<PC Name="Acoustic Bass" PC="33">
+				<Bank Name="Acoustic Bass" />
+			</PC>
+			<PC Name="Electric Bass (finger)" PC="34">
+				<Bank Name="Electric Bass (finger)" />
+			</PC>
+			<PC Name="Electric Bass (pick)" PC="35">
+				<Bank Name="Electric Bass (pick)" />
+			</PC>
+			<PC Name="Fretless Bass" PC="36">
+				<Bank Name="Fretless Bass" />
+			</PC>
+			<PC Name="Slap Bass 1" PC="37">
+				<Bank Name="Slap Bass 1" />
+			</PC>
+			<PC Name="Slap Bass 2" PC="38">
+				<Bank Name="Slap Bass 2" />
+			</PC>
+			<PC Name="Synth Bass 1" PC="39">
+				<Bank Name="Synth Bass 1" />
+			</PC>
+			<PC Name="Synth Bass 2" PC="40">
+				<Bank Name="Synth Bass 2" />
+			</PC>
+			<PC Name="Violin" PC="41">
+				<Bank Name="Violin" />
+			</PC>
+			<PC Name="Viola" PC="42">
+				<Bank Name="Viola" />
+			</PC>
+			<PC Name="Cello" PC="43">
+				<Bank Name="Cello" />
+			</PC>
+			<PC Name="Contrabass" PC="44">
+				<Bank Name="Contrabass" />
+			</PC>
+			<PC Name="Tremolo Strings" PC="45">
+				<Bank Name="Tremolo Strings" />
+			</PC>
+			<PC Name="Pizzicato Strings" PC="46">
+				<Bank Name="Pizzicato Strings" />
+			</PC>
+			<PC Name="Orchestral Harp" PC="47">
+				<Bank Name="Orchestral Harp" />
+			</PC>
+			<PC Name="Timpani" PC="48">
+				<Bank Name="Timpani" />
+			</PC>
+			<PC Name="String Ensemble 1" PC="49">
+				<Bank Name="String Ensemble 1" />
+			</PC>
+			<PC Name="String Ensemble 2" PC="50">
+				<Bank Name="String Ensemble 2" />
+			</PC>
+			<PC Name="Synth Strings 1" PC="51">
+				<Bank Name="Synth Strings 1" />
+			</PC>
+			<PC Name="Synth Strings 2" PC="52">
+				<Bank Name="Synth Strings 2" />
+			</PC>
+			<PC Name="Choir Aahs" PC="53">
+				<Bank Name="Choir Aahs" />
+			</PC>
+			<PC Name="Voice Oohs" PC="54">
+				<Bank Name="Voice Oohs" />
+			</PC>
+			<PC Name="Synth Voice" PC="55">
+				<Bank Name="Synth Voice" />
+			</PC>
+			<PC Name="Orchestra Hit" PC="56">
+				<Bank Name="Orchestra Hit" />
+			</PC>
+			<PC Name="Trumpet" PC="57">
+				<Bank Name="Trumpet" />
+			</PC>
+			<PC Name="Trombone" PC="58">
+				<Bank Name="Trombone" />
+			</PC>
+			<PC Name="Tuba" PC="59">
+				<Bank Name="Tuba" />
+			</PC>
+			<PC Name="Muted Trumpet" PC="60">
+				<Bank Name="Muted Trumpet" />
+			</PC>
+			<PC Name="French Horn" PC="61">
+				<Bank Name="French Horn" />
+			</PC>
+			<PC Name="Brass Section" PC="62">
+				<Bank Name="Brass Section" />
+			</PC>
+			<PC Name="Synth Brass 1" PC="63">
+				<Bank Name="Synth Brass 1" />
+			</PC>
+			<PC Name="Synth Brass 2" PC="64">
+				<Bank Name="Synth Brass 2" />
+			</PC>
+			<PC Name="Soprano Sax" PC="65">
+				<Bank Name="Soprano Sax" />
+			</PC>
+			<PC Name="Alto Sax" PC="66">
+				<Bank Name="Alto Sax" />
+			</PC>
+			<PC Name="Tenor Sax" PC="67">
+				<Bank Name="Tenor Sax" />
+			</PC>
+			<PC Name="Baritone Sax" PC="68">
+				<Bank Name="Baritone Sax" />
+			</PC>
+			<PC Name="Oboe" PC="69">
+				<Bank Name="Oboe" />
+			</PC>
+			<PC Name="English Horn" PC="70">
+				<Bank Name="English Horn" />
+			</PC>
+			<PC Name="Bassoon" PC="71">
+				<Bank Name="Bassoon" />
+			</PC>
+			<PC Name="Clarinet" PC="72">
+				<Bank Name="Clarinet" />
+			</PC>
+			<PC Name="Piccolo" PC="73">
+				<Bank Name="Piccolo" />
+			</PC>
+			<PC Name="Flute" PC="74">
+				<Bank Name="Flute" />
+			</PC>
+			<PC Name="Recorder" PC="75">
+				<Bank Name="Recorder" />
+			</PC>
+			<PC Name="Pan Flute" PC="76">
+				<Bank Name="Pan Flute" />
+			</PC>
+			<PC Name="Blown Bottle" PC="77">
+				<Bank Name="Blown Bottle" />
+			</PC>
+			<PC Name="Shakuhachi" PC="78">
+				<Bank Name="Shakuhachi" />
+			</PC>
+			<PC Name="Whistle" PC="79">
+				<Bank Name="Whistle" />
+			</PC>
+			<PC Name="Ocarina" PC="80">
+				<Bank Name="Ocarina" />
+			</PC>
+			<PC Name="Lead 1 (square)" PC="81">
+				<Bank Name="Lead 1 (square)" />
+			</PC>
+			<PC Name="Lead 2 (sawtooth)" PC="82">
+				<Bank Name="Lead 2 (sawtooth)" />
+			</PC>
+			<PC Name="Lead 3 (calliope)" PC="83">
+				<Bank Name="Lead 3 (calliope)" />
+			</PC>
+			<PC Name="Lead 4 (chiff)" PC="84">
+				<Bank Name="Lead 4 (chiff)" />
+			</PC>
+			<PC Name="Lead 5 (charang)" PC="85">
+				<Bank Name="Lead 5 (charang)" />
+			</PC>
+			<PC Name="Lead 6 (voice)" PC="86">
+				<Bank Name="Lead 6 (voice)" />
+			</PC>
+			<PC Name="Lead 7 (fifths)" PC="87">
+				<Bank Name="Lead 7 (fifths)" />
+			</PC>
+			<PC Name="Lead 8 (bass+lead)" PC="88">
+				<Bank Name="Lead 8 (bass+lead)" />
+			</PC>
+			<PC Name="Pad 1 (new age)" PC="89">
+				<Bank Name="Pad 1 (new age)" />
+			</PC>
+			<PC Name="Pad 2 (warm)" PC="90">
+				<Bank Name="Pad 2 (warm)" />
+			</PC>
+			<PC Name="Pad 3 (polysynth)" PC="91">
+				<Bank Name="Pad 3 (polysynth)" />
+			</PC>
+			<PC Name="Pad 4 (choir)" PC="92">
+				<Bank Name="Pad 4 (choir)" />
+			</PC>
+			<PC Name="Pad 5 (bowed)" PC="93">
+				<Bank Name="Pad 5 (bowed)" />
+			</PC>
+			<PC Name="Pad 6 (metallic)" PC="94">
+				<Bank Name="Pad 6 (metallic)" />
+			</PC>
+			<PC Name="Pad 7 (halo)" PC="95">
+				<Bank Name="Pad 7 (halo)" />
+			</PC>
+			<PC Name="Pad 8 (sweep)" PC="96">
+				<Bank Name="Pad 8 (sweep)" />
+			</PC>
+			<PC Name="FX 1 (ice rain)" PC="97">
+				<Bank Name="FX 1 (ice rain)" />
+			</PC>
+			<PC Name="FX 2 (soundtrack)" PC="98">
+				<Bank Name="FX 2 (soundtrack)" />
+			</PC>
+			<PC Name="FX 3 (crystal)" PC="99">
+				<Bank Name="FX 3 (crystal)" />
+			</PC>
+			<PC Name="FX 4 (atmosphere)" PC="100">
+				<Bank Name="FX 4 (atmosphere)" />
+			</PC>
+			<PC Name="FX 5 (brightness)" PC="101">
+				<Bank Name="FX 5 (brightness)" />
+			</PC>
+			<PC Name="FX 6 (goblins)" PC="102">
+				<Bank Name="FX 6 (goblins)" />
+			</PC>
+			<PC Name="FX 7 (echoes)" PC="103">
+				<Bank Name="FX 7 (echoes)" />
+			</PC>
+			<PC Name="FX 8 (sci-fi)" PC="104">
+				<Bank Name="FX 8 (sci-fi)" />
+			</PC>
+			<PC Name="Sitar" PC="105">
+				<Bank Name="Sitar" />
+			</PC>
+			<PC Name="Banjo" PC="106">
+				<Bank Name="Banjo" />
+			</PC>
+			<PC Name="Shamisen" PC="107">
+				<Bank Name="Shamisen" />
+			</PC>
+			<PC Name="Koto" PC="108">
+				<Bank Name="Koto" />
+			</PC>
+			<PC Name="Kalimba" PC="109">
+				<Bank Name="Kalimba" />
+			</PC>
+			<PC Name="Bag Pipe" PC="110">
+				<Bank Name="Bag Pipe" />
+			</PC>
+			<PC Name="Fiddle" PC="111">
+				<Bank Name="Fiddle" />
+			</PC>
+			<PC Name="Shanai" PC="112">
+				<Bank Name="Shanai" />
+			</PC>
+			<PC Name="Tinkle Bell" PC="113">
+				<Bank Name="Tinkle Bell" />
+			</PC>
+			<PC Name="Agogo" PC="114">
+				<Bank Name="Agogo" />
+			</PC>
+			<PC Name="Steel Drums" PC="115">
+				<Bank Name="Steel Drums" />
+			</PC>
+			<PC Name="Woodblock" PC="116">
+				<Bank Name="Woodblock" />
+			</PC>
+			<PC Name="Taiko Drum" PC="117">
+				<Bank Name="Taiko Drum" />
+			</PC>
+			<PC Name="Melodic Tom" PC="118">
+				<Bank Name="Melodic Tom" />
+			</PC>
+			<PC Name="Synth Drum" PC="119">
+				<Bank Name="Synth Drum" />
+			</PC>
+			<PC Name="Reverse Cymbal" PC="120">
+				<Bank Name="Reverse Cymbal" />
+			</PC>
+			<PC Name="Guitar Fret Noise" PC="121">
+				<Bank Name="Guitar Fret Noise" />
+			</PC>
+			<PC Name="Breath Noise" PC="122">
+				<Bank Name="Breath Noise" />
+			</PC>
+			<PC Name="Seashore" PC="123">
+				<Bank Name="Seashore" />
+			</PC>
+			<PC Name="Bird Tweet" PC="124">
+				<Bank Name="Bird Tweet" />
+			</PC>
+			<PC Name="Telephone Ring" PC="125">
+				<Bank Name="Telephone Ring" />
+			</PC>
+			<PC Name="Helicopter" PC="126">
+				<Bank Name="Helicopter" />
+			</PC>
+			<PC Name="Applause" PC="127">
+				<Bank Name="Applause" />
+			</PC>
+			<PC Name="Gunshot" PC="128">
+				<Bank Name="Gunshot" />
+			</PC>
+
+		</Map>
+	</InstrumentList>
+
+	<DrumSetList>
+		<Map Name="GM">
+			<PC Name="Rhythm" PC="1">
+				<Bank Name="Rhythm" LSB="0" MSB="0">
+					<Tone Name="Acou Bass Drum" Key="35" />
+					<Tone Name="Bass Drum 1" Key="36" />
+					<Tone Name="Side Stick" Key="37" />
+					<Tone Name="Acoustic Snare" Key="38" />
+					<Tone Name="Hand clap" Key="39" />
+					<Tone Name="Electoric Snare" Key="40" />
+					<Tone Name="Low Floor Tom" Key="41" />
+					<Tone Name="Closed Hi-Hat" Key="42" />
+					<Tone Name="High Floor Tom" Key="43" />
+					<Tone Name="Pedal Hi-Hat" Key="44" />
+					<Tone Name="Low Tom" Key="45" />
+					<Tone Name="Open Hi-Hat" Key="46" />
+					<Tone Name="Low Mid Tom" Key="47" />
+					<Tone Name="Hi Mid Tom" Key="48" />
+					<Tone Name="Crash Cymbal 1" Key="49" />
+					<Tone Name="High Tom" Key="50" />
+					<Tone Name="Ride Cymbal 1" Key="51" />
+					<Tone Name="Chinese Cymbal" Key="52" />
+					<Tone Name="Ride Bell" Key="53" />
+					<Tone Name="Tambourine" Key="54" />
+					<Tone Name="Splash Cymbal" Key="55" />
+					<Tone Name="Cowbell" Key="56" />
+					<Tone Name="Crash Cymbal 2" Key="57" />
+					<Tone Name="Vibraslap" Key="58" />
+					<Tone Name="Ride Cymbal 2" Key="59" />
+					<Tone Name="Hi Bongo" Key="60" />
+					<Tone Name="Low Bongo" Key="61" />
+					<Tone Name="Mute Hi Conga" Key="62" />
+					<Tone Name="Open Hi Conga" Key="63" />
+					<Tone Name="Low Conga" Key="64" />
+					<Tone Name="High Timbale" Key="65" />
+					<Tone Name="Low Timbale" Key="66" />
+					<Tone Name="High Agogo" Key="67" />
+					<Tone Name="Low Agogo" Key="68" />
+					<Tone Name="Cabassa" Key="69" />
+					<Tone Name="Maracas" Key="70" />
+					<Tone Name="Short Whistle" Key="71" />
+					<Tone Name="Long Whistle" Key="72" />
+					<Tone Name="Short Guiro" Key="73" />
+					<Tone Name="Long Guiro" Key="74" />
+					<Tone Name="Claves" Key="75" />
+					<Tone Name="High Wood Block" Key="76" />
+					<Tone Name="Low Wood Block" Key="77" />
+					<Tone Name="Mute Cuica" Key="78" />
+					<Tone Name="Open Cuica" Key="79" />
+					<Tone Name="Mute Triangle" Key="80" />
+					<Tone Name="Open Triangle" Key="81" />
+				</Bank>
+			</PC>
+		</Map>
+	</DrumSetList>
+
+	<ControlChangeMacroList>
+	
+		<Folder Name="PerformEdit">
+		
+			<CCM ID="130" Name="PitchBend" Color="#0fa806" Sync="Last">
+				<Value Min="-8192" Max="8191" Offset="8192" />
+				<Memo>音程を変化させます。</Memo>
+				<Data>@PB #VH #VL</Data>
+			</CCM>
+		
+			<CCM ID="140" Name="PitchBend Range" Sync="Last">
+				<Value Default="2" Min="0" Max="24" />
+				<Memo>ピッチベンドで変わる音程の最大値を設定します。12で1オクターブです。</Memo>
+				<Data>@RPN 00H 00H #VL #NONE</Data>
+			</CCM>
+			
+			<CCM ID="1" Name="Modulation" Color="#1c1cfb" Sync="Last">
+				<Value />
+				<Memo>音の揺らぐ深さを設定します。</Memo>
+				<Data>@CC 1 #VL</Data>
+			</CCM>
+			
+			<CCM ID="11" Name="Expression" Color="#CA0000" Sync="Last">
+				<Value />
+				<Memo>パートの音量を設定します。主に演奏中の抑揚表現に使用します。</Memo>
+				<Data>@CC 11 #VL</Data>
+			</CCM>
+			
+			<CCM ID="64" Name="Hold1">
+				<Value>
+					<Entry Label="Off" Value="0" />
+					<Entry Label="On" Value="127" />
+				</Value>
+				<Memo>音を持続させるかどうかを設定します。</Memo>
+				<Data>@CC 64 #VL</Data>
+			</CCM>
+			
+		</Folder>
+		
+		<Folder Name="PartEdit">
+			<CCM ID="7" Name="Part Level" Color="#CA0000" Sync="Last">
+				<Value Default="100" />
+				<Memo>パートの音量バランスを設定します。</Memo>
+				<Data>@CC 7 #VL</Data>
+			</CCM>
+			
+			<CCM ID="10" Name="Part Panpot" Color="#008080" Sync="Last">
+				<Value Min="-64" Max="63" Offset="64" />
+				<Memo>音の定位を設定します。</Memo>
+				<Data>@CC 10 #VL</Data>
+			</CCM>
+
+			<CCM ID="141" Name="MasterFineTuning">
+				<Value Min="-8192" Max="8191" Offset="8192" />
+				<Memo></Memo>
+				<Data>@RPN 00H 01H #VH #VL</Data>
+			</CCM>
+			
+			<CCM ID="142" Name="MasterCoarseTuning">
+				<Value Min="-24" Max="24" Offset="64" />
+				<Memo></Memo>
+				<Data>@RPN 00H 02H #VL #NONE</Data>
+			</CCM>
+			
+		</Folder>
+
+		<Folder Name="Other">
+				
+			<CCM ID="6" Name="DataEntryMSB">
+				<Value />
+				<Memo>データエントリMSBを設定します。</Memo>
+				<Data>@CC 6 #VL</Data>
+			</CCM>
+			
+			<CCM ID="38" Name="DataEntryLSB">
+				<Value />
+				<Memo>データエントリLSBを設定します。</Memo>
+				<Data>@CC 38 #VL</Data>
+			</CCM>
+			
+			<CCM ID="100" Name="RPN LSB">
+				<Value />
+				<Memo></Memo>
+				<Data>@CC 100 #VL</Data>
+			</CCM>
+			
+			<CCM ID="101" Name="RPN MSB">
+				<Value />
+				<Memo></Memo>
+				<Data>@CC 101 #VL</Data>
+			</CCM>
+		
+			<CCM ID="121" Name="ResetAllController">
+				<Memo></Memo>
+				<Data>@CC 121 0</Data>
+			</CCM>
+			
+			<CCM ID="123" Name="AllNoteOff">
+				<Memo></Memo>
+				<Data>@CC 123 0</Data>
+			</CCM>
+			
+			<CCM ID="132" Name="ChannelPressure">
+				<Value />
+				<Memo></Memo>
+				<Data>@CP #VL</Data>
+			</CCM>
+			
+			<CCM ID="200" Name="GM System ON">
+				<Data>@SYSEX F0H 7EH 7FH 09H 01H F7H</Data>
+				<Memo>GM音源を初期化します。</Memo>
+			</CCM>
+
+			<CCM ID="128" Name="Rest" Color="#aaaaaa">
+				<Memo>休符です。</Memo>
+			</CCM>
+		</Folder>
+
+	</ControlChangeMacroList>
+
+	<TemplateList>
+		<Template ID="0" Name="トラック初期化">
+			<Memo>トラック初期化用テンプレートです。</Memo>
+			<CC ID="7" Value="100" />
+			<CC ID="10" Value="0" />
+			<PC Mode="Auto" />
+			<CC ID="130" Value="0" />
+			<CC ID="1" Value="0" />
+			<CC ID="11" Value="127" />		
+		</Template>
+	</TemplateList>
+
+	<DefaultData>
+		<Track Mode="Conductor">
+			<Mark Tick="0" Name="Setup" />
+			<Tempo Tick="0" Tempo="120.0" />
+			<Mark Tick="1920" Name="Start" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Name="Setup" Ch="1">
+			<CC Tick="0" ID="200" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="1" Current="1">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="2">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="3">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="4">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="5">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="6">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="7">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="8">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="9">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Name="Rhythm" Ch="10" Mode="Rhythm">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="11">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="12">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="13">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="14">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="15">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+		<Track Ch="16">
+			<Template ID="0" Tick="480" />
+			<EOT Tick="1920" />
+		</Track>
+	</DefaultData>
+
+</ModuleData>
