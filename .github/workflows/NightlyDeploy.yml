@@ -5,8 +5,8 @@ on:
 name: Nightly Deployment
 
 jobs:
-  build:
-    name: Build/Compile
+  deploy:
+    name: Deployment
     runs-on: windows-latest
     defaults:
       run:

@@ -1,12 +1,10 @@
-on:
-  schedule:
-    - cron: "58 23 * * *"
+on: push
 
 name: Push Check
 
 jobs:
-  build:
-    name: Build/Compile
+  deploy:
+    name: Deployment
     runs-on: windows-latest
     defaults:
       run:
@@ -25,11 +23,10 @@ jobs:
         run: |
           git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)')
           if ! git diff --name-only $(echo ${{github.event.compare}} | grep -oE '([a-z0-9]+\.\.\.[a-z0-9]+)') | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)\/)'; then
-            echo "No resource files changed. Won't making new release."
-            echo ::set-env name=RC_CHANGED::0
+            echo "No files translated. Stopping!"
+            exit 1
           else
-            echo "Changes detected on resource files. Will making new release."
-            echo ::set-env name=RC_CHANGED::1
+            echo "Some files translated. Continuing."
           fi
       - name: Set enviroment variables
         run: |
@@ -89,13 +86,6 @@ jobs:
           rm -rf *.rc
           rm -rf *.res
           rm -rf tmp.*
-  deploy:
-    name: Deployment
-    runs-on: windows-latest
-    defaults:
-      run:
-        shell: bash
-    steps:
       - name: Prepare deployment
         run: |
           cd _compile
