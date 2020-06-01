@@ -114,13 +114,6 @@ jobs:
           rm -rf *.rc
           rm -rf *.res
           rm -rf tmp.*
-  deploy:
-    name: Deployment
-    runs-on: windows-latest
-    defaults:
-      run:
-        shell: bash
-    steps:
       - name: Prepare deployment
         run: |
           cd _compile
