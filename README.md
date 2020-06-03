@@ -233,3 +233,48 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [x] 53
 
 </details>
+
+### Manual
+
+<details><summary>Expand to view the checklist.</summary>
+
+- [ ] index.html
+- [ ] install.html
+- [ ] module.html
+- [ ] other.html
+- [ ] use.html
+- [ ] assets...
+
+</details>
+
+### Module
+
+<details><summary>Expand to view the checklist.</summary>
+
+- [ ] GMLevel1.xml
+- [ ] ok_GSm.xml
+- [ ] ok_XG2k.xml
+- [ ] ok_XGb.xml
+- [ ] SC-88Pro.xml
+- [ ] SC-8850.xml
+
+</details>
+
+### System
+
+<details><summary>Expand to view the checklist.</summary>
+
+- [ ] CurveCustom.txt
+- [ ] Exclusive.txt
+- [ ] Formula.txt
+- [ ] ParamMap.txt
+
+</details>
+
+### Other
+
+<details><summary>Expand to view the checklist.</summary>
+
+- [ ] readme.txt
+
+</details>

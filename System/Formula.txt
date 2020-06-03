@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Input data using the format [variable name = value] like so:
 aaa = 100
 bbb = 120
@@ -19,3 +20,32 @@ A unique variable name works globally between tracks. Duplicates of the same var
 â‰ªPre-defined Variablesâ‰«
 ãƒ»piâ€¦ Ï€
 ãƒ»rndâ€¦ random value between 0 and 1 (fractional)
+=======
+á‰ğàâ
+aaa=100
+‚Ì‚æ‚¤‚ÉA•Ï”–¼=”®‚Ì‘®‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B
+
+•Ï”–¼‚Í”¼Šp‰p”šA“ú–{Œê‚É‘Î‰‚µ‚Ä‚¢‚Ü‚·B
+
+•Ï”–¼‚Í”¼Šp/‘SŠp‚ğ‹æ•Ê‚µA¬•¶š/‘å•¶š‚ğ‹æ•Ê‚µ‚Ü‚¹‚ñB
+
+‚±‚Ì‘ã“ü®‚ÍA‚±‚ÌƒCƒxƒ“ƒg‚ª‰‰‘t‚³‚ê‚½“_‚ÅÀs‚³‚ê‚Ü‚·B
+ˆê“xÀs‚³‚ê‚ê‚ÎA‘Sƒgƒ‰ƒbƒN‚Ì
+EƒRƒ“ƒgƒ[ƒ‹ƒ`ƒFƒ“ƒWƒCƒxƒ“ƒg‚ÌGate/Value
+Eƒeƒ“ƒ|ƒCƒxƒ“ƒg‚ÌValue
+‚Åg—p‚Å‚«‚Ü‚·B
+
+á’ˆÓ“_â
+ˆÀˆÕ‚ÉuVolumev‚Æ‚¢‚¤•Ï”–¼‚ğ•t‚¯‚Ä‚µ‚Ü‚¤‚ÆTrack1‚ÆTrack2‚ÅŒÂ•Ê‚Ég‚Á‚Ä‚¢‚½‚Â‚à‚è‚ª“¯‚¶Volume•Ï”‚ğQÆ‚µ‚Ä‚¢‚½A‚Æ‚¢‚¤–‚à‚ ‚è“¾‚Ü‚·‚Ì‚Å’ˆÓ‚µ‚Ä‚­‚¾‚³‚¢B
+
+ág—p‰Â”\‚ÈŠÖ”â
+Eabs(’l)@’l‚Ìâ‘Î’l‚ğ•Ô‚µ‚Ü‚·B
+Esin(Šp“x)@ˆø”‚Íƒ‰ƒWƒAƒ“’PˆÊ‚Å‚·B
+Ecos(Šp“x)
+Etan(Šp“x)
+
+á’è‹`Ï‚İ‚Ì•Ï”â
+EpicƒÎ
+Erndc0`1‚Ìƒ‰ƒ“ƒ_ƒ€’li­”j
+
+>>>>>>> upstream/master
