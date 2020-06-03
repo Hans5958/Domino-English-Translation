@@ -75,7 +75,8 @@ jobs:
           cat ../StringTable/* > StringTable.rc
           cat ../VersionInfo/* > VersionInfo.rc
           copy ../240.rc
-          Get-ChildItem -Path ../240 -File | Foreach {python ../parsecombo.py pack (Get-Item $_).FullName 240/(Get-Item $_).BaseName}
+          md -Force 240
+          Get-ChildItem -Path ../240 -File | Foreach {python ../parsecombo.py pack $_.FullName "240/$($_.BaseName)"}
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Dialog.rc", "-save Dialog.res", "-action compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Menu.rc", "-save Menu.res", "-action compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open StringTable.rc", "-save StringTable.res -action", "compile", "-log CON" -Wait
@@ -96,6 +97,7 @@ jobs:
           rm -rf *.rc
           rm -rf *.res
           rm -rf tmp.*
+          rm -rf 240
       - name: Prepare deployment
         run: |
           cd _compile
