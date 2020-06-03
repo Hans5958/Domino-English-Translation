@@ -1,6 +1,6 @@
 1262
 1027
-custom string works again!!! Measure : Tick
+Measure : Tick
 1262
 1027
 Measure : Beat : Tick
