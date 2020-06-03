@@ -1,10 +1,9 @@
 
-  MIDI‰¹Šy•ÒWƒ\ƒtƒguDominov
+  ã€ŒDominoã€ MIDI Music Editing Software
   Copyright (C) 2007-2013 Takabo Soft (http://takabosoft.com/)
 
-
-‚±‚Ì“x‚ÍDomino‚ğƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä‚¢‚½‚¾‚«A½‚É—L‚è“ï‚¤‚²‚´‚¢‚Ü‚·B
-æˆµà–¾‘‚Í«‚±‚¿‚ç‚É‚È‚è‚Ü‚·‚Ì‚ÅAÚ‚µ‚­‚Í‚»‚¿‚ç‚ğ‚²——‚­‚¾‚³‚¢B
+Thank you very much for downloading Domino!
+Please read the User's Manual for details which can be found in the following directory: 
 Manual/index.htm
 
-iƒAƒvƒŠ‹N“®’†‚É[F1]ƒL[‚ğ‰Ÿ‚µ‚Ä‚àæˆµà–¾‘‚ğŒ©‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·j
+(Alternatively, you can open the User's Manual by pressing the [F1] key within the application.)

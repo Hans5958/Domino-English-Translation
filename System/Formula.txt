@@ -8,18 +8,18 @@ This variable can be assigned to Tempo event & Control Change event values.
 * Japanese and half-width alphanumeric characters are supported.
 * Variable names can be full-width or half-width and are not case sensitive.
 
-≪Note≫
+<< Note >>
 A unique variable name works globally between tracks. Duplicates of the same variable names may exist but the last played variable event of the same name will be prioritized.
 
-≪Available Functions≫
-・abs()　absolute function. Returns the absolute value of a number.
-・sin()　sine function. Argument is expressed in radians.
-・cos()　cosine function
-・tan()　tangent function
+<< Available Functions >>
+* abs()... absolute function. Returns the absolute value of a number.
+* sin()... sine function. Argument is expressed in radians.
+* cos()... cosine function
+* tan()... tangent function
 
-≪Pre-defined Variables≫
-・pi… π
-・rnd… random value between 0 and 1 (fractional)
+<< Pre-defined Variables >>
+* pi... apprx. 3.14159
+* rnd... random value between 0 and 1 (fractional)
 =======
 ������
 aaa=100
