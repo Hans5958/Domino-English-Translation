@@ -1,9 +1,8 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-33260, 	"Event Graph 1 Onion Skin\nEvent Graph 1 Onion Skin"
-33261, 	"Event Graph 1 Onion Skin\nEvent Graph 1 Onion Skin"
-33262, 	"Quick Select Chord\nQuick Select Chord"
-33263, 	"Increase by a factor of 10 the value of Tick, Gate or Step entered with the keyboard in the event list\nIncrease keyboard input magnitude"
+  33260, 	"Sets up the Onion Skin function within the Graph Panel 1.\nGraph Panel 1: Onion Skin"
+  33261, 	"Sets up the Onion Skin function within the Graph Panel 2.\nGraph Panel 2: Onion Skin"
+  33262, 	"Lists user-created chord stamps.\nList Chord Stamps"
+  33263, 	"Increase the value of Tick, Gate or Step received from MIDI IN by a factor of 10 in the Event List.\nIncrease Value Magnitude"
 }
-

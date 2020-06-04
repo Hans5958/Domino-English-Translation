@@ -1,21 +1,20 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-33344, 	"カレントトラックの選択されたノートに対し、スケール情報を元にハモリパートを生成します。\nハモリパートの生成"
-33345, 	"選択されたイベントのVel/Valueに 1 を加えます（イベントによって補正値は異なります）。\n小単位で加える"
-33346, 	"選択されたイベントのVel/Valueから 1 を引きます（イベントによって補正値は異なります）。\n小単位で引く"
-33347, 	"選択されたイベントのVel/Valueに 10 を加えます（イベントによって補正値は異なります）。\n中単位で加える"
-33348, 	"選択されたイベントのVel/Valueから 10 を引きます（イベントによって補正値は異なります）。\n中単位で引く"
-33349, 	"選択されたイベントのVel/Valueに 100 を加えます（イベントによって補正値は異なります）。\n大単位で加える"
-33350, 	"選択されたイベントのVel/Valueから 100 を引きます（イベントによって補正値は異なります）。\n大単位で引く"
-33351, 	"拍子イベントの表示/非表示を切り替えます。\nイベントリストフィルター : 拍子イベント"
-33352, 	"調号イベントの表示/非表示を切り替えます。\nイベントリストフィルター : 調号イベント"
-33353, 	"スケールイベントの表示/非表示を切り替えます。\nイベントリストフィルター : スケールイベント"
-33354, 	"コードイベントの表示/非表示を切り替えます。\nイベントリストフィルター : コードイベント"
-33355, 	"マークイベントの表示/非表示を切り替えます。\nイベントリストフィルター : マークイベント"
-33356, 	"マークを編集します。\nマークの編集"
-33357, 	"マークを削除します。\nマークの削除"
-33358, 	"条件に当てはまるイベントを検索します。\n検索"
-33359, 	"クォンタイズを行う際の、音の長さを指定します。\nクォンタイズ - 小節"
-}
-
+  33344, 	"Generates harmonic parts based on the current key scale to the current track's note selection.\nHarmonize"
+  33345, 	"Add 1 point to the highlighted event's Velocity/Value.\n+ 1"
+  33346, 	"Subtract 1 point from the highlighted event's Velocity/Value.\n- 1"
+  33347, 	"Add 10 points to the highlighted event's Velocity/Value.\n+ 10"
+  33348, 	"Subtract 10 points from the highlighted event's Velocity/Value.\n- 10"
+  33349, 	"Add 100 points to the highlighted event's Velocity/Value.\n+ 100"
+  33350, 	"Subtract 100 points from the highlighted event's Velocity/Value.\n- 100"
+  33351, 	"Filters time signatures.\nFilter Time Signatures"
+  33352, 	"Filters key signatures.\nFilter Key Signatures"
+  33353, 	"Filters key scales.\nFilter Key Scales"
+  33354, 	"Filters chord events.\nFilter Chord Events"
+  33355, 	"Filters markers.\nFilter Markers"
+  33356, 	"Edits the marker label.\nEdit Marker"
+  33357, 	"Deletes this marker.\nDelete Marker"
+  33358, 	"Find events that meet the following conditions.\nFind"
+  33359, 	"Switches quantization to Bar.\nQuantization: Bar"
+} 

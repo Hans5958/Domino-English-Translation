@@ -1,7 +1,6 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-57664, 	"Display program information, version number and copyright\nAbout"
-57665, 	"Quit the application; prompts to save documents\nExit"
+  57664, 	"Shows info about Domino.\nAbout"
+  57665, 	"Prompts unsaved changes and exits the program.\nExit Domino"
 }
-

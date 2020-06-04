@@ -1,7 +1,6 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-59392, 	"Show or hide the standard toolbar\nToggle standard ToolBar"
-59393, 	"Show or hide the status bar\nToggle StatusBar"
+  59392, 	"Shows/Hides the Toolbar.\nToggle Toolbar"
+  59393, 	"Shows/Hides the Status Bar.\nToggle Status Bar"
 }
-

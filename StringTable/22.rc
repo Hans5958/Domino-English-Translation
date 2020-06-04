@@ -1,15 +1,14 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-33090, 	"Display chords of current track + onion skin track at playback marker position in the status bar\nInspect Chords"
-33094, 	"Add Several Tracks\nAdd Several Tracks"
-33095, 	"Duplicate Onion Skin Notes\nDuplicate Onion Skin Notes"
-33096, 	"State of  MIDI Out Device synchronization - Per track settings. \n Per track settings"
-33097, 	"Humanize\nHumanize"
-33098, 	"Custom Filter\nCustom Filter"
-33099, 	"Exclude All Events\nExclude All Events"
-33100, 	"Include All Events\nInclude All Events"
-33101, 	"Include Notes\nInclude Notes"
-33102, 	"Include Program Changes\nInclude Program Changes"
+  33090, 	"Shows the chord analysis from slider position (includes current and onion skin track) on the status bar.\nInspect Chord"
+  33094, 	"Add tracks from specified port's pre-configured track set.\nAdd Track Set"
+  33095, 	"Duplicates current Onion Skin notes to the current track.\nMirror Onion Skin Note(s)"
+  33096, 	"Sets up MIDI Device Synchronization to individual tracks.\nPer Track Sync"
+  33097, 	"Shifts the selected event's Tick Gate, and Vel/Value randomly.\nHumanize"
+  33098, 	"Sets up the Event List Filter function.\nSetup Event List Filter"
+  33099, 	"Toggles the Event List Filter function.\nToggle Event List Filter"
+  33100, 	"Resets the Event List Filter setup and disables it.\nReset/Disable Event List Filter"
+  33101, 	"Filters notes.\nFilter Notes"
+  33102, 	"Filters program changes.\nFilter PCs"
 }
-
