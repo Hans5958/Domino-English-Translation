@@ -1,16 +1,15 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32832, 	"Insert Track Initialization Template\nInsert Track Initialization Template"
-32838, 	"Split Events\nSplit Events"
-32839, 	"Trim Events\nTrim Events"
-32840, 	"Batch Modify\nBatch Modify"
-32841, 	"Transpose\nTranspose"
-32842, 	"Quantize\nQuantize"
-32843, 	"Insert Custom Curve\nInsert Custom Curve"
-32844, 	"Strum\nStrum"
-32845, 	"One Octave Up\nOne Octave Up"
-32846, 	"One Octave Down\nOne Octave Down"
-32847, 	"Edit Selected Event value\nEdit Value"
+  32832, 	"Choose a template by inserting various events.\nInsert Template"
+  32838, 	"Divides note(s) on slider.\nSlice"
+  32839, 	"Divides note(s) on slider and removes its remains. Nobody will sense any traces.\nTrim"
+  32840, 	"Modify selection data.\nModify"
+  32841, 	"Transposes notes (except from Rhythm Tracks).\nTranspose"
+  32842, 	"Controls the note tick and gate using specified quantization values.\nQuantizer"
+  32843, 	"Sets up a specified graph to be assigned to the selection range.\nGraph on selection"
+  32844, 	"Shifts the timing of selected notes like guitar strokes.\nStroke"
+  32845, 	"Transposes note(s) one octave up.\n+1 Octave"
+  32846, 	"Transposes note(s) one octave down.\n-1 Octave"
+  32847, 	"Modifies the selected value of an event.\nEdit selected value"
 }
-

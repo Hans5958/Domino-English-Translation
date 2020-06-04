@@ -1,19 +1,18 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32976, 	"GoTo End\nGoTo End"
-32977, 	"Pitch Bend\nPitch Bend"
-32979, 	"Modulation\nModulation"
-32980, 	"Expression\nExpression"
-32982, 	"Volume\nVolume"
-32983, 	"Panpot\nPanpot"
-32984, 	"Hold\nHold"
-32985, 	"LPF Cutoff Frequency\nLPF Cutoff Frequency"
-32986, 	"Resonance\nResonance"
-32987, 	"Master Volume\nMaster Volume"
-32988, 	"Pitch Bend\nPitch Bend"
-32989, 	"Modulation\nModulation"
-32990, 	"Expression\nExpression"
-32991, 	"Volume\nVolume"
+  32976, 	"Moves the slider to the last event (End of Track).\nto End of Track"
+  32977, 	"Shows the Pitch Bend graph within the Graph Panel 2.\nGraph Panel 2: Pitch Bend"
+  32979, 	"Shows the Modulation graph within the Graph Panel 2.\nGraph Panel 2: Modulation"
+  32980, 	"Shows the Expression graph within the Graph Panel 2.\nGraph Panel 2: Expression"
+  32982, 	"Shows the Volume graph within the Graph Panel 2.\nGraph Panel 2: Volume"
+  32983, 	"Shows the Panning graph within the Graph Panel 2.\nGraph Panel 2: Panning"
+  32984, 	"Shows the Hold graph within the Graph Panel 2.\nGraph Panel 2: Hold"
+  32985, 	"Shows the LPF Cutoff Frequency graph within the Graph Panel 2.\nGraph Panel 2: LPF Cutoff Frequency"
+  32986, 	"Shows the Resonance graph within the Graph Panel 2.\nGraph Panel 2: Resonance"
+  32987, 	"Shows the Master Volume graph within the Graph Panel 2.\nGraph Panel 2: Master Volume"
+  32988, 	"Shows the Pitch Bend graph within the Graph Panel 1.\nGraph Panel 1: Pitch Bend"
+  32989, 	"Shows the Modulation graph within the Graph Panel 1.\nGraph Panel 1: Modulation"
+  32990, 	"Shows the Expression graph within the Graph Panel 1.\nGraph Panel 1: Expression"
+  32991, 	"Shows the Volume graph within the Graph Panel 1.\nGraph Panel 1: Volume"
 }
-
