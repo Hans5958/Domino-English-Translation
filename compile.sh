@@ -25,24 +25,23 @@ echo '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Dialog.r
 "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Menu.rc -save Menu.res -action compile -log CON
 "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open StringTable.rc -save StringTable.res -action compile -log CON
 "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open 240.rc -save 240.res -action compile -log CON
+"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open 240/240.rc -save 240.res -action compile -log CON
 "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -script tmp.txt' > tmp.bat
 cat ../Dialog/* > Dialog.rc
 cat ../Menu/* > Menu.rc
 cat ../StringTable/* > StringTable.rc
 cat ../VersionInfo/* > VersionInfo.rc
-cp ../240.rc .
-mkdir -p 240
-for file in ../240/*.bin.txt
-do
+mkdir 240
+cp ../240/240.rc 240
+for file in ../240/*.bin.txt; do
 	f="$(basename -s .txt $file)"
-	python ../parsecombo.py pack $file 240/$f
+	python3 "../_deploy/parsecombo.py" pack $file 240/$f
 done
 sed -i '2s/.*/FILEVERSION 1,43,'$VERSION_NUM',0/' VersionInfo.rc
 sed -i '3s/.*/PRODUCTVERSION 1,43,'$VERSION_NUM',0/' VersionInfo.rc
 sed -i '12s/.*/		VALUE "FileVersion", "1.43-en.'$VERSION_NUM'-nightly.'$BUILD_DATE'"/' VersionInfo.rc
 sed -i '17s/.*/		VALUE "ProductVersion", "1.43-en.'$VERSION_NUM'-nightly.'$BUILD_DATE'"/' VersionInfo.rc
-cmd.exe /ctmp.bat
+cmd.exe /c tmp.bat
 touch Domino_Translated_$BUILD_DATE.exe
 rm -rf Manual
 cp -r ../Manual .

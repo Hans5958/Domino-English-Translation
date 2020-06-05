@@ -54,7 +54,6 @@ jobs:
         shell: powershell
         run: |
           cd _compile
-          dir
           echo "[FILENAMES] 
           Exe=  Domino.exe 
           SaveAs= Domino.exe 
@@ -74,20 +73,18 @@ jobs:
           cat ../Menu/* > Menu.rc
           cat ../StringTable/* > StringTable.rc
           cat ../VersionInfo/* > VersionInfo.rc
-          copy ../240.rc
-          md -Force 240
-          Get-ChildItem -Path ../240 -File | Foreach {python ../parsecombo.py pack $_.FullName "240/$($_.BaseName)"}
+          md 240
+          copy ../240/240.rc 240
+          Get-ChildItem -Path ../240 -File | Foreach {python ../_deploy/parsecombo.py pack $_.FullName "240/$($_.BaseName)"}
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Dialog.rc", "-save Dialog.res", "-action compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Menu.rc", "-save Menu.res", "-action compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open StringTable.rc", "-save StringTable.res -action", "compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open VersionInfo.rc", "-save VersionInfo.res -action", "compile", "-log CON" -Wait
-          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open 240.rc", "-save 240.res -action", "compile", "-log CON" -Wait
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open 240/240.rc", "-save 240.res -action", "compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-script tmp.txt"
       - name: Build (part 2, bash)
         run: |
           cd _compile
-          ls
-          echo $(ls)
           touch Domino.exe
           rm -rf Manual
           cp -r ../Manual .
