@@ -47,8 +47,8 @@ cp -r ../Manual .
 cp -r ../Module .
 cp -r ../System .
 cp -r ../Other/* .
+read -n1 -r -p "Press any key to continue..." key
 rm -rf *.rc
 rm -rf *.res
 rm -rf tmp.*
 rm -rf 240
-read -n1 -r -p "Press any key to continue..." key
