@@ -4,7 +4,6 @@ rm -rf _compile
 mkdir _compile
 cp -r _deploy/Domino143/* _compile
 cd _compile
-read -n1 -r -p "Press any key to continue..." key
 echo "[FILENAMES]
 Exe=    Domino.exe
 SaveAs= Domino_Translated_$BUILD_DATE.exe
@@ -39,8 +38,8 @@ for file in ../240/*.bin.txt; do
 done
 sed -i '2s/.*/FILEVERSION 1,43,'$VERSION_NUM',0/' VersionInfo.rc
 sed -i '3s/.*/PRODUCTVERSION 1,43,'$VERSION_NUM',0/' VersionInfo.rc
-sed -i '12s/.*/		VALUE "FileVersion", "1.43-en.'$VERSION_NUM'-nightly.'$BUILD_DATE'"/' VersionInfo.rc
-sed -i '17s/.*/		VALUE "ProductVersion", "1.43-en.'$VERSION_NUM'-nightly.'$BUILD_DATE'"/' VersionInfo.rc
+sed -i '12s/.*/		VALUE "FileVersion", "1.43-en.'$VERSION_NUM'-dev.'$BUILD_DATE'"/' VersionInfo.rc
+sed -i '17s/.*/		VALUE "ProductVersion", "1.43-en.'$VERSION_NUM'-dev.'$BUILD_DATE'"/' VersionInfo.rc
 cmd.exe /c tmp.bat
 touch Domino_Translated_$BUILD_DATE.exe
 rm -rf Manual
