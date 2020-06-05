@@ -41,6 +41,8 @@ jobs:
           sed -i '3s/.*/PRODUCTVERSION 1,43,${{env.VERSION_NUM}},0/' 1.rc
           sed -i '12s/.*/		VALUE "FileVersion", "1.43-${{env.VERSION_NUM}}-artifact.${{env.BUILD_DATE}}"/' 1.rc
           sed -i '17s/.*/		VALUE "ProductVersion", "1.43-${{env.VERSION_NUM}}-artifact.${{env.BUILD_DATE}}"/' 1.rc
+      - name: Install Python 3
+        run: choco install python3
       - name: Install Resource Hacker
         run: choco install reshack
       - name: Prepare _compile folder
@@ -52,7 +54,6 @@ jobs:
         shell: powershell
         run: |
           cd _compile
-          dir
           echo "[FILENAMES] 
           Exe=  Domino.exe 
           SaveAs= Domino.exe 
@@ -62,24 +63,28 @@ jobs:
           -delete  DIALOG,, 
           -delete  STRINGTABLE,, 
           -delete  VERSIONINFO,, 
+          -delete  240,,
           -add   Menu.res, MENU,, 
           -add   Dialog.res, DIALOG,, 
           -add   StringTable.res, STRINGTABLE,,
-          -add   VersionInfo.res, VERSIONINFO,," > tmp.txt
+          -add   VersionInfo.res, VERSIONINFO,,
+          -add   240.res, 240,," > tmp.txt
           cat ../Dialog/* > Dialog.rc
           cat ../Menu/* > Menu.rc
           cat ../StringTable/* > StringTable.rc
           cat ../VersionInfo/* > VersionInfo.rc
+          md 240
+          copy ../240/240.rc 240
+          Get-ChildItem -Path ../240 -File | Foreach {python ../_deploy/parsecombo.py pack $_.FullName "240/$($_.BaseName)"}
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Dialog.rc", "-save Dialog.res", "-action compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open Menu.rc", "-save Menu.res", "-action compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open StringTable.rc", "-save StringTable.res -action", "compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open VersionInfo.rc", "-save VersionInfo.res -action", "compile", "-log CON" -Wait
+          Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-open 240/240.rc", "-save 240.res -action", "compile", "-log CON" -Wait
           Start-Process -NoNewWindow -FilePath "C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -ArgumentList "-script tmp.txt"
       - name: Build (part 2, bash)
         run: |
           cd _compile
-          ls
-          echo $(ls)
           touch Domino.exe
           rm -rf Manual
           cp -r ../Manual .
@@ -89,6 +94,7 @@ jobs:
           rm -rf *.rc
           rm -rf *.res
           rm -rf tmp.*
+          rm -rf 240
       - name: Prepare deployment
         run: |
           cd _compile
