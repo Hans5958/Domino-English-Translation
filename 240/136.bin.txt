@@ -6,70 +6,70 @@ Measure : Tick
 Measure : Beat : Tick
 1264
 1027
-Note#60 = C4
+Note #60 = C4
 1264
 1027
-Note#60 = C3
+Note #60 = C3
 1263
 1027
-そのまま演奏
+Do nothing
 1263
 1027
-タイとみなす
+Tie Notes
 1329
 1027
-右側
+Right side
 1329
 1027
-イベントリストの下
+Below Event List
 1329
 1027
-左側
+Left side
 1300
 1027
-1ドット
+1 dot
 1300
 1027
-2ドット
+2 dots
 1304
 1027
-0～127
+0~127
 1304
 1027
-1～128
+1~128
 1305
 1027
-そのまま
+Pause
 1305
 1027
-演奏開始位置へ
+Restart
 1305
 1027
-イベントリストカーソル位置へ
+On selected event
 1305
 1027
-演奏開始位置へ（スクロール無し）
+Restart without scrolling back
 1306
 1027
-そのまま
+Pause
 1306
 1027
-演奏開始位置へ
+Restart
 1306
 1027
-イベントリストカーソル位置へ
+On selected event
 1306
 1027
-演奏開始位置へ（スクロール無し）
+Restart without scrolling back
 1307
 1027
-その場から
+On current slider position
 1307
 1027
-一時停止した位置から
+On initial pause position
 1308
 1027
-ラベルのみ
+Show labels only
 1308
 1027
-小節番号 ラベル
+Show labels with its measure #

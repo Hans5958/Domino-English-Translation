@@ -1,45 +1,45 @@
 1297
 1027
-表示しない
+Hidden
 1297
 1027
-表示する （1 Sample）
+1 Sample
 1297
 1027
-表示する （  1 Sample）
+  1 Sample
 1297
 1027
-表示する （001 Sample）
+001 Sample
 1297
 1027
-表示する （[1] Sample）
+[1] Sample
 1297
 1027
-表示する （[  1] Sample）
+[  1] Sample
 1297
 1027
-表示する （[001] Sample）
+[001] Sample
 1415
 1027
-長い順
+by length
 1415
 1027
-種類別長い順
+by type and length
 1307
 1027
-ファイルを開く
+Open
 1307
 1027
-内容をクリップボードへ保存
+Copy to clipboard
 1308
 1027
-カーソル位置または演奏位置
+On event selection
 1308
 1027
-次の小節の先頭（トグル式）
+On next measure
 1309
 1027
-禁止する
+Discard
 1309
 1027
-許可する
+Keep
