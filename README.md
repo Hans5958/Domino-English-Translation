@@ -11,21 +11,34 @@ This repository is made to unify the translations made by community, while tryin
 
 ## Usage
 
-1. Download either the Domino ``.zip`` or the ``.exe``.  
-    - The ``.zip`` contains everything you need to run Domino. __Download this if you are not sure or this is your first time using this program.__  
-    - You can also download the ``.exe`` if you want to use your configured settings. Place it inside your Domino directly, where "``Domino.exe``" placed.
+1. Download either the Domino `.zip` or the `.exe`.  
+    - The `.zip` contains everything you need to run Domino. __Download this if you are not sure or this is your first time using this program.__  
+    - You can also download the `.exe` if you want to use your configured settings. Place it inside your Domino directly, where "`Domino.exe`" placed.
 
     <a href="https://github.com/Hans5958/Domino-English-Translation/releases/latest"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square" alt="Download the latest stable release"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square" alt="Download the latest nightly release"></a>
 
 2. Run the executable.
-    - If you downloaded the .zip, just run ``Domino.exe``.
-    - If you downloaded the .exe, after placing it on the directory, run ``Domino_Translated.exe`` (make sure you rename it so you know which one's the new version!).
+    - If you downloaded the .zip, just run `Domino.exe`.
+    - If you downloaded the .exe, after placing it on the directory, run `Domino_Translated.exe` (make sure you rename it so you know which one's the new version!).
+
+## Building
+
+### Requirements
+
+- Windows operating system. This is a Win32 application.
+- Windows Subsystem for Linux (WSL)
+- Resource Hacker
+- Python 3
+
+### Howto
+
+Just run `compile.sh`, and the binaries (the `.exe` files) will be compiled and placed inside the `_compile` folder.
 
 ## Contributing
 
-You can contribute by translating the ``.rc`` files. The ``.rc`` files contains the most of the program's strings. Some of it are translated, so check the checklist below first to know which one's is not translated. 
+You can contribute by translating various files. The `.rc` files contains the most of the program's strings. There is also `.html` files for the manuals, `.xml` for the modules, and some `.txt`'s.
 
-You can also execute ``compile.sh`` if you want the ``.exe`` versions of it, and it will be placed inside the ``_compile`` folder. Just make sure you have Resoure Hacker and Windows Subsystem for Linux installed.
+Read [Building](#building) to get the binary files.
 
 For starters, you can make a pull request from your fork, and the I'll check and merge it. If you don't know how to do it, make sure to read one of this guides.
 - [How to Contribute to Open Source | Open Source Guides](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
@@ -38,7 +51,7 @@ TL;DR, here's how.
 3. Do your edits there and commit (and push) the changes.
 4. Create a pull request by clicking the "New pull request" button.
 
-If you are still confused, you can ask me on [the issue board](https://github.com/Hans5958/Domino-English-Translation/issues) or on Discord (``Hans5958#0969``). 
+If you are still confused, you can ask me on [the issue board](https://github.com/Hans5958/Domino-English-Translation/issues) or on Discord (`Hans5958#0969`). 
 <!-- You can contribute by following these steps.
 
 1. Fork the master repository.  
@@ -268,6 +281,35 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [ ] Exclusive.txt
 - [ ] Formula.txt
 - [ ] ParamMap.txt
+
+</details>
+
+### 240
+
+<details><summary>Expand to view the checklist.</summary>
+
+- [ ] 134
+- [ ] 136
+- [ ] 156
+- [ ] 165
+- [ ] 174
+- [ ] 217
+- [ ] 275
+- [ ] 277
+- [ ] 279
+- [ ] 280
+- [ ] 281
+- [ ] 290
+- [ ] 293
+- [ ] 295
+- [ ] 297
+- [ ] 299
+- [ ] 300
+- [ ] 301
+- [ ] 306
+- [ ] 307
+- [ ] 319
+- [ ] 322
 
 </details>
 

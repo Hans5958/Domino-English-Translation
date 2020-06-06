@@ -1,0 +1,8 @@
+* 				text=auto 
+*.rc			text eol=crlf
+*.html			text eol=crlf
+System/* 		text eol=crlf
+Other/*			text eol=crlf
+Module/*		text eol=crlf
+Manual/*.html	text eol=crlf
+*.sh   			text eol=lf
