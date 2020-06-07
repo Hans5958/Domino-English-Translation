@@ -7,9 +7,8 @@ FONT 9, "MS Sans Serif"
    CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 63, 81, 50, 14 
    CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 117, 81, 50, 14 
    CONTROL "Setup", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 7, 167, 68 
-   CONTROL "# Finds and re-aligns overlapping note gates. \r\n\r\nAdjust the value below to reduce the gate further.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 21, 155, 28 
+   CONTROL "* Finds and re-aligns overlapping note gates. \r\n\r\nAdjust the value below to reduce the gate further.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 21, 155, 28 
    CONTROL "Reduce by: ", -1, STATIC, SS_RIGHT | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 34, 53, 51, 12 
    CONTROL "", 1264, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 85, 53, 34, 12 
    CONTROL "Spin1", 1265, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 106, 53, 10, 12 
 }
-
