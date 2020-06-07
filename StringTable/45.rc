@@ -1,10 +1,9 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-61472, 	"No error message is available."
-61473, 	"An unsupported operation was attempted."
-61474, 	"A required resource was unavailable."
-61475, 	"Out of memory."
-61476, 	"An unknown error has occurred."
+  61472, 	"No error message."
+  61473, 	"An unsupported operation was executed."
+  61474, 	"The required resources could not be used."
+  61475, 	"Out of memory."
+  61476, 	"An unknown error has occurred."
 }
-

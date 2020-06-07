@@ -1,9 +1,8 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-57600, 	"Create a new document\nNew"
-57601, 	"Open an existing document\nOpen"
-57603, 	"Save the active document\nSave"
-57604, 	"Save the active document with a new name\nSave As"
+  57600, 	"Creates a new project.\nNew"
+  57601, 	"Opens a specified Domino project or MIDI file.\nOpen"
+  57603, 	"Saves progress to current project.\nSave project"
+  57604, 	"Saves progress as another project.\nSave project as"
 }
-

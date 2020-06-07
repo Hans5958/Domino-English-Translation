@@ -1,9 +1,8 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-33136, 	"Ripple Delete\nRipple Delete"
-33137, 	"Customize Scrolling Amount\nCustomize Scrolling Amount"
-33138, 	"No Chord\nNo Chord"
-33139, 	"Customize Chords\nCustomize Chords"
+  33136, 	"Ripple Delete. (Event List selection and highlight only)\nRipple Delete"
+  33137, 	"Sets up the scroll command settings.\nScroll Options"
+  33138, 	"Disables chord stamp.\nDisable Chord Stamp"
+  33139, 	"Sets up chord stamps.\nChord Stamp Setup"
 }
-

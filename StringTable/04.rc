@@ -1,18 +1,17 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32771, 	"Open the specified file."
-32772, 	"Open the specified file."
-32773, 	"Open the specified file."
-32774, 	"Open the specified file."
-32775, 	"Open the specified file."
-32776, 	"Open the specified file."
-32777, 	"Open the specified file."
-32778, 	"Open the specified file."
-32779, 	"Open the specified file."
-32780, 	"Open the specified file."
-32781, 	"Open the specified file."
-32782, 	"Open the specified file."
-32783, 	"Open the specified file."
+  32771, 	"Opens this project."
+  32772, 	"Opens this project."
+  32773, 	"Opens this project."
+  32774, 	"Opens this project."
+  32775, 	"Opens this project."
+  32776, 	"Opens this project."
+  32777, 	"Opens this project."
+  32778, 	"Opens this project."
+  32779, 	"Opens this project."
+  32780, 	"Opens this project."
+  32781, 	"Opens this project."
+  32782, 	"Opens this project."
+  32783, 	"Opens this project."
 }
-

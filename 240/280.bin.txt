@@ -1,90 +1,90 @@
 1298
 1027
-Event列の左
+Left side of Event columm
 1298
 1027
-Event列の右
+Right side of Event columm
 1299
 1027
-表示しない
+Hidden
 1299
 1027
-表示する
+Shown
 1300
 1027
-端なら列、それ以外は文字移動
+Navigate columns and text/value
 1300
 1027
-列を移動
+Navigate columns only
 1300
 1027
-文字位置を移動
+Navigate text/value only
 1297
 1027
-表示しない
+Hidden
 1297
 1027
-表示する （1 Sample）
+1 Sample
 1297
 1027
-表示する （  1 Sample）
+  1 Sample
 1297
 1027
-表示する （001 Sample）
+001 Sample
 1297
 1027
-表示する （[1] Sample）
+[1] Sample
 1297
 1027
-表示する （[  1] Sample）
+[  1] Sample
 1297
 1027
-表示する （[001] Sample）
+[001] Sample
 1295
 1027
-表示しない
+Hidden
 1295
 1027
-表示する
+Shown
 1296
 1027
-デフォルト
+Bright
 1296
 1027
-背景黒モード
+Dark
 1296
 1027
-背景灰色モード
+Dull
 1301
 1027
-着色しない
+Disabled
 1301
 1027
-1行まとめて着色
+Whole line
 1301
 1027
-Mea～Step列のみ着色
+Only Mea|Tick|Step columns
 1301
 1027
-色が付いてない部分を着色
+Only if colorless
 1301
 1027
-Mea～Step列及びノートを着色
+Only Mea|Tick|Step columns and notes
 1302
 1027
-すべて表示
+Show each
 1302
 1027
-表示値が変わる部分のみ表示
+Show 1 each measure (keep on screen)
 1302
 1027
-値が変わる部分のみ表示
+Show 1 each measure
 1303
 1027
-発音しない
+Disabled
 1303
 1027
-単音を発音
+Enabled
 1303
 1027
-同タイミングのノートも一緒に発音
+Enabled (includes coinciding notes)

@@ -1,54 +1,54 @@
 1376
 1027
-Tickクォンタイズ設定通り
+Quantization (+[Ctrl])
 1376
 1027
-オフ（Ctrlキーでオン）
+Off (+[Ctrl])
 1376
 1027
-オン（Ctrlキーでオフ）
+On (+[Ctrl])
 1295
 1027
-オフ（Altキーでオン）
+Off (+[Alt])
 1295
 1027
-オン（Altキーでオフ）
+On (+[Alt])
 1296
 1027
-Tickクォンタイズ設定通り
+Quantization (+[Ctrl])
 1296
 1027
-オフ（Ctrlキーでオン）
+Off (+[Ctrl])
 1296
 1027
-オン（Ctrlキーでオフ）
+On (+[Ctrl])
 1297
 1027
-オフ（Altキーでオン）
+Off (+[Alt])
 1297
 1027
-オン（Altキーでオフ）
+On (+[Alt])
 1298
 1027
-Gateクォンタイズ設定通り
+Quantization (+[Ctrl])
 1298
 1027
-オフ（Ctrlキーでオン）
+Off (+[Ctrl])
 1298
 1027
-オン（Ctrlキーでオフ）
+On (+[Ctrl])
 1299
 1027
-表示しない
+Hidden
 1299
 1027
-表示する
+Shown
 1300
 1027
-デフォルト
+Bright
 1300
 1027
-背景灰色モード
+Dull
 1300
 1027
-背景暗い灰色モード
+Dark

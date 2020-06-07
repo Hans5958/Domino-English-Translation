@@ -1,13 +1,12 @@
 STRINGTABLE
-LANGUAGE LANG_JAPANESE, 0x1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-1000, 	"It displays the current playing position and tempo of. \n of the current playing position and tempo"
-1001, 	"Change the current track.\n Current track"
-1002, 	"Specifies the default velocity values. \n Default Velocity"
-1003, 	"Specifies the default gate value. \n Default gate"
-1004, 	"Change the quantization is carried out with a pen or a selection tool. \n Quantization Tool"
-1005, 	"Meas : Tick "
-1006, 	"C 4                "
-1007, 	"Choice"
+  1000, 	"Displays tempo value, and current time of the slider position.\nTime Panel"
+  1001, 	"Shows current track and works as a track selector.\nTracklist"
+  1002, 	"Shows the Default Velocity value of the current track, which can be adjusted.\nDefault Velocity"
+  1003, 	"Shows the Default Gate value of the current track, which can be adjusted.\nDefault Gate"
+  1004, 	"Shows the Quantization mode for tools and piano roll, which can be switched.\nQuantization"
+  1005, 	" Meas : Tick "
+  1006, 	" C 4                "
+  1007, 	" Select "
 }
-

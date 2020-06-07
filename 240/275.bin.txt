@@ -1,9 +1,9 @@
 1413
 1027
-左クリックで+1、右クリックで-1
+Left-click adds value. Right-click deducts value.
 1413
 1027
-左クリックで-1、右クリックで+1
+Left-click deducts value. Right-click adds value.
 1413
 1027
-右ボタン上下ドラッグで補正、右ダブルクリックで0、左ダブルクリックでイベント挿入
+Right-click + drag adjusts value up/down. Double right-click resets. Double left-click inserts event from panel.

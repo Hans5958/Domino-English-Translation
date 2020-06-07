@@ -1,22 +1,20 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-33040, 	"Adds one medium unit.\n Add one medium unit "
-33041, 	"Substracts one medium unit.\n Substract one medium unit"
-33042, 	"User Defined Toolbar 1\nUser Defined Toolbar 1"
-33043, 	"???????????????????????\n???????????????????"
-33044, 	"User Defined Toolbar 2\nUser Defined Toolbar 2"
-33045, 	"Selection Filter\nSelection Filter"
-33046, 	"Insert Multiple Control Changes\nInsert Multiple Control Changes"
-33047, 	"Send Event"
-33048, 	"Stop/Play (no rewind)\n Stop/Play (no rewind)"
-33049, 	"Scale/Chord Highlighter\nScale/Chord Highlighter"
-33050, 	"Track Monitor Bar\nTrack Monitor Bar"
-33051, 	"Customize Track Monitor Bar\nCustomize Track Monitor Bar"
-33052, 	"Molto Pianissimo\nMolto Pianissimo"
-33053, 	"Pianissimo\nPianissimo"
-33054, 	"Piano\nPiano"
-33055, 	"Mezzopiano\nMezzopiano"
+  33040, 	"Adds 10 points to a value (varies between columns).\n+ 10"
+  33041, 	"Deducts 10 points to a value (varies between columns).\n- 10"
+  33042, 	"Shows/hides this toolbar.\nToggle Toolbar"
+  33043, 	"Focuses operation in the Event List.\nFocus navigation to Event List"
+  33044, 	"Shows/hides this toolbar.\nToggle Toolbar"
+  33045, 	"Refines selection range.\nFilter Selection Range"
+  33046, 	"Inserts a specified batch of Control Changes.\nInsert CCs"
+  33047, 	"Preview/play selected note/CC event."
+  33048, 	"Pauses/Resumes playback.\nPause/Resume Playback"
+  33049, 	"Sets up key scale/chord highlight guide to Piano Roll.\nKey Scale/Chord Highlight"
+  33050, 	"Shows/hides the Track Monitor Bar.\nToggle Track Monitor Bar"
+  33051, 	"Customize the Track Monitor Bar.\nTrack Monitor Bar Customization"
+  33052, 	"Changes Default Velocity to molto pianissimo.\nmolto pianissimo"
+  33053, 	"Changes Default Velocity to pianissimo.\npianissimo"
+  33054, 	"Changes Default Velocity to piano.\npiano"
+  33055, 	"Changes Default Velocity to mezzo piano.\nmezzo piano"
 }
-
-

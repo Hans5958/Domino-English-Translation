@@ -1,7 +1,6 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32941, 	"Create Marker\nCreate Marker"
-32942, 	"Edit Markers\nEdit Markers"
+  32941, 	"Inserts a Marker event. (Conductor Track only).\nAdd Marker"
+  32942, 	"Shows a list of registered markers which can be modified.\nEdit"
 }
-

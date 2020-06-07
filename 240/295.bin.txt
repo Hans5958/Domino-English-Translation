@@ -1,30 +1,30 @@
 1389
 1027
-ON: 同期 OFF: 非同期
+ON: Sync OFF: Async
 1389
 1027
-ON: 同期 OFF: 演奏中は非同期
+ON: Sync OFF: Async (playback)
 1390
 1027
-デフォルト
+Default
 1390
 1027
-すべて縦線を描画、右Stepを塗る
+Draw all borders and fills
 1391
 1027
-無し
+Disabled
 1391
 1027
-音の低い順
+Ascending
 1391
 1027
-音の高い順
+Descending
 1392
 1027
-カーソルを移動しない
+Current selection only
 1392
 1027
-カーソルを移動する
+Include next selection
 1393
 1027
 60
@@ -39,7 +39,7 @@ C  4 [ 60]
 C 4  60
 1546
 1027
-確定のみ
+Apply only
 1546
 1027
-確定し、カーソルを下へ移動
+Apply then proceed next entry

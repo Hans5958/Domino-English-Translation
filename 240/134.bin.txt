@@ -1,15 +1,15 @@
 1013
 1027
-無し
+Disabled
 1013
 1027
-有り（ウィンドウアクティブ時のみ）
+Only when window is active
 1013
 1027
-有り（常時）
+Always
 1018
 1027
-入力されたデータをそのまま利用する
+From device input
 1018
 1027
-トラックのデフォルトVelocity値を利用する
+From track's Default Velocity

@@ -1,16 +1,10 @@
-≪解説≫
-aaa=100
-bbb=120
-のように、「変数名=値」の書式で入力してください。
+Every variable assignment expressions created will be listed here.
 
-変数はいくつでも入力できます。
+You may input data using the format [variable name = value] like so:
+aaa = 100
+bbb = 120
 
-変数名は半角/全角を区別し、小文字/大文字を区別しません。
+* There are no limitations to the variable entry count.
+* Variable names can be full-width or half-width and are not case sensitive.
 
-「変数代入式イベント」で作成された変数も、ここに表示されます。
-
-ここで編集した変数は［OK］ボタンを押した直後から参照できます。
-これら変数は全トラックの
-・コントロールチェンジイベントのGate/Value
-・テンポイベントのValue
-で使用できます。
+These variables can be assigned to Tempo event & Control Change event values.

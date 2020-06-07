@@ -1,19 +1,18 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32848, 	"Event Properties\nEvent Properties"
-32849, 	"Adjust End of Track\nAdjust End of Track"
-32850, 	"Pen\nPen"
-32851, 	"Selector\nSelector"
-32852, 	"Eraser\nEraser"
-32853, 	"Swap Tools\nSwap Tools"
-32855, 	"Quantize Ticks\nQuantize Ticks"
-32856, 	"Quantize Gates\nQuantize Gates"
-32857, 	"Free Hand\nFree Hand"
-32858, 	"Line\nLine"
-32859, 	"Curve 1\nCurve 1"
-32861, 	"Curve 2\nCurve 2"
-32862, 	"Random\nRandom"
-32863, 	"Edit and manage event graphs curves\nCustomize Custom Curves"
+  32848, 	"Shows the properties of the selected event.\nEvent Properties"
+  32849, 	"Sets up every track's length by placing the End of Track mark to current slider position.\nSet End of Track mark"
+  32850, 	"Places notes on the Piano Roll.\nPen Tool"
+  32851, 	"Selects data by holding left-click.\nSelect Tool"
+  32852, 	"Selects data and deletes them by holding left-click.\nEraser"
+  32853, 	"Switches between the Pen Tool and Select Tool\nToggle Pen/Select Tool"
+  32855, 	"Quantizes note arrangement.\nQuantize Ticks"
+  32856, 	"Quantizes note gates.\nQuantize &Gates"
+  32857, 	"Graph freely within the Graph Panel.\nFreehand Graph"
+  32858, 	"Graphs a line within the Graph Panel.\nLine Graph"
+  32859, 	"Graphs a gentle curve within the Graph Panel.\nEase In Curve"
+  32861, 	"Graphs a strong curve within the Graph Panel.\nEase Out Curve"
+  32862, 	"Graphs random and various bars within the Graph Panel.\nRandom"
+  32863, 	"Sets up user-created graphs using graphing expressions.\nFormulate Graph"
 }
-

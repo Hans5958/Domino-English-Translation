@@ -1,12 +1,12 @@
 1295
 1027
-全トラックで共通
+all tracks
 1295
 1027
-トラック毎に記憶
+each track
 1296
 1027
-オフ
+Disabled
 1296
 1027
-オン
+Enabled

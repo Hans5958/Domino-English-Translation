@@ -1,60 +1,60 @@
 1294
 1027
-4分線まで表示
+4 beats
 1294
 1027
-8分線まで表示
+8 beats
 1294
 1027
-16分線まで表示
+16 beats
 1295
 1027
-表示しない
+Hidden
 1295
 1027
-表示する
+Shown
 1296
 1027
-全トラックで共通
+all tracks
 1296
 1027
-トラック毎に記憶
+each track
 1298
 1027
-表示しない
+Hidden
 1298
 1027
-表示する
+Shown
 1299
 1027
-スクロールしない
+Do not scroll
 1299
 1027
-演奏線の位置を固定
+Fixed to slider
 1299
 1027
-演奏線が左端に来るように
+Fixed to slider (left edge)
 1299
 1027
-演奏線が左端から25%の位置に
+Fixed to slider (left-margined)
 1299
 1027
-演奏線が画面中央に来るように
+Fixed to slider (center)
 1300
 1027
-何もしない
+Do nothing
 1300
 1027
-Velocityを補正
+Velocity Adjustment
 1300
 1027
-Gateを補正
+Gate Adjustment
 1301
 1027
-無し
+Hidden
 1301
 1027
 C
 1301
 1027
-ノート番号（白鍵のみ）
+Key number (white keys only)

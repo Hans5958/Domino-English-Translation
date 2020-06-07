@@ -1,24 +1,24 @@
 1299
 1027
-スクロールしない
+Do not scroll
 1299
 1027
-演奏線の位置を固定
+Fixed to slider
 1299
 1027
-演奏線が左端に来るように
+Fixed to slider (left edge)
 1299
 1027
-演奏線が左端から25%の位置に
+Fixed to slider (left-margined)
 1299
 1027
-演奏線が画面中央に来るように
+Fixed to slider (center)
 1385
 1027
-表示しない
+Hidden
 1385
 1027
-枠を表示
+Translucent rectangle
 1385
 1027
-小節を反転表示
+Color inversion

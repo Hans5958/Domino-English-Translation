@@ -1,9 +1,9 @@
 1345
 1027
-通常
+Default
 1345
 1027
-既存ノート補正
+Note Edit
 1345
 1027
-複数チャンネル
+Multiple Channels

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml version="1.0" encoding="SHIFT-JIS"?>
 <ModuleData Name="GSm (Microsoft GS Wavetable SW Synth)" Folder="" Priority="11" FileCreator="逃亡者" FileVersion="1.08" WebSite="http://mimikopi.nomaki.jp/">
 	<ControlChangeEventDefault ID="255" />
 	<ExclusiveEventDefault Data="F0H 41H 10H 42H 12H [ ] F7H" />
@@ -6,7 +6,7 @@
 	<ProgramChangeEventPropertyDlg AutoPreviewDelay="10" />
 
 <InstrumentList>
-	<Map Name="001-008 ﾋﾟｱﾉ">
+	<Map Name="001-008 Piano">
 		<PC Name="Piano 1" PC="1">
 			<Bank Name="Piano 1" MSB="0" LSB="0" />
 			<Bank Name="Piano 1w" MSB="8" LSB="0" />
@@ -53,7 +53,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="009-016 ｸﾛﾏﾁｯｸ･ﾊﾟｰｶｯｼｮﾝ">
+	<Map Name="009-016 Chromatic Perc">
 		<PC Name="Celesta" PC="9">
 			<Bank Name="Celesta" MSB="0" LSB="0" />
 		</PC>
@@ -91,7 +91,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="017-024 ｵﾙｶﾞﾝ">
+	<Map Name="017-024 Organ">
 		<PC Name="Organ 1" PC="17">
 			<Bank Name="Organ 1" MSB="0" LSB="0" />
 			<Bank Name="Detune Or1" MSB="8" LSB="0" />
@@ -133,7 +133,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="025-032 ｷﾞﾀｰ">
+	<Map Name="025-032 Guitar">
 		<PC Name="Nylon Gt." PC="25">
 			<Bank Name="Nylon Gt." MSB="0" LSB="0" />
 			<Bank Name="Ukulele" MSB="8" LSB="0" />
@@ -178,7 +178,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="033-040 ﾍﾞｰｽ">
+	<Map Name="033-040 Bass">
 		<PC Name="Acoustic Bs" PC="33">
 			<Bank Name="Acoustic Bs" MSB="0" LSB="0" />
 		</PC>
@@ -216,7 +216,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="041-048 ｽﾄﾘﾝｸﾞｽ/ｵｰｹｽﾄﾗ">
+	<Map Name="041-048 Strings/Orchestra">
 		<PC Name="Violin" PC="41">
 			<Bank Name="Violin" MSB="0" LSB="0" />
 			<Bank Name="Slow Violin" MSB="8" LSB="0" />
@@ -251,7 +251,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="049-056 ｱﾝｻﾝﾌﾞﾙ">
+	<Map Name="049-056 Ensemble">
 		<PC Name="Strings" PC="49">
 			<Bank Name="Strings" MSB="0" LSB="0" />
 			<Bank Name="Orchestra" MSB="8" LSB="0" />
@@ -288,7 +288,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="057-064 ﾌﾞﾗｽ">
+	<Map Name="057-064 Brass">
 		<PC Name="Trumpet" PC="57">
 			<Bank Name="Trumpet" MSB="0" LSB="0" />
 		</PC>
@@ -329,7 +329,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="065-072 ﾘｰﾄﾞ">
+	<Map Name="065-072 Reeds">
 		<PC Name="Soprano Sax" PC="65">
 			<Bank Name="Soprano Sax" MSB="0" LSB="0" />
 		</PC>
@@ -363,7 +363,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="073-080 ﾊﾟｲﾌﾟ">
+	<Map Name="073-080 Pipes">
 		<PC Name="Piccolo" PC="73">
 			<Bank Name="Piccolo" MSB="0" LSB="0" />
 		</PC>
@@ -397,7 +397,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="081-088 ｼﾝｾ･ﾘｰﾄﾞ">
+	<Map Name="081-088 Synth Lead">
 		<PC Name="Square Wave" PC="81">
 			<Bank Name="Square Wave" MSB="0" LSB="0" />
 			<Bank Name="Square" MSB="1" LSB="0" />
@@ -435,7 +435,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="089-096 ｼﾝｾ･ﾊﾟｯﾄﾞなど">
+	<Map Name="089-096 Synth Leads, etc.">
 		<PC Name="Fantasia" PC="89">
 			<Bank Name="Fantasia" MSB="0" LSB="0" />
 		</PC>
@@ -469,7 +469,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="097-104 ｼﾝｾ SFX">
+	<Map Name="097-104 Synth SFX">
 		<PC Name="Ice Rain" PC="97">
 			<Bank Name="Ice Rain" MSB="0" LSB="0" />
 		</PC>
@@ -506,7 +506,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="105-112 ｴｽﾆｯｸなど">
+	<Map Name="105-112 Ethnic, etc.">
 		<PC Name="Sitar" PC="105">
 			<Bank Name="Sitar" MSB="0" LSB="0" />
 			<Bank Name="Sitar 2" MSB="1" LSB="0" />
@@ -542,7 +542,7 @@
 		</PC>
 	</Map>
 
-	<Map Name="113-120 ﾊﾟｰｶｯｼﾌﾞ">
+	<Map Name="113-120 Percussion">
 		<PC Name="Tinkle Bell" PC="113">
 			<Bank Name="Tinkle Bell" MSB="0" LSB="0" />
 		</PC>
@@ -1711,19 +1711,19 @@
 		<Entry Label="CH16" Value="31" />
 	</Table>
 
-	<CCM ID="255" Name="255 Rest (休符)" Color="#6600CC">
+	<CCM ID="255" Name="255 Rest" Color="#6600CC">
 			<Data></Data>
 		<Memo>休符 です。\n「SMF書き出し」 時に削除されます。\nｲﾍﾞﾝﾄの位置調整に ご利用下さい。</Memo>
 	</CCM>
 
-	<CCM ID="254" Name="☆☆ Control Change ＋ α ☆☆" Color="#6600CC">
+	<CCM ID="254" Name="** Control Change + @ **" Color="#6600CC">
 			<Data></Data>
 		<Memo>SMF (ｽﾀﾝﾀﾞｰﾄﾞ･ﾐﾃﾞｨ･ﾌｧｲﾙ) の基本ｲﾍﾞﾝﾄです。\n(※ ﾏｽﾀｰﾎﾞﾘｭｰﾑは除く。)</Memo>
 	</CCM>
 
 <Folder Name="[000-127] CC">
 
-<Folder Name="基本 (1、7、10、11)">
+<Folder Name="Basic (1, 7, 10, 11)">
 	<CCM ID="1" Name="001 Modulation" Color="#0000CC" Sync="Last">
 		<Value />
 			<Data>@CC 1 #VL</Data>
@@ -1736,7 +1736,7 @@
 		<Memo>ﾊﾟｰﾄの音量。一般的には、発音中の変化には使用しない。\n【Volume と Expression の違い】\n　Volume は 絶対指定 で Expression は 相対指定。\n　Expression は Volume の値に対する割合と考えよう。</Memo>
 	</CCM>
 
-	<CCM ID="10" Name="010 Panpot" Color="#CC0099" Sync="Last">
+	<CCM ID="10" Name="010 Panning" Color="#CC0099" Sync="Last">
 		<Value Default="64" TableID="4" />
 			<Data>@CC 10 #VL</Data>
 		<Memo>音の定位 (位置)。\n64 を基点として左右の方向に増減。</Memo>
@@ -1749,7 +1749,7 @@
 	</CCM>
 </Folder>
 
-<Folder Name="Program Change (0、32)">
+<Folder Name="Program Change (0, 32)">
 	<CCM ID="0" Name="000 Bank MSB" Color="#800080">
 		<Value />
 			<Data>@CC 0 #VL</Data>
@@ -1763,7 +1763,7 @@
 	</CCM>
 </Folder>
 
-<Folder Name="Hold Pedal 類 (64、66、67)">
+<Folder Name="Hold Pedals (64, 66, 67)">
 	<CCM ID="64" Name="064 Hold Pedal" Color="#333333">
 		<Value TableID="1" />
 			<Data>@CC 64 #VL</Data>
@@ -1783,7 +1783,7 @@
 	</CCM>
 </Folder>
 
-<Folder Name="ｴﾌｪｸﾄ類 (91、93、94)">
+<Folder Name="Effects (91, 93, 94)">
 	<CCM ID="91" Name="091 Reverb" Color="#006666" Sync="Last">
 		<Value />
 			<Data>@CC 91 #VL</Data>
@@ -1793,17 +1793,17 @@
 	<CCM ID="93" Name="093 Chorus" Color="#0066CC" Sync="Last">
 		<Value />
 			<Data>@CC 93 #VL</Data>
-		<Memo>ｴﾌｪｸﾄのｺｰﾗｽの効果量。\n※ MSGS では無効のはずだが、音割れの原因になることがあるため 「0」 にしておくことを推奨。</Memo>
+		<Memo>ｴﾌｪｸﾄのｺｰﾗｽの効果量。\n# MSGS では無効のはずだが, 音割れの原因になることがあるため [0] にしておくことを推奨。</Memo>
 	</CCM>
 
 	<CCM ID="94" Name="094 Del / Var" Color="#993300" Sync="Last">
 		<Value />
 			<Data>@CC 94 #VL</Data>
-		<Memo>[GS音源]　ｴﾌｪｸﾄのﾃﾞｨﾚｲの効果量。\n[XG音源]　ﾊﾞﾘｴｰｼｮﾝｴﾌｪｸﾄの効果量。\n※ MSGS では無効のはずだが、音割れの原因になることがあるため 「0」 にしておくことを推奨。</Memo>
+		<Memo>[GS音源]  ｴﾌｪｸﾄのﾃﾞｨﾚｲの効果量。\n[XG音源]  ﾊﾞﾘｴｰｼｮﾝｴﾌｪｸﾄの効果量。\n# MSGS では無効のはずだが, 音割れの原因になることがあるため [0] にしておくことを推奨。</Memo>
 	</CCM>
 </Folder>
 
-<Folder Name="代理 NRPN (76、77、78、74、71、73、75、72)">
+<Folder Name="Reserved NRPN (76, 77, 78, 74, 71, 73, 75, 72)">
 	<CCM ID="76" Name="CC:076">
 		<Value Default="64" TableID="4" />
 			<Data>@CC 76 #VL</Data>
@@ -1853,7 +1853,7 @@
 	</CCM>
 </Folder>
 
-<Folder Name="AC1、AC2 (16、17)">
+<Folder Name="AC1, AC2 (16, 17)">
 	<CCM ID="16" Name="CC:016">
 		<Value />
 			<Data>@CC 16 #VL</Data>
@@ -1867,7 +1867,7 @@
 	</CCM>
 </Folder>
 
-<Folder Name="ﾎﾟﾙﾀﾒﾝﾄ (65、5、84)">
+<Folder Name="Portamento (65, 5, 84)">
 	<CCM ID="65" Name="CC:065">
 		<Value />
 			<Data>@CC 65 #VL</Data>
@@ -1881,44 +1881,44 @@
 	</CCM>
 
 	<CCM ID="84" Name="CC:084">
-		<Value Name="Note No. (音階)" Type="Key" />
+		<Value Name="Note No. (Scale)" Type="Key" />
 			<Data>@CC 84 #VL</Data>
 		<Memo></Memo>
 	</CCM>
 </Folder>
 
-<Folder Name="RPN、NRPN (101、100、6、38、99、98)">
+<Folder Name="RPN, NRPN (101, 100, 6, 38, 99, 98)">
 	<CCM ID="101" Name="101 RPN MSB" Color="#006600">
 		<Value>
 			<Entry Label="  0     RPN" Value="0" />
 			<Entry Label="127    Null" Value="127" />
 		</Value>
 			<Data>@CC 101 #VL</Data>
-		<Memo>RPN の設定に使用。\nCC#101 → CC#100 → CC#6 (→ CC#38) の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し、CC#6 (と CC#38) で効果量を設定する。</Memo>
+		<Memo>RPN の設定に使用。\nCC#101 to CC#100 to CC#6 (to CC#38) の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し, CC#6 (と CC#38) で効果量を設定する。</Memo>
 	</CCM>
 
 	<CCM ID="100" Name="100 RPN LSB" Color="#003300">
 		<Value>
-			<Entry Label="  0 ﾍﾞﾝﾄﾞ幅" Value="0" />
-			<Entry Label="  1  微調整" Value="1" />
-			<Entry Label="  2  ﾉｰﾄｼﾌﾄ" Value="2" />
-			<Entry Label="  5 Modﾚﾝｼﾞ" Value="5" />
+			<Entry Label="  0 Bend Range" Value="0" />
+			<Entry Label="  1  Fine Tune" Value="1" />
+			<Entry Label="  2  Note Shift" Value="2" />
+			<Entry Label="  5 Mod Range" Value="5" />
 			<Entry Label="127    Null" Value="127" />
 		</Value>
 			<Data>@CC 100 #VL</Data>
-		<Memo>RPN の設定に使用。\nCC#101 → CC#100 → CC#6 (→ CC#38) の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し、CC#6 (と CC#38) で効果量を設定する。</Memo>
+		<Memo>RPN の設定に使用。\nCC#101 to CC#100 to CC#6 (to CC#38) の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し, CC#6 (と CC#38) で効果量を設定する。</Memo>
 	</CCM>
 
 	<CCM ID="6" Name="006 Data MSB" Color="#996600">
 		<Value TableID="4" />
 			<Data>@CC 6 #VL</Data>
-		<Memo>RPN、NRPN の設定に使用。\n―\n【RPN】\nCC#101 → CC#100 → CC#6 (→ CC#38) の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し、CC#6 (と CC#38) で効果量を設定する。\n―\n【NRPN】\nCC#99 → CC#98 → CC#6 の順番で受信させる。\nCC#99 と CC#98 の組み合わせで機能を選択し、CC#6 で効果量を設定する。</Memo>
+		<Memo>RPN, NRPN の設定に使用。\n―\n[RPN] \nCC#101 to CC#100 to CC#6 (to CC#38) の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し, CC#6 (と CC#38) で効果量を設定する。\n―\n[NRPN] \nCC#99 to CC#98 to CC#6 の順番で受信させる。\nCC#99 と CC#98 の組み合わせで機能を選択し, CC#6 で効果量を設定する。</Memo>
 	</CCM>
 
 	<CCM ID="38" Name="038 Data LSB" Color="#993300">
 		<Value />
 			<Data>@CC 38 #VL</Data>
-		<Memo>RPN の設定に使用。\nCC#101 → CC#100 → CC#6 → CC#38 の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し、CC#6 と CC#38 で効果量を設定する。</Memo>
+		<Memo>RPN の設定に使用。\nCC#101 to CC#100 to CC#6 to CC#38 の順番で受信させる。\nCC#101 と CC#100 の組み合わせで機能を選択し, CC#6 と CC#38 で効果量を設定する。</Memo>
 	</CCM>
 
 	<CCM ID="99" Name="CC:099">
@@ -1934,7 +1934,7 @@
 	</CCM>
 </Folder>
 
-<Folder Name="スイッチ類 (120、121、123、126、127、96、97、124、125)">
+<Folder Name="Switches (120, 121, 123, 126, 127, 96, 97, 124, 125)">
 	<CCM ID="120" Name="120 All Sound Off" Color="#333333">
 		<Value>
 			<Entry Label="  0   ON" Value="0" />
@@ -1948,7 +1948,7 @@
 			<Entry Label="  0   ON" Value="0" />
 		</Value>
 			<Data>@CC 121 #VL</Data>
-		<Memo>特定の項目にﾘｾｯﾄを掛ける。\n―\n【ﾘｾｯﾄ】\nCC#001 Modulation\nCC#011 Expression\nCC#064 Hold Pedal\nCC#065 Partamento\nCC#066 Sostenuto\nCC#067 Soft Pedal\nCCM#128 Channel After Touch\nCCM#129 Polyphonic After Touch\nCCM#130 Pitch Bend\n―\n【未設定状態】\nRPN\nNRPN</Memo>
+		<Memo>特定の項目にﾘｾｯﾄを掛ける。\n―\n[ﾘｾｯﾄ] \nCC#001 Modulation\nCC#011 Expression\nCC#064 Hold Pedal\nCC#065 Partamento\nCC#066 Sostenuto\nCC#067 Soft Pedal\nCCM#128 Channel After Touch\nCCM#129 Polyphonic After Touch\nCCM#130 Pitch Bend\n―\n[未設定状態] \nRPN\nNRPN</Memo>
 	</CCM>
 
 	<CCM ID="123" Name="123 All Note Off" Color="#333333">
@@ -1956,7 +1956,7 @@
 			<Entry Label="  0   ON" Value="0" />
 		</Value>
 			<Data>@CC 123 #VL</Data>
-		<Memo>ﾉｰﾄｵﾌを実行する。\n※ CC#64 Hold Pedal が ON の時には無効。</Memo>
+		<Memo>ﾉｰﾄｵﾌを実行する。\n# CC#64 Hold Pedal が ON の時には無効。</Memo>
 	</CCM>
 
 	<CCM ID="126" Name="126 MONO" Color="#333333">
@@ -1964,7 +1964,7 @@
 			<Entry Label="  0   ON" Value="0" />
 		</Value>
 			<Data>@CC 126 #VL</Data>
-		<Memo>和音を鳴らせない ﾓﾉﾗﾙﾓｰﾄﾞ にする。\n※ 正確には 「ON ： 0 ～ 16」 。</Memo>
+		<Memo>和音を鳴らせない ﾓﾉﾗﾙﾓｰﾄﾞ にする。\n# 正確には [ON : 0 ~ 16] 。</Memo>
 	</CCM>
 
 	<CCM ID="127" Name="127 POLY" Color="#333333">
@@ -1972,7 +1972,7 @@
 			<Entry Label="  0   ON" Value="0" />
 		</Value>
 			<Data>@CC 127 #VL</Data>
-		<Memo>和音を鳴らせるようにする。\n通常、ﾃﾞﾌｫﾙﾄで ON になっている。</Memo>
+		<Memo>和音を鳴らせるようにする。\n通常, ﾃﾞﾌｫﾙﾄで ON になっている。</Memo>
 	</CCM>
 
 	<CCM ID="96" Name="CC:096">
@@ -2002,23 +2002,23 @@
 
 </Folder>
 
-<Folder Name="[128-131] CAT、PAT、Pitch Bend、ﾏｽﾀｰﾎﾞﾘｭｰﾑ">
+<Folder Name="[128-131] CAT, PAT, Pitch Bend, Master Volume">
 	<CCM ID="128" Name="128 CAT" Color="#660000" Sync="Last">
 		<Value />
 			<Data>@CP #VL</Data>
-		<Memo>[Channel After Touch] ※ 「Channel Pressure」 とも呼ばれる。\n効果が未設定状態の CC。\n※ MSGS では無効。</Memo>
+		<Memo>[Channel After Touch] # [Channel Pressure] とも呼ばれる。\n効果が未設定状態の CC。\n# MSGS では無効。</Memo>
 	</CCM>
 
 	<CCM ID="129" Name="129 PAT" Color="#440000" Sync="LastEachGate">
 		<Value />
-		<Gate Default="60" Name="Note No. (音階)" Type="Key" />
+		<Gate Default="60" Name="Note No. (Scale)" Type="Key" />
 			<Data>@PKP #GL #VL</Data>
-		<Memo>[Polyphonic After Touch] ※ 「Polyphonic Key Pressure」 とも呼ばれる。\n効果が未設定状態の CC。\nGate で指定した Note No. (音階) のみに効果が与えられる。\n※ MSGS では無効。</Memo>
+		<Memo>[Polyphonic After Touch] # [Polyphonic Key Pressure] とも呼ばれる。\n効果が未設定状態の CC。\nGate で指定した Note No. (音階) のみに効果が与えられる。\n# MSGS では無効。</Memo>
 	</CCM>
 
 	<CCM ID="130" Name="130 Pitch Bend" Color="#800000" Sync="Last">
 		<Value Min="-8192" Max="8191" Offset="8192" />
-		<Gate Max="128" Name="ﾒﾓ">
+		<Gate Max="128" Name="Memo">
 			<Entry Label=" " Value="0" />
 			<Entry Label=" 683" Value="1" />
 			<Entry Label="1365" Value="2" />
@@ -2035,92 +2035,92 @@
 			<Entry Label=" " Value="128" />
 		</Gate>
 			<Data>@PB #VH #VL</Data>
-		<Memo>音程を変化させる。\nこの時、音質も変化するため、音色作りにも利用可能。\nRPN：Pitch Bend Sensitivity (CCM#151) で音程の変化幅を設定する。</Memo>
+		<Memo>音程を変化させる。\nこの時, 音質も変化するため, 音色作りにも利用可能。\nRPN:Pitch Bend Sensitivity (CCM#151) で音程の変化幅を設定する。</Memo>
 	</CCM>
 
-	<CCM ID="131" Name="131 ﾏｽﾀｰﾎﾞﾘｭｰﾑ" Color="#CC00FF" Sync="Last">
+	<CCM ID="131" Name="131 Master Volume" Color="#CC00FF" Sync="Last">
 		<Value Default="127" />
 			<Data>@SYSEX F0H 7FH 7FH 04H 01H 00H #VL F7H</Data>
-		<Memo>[GM Master Volume] \n全体の音量。主に ﾌｪｰﾄﾞｲﾝ・ﾌｪｰﾄﾞｱｳﾄ に使用する。\n※ MSGS の場合は 「ﾉｰﾄｵﾝ時に確認」 的な仕様のようで、発音中の音量が変化しないので注意。\n(長く伸ばしている音があった場合にﾏｽﾀｰﾎﾞﾘｭｰﾑによる ﾌｪｰﾄﾞｲﾝ・ﾌｪｰﾄﾞｱｳﾄ が綺麗に決まらない。)</Memo>
+		<Memo>[GM Master Volume] \n全体の音量。主に ﾌｪｰﾄﾞｲﾝ・ﾌｪｰﾄﾞｱｳﾄ に使用する。\n# MSGS の場合は [ﾉｰﾄｵﾝ時に確認] 的な仕様のようで, 発音中の音量が変化しないので注意。\n(長く伸ばしている音があった場合にMaster Volumeによる ﾌｪｰﾄﾞｲﾝ・ﾌｪｰﾄﾞｱｳﾄ が綺麗に決まらない。)</Memo>
 	</CCM>
 </Folder>
 
-	<CCM ID="253" Name="☆☆ RPN、NRPN ☆☆" Color="#6600CC">
+	<CCM ID="253" Name="** RPN, NRPN **" Color="#6600CC">
 			<Data></Data>
-		<Memo>「CC#101 + CC#100」 または 「CC#99 + CC#98」 で種類を選択して、「CC#6 (+ CC#38)」 で値を設定するﾊﾟﾗﾒｰﾀｰです。\nDomino では、これら 3つ または 4つ のｲﾍﾞﾝﾄを 1つの CCM でまとめて送信出来ます。\n※ MSGS では NRPN は使用しません。</Memo>
+		<Memo>[CC#101 + CC#100] または [CC#99 + CC#98] で種類を選択して, [CC#6 (+ CC#38)] で値を設定するﾊﾟﾗﾒｰﾀｰです。\nDomino では, これら 3つ または 4つ のｲﾍﾞﾝﾄを 1つの CCM でまとめて送信出来ます。\n# MSGS では NRPN は使用しません。</Memo>
 	</CCM>
 
 <Folder Name="[150-155] RPN">
 	<CCM ID="150" Name="150-155 RPN" Color="#6600CC">
 			<Data></Data>
-		<Memo>「CC#101 + CC#100」 で種類を選択して、「CC#6 (+ CC#38)」 で値を設定するﾊﾟﾗﾒｰﾀｰです。\nCCM#155 Modulation Depth Range 以外は GM対応音源で共通に有効 (…のはず) です。</Memo>
+		<Memo>[CC#101 + CC#100] で種類を選択して, [CC#6 (+ CC#38)] で値を設定するﾊﾟﾗﾒｰﾀｰです。\nCCM#155 Modulation Depth Range 以外は GM対応音源で共通に有効 (…のはず) です。</Memo>
 	</CCM>
 
-	<CCM ID="151" Name="151 ﾍﾞﾝﾄﾞ幅" Color="#800000">
+	<CCM ID="151" Name="151 Bend Range" Color="#800000">
 		<Value Default="12" Max="48" />
 			<Data>@RPN 0 0 #VL #NONE</Data>
-		<Memo>[Pitch Bend Sensitivity] ※ 「Pitch Bend Range」 とか 「ﾍﾞﾝﾄﾞ幅」 とも呼ばれる。\nCCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に、どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常、ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は 「2」 に設定される。\n※ 値の範囲が 「0 ～ 48」 なのは MSGS のみ (GM 対応音源は 通常 「0 ～ 24」 ) なので注意。</Memo>
+		<Memo>[Pitch Bend Sensitivity] # [Pitch Bend Range] とか [Bend Range] とも呼ばれる。\nCCM#130 Pitch Bend の値が最大 (+8191 または -8192) の時に, どれだけ音程を変化させるかを半音単位 (12 で 1 ｵｸﾀｰﾌﾞ) で設定。通常, ﾃﾞﾌｫﾙﾄ (ﾘｾｯﾄ受信時) は [2] に設定される。\n# 値の範囲が [0 ~ 48] なのは MSGS のみ (GM 対応音源は 通常 [0 ~ 24] ) なので注意。</Memo>
 	</CCM>
 
-	<CCM ID="152" Name="152 音程微調整" Color="#006600">
+	<CCM ID="152" Name="152 Fine Tune" Color="#006600">
 		<Value Min="-8192" Max="8191" Offset="8192" />
 			<Data>@RPN 0 1 #VH #VL</Data>
-		<Memo>[Master Fine Tuning] \nﾊﾟｰﾄの音程を 「半音の 1 / 8192」 単位で微調整。(+8191 で 半音上がる)\n※ 半音とは隣の鍵盤 (ﾋﾟｱﾉﾛｰﾙの1ﾏｽ隣) のこと。「隣の鍵盤の半分」 という意味ではないので注意。(例えば、ﾄﾞの半音上はﾄﾞ＃、ﾐの半音上はﾌｧとなる。)</Memo>
+		<Memo>[Master Fine Tuning] \nﾊﾟｰﾄの音程を [半音の 1 / 8192] 単位で微調整。(+8191 で 半音上がる)\n# 半音とは隣の鍵盤 (ﾋﾟｱﾉﾛｰﾙの1ﾏｽ隣) のこと。[隣の鍵盤の半分] という意味ではないので注意。(例えば, ﾄﾞの半音上はﾄﾞ＃, ﾐの半音上はﾌｧとなる。)</Memo>
 	</CCM>
 
-	<CCM ID="153" Name="153 GM ﾉｰﾄｼﾌﾄ" Color="#006600">
-		<Value Default="64" Min="40" Max="88" TableID="7" Name="半音" />
+	<CCM ID="153" Name="153 GM Note Shift" Color="#006600">
+		<Value Default="64" Min="40" Max="88" TableID="7" Name="Semitone" />
 			<Data>@RPN 0 2 #VL #NONE</Data>
-		<Memo>[Master Coarse Tuning] \nﾊﾟｰﾄの音程を半音単位で調整。\n64 を基点として増減。\n※ ﾉｰﾄを移動させているわけではなく、ﾋﾟｯﾁによる音程変化なので注意。(つまり、音質も変化する。)</Memo>
+		<Memo>[Master Coarse Tuning] \nﾊﾟｰﾄの音程を半音単位で調整。\n64 を基点として増減。\n# ﾉｰﾄを移動させているわけではなく, ﾋﾟｯﾁによる音程変化なので注意。(つまり, 音質も変化する。)</Memo>
 	</CCM>
 
 	<CCM ID="154" Name="154 RPN Null" Color="#006600">
 			<Data>@RPN 127 127 #NONE #NONE</Data>
-		<Memo>RPN、NRPN の設定を解除することで、CC#6、CC#38 を無効化する。\n消し忘れ等による RPN、NRPN の誤作動を防ぐためのもの。</Memo>
+		<Memo>RPN, NRPN の設定を解除することで, CC#6, CC#38 を無効化する。\n消し忘れ等による RPN, NRPN の誤作動を防ぐためのもの。</Memo>
 	</CCM>
 
-	<CCM ID="155" Name="155 Mod Dep ﾚﾝｼﾞ" Color="#006600">
-		<Value Default="64" Name="100/128 ｾﾝﾄ" />
-		<Gate Max="4" Name="半音" />
+	<CCM ID="155" Name="155 Mod Depth Range" Color="#006600">
+		<Value Default="64" Name="100/128 cents" />
+		<Gate Max="4" Name="Semitone" />
 			<Data>@RPN 0 5 #GL #VL</Data>
-		<Memo>[Modulation Depth Range] \nCC#1 Modulation の変化幅。\n※ MSGS では無効。</Memo>
+		<Memo>[Modulation Depth Range] \nCC#1 Modulation の変化幅。\n# MSGS では無効。</Memo>
 	</CCM>
 
-	<CCM ID="156" Name="156 GM ﾉｰﾄｼﾌﾄ (音色作り用)" Color="#006600">
-		<Value Default="0" Min="-24" Max="24" Offset="64" Name="半音" />
+	<CCM ID="156" Name="156 GM Note Shift (音色作り用)" Color="#006600">
+		<Value Default="0" Min="-24" Max="24" Offset="64" Name="Semitone" />
 			<Data>@RPN 0 2 #VL #NONE</Data>
-		<Memo>[Master Coarse Tuning] ﾊﾟｰﾄの音程を半音単位で調整。\nCCM#153 GM ﾉｰﾄｼﾌﾄ の値の範囲を 「-24 ～ 0 ～ +24」 に変更したもの。\n※ RPN：Master Coarse Tuning による音色作り (「ﾄﾗｯｸのﾌﾟﾛﾊﾟﾃｨ」 の 「Key補正」 を使用) の際は こちらを使用した方が楽だと思われる。</Memo>
+		<Memo>[Master Coarse Tuning] ﾊﾟｰﾄの音程を半音単位で調整。\nCCM#153 GM Note Shift の値の範囲を [-24 ~ 0 ~ +24] に変更したもの。\n# RPN:Master Coarse Tuning による音色作り ([ﾄﾗｯｸのﾌﾟﾛﾊﾟﾃｨ] の [Key補正] を使用) の際は こちらを使用した方が楽だと思われる。</Memo>
 	</CCM>
 </Folder>
 
-	<CCM ID="252" Name="☆☆ リセット、ドラム追加、レイヤー ☆☆" Color="#6600CC">
+	<CCM ID="252" Name="** Reset, Drum Add, Layer **" Color="#6600CC">
 			<Data></Data>
-		<Memo>GS、XG の基本 3点セットです。</Memo>
+		<Memo>GS, XG の基本 3点セットです。</Memo>
 	</CCM>
 
-<Folder Name="[140-148] ﾘｾｯﾄ">
-	<CCM ID="140" Name="140-148 ﾘｾｯﾄ" Color="#6600CC">
+<Folder Name="[140-148] Reset">
+	<CCM ID="140" Name="140-148 Reset" Color="#6600CC">
 			<Data></Data>
-		<Memo>初期化ﾒｯｾｰｼﾞです。\n各ﾊﾟﾗﾒｰﾀｰのﾘｾｯﾄや、それぞれの 音色MAP を使用するための準備が行われます。</Memo>
+		<Memo>初期化ﾒｯｾｰｼﾞです。\n各ﾊﾟﾗﾒｰﾀｰのﾘｾｯﾄや, それぞれの 音色MAP を使用するための準備が行われます。</Memo>
 	</CCM>
 
 	<CCM ID="141" Name="141 GS Reset" Color="#0000FF">
 			<Data>@SYSEX F0H 41H 10H 42H 12H 40H 00H 7FH 00H 41H F7H</Data>
-		<Memo>[GS Reset] \nGS の初期化ﾒｯｾｰｼﾞ。\n※ MSGS では絶対に入れる必要がある。</Memo>
+		<Memo>[GS Reset] \nGS の初期化ﾒｯｾｰｼﾞ。\n# MSGS では絶対に入れる必要がある。</Memo>
 	</CCM>
 
-	<CCM ID="142" Name="142 ｼｽﾃﾑﾓｰﾄﾞｾｯﾄ" Color="#0000FF">
+	<CCM ID="142" Name="142 System Mode Setup" Color="#0000FF">
 		<Value Max="1">
 			<Entry Label="0  Single" Value="0" />
 			<Entry Label="1  Double" Value="1" />
 		</Value>
 			<Data>@SYSEX F0H 41H 10H 42H 12H [ 00H 00H 7FH #VL ] F7H</Data>
-		<Memo>[System Mode Set] \nSC-88、SC-88Pro でﾓｰﾄﾞの切り替えに使用する。SC-8850、SC-8820、SC-D70 では使用しない。\n※ GS Reset では Double Module Mode が解除されないため、SC-88、SC-88Pro 対応のMIDIを作る場合は GS Reset の前にこちらを入れておいた方が良いかも。</Memo>
+		<Memo>[System Mode Set] \nSC-88, SC-88Pro でﾓｰﾄﾞの切り替えに使用する。SC-8850, SC-8820, SC-D70 では使用しない。\n# GS Reset では Double Module Mode が解除されないため, SC-88, SC-88Pro 対応のMIDIを作る場合は GS Reset の前にこちらを入れておいた方が良いかも。</Memo>
 	</CCM>
 
-	<CCM ID="143" Name="143 XG ｼｽﾃﾑ ｵﾝ" Color="#CC0000">
+	<CCM ID="143" Name="143 XG System On" Color="#CC0000">
 			<Data>@SYSEX F0H 43H 10H 4CH 00H 00H 7EH 00H F7H</Data>
-		<Memo>[XG System On] \nXG の初期化ﾒｯｾｰｼﾞ。\n※ Vista 以降の MSGS ではﾄﾞﾗﾑが鳴らなくなるので、絶対に使用してはいけない。</Memo>
+		<Memo>[XG System On] \nXG の初期化ﾒｯｾｰｼﾞ。\n# Vista 以降の MSGS ではﾄﾞﾗﾑが鳴らなくなるので, 絶対に使用してはいけない。</Memo>
 	</CCM>
 
 	<CCM ID="145" Name="145 XG Map Select" Color="#FF3366">
@@ -2129,51 +2129,51 @@
 			<Entry Label="1  Native" Value="1" />
 		</Value>
 			<Data>@SYSEX F0H 43H 10H 49H 00H 00H 12H #VL F7H</Data>
-		<Memo>[Voice Map]　XG音源の GM MAP を切り替える。\n　[MU basic]　MU50時代の昔の音色。\n　[MU100Native]　MU100時代の新しい音色。</Memo>
+		<Memo>[Voice Map]  XG音源の GM MAP を切り替える。\n  [MU basic]  MU50時代の昔の音色。\n  [MU100Native]  MU100時代の新しい音色。</Memo>
 	</CCM>
 
-	<CCM ID="146" Name="146 GM ｼｽﾃﾑ ｵﾝ" Color="#000000">
+	<CCM ID="146" Name="146 GM System On" Color="#000000">
 			<Data>@SYSEX F0H 7EH 7FH 09H 01H F7H</Data>
-		<Memo>[GM System On] \nGM1 の初期化ﾒｯｾｰｼﾞ。\nﾘｾｯﾄを掛けるというよりも機能を制限することが目的なので、その意図が無い場合は使うべきではない。\n※ MSGS では GM2 System On や GM System Off による無音状態の解除のために必要。</Memo>
+		<Memo>[GM System On] \nGM1 の初期化ﾒｯｾｰｼﾞ。\nﾘｾｯﾄを掛けるというよりも機能を制限することが目的なので, その意図が無い場合は使うべきではない。\n# MSGS では GM2 System On や GM System Off による無音状態の解除のために必要。</Memo>
 	</CCM>
 
-	<CCM ID="147" Name="147 GM2 ｼｽﾃﾑ ｵﾝ" Color="#000000">
+	<CCM ID="147" Name="147 GM2 System On" Color="#000000">
 			<Data>@SYSEX F0H 7EH 7FH 09H 03H F7H</Data>
-		<Memo>[GM2 System On] \nGM2 の初期化ﾒｯｾｰｼﾞ。\n※ MSGS では音が一切鳴らなくなるので、絶対に使用してはいけない。</Memo>
+		<Memo>[GM2 System On] \nGM2 の初期化ﾒｯｾｰｼﾞ。\n# MSGS では音が一切鳴らなくなるので, 絶対に使用してはいけない。</Memo>
 	</CCM>
 
-	<CCM ID="148" Name="148 GM ｼｽﾃﾑ ｵﾌ" Color="#000000">
+	<CCM ID="148" Name="148 GM System Off" Color="#000000">
 			<Data>@SYSEX F0H 7EH 7FH 09H 02H F7H</Data>
-		<Memo>[GM System Off] \nGM 対応音源 の初期化ﾒｯｾｰｼﾞ。\nGM ではない本来のﾓｰﾄﾞ (GS や XG) に切り替わる。\n※ MSGS では音が一切鳴らなくなるので、絶対に使用してはいけない。</Memo>
+		<Memo>[GM System Off] \nGM 対応音源 の初期化ﾒｯｾｰｼﾞ。\nGM ではない本来のﾓｰﾄﾞ (GS や XG) に切り替わる。\n# MSGS では音が一切鳴らなくなるので, 絶対に使用してはいけない。</Memo>
 	</CCM>
 </Folder>
 
-<Folder Name="[200-201] ﾄﾞﾗﾑ追加">
-	<CCM ID="200" Name="200-201 Drum 追加" Color="#6600CC">
+<Folder Name="[200-201] Drum Add">
+	<CCM ID="200" Name="200-201 Drum Add" Color="#6600CC">
 			<Data></Data>
 		<Memo>ﾄﾞﾗﾑﾊﾟｰﾄを追加します。</Memo>
 	</CCM>
 
-	<CCM ID="201" Name="201 GS ﾄﾞﾗﾑ追加" Color="#0000FF">
-		<Value Default="1" Max="2" Name="ﾓｰﾄﾞを設定">
+	<CCM ID="201" Name="201 GS Drum Add" Color="#0000FF">
+		<Value Default="1" Max="2" Name="Setup Mode">
 			<Entry Label="0  Melody" Value="0" />
 			<Entry Label="1  Drum 1" Value="1" />
 			<Entry Label="2  Drum 2" Value="2" />
 		</Value>
-		<Gate Default="26" Min="16" Max="31" TableID="15" Name="CH を選択" />
+		<Gate Default="26" Min="16" Max="31" TableID="15" Name="Select CH" />
 			<Data>@SYSEX F0H 41H 10H 42H 12H [ 40H #GL 15H #VL ] F7H</Data>
-		<Memo>[Use For Rhythm Part] GS音源でﾄﾞﾗﾑﾊﾟｰﾄを追加する時に使用する。\n※ MSGS では 「2：Drum 2」 は Pan が安定しないため、全て 「1：Drum 1」 にした方が良い。\n※ ﾘｾｯﾄが掛かったような挙動をするので、入れる位置は 「-- CH Setup --」 より前を推奨。\n※ このｲﾍﾞﾝﾄは MSGS、GS音源 (XG音源 の TG300Bﾓｰﾄﾞ 含む) で共通に有効。</Memo>
+		<Memo>[Use For Rhythm Part] GS音源でﾄﾞﾗﾑﾊﾟｰﾄを追加する時に使用する。\n# MSGS では [2:Drum 2] は Pan が安定しないため, 全て [1:Drum 1] にした方が良い。\n# ﾘｾｯﾄが掛かったような挙動をするので, 入れる位置は [-- CH Setup --] より前を推奨。\n# このｲﾍﾞﾝﾄは MSGS, GS音源 (XG音源 の TG300Bﾓｰﾄﾞ 含む) で共通に有効。</Memo>
 	</CCM>
 </Folder>
 
-<Folder Name="[210-211] ﾚｲﾔｰ">
-	<CCM ID="210" Name="210-211 ﾚｲﾔｰ" Color="#6600CC">
+<Folder Name="[210-211] Layer">
+	<CCM ID="210" Name="210-211 Layer" Color="#6600CC">
 			<Data></Data>
 		<Memo>ﾚｲﾔｰです。\n同じ演奏情報を省略して容量を節約出来ます。</Memo>
 	</CCM>
 
-	<CCM ID="211" Name="211 MSGS ﾚｲﾔｰ G → V" Color="#0000FF">
-		<Value Default="1" Max="17" Name="CH を設定">
+	<CCM ID="211" Name="211 MSGS Layer G to V" Color="#0000FF">
+		<Value Default="1" Max="17" Name="Select CH">
 			<Entry Label="CH01" Value="1" />
 			<Entry Label="CH02" Value="2" />
 			<Entry Label="CH03" Value="3" />
@@ -2192,31 +2192,31 @@
 			<Entry Label="CH16" Value="16" />
 			<Entry Label=" OFF" Value="17" />
 		</Value>
-		<Gate Default="17" Min="16" Max="31" TableID="15" Name="CH を選択" />
+		<Gate Default="17" Min="16" Max="31" TableID="15" Name="Select CH" />
 			<Data>@SYSEX F0H 41H 10H 42H 12H [ 40H #GL 02H #VL ] F7H</Data>
-		<Memo>[Rx.Channel] \nGate で指定した CH を Value で指定した CH に ﾚｲﾔｰ する。(この日本語あってるかな…？＾＾；)\nﾚｲﾔｰ を使用すると、同じ演奏情報を省略して容量を節約することが可能。※ GS とｱﾄﾞﾚｽは同じだが、Value の指定がｽﾞﾚている (このｲﾍﾞﾝﾄを使用すると MSGS 専用になってしまう) ので注意。</Memo>
+		<Memo>[Rx.Channel] \nGate で指定した CH を Value で指定した CH に ﾚｲﾔｰ する。(この日本語あってるかな…？＾＾；)\nﾚｲﾔｰ を使用すると, 同じ演奏情報を省略して容量を節約することが可能。# GS とｱﾄﾞﾚｽは同じだが, Value の指定がｽﾞﾚている (このｲﾍﾞﾝﾄを使用すると MSGS 専用になってしまう) ので注意。</Memo>
 	</CCM>
 </Folder>
 
-	<CCM ID="251" Name="☆☆ メモ ☆☆" Color="#6600CC">
+	<CCM ID="251" Name="** Memo **" Color="#6600CC">
 			<Data></Data>
-		<Memo>ﾒﾓ用のﾀﾞﾐｰﾃﾞｰﾀです。\n「SMF書き出し」 時に削除されます。</Memo>
+		<Memo>ﾒﾓ用のﾀﾞﾐｰﾃﾞｰﾀです。\n[SMF書き出し] 時に削除されます。</Memo>
 	</CCM>
 
-<Folder Name="メモ">
-	<CCM ID="1300" Name="※ 【重要】ﾄﾞﾗﾑの追加について" Color="#000000">
+<Folder Name="Memo">
+	<CCM ID="1300" Name="# [Important] About Drum Add" Color="#000000">
 		<Value>
-			<Entry Label="【説明】" Value="0" />
+			<Entry Label="[Explanation]" Value="0" />
 		</Value>
 			<Data></Data>
-		<Memo>ﾄﾞﾗﾑﾊﾟｰﾄの追加は 「System Setup」 ﾄﾗｯｸで設定します。\n「System Setup」 ﾄﾗｯｸに 全CH分の 「CCM#201 GS ﾄﾞﾗﾑ追加」 を配置してありますので、ﾄﾞﾗﾑﾊﾟｰﾄにしたい CH の Value を 「1：Drum1」 に変更して下さい。\n※ MSGS では 「2：Drum 2」 は Pan が安定しないため、全て 「1：Drum 1」 にした方が良いです。</Memo>
+		<Memo>ﾄﾞﾗﾑﾊﾟｰﾄの追加は [System Setup] ﾄﾗｯｸで設定します。\n[System Setup] ﾄﾗｯｸに 全CH分の [CCM#201 GS ﾄﾞﾗﾑ追加] を配置してありますので, ﾄﾞﾗﾑﾊﾟｰﾄにしたい CH の Value を [1:Drum1] に変更して下さい。\n# MSGS では [2:Drum 2] は Pan が安定しないため, 全て [1:Drum 1] にした方が良いです。</Memo>
 	</CCM>
 </Folder>
 </ControlChangeMacroList>
 
 <TemplateList>
 
-<Folder Name="ﾄﾗｯｸ初期化用">
+<Folder Name="Track Initialization">
 	<Template ID="3" Name="No.3">
 			<CC ID="11" Value="127" />
 			<CC ID="1" />
@@ -2231,7 +2231,7 @@
 	</Template>
 </Folder>
 
-<Template Name="ﾌｪｰﾄﾞｱｳﾄ (-2)">
+<Template Name="Fade Out (-2)">
 <CC ID="131" Value="127" />
 <CC ID="131" Value="125" />
 <CC ID="131" Value="123" />
@@ -2296,12 +2296,12 @@
 <CC ID="131" Value="5" />
 <CC ID="131" Value="3" />
 <CC ID="131" Value="1" />
-<Memo>「4 / 4 拍子」 の時に Step 「240」、\n「3 / 4 拍子」 の時に Step 「180」 で \n「8小節」 になります。</Memo>
+<Memo>[4 / 4 拍子] の時に Step [240], \n[3 / 4 拍子] の時に Step [180] で \n[8小節] になります。</Memo>
 </Template>
 
-<Folder Name="Pitch Bend ＋">
-<Folder Name="[12 + 1] 0 → MAX">
-<Template Name="[ 1] 0 →  683">
+<Folder Name="Pitch Bend +">
+<Folder Name="[12 + 1] 0~MAX">
+<Template Name="[ 1] 0~ 683">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="56" />
 <CC ID="130" Value="113" />
@@ -2317,7 +2317,7 @@
 <CC ID="130" Value="683" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] 0 → 1365">
+<Template Name="[ 2] 0~1365">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="111" />
 <CC ID="130" Value="225" />
@@ -2333,7 +2333,7 @@
 <CC ID="130" Value="1365" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] 0 → 2048">
+<Template Name="[ 3] 0~2048">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="167" />
 <CC ID="130" Value="338" />
@@ -2349,7 +2349,7 @@
 <CC ID="130" Value="2048" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] 0 → 2731">
+<Template Name="[ 4] 0~2731">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="223" />
 <CC ID="130" Value="451" />
@@ -2365,7 +2365,7 @@
 <CC ID="130" Value="2731" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] 0 → 3413">
+<Template Name="[ 5] 0~3413">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="289" />
 <CC ID="130" Value="573" />
@@ -2381,7 +2381,7 @@
 <CC ID="130" Value="3413" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] 0 → 4096">
+<Template Name="[ 6] 0~4096">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="345" />
 <CC ID="130" Value="686" />
@@ -2397,7 +2397,7 @@
 <CC ID="130" Value="4096" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] 0 → 4779">
+<Template Name="[ 7] 0~4779">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="401" />
 <CC ID="130" Value="799" />
@@ -2413,7 +2413,7 @@
 <CC ID="130" Value="4779" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] 0 → 5461">
+<Template Name="[ 8] 0~5461">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="456" />
 <CC ID="130" Value="911" />
@@ -2429,7 +2429,7 @@
 <CC ID="130" Value="5461" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] 0 → 6144">
+<Template Name="[ 9] 0~6144">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="512" />
 <CC ID="130" Value="1024" />
@@ -2445,7 +2445,7 @@
 <CC ID="130" Value="6144" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] 0 → 6827">
+<Template Name="[10] 0~6827">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="568" />
 <CC ID="130" Value="1137" />
@@ -2461,7 +2461,7 @@
 <CC ID="130" Value="6827" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] 0 → 7509">
+<Template Name="[11] 0~7509">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="623" />
 <CC ID="130" Value="1249" />
@@ -2477,7 +2477,7 @@
 <CC ID="130" Value="7509" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] 0 → 8191">
+<Template Name="[12] 0~8191">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="683" />
 <CC ID="130" Value="1365" />
@@ -2494,8 +2494,8 @@
 <Memo></Memo>
 </Template>
 </Folder>
-<Folder Name="[12 + 1] MAX → 0">
-<Template Name="[ 1]  683 → 0">
+<Folder Name="[12 + 1] MAX~0">
+<Template Name="[ 1]  683~0">
 <CC ID="130" Value="683" />
 <CC ID="130" Value="626" />
 <CC ID="130" Value="569" />
@@ -2511,7 +2511,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] 1365 → 0">
+<Template Name="[ 2] 1365~0">
 <CC ID="130" Value="1365" />
 <CC ID="130" Value="1251" />
 <CC ID="130" Value="1137" />
@@ -2527,7 +2527,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] 2048 → 0">
+<Template Name="[ 3] 2048~0">
 <CC ID="130" Value="2048" />
 <CC ID="130" Value="1877" />
 <CC ID="130" Value="1706" />
@@ -2543,7 +2543,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] 2731 → 0">
+<Template Name="[ 4] 2731~0">
 <CC ID="130" Value="2731" />
 <CC ID="130" Value="2503" />
 <CC ID="130" Value="2275" />
@@ -2559,7 +2559,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] 3413 → 0">
+<Template Name="[ 5] 3413~0">
 <CC ID="130" Value="3413" />
 <CC ID="130" Value="3129" />
 <CC ID="130" Value="2845" />
@@ -2575,7 +2575,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] 4096 → 0">
+<Template Name="[ 6] 4096~0">
 <CC ID="130" Value="4096" />
 <CC ID="130" Value="3755" />
 <CC ID="130" Value="3414" />
@@ -2591,7 +2591,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] 4779 → 0">
+<Template Name="[ 7] 4779~0">
 <CC ID="130" Value="4779" />
 <CC ID="130" Value="4381" />
 <CC ID="130" Value="3983" />
@@ -2607,7 +2607,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] 5461 → 0">
+<Template Name="[ 8] 5461~0">
 <CC ID="130" Value="5461" />
 <CC ID="130" Value="5006" />
 <CC ID="130" Value="4551" />
@@ -2623,7 +2623,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] 6144 → 0">
+<Template Name="[ 9] 6144~0">
 <CC ID="130" Value="6144" />
 <CC ID="130" Value="5632" />
 <CC ID="130" Value="5120" />
@@ -2639,7 +2639,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] 6827 → 0">
+<Template Name="[10] 6827~0">
 <CC ID="130" Value="6827" />
 <CC ID="130" Value="6258" />
 <CC ID="130" Value="5689" />
@@ -2655,7 +2655,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] 7509 → 0">
+<Template Name="[11] 7509~0">
 <CC ID="130" Value="7509" />
 <CC ID="130" Value="6883" />
 <CC ID="130" Value="6257" />
@@ -2671,7 +2671,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] 8191 → 0">
+<Template Name="[12] 8191~0">
 <CC ID="130" Value="8191" />
 <CC ID="130" Value="7509" />
 <CC ID="130" Value="6827" />
@@ -2688,8 +2688,8 @@
 <Memo></Memo>
 </Template>
 </Folder>
-<Folder Name="[24 + 1] 0 → MAX">
-<Template Name="[ 1] 0 →  683">
+<Folder Name="[24 + 1] 0~MAX">
+<Template Name="[ 1] 0~ 683">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="39" />
 <CC ID="130" Value="67" />
@@ -2717,7 +2717,7 @@
 <CC ID="130" Value="683" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] 0 → 1365">
+<Template Name="[ 2] 0~1365">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="54" />
 <CC ID="130" Value="111" />
@@ -2745,7 +2745,7 @@
 <CC ID="130" Value="1365" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] 0 → 2048">
+<Template Name="[ 3] 0~2048">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="93" />
 <CC ID="130" Value="178" />
@@ -2773,7 +2773,7 @@
 <CC ID="130" Value="2048" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] 0 → 2731">
+<Template Name="[ 4] 0~2731">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="109" />
 <CC ID="130" Value="223" />
@@ -2801,7 +2801,7 @@
 <CC ID="130" Value="2731" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] 0 → 3413">
+<Template Name="[ 5] 0~3413">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="147" />
 <CC ID="130" Value="289" />
@@ -2829,7 +2829,7 @@
 <CC ID="130" Value="3413" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] 0 → 4096">
+<Template Name="[ 6] 0~4096">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="163" />
 <CC ID="130" Value="334" />
@@ -2857,7 +2857,7 @@
 <CC ID="130" Value="4096" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] 0 → 4779">
+<Template Name="[ 7] 0~4779">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="202" />
 <CC ID="130" Value="401" />
@@ -2885,7 +2885,7 @@
 <CC ID="130" Value="4779" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] 0 → 5461">
+<Template Name="[ 8] 0~5461">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="217" />
 <CC ID="130" Value="445" />
@@ -2913,7 +2913,7 @@
 <CC ID="130" Value="5461" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] 0 → 6144">
+<Template Name="[ 9] 0~6144">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="256" />
 <CC ID="130" Value="512" />
@@ -2941,7 +2941,7 @@
 <CC ID="130" Value="6144" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] 0 → 6827">
+<Template Name="[10] 0~6827">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="295" />
 <CC ID="130" Value="579" />
@@ -2969,7 +2969,7 @@
 <CC ID="130" Value="6827" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] 0 → 7509">
+<Template Name="[11] 0~7509">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="310" />
 <CC ID="130" Value="623" />
@@ -2997,7 +2997,7 @@
 <CC ID="130" Value="7509" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] 0 → 8191">
+<Template Name="[12] 0~8191">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="341" />
 <CC ID="130" Value="683" />
@@ -3026,8 +3026,8 @@
 <Memo></Memo>
 </Template>
 </Folder>
-<Folder Name="[24 + 1] MAX → 0">
-<Template Name="[ 1]  683 → 0">
+<Folder Name="[24 + 1] MAX~0">
+<Template Name="[ 1]  683~0">
 <CC ID="130" Value="683" />
 <CC ID="130" Value="655" />
 <CC ID="130" Value="627" />
@@ -3055,7 +3055,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] 1365 → 0">
+<Template Name="[ 2] 1365~0">
 <CC ID="130" Value="1365" />
 <CC ID="130" Value="1308" />
 <CC ID="130" Value="1251" />
@@ -3083,7 +3083,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] 2048 → 0">
+<Template Name="[ 3] 2048~0">
 <CC ID="130" Value="2048" />
 <CC ID="130" Value="1963" />
 <CC ID="130" Value="1878" />
@@ -3111,7 +3111,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] 2731 → 0">
+<Template Name="[ 4] 2731~0">
 <CC ID="130" Value="2731" />
 <CC ID="130" Value="2617" />
 <CC ID="130" Value="2503" />
@@ -3139,7 +3139,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] 3413 → 0">
+<Template Name="[ 5] 3413~0">
 <CC ID="130" Value="3413" />
 <CC ID="130" Value="3271" />
 <CC ID="130" Value="3129" />
@@ -3167,7 +3167,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] 4096 → 0">
+<Template Name="[ 6] 4096~0">
 <CC ID="130" Value="4096" />
 <CC ID="130" Value="3925" />
 <CC ID="130" Value="3754" />
@@ -3195,7 +3195,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] 4779 → 0">
+<Template Name="[ 7] 4779~0">
 <CC ID="130" Value="4779" />
 <CC ID="130" Value="4580" />
 <CC ID="130" Value="4381" />
@@ -3223,7 +3223,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] 5461 → 0">
+<Template Name="[ 8] 5461~0">
 <CC ID="130" Value="5461" />
 <CC ID="130" Value="5233" />
 <CC ID="130" Value="5005" />
@@ -3251,7 +3251,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] 6144 → 0">
+<Template Name="[ 9] 6144~0">
 <CC ID="130" Value="6144" />
 <CC ID="130" Value="5888" />
 <CC ID="130" Value="5632" />
@@ -3279,7 +3279,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] 6827 → 0">
+<Template Name="[10] 6827~0">
 <CC ID="130" Value="6827" />
 <CC ID="130" Value="6543" />
 <CC ID="130" Value="6259" />
@@ -3307,7 +3307,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] 7509 → 0">
+<Template Name="[11] 7509~0">
 <CC ID="130" Value="7509" />
 <CC ID="130" Value="7196" />
 <CC ID="130" Value="6883" />
@@ -3335,7 +3335,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] 8191 → 0">
+<Template Name="[12] 8191~0">
 <CC ID="130" Value="8191" />
 <CC ID="130" Value="7851" />
 <CC ID="130" Value="7509" />
@@ -3365,9 +3365,9 @@
 </Template>
 </Folder>
 </Folder>
-<Folder Name="Pitch Bend －">
-<Folder Name="[12 + 1] 0 → MAX">
-<Template Name="[ 1] 0 → - 683">
+<Folder Name="Pitch Bend -">
+<Folder Name="[12 + 1] 0~MAX">
+<Template Name="[ 1] 0~-683">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-56" />
 <CC ID="130" Value="-113" />
@@ -3383,7 +3383,7 @@
 <CC ID="130" Value="-683" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] 0 → -1365">
+<Template Name="[ 2] 0~-1365">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-111" />
 <CC ID="130" Value="-225" />
@@ -3399,7 +3399,7 @@
 <CC ID="130" Value="-1365" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] 0 → -2048">
+<Template Name="[ 3] 0~-2048">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-167" />
 <CC ID="130" Value="-338" />
@@ -3415,7 +3415,7 @@
 <CC ID="130" Value="-2048" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] 0 → -2731">
+<Template Name="[ 4] 0~-2731">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-223" />
 <CC ID="130" Value="-451" />
@@ -3431,7 +3431,7 @@
 <CC ID="130" Value="-2731" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] 0 → -3413">
+<Template Name="[ 5] 0~-3413">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-289" />
 <CC ID="130" Value="-573" />
@@ -3447,7 +3447,7 @@
 <CC ID="130" Value="-3413" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] 0 → -4096">
+<Template Name="[ 6] 0~-4096">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-345" />
 <CC ID="130" Value="-686" />
@@ -3463,7 +3463,7 @@
 <CC ID="130" Value="-4096" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] 0 → -4779">
+<Template Name="[ 7] 0~-4779">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-401" />
 <CC ID="130" Value="-799" />
@@ -3479,7 +3479,7 @@
 <CC ID="130" Value="-4779" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] 0 → -5461">
+<Template Name="[ 8] 0~-5461">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-456" />
 <CC ID="130" Value="-911" />
@@ -3495,7 +3495,7 @@
 <CC ID="130" Value="-5461" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] 0 → -6144">
+<Template Name="[ 9] 0~-6144">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-512" />
 <CC ID="130" Value="-1024" />
@@ -3511,7 +3511,7 @@
 <CC ID="130" Value="-6144" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] 0 → -6827">
+<Template Name="[10] 0~-6827">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-568" />
 <CC ID="130" Value="-1137" />
@@ -3527,7 +3527,7 @@
 <CC ID="130" Value="-6827" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] 0 → -7509">
+<Template Name="[11] 0~-7509">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-623" />
 <CC ID="130" Value="-1249" />
@@ -3543,7 +3543,7 @@
 <CC ID="130" Value="-7509" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] 0 → -8192">
+<Template Name="[12] 0~-8192">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-683" />
 <CC ID="130" Value="-1365" />
@@ -3560,8 +3560,8 @@
 <Memo></Memo>
 </Template>
 </Folder>
-<Folder Name="[12 + 1] MAX → 0">
-<Template Name="[ 1] - 683 → 0">
+<Folder Name="[12 + 1] MAX~0">
+<Template Name="[ 1] -683~0">
 <CC ID="130" Value="-683" />
 <CC ID="130" Value="-626" />
 <CC ID="130" Value="-569" />
@@ -3577,7 +3577,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] -1365 → 0">
+<Template Name="[ 2] -1365~0">
 <CC ID="130" Value="-1365" />
 <CC ID="130" Value="-1251" />
 <CC ID="130" Value="-1137" />
@@ -3593,7 +3593,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] -2048 → 0">
+<Template Name="[ 3] -2048~0">
 <CC ID="130" Value="-2048" />
 <CC ID="130" Value="-1877" />
 <CC ID="130" Value="-1706" />
@@ -3609,7 +3609,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] -2731 → 0">
+<Template Name="[ 4] -2731~0">
 <CC ID="130" Value="-2731" />
 <CC ID="130" Value="-2503" />
 <CC ID="130" Value="-2275" />
@@ -3625,7 +3625,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] -3413 → 0">
+<Template Name="[ 5] -3413~0">
 <CC ID="130" Value="-3413" />
 <CC ID="130" Value="-3129" />
 <CC ID="130" Value="-2845" />
@@ -3641,7 +3641,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] -4096 → 0">
+<Template Name="[ 6] -4096~0">
 <CC ID="130" Value="-4096" />
 <CC ID="130" Value="-3755" />
 <CC ID="130" Value="-3414" />
@@ -3657,7 +3657,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] -4779 → 0">
+<Template Name="[ 7] -4779~0">
 <CC ID="130" Value="-4779" />
 <CC ID="130" Value="-4381" />
 <CC ID="130" Value="-3983" />
@@ -3673,7 +3673,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] -5461 → 0">
+<Template Name="[ 8] -5461~0">
 <CC ID="130" Value="-5461" />
 <CC ID="130" Value="-5006" />
 <CC ID="130" Value="-4551" />
@@ -3689,7 +3689,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] -6144 → 0">
+<Template Name="[ 9] -6144~0">
 <CC ID="130" Value="-6144" />
 <CC ID="130" Value="-5632" />
 <CC ID="130" Value="-5120" />
@@ -3705,7 +3705,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] -6827 → 0">
+<Template Name="[10] -6827~0">
 <CC ID="130" Value="-6827" />
 <CC ID="130" Value="-6258" />
 <CC ID="130" Value="-5689" />
@@ -3721,7 +3721,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] -7509 → 0">
+<Template Name="[11] -7509~0">
 <CC ID="130" Value="-7509" />
 <CC ID="130" Value="-6883" />
 <CC ID="130" Value="-6257" />
@@ -3737,7 +3737,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] -8192 → 0">
+<Template Name="[12] -8192~0">
 <CC ID="130" Value="-8192" />
 <CC ID="130" Value="-7509" />
 <CC ID="130" Value="-6827" />
@@ -3754,8 +3754,8 @@
 <Memo></Memo>
 </Template>
 </Folder>
-<Folder Name="[24 + 1] 0 → MAX">
-<Template Name="[ 1] 0 → - 683">
+<Folder Name="[24 + 1] 0~MAX">
+<Template Name="[ 1] 0~- 683">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-39" />
 <CC ID="130" Value="-67" />
@@ -3783,7 +3783,7 @@
 <CC ID="130" Value="-683" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] 0 → -1365">
+<Template Name="[ 2] 0~-1365">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-54" />
 <CC ID="130" Value="-111" />
@@ -3811,7 +3811,7 @@
 <CC ID="130" Value="-1365" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] 0 → -2048">
+<Template Name="[ 3] 0~-2048">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-93" />
 <CC ID="130" Value="-178" />
@@ -3839,7 +3839,7 @@
 <CC ID="130" Value="-2048" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] 0 → -2731">
+<Template Name="[ 4] 0~-2731">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-109" />
 <CC ID="130" Value="-223" />
@@ -3867,7 +3867,7 @@
 <CC ID="130" Value="-2731" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] 0 → -3413">
+<Template Name="[ 5] 0~-3413">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-147" />
 <CC ID="130" Value="-289" />
@@ -3895,7 +3895,7 @@
 <CC ID="130" Value="-3413" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] 0 → -4096">
+<Template Name="[ 6] 0~-4096">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-163" />
 <CC ID="130" Value="-334" />
@@ -3923,7 +3923,7 @@
 <CC ID="130" Value="-4096" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] 0 → -4779">
+<Template Name="[ 7] 0~-4779">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-202" />
 <CC ID="130" Value="-401" />
@@ -3951,7 +3951,7 @@
 <CC ID="130" Value="-4779" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] 0 → -5461">
+<Template Name="[ 8] 0~-5461">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-217" />
 <CC ID="130" Value="-445" />
@@ -3979,7 +3979,7 @@
 <CC ID="130" Value="-5461" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] 0 → -6144">
+<Template Name="[ 9] 0~-6144">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-256" />
 <CC ID="130" Value="-512" />
@@ -4007,7 +4007,7 @@
 <CC ID="130" Value="-6144" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] 0 → -6827">
+<Template Name="[10] 0~-6827">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-295" />
 <CC ID="130" Value="-579" />
@@ -4035,7 +4035,7 @@
 <CC ID="130" Value="-6827" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] 0 → -7509">
+<Template Name="[11] 0~-7509">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-310" />
 <CC ID="130" Value="-623" />
@@ -4063,7 +4063,7 @@
 <CC ID="130" Value="-7509" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] 0 → -8192">
+<Template Name="[12] 0~-8192">
 <CC ID="130" Value="0" />
 <CC ID="130" Value="-341" />
 <CC ID="130" Value="-683" />
@@ -4092,8 +4092,8 @@
 <Memo></Memo>
 </Template>
 </Folder>
-<Folder Name="[24 + 1] MAX → 0">
-<Template Name="[ 1] - 683 → 0">
+<Folder Name="[24 + 1] MAX~0">
+<Template Name="[ 1] - 683~0">
 <CC ID="130" Value="-683" />
 <CC ID="130" Value="-655" />
 <CC ID="130" Value="-627" />
@@ -4121,7 +4121,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 2] -1365 → 0">
+<Template Name="[ 2] -1365~0">
 <CC ID="130" Value="-1365" />
 <CC ID="130" Value="-1308" />
 <CC ID="130" Value="-1251" />
@@ -4149,7 +4149,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 3] -2048 → 0">
+<Template Name="[ 3] -2048~0">
 <CC ID="130" Value="-2048" />
 <CC ID="130" Value="-1963" />
 <CC ID="130" Value="-1878" />
@@ -4177,7 +4177,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 4] -2731 → 0">
+<Template Name="[ 4] -2731~0">
 <CC ID="130" Value="-2731" />
 <CC ID="130" Value="-2617" />
 <CC ID="130" Value="-2503" />
@@ -4205,7 +4205,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 5] -3413 → 0">
+<Template Name="[ 5] -3413~0">
 <CC ID="130" Value="-3413" />
 <CC ID="130" Value="-3271" />
 <CC ID="130" Value="-3129" />
@@ -4233,7 +4233,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 6] -4096 → 0">
+<Template Name="[ 6] -4096~0">
 <CC ID="130" Value="-4096" />
 <CC ID="130" Value="-3925" />
 <CC ID="130" Value="-3754" />
@@ -4261,7 +4261,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 7] -4779 → 0">
+<Template Name="[ 7] -4779~0">
 <CC ID="130" Value="-4779" />
 <CC ID="130" Value="-4580" />
 <CC ID="130" Value="-4381" />
@@ -4289,7 +4289,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 8] -5461 → 0">
+<Template Name="[ 8] -5461~0">
 <CC ID="130" Value="-5461" />
 <CC ID="130" Value="-5233" />
 <CC ID="130" Value="-5005" />
@@ -4317,7 +4317,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[ 9] -6144 → 0">
+<Template Name="[ 9] -6144~0">
 <CC ID="130" Value="-6144" />
 <CC ID="130" Value="-5888" />
 <CC ID="130" Value="-5632" />
@@ -4345,7 +4345,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[10] -6827 → 0">
+<Template Name="[10] -6827~0">
 <CC ID="130" Value="-6827" />
 <CC ID="130" Value="-6543" />
 <CC ID="130" Value="-6259" />
@@ -4373,7 +4373,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[11] -7509 → 0">
+<Template Name="[11] -7509~0">
 <CC ID="130" Value="-7509" />
 <CC ID="130" Value="-7196" />
 <CC ID="130" Value="-6883" />
@@ -4401,7 +4401,7 @@
 <CC ID="130" Value="0" />
 <Memo></Memo>
 </Template>
-<Template Name="[12] -8192 → 0">
+<Template Name="[12] -8192~0">
 <CC ID="130" Value="-8192" />
 <CC ID="130" Value="-7851" />
 <CC ID="130" Value="-7509" />
@@ -4432,8 +4432,8 @@
 </Folder>
 </Folder>
 
-<Folder Name="Panpot">
-<Template Name="L → C → R → C → L">
+<Folder Name="Panning">
+<Template Name="L to C to R to C to L">
 <CC ID="10" Value="0" />
 <CC ID="10" Value="2" />
 <CC ID="10" Value="4" />
@@ -4563,9 +4563,9 @@
 <CC ID="10" Value="4" />
 <CC ID="10" Value="2" />
 <CC ID="10" Value="0" />
-<Memo>※ Step を 「30」 にすると 2小節分になります。</Memo>
+<Memo># Step を [30] にすると 2小節分になります。</Memo>
 </Template>
-<Template Name="R → C → L → C → R">
+<Template Name="R to C to L to C to R">
 <CC ID="10" Value="127" />
 <CC ID="10" Value="125" />
 <CC ID="10" Value="123" />
@@ -4695,9 +4695,9 @@
 <CC ID="10" Value="124" />
 <CC ID="10" Value="126" />
 <CC ID="10" Value="127" />
-<Memo>※ Step を 「30」 にすると 2小節分になります。</Memo>
+<Memo># Step を [30] にすると 2小節分になります。</Memo>
 </Template>
-<Template Name="L → C → R (+2)">
+<Template Name="L to C to R (+2)">
 <CC ID="10" Value="0" />
 <CC ID="10" Value="2" />
 <CC ID="10" Value="4" />
@@ -4763,9 +4763,9 @@
 <CC ID="10" Value="124" />
 <CC ID="10" Value="126" />
 <CC ID="10" Value="127" />
-<Memo>※ Step を 「30」 にすると 1小節分になります。</Memo>
+<Memo># Step を [30] にすると 1小節分になります。</Memo>
 </Template>
-<Template Name="R → C → L (-2)">
+<Template Name="R to C to L (-2)">
 <CC ID="10" Value="127" />
 <CC ID="10" Value="125" />
 <CC ID="10" Value="123" />
@@ -4831,9 +4831,9 @@
 <CC ID="10" Value="4" />
 <CC ID="10" Value="2" />
 <CC ID="10" Value="0" />
-<Memo>※ Step を 「30」 にすると 1小節分になります。</Memo>
+<Memo># Step を [30] にすると 1小節分になります。</Memo>
 </Template>
-<Template Name="L → C (+2)">
+<Template Name="L to C (+2)">
 <CC ID="10" Value="0" />
 <CC ID="10" Value="2" />
 <CC ID="10" Value="4" />
@@ -4867,9 +4867,9 @@
 <CC ID="10" Value="60" />
 <CC ID="10" Value="62" />
 <CC ID="10" Value="64" />
-<Memo>※ Step を 「30」 にすると 2拍分になります。</Memo>
+<Memo># Step を [30] にすると 2拍分になります。</Memo>
 </Template>
-<Template Name="C → R (+2)">
+<Template Name="C to R (+2)">
 <CC ID="10" Value="64" />
 <CC ID="10" Value="66" />
 <CC ID="10" Value="68" />
@@ -4903,9 +4903,9 @@
 <CC ID="10" Value="124" />
 <CC ID="10" Value="126" />
 <CC ID="10" Value="127" />
-<Memo>※ Step を 「30」 にすると 2拍分になります。</Memo>
+<Memo># Step を [30] にすると 2拍分になります。</Memo>
 </Template>
-<Template Name="R → C (-2)">
+<Template Name="R to C (-2)">
 <CC ID="10" Value="127" />
 <CC ID="10" Value="125" />
 <CC ID="10" Value="123" />
@@ -4939,9 +4939,9 @@
 <CC ID="10" Value="67" />
 <CC ID="10" Value="65" />
 <CC ID="10" Value="64" />
-<Memo>※ Step を 「30」 にすると 2拍分になります。</Memo>
+<Memo># Step を [30] にすると 2拍分になります。</Memo>
 </Template>
-<Template Name="C → L (-2)">
+<Template Name="C to L (-2)">
 <CC ID="10" Value="64" />
 <CC ID="10" Value="62" />
 <CC ID="10" Value="60" />
@@ -4975,14 +4975,14 @@
 <CC ID="10" Value="4" />
 <CC ID="10" Value="2" />
 <CC ID="10" Value="0" />
-<Memo>※ Step を 「30」 にすると 2拍分になります。</Memo>
+<Memo># Step を [30] にすると 2拍分になります。</Memo>
 </Template>
 </Folder>
 </TemplateList>
 
 <DefaultData>
 	<Track Mode="Conductor">
-		<Comment Tick="0" Text="【サイト名】 URL" />
+		<Comment Tick="0" Text="[Website] URL" />
 			<Tempo Tick="0" Tempo="60.0" Step="0" />
 				<Mark Name="Setup" />
 				<TimeSignature TimeSignature="1/8" />
@@ -4996,9 +4996,9 @@
 		<Comment Text="---- Reset --------------------------------------------------" Tick="0" Step="0" />
 			<CC ID="146" Step="60" />
 			<CC ID="141" />
-		<Comment Text="---- 全体設定 --------------------------------------------------" Step="0" />
+		<Comment Text="---- General --------------------------------------------------" Step="0" />
 			<CC ID="131" Step="4" />
-		<Comment Text="---- Drum 追加 --------------------------------------------------" Step="0" />
+		<Comment Text="---- Drum Add --------------------------------------------------" Step="0" />
 			<CC ID="201" Gate="17" Value="0" Step="4" />
 			<CC ID="201" Gate="18" Value="0" />
 			<CC ID="201" Gate="19" Value="0" />

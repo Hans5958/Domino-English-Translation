@@ -1,20 +1,19 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-{
-32800, 	"Real Time Recording\nReal Time Recording"
-32801, 	"Step Recording\nStep Recording"
-32802, 	"System Exclusive Event Recording\nSystem Exclusive Event Recording"
-32803, 	"Rythm\nRythm"
-32804, 	"Main Toolbar\nMain Toolbar"
-32805, 	"Lock Steps\nLock Steps"
-32806, 	"Unlock Steps\nUnlock Steps"
-32807, 	"X-Axis Zoom In\nX-Axis Zoom In"
-32808, 	"X-Axis Zoom Out\nX-Axis Zoom Out"
-32809, 	"Y-Axis Zoom In\nY-Axis Zoom In"
-32810, 	"Y-Axis Zoom Out\nY-Axis Zoom Out"
-32811, 	"Markers Bar\nMarkers Bar"
-32812, 	"Track List Bar\nTrack List Bar"
-32813, 	"Track Sheet\nTrack Sheet"
-32814, 	"Output Panel\nOutput Panel"
+{ 
+  32800, 	"Record MIDI events from MIDI-IN in realtime.\nRealtime Recording"
+  32801, 	"Step record MIDI events from MIDI-IN.\nStep Recording"
+  32802, 	"Receive exclusive events from MIDI-IN.\nExclusive Reception"
+  32803, 	"Inserts a Rhythmic Signature event. (Conductor Track only)\nInsert Rhythmic Signature"
+  32804, 	"Shows/hides this toolbar.\nToggle Toolbar"
+  32805, 	"Sets up the measure location from which its content's step values will not be affected by any operation.\nLock Steps"
+  32806, 	"Cancels step locking.\nUnlock Steps"
+  32807, 	"Zooms in X axis.\nZoom in (X-axis)"
+  32808, 	"Zooms out X axis.\nZoom out (X-axis)"
+  32809, 	"Zooms in Y axis.\nZoom in (Y-axis)"
+  32810, 	"Zooms out Y axis.\nZoom out (Y-axis)"
+  32811, 	"Shows/hides the Marker Bar.\nToggle Marker Bar"
+  32812, 	"Shows/hides the Track Bar.\nToggle Track Bar"
+  32813, 	"Shows/hides the Tracklist.\nToggle Tracklist"
+  32814, 	"Shows/hides the Output Panel\nToggle Output Panel"
 }
-

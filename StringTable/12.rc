@@ -1,17 +1,15 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32896, 	"Go To Next Measure\nGo To Next Measure"
-32897, 	"Mute Track\nMute Track"
-32898, 	"Solo Track\nSolo Track"
-32899, 	"Play All Tracks\nPlay All Tracks"
-32900, 	"Synchronize MIDI Out Device\nSynchronize MIDI Out Device"
-32901, 	"Time Information\nTime Information"
-32902, 	"Add New Track\nAdd New Track"
-32903, 	"Delete Track\nDelete Track"
-32904, 	"Track Properties\nTrack Properties"
-32905, 	"Previous Track\nPrevious Track"
-32906, 	"Next Track\nNext Track"
+  32896, 	"Moves the slider to next measure.\nto Next bar"
+  32897, 	"Switches the current track on/off.\nToggle Current Track"
+  32898, 	"Switches the current track to solo mode.\nSolo Current Track"
+  32899, 	"Turns on all tracks.\nEnable All Tracks"
+  32900, 	"Synchronizes sound source state to current playback.\nSync to MIDI Devices"
+  32901, 	"Shows song time information and time calculation tool.\nTime Information"
+  32902, 	"Adds a new track.\nAdd Track"
+  32903, 	"Removes current/selected track.\nRemove Track"
+  32904, 	"Shows the track properties window.\nTrack Properties"
+  32905, 	"Shows the previous track.\nPrevious Track"
+  32906, 	"Shows the next track.\nNext Track"
 }
-
-

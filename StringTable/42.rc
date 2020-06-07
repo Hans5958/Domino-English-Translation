@@ -1,7 +1,6 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-61202, 	"Restore the window to normal size"
-61203, 	"Switching of application"
+  61202, 	"Restores window from minimization."
+  61203, 	"Switches application."
 }
-

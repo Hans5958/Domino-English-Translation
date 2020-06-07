@@ -1,8 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-32973, 	"Anchor Points\nAnchor Points"
-32974, 	"Anchor Points\nAnchor Points"
-32975, 	"Copy Output Panel Contents to the Clipboard"
+  32973, 	"Shows/hides the anchors which adjusts its control value by dragging it up/down/left/right within the Graph Panel 1.\nGraph Panel 1: Anchors"
+  32974, 	"Shows/hides the anchors which adjusts its control value by dragging it up/down/left/right within the Graph Panel 2.\nGraph Panel 2: Anchors"
+  32975, 	"Copies selected entry to clipboard."
 }
-
