@@ -9,7 +9,7 @@ FONT 9, "MS Sans Serif"
    CONTROL "This mode lets you update previously arranged notes with realtime input information.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 182, 19 
    CONTROL "Target notes from:", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 29, 182, 90 
    CONTROL "Nearest Tic&k\r\n(An input within a particular chord's gate will process that whole chord.)", 1351, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 44, 165, 26 
-   CONTROL "Nearest Tick or Scale", 1055, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 15, 74, 73, 10 
+   CONTROL "Nearest Tick or Scale", 1055, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 15, 74, 164, 10 
    CONTROL "&Event Sequence\r\n(An input within a particular chord's gate will process that whole chord.)", 1075, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 15, 88, 161, 26 
    CONTROL "Update Properties", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 123, 182, 81 
    CONTROL "&Note &Scale: ", -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 21, 139, 40, 10 
@@ -25,4 +25,3 @@ FONT 9, "MS Sans Serif"
    CONTROL "(unchanged)", 1081, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 67, 187, 53, 10 
    CONTROL "Updated", 1082, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 126, 187, 45, 10 
 }
-
