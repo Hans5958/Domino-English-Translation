@@ -4,11 +4,11 @@ CAPTION "pref piano roll pg 2"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "MS Sans Serif"
 {
-   CONTROL "Move &event selection to the controlled note's corresponding event", 1394, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 1, 210, 10 
-   CONTROL "&Scroll to the left edge when moving to a marker even if it is on-screen", 1412, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 12, 221, 10 
-   CONTROL "Shade &note color based on its velocity value", 1416, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 24, 146, 10 
-   CONTROL "Shade &Onion Skin note color based on its velocity value", 1417, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 36, 178, 10 
-   CONTROL "Enable &left edge note gate control", 1483, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 48, 112, 10 
+   CONTROL "Move &event selection to the controlled note's corresponding event", 1394, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 1, 257, 10 
+   CONTROL "&Scroll to the left edge when moving to a marker even if it is on-screen", 1412, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 12, 257, 10 
+   CONTROL "Shade &note color based on its velocity value", 1416, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 24, 257, 10 
+   CONTROL "Shade &Onion Skin note color based on its velocity value", 1417, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 36, 257, 10 
+   CONTROL "Enable &left edge note gate control", 1483, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 48, 257, 10 
    CONTROL "Onion Skin note &brightness: ", -1, STATIC, SS_RIGHT | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 64, 138, 14 
    CONTROL "", 1418, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 138, 64, 35, 12 
    CONTROL "Spin1", 1419, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 168, 64, 10, 12 
@@ -24,7 +24,6 @@ FONT 9, "MS Sans Serif"
    CONTROL "", 1238, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 106, 151, 31, 12 
    CONTROL "Spin1", 1239, "msctls_updown32", UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_CHILD | WS_VISIBLE, 127, 151, 10, 12 
    CONTROL "Page break if slider is under ", -1, STATIC, SS_RIGHT | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 151, 96, 12 
-   CONTROL "Show measure start at the le&ft edge of the panel on page break", 1472, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 169, 199, 10 
-   CONTROL "Page break on peeking measure", 1473, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 181, 112, 10 
+   CONTROL "Show measure start at the le&ft edge of the panel on page break", 1472, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 169, 243, 10 
+   CONTROL "Page break on peeking measure", 1473, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 181, 245, 10 
 }
-
