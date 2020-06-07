@@ -1,1 +1,1 @@
-Still no new translation, only some minor fixes on the Manual, and added 240 files to be translated. (Thanks, @khang06)
+New translations courtesy to @ryryjy with other, minor changes.
