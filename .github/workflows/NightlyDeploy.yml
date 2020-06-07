@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "58 23 * * *"
+    - cron: "0 0 * * *"
 
 name: Nightly Deployment
 
@@ -37,8 +37,8 @@ jobs:
           fetch-depth: 100
       - name: Check changes
         run: |
-          git diff HEAD '@{today.midnight}' --name-only
-          if ! git diff HEAD '@{today.midnight}' --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)\/)'; then
+          git diff @{24.hours.ago}..HEAD --name-only
+          if ! git diff @{24.hours.ago}..HEAD --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)\/)'; then
             echo "No files translated. Won't making new release."
             echo ::set-env name=RC_CHANGED::0
           else
