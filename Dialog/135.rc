@@ -2,7 +2,7 @@
 STYLE DS_SETFONT | WS_CHILD
 CAPTION "pref midi out"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-FONT 9, "Segoe UI"
+FONT 9, "MS Sans Serif"
 {
    CONTROL "Select the MIDI-OUT device and its designated sound source connection (Sound Source Definition File) by clicking on the boxes of one of the rows.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 257, 17 
    CONTROL "List1", 1014, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 0, 19, 255, 181 

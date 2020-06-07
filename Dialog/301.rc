@@ -2,7 +2,7 @@
 STYLE DS_SETFONT | WS_CHILD
 CAPTION "pref piano roll pg 2"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-FONT 9, "Segoe UI"
+FONT 9, "MS Sans Serif"
 {
    CONTROL "Move &event selection to the controlled note's corresponding event", 1394, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 1, 210, 10 
    CONTROL "&Scroll to the left edge when moving to a marker even if it is on-screen", 1412, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 12, 221, 10 

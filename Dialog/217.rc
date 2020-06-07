@@ -2,7 +2,7 @@
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Harmonize"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-FONT 9, "Segoe UI"
+FONT 9, "MS Sans Serif"
 {
    CONTROL "Harmonic parts are generated for the selected notes based on its key scale.", -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 240, 9 
    CONTROL "Options", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 22, 278, 136 
