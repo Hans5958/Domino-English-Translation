@@ -183,18 +183,9 @@ jobs:
           fi
           echo "\
 
-        # ### Commits 
-        # " >> release.txt
-        # FROM_COMMIT=$(git rev-list origin/master@{yesterday} --before 24.hours.ago | tail -n1)
-        # for commit in $(git log $FROM_COMMIT..HEAD --pretty=%H -- '*.rc'); do
-        #   echo - $commit $(git show --format="%s" $commit | head -1) \($(git show --format="%an" $commit | head -1)\) >> release.txt
-        # done
-        # echo "\
-        #
           ----
 
           *Built on ${{env.BUILD_DATE_FULL}}.*" >> release.txt
-        # *Commits listed are the ones that translated some files.*" >> release.txt
       - name: Create release
         uses: softprops/action-gh-release@v1
         env:
