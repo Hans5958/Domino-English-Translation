@@ -1,1 +1,0 @@
-New translations courtesy to @ryryjy with other, minor changes.
