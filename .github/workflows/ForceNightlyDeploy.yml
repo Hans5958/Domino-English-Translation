@@ -30,8 +30,8 @@ jobs:
           cd VersionInfo
           sed -i '2s/.*/FILEVERSION 1,43,${{env.VERSION_NUM}},0/' 1.rc
           sed -i '3s/.*/PRODUCTVERSION 1,43,${{env.VERSION_NUM}},0/' 1.rc
-          sed -i '12s/.*/		VALUE "FileVersion", "1.43-${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}"/' 1.rc
-          sed -i '17s/.*/		VALUE "ProductVersion", "1.43-${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}"/' 1.rc
+          sed -i '12s/.*/		VALUE "FileVersion", "1.43-en.${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}"/' 1.rc
+          sed -i '17s/.*/		VALUE "ProductVersion", "1.43-en.${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}}"/' 1.rc
       - name: Install required packages
         run: choco install reshack python3
       - name: Prepare _compile folder
@@ -96,7 +96,7 @@ jobs:
         run: |
           cd _compile
           cp ../_deploy/readme-translation.txt readme-translation.txt
-          sed -i '2s/.*/Build ${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}} (1.43-${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}})/' readme-translation.txt
+          sed -i '2s/.*/Build ${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}} (1.43-en.${{env.VERSION_NUM}}-nightly.${{env.BUILD_DATE}})/' readme-translation.txt
           7z a ../Domino143_Translated.zip *
           mv -v Domino.exe ../Domino_Translated.exe
       - name: Upload artifact 1
