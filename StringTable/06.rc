@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 { 
-  32800, 	"Record MIDI events from MIDI-IN in realtime.\nRealtime Recording"
+  32800, 	"Record MIDI events from MIDI-IN in realtime.\nReal-Time Recording"
   32801, 	"Step record MIDI events from MIDI-IN.\nStep Recording"
   32802, 	"Receive exclusive events from MIDI-IN.\nExclusive Reception"
   32803, 	"Inserts a Rhythmic Signature event. (Conductor Track only)\nInsert Rhythmic Signature"

@@ -1,6 +1,6 @@
 304 DIALOG 0, 0, 295, 251
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Realtime Recording Configuration"
+CAPTION "Real-Time Recording Configuration"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "MS Sans Serif"
 {
@@ -14,6 +14,6 @@ FONT 9, "MS Sans Serif"
    CONTROL "Vertical", 1075, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 172, 21, 47, 10 
    CONTROL "Horizontal", 1054, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 231, 21, 52, 10 
    CONTROL "Other Settings", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 159, 47, 131, 79 
-   CONTROL "Automatically &start recording as soon as Realtime Recording window shows", 1447, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 60, 106, 24 
-   CONTROL "Automatically &close Realtime Recording as soon as it stops", 1448, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 91, 102, 24 
+   CONTROL "Automatically &start recording as soon as Real-Time Recording window shows", 1447, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 60, 106, 24 
+   CONTROL "Automatically &close Real-Time Recording as soon as it stops", 1448, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 91, 102, 24 
 }
