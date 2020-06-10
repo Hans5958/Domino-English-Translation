@@ -327,7 +327,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "Replace Control Change/s (&Y)...", 33317
 		MENUITEM "Replicate O&nion Skin...", 33095
 		MENUITEM "Tap Tempo and Fit (&U)...", 33289
-		MENUITEM "Batch Correction of Overlapping Notes (&X)...", 33313
+		MENUITEM "Fi&x Overlapping Notes..." 33313
 		MENUITEM "Restore Major Link Events (&Z)...", 33315
 		MENUITEM "Generate Harmony Parts (&6)...", 33344
 		MENUITEM SEPARATOR

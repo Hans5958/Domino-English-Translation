@@ -4,11 +4,10 @@ CAPTION "Multi Replace Control Change Events - Replace Pattern"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "MS Sans Serif"
 {
-   CONTROL "", 1108, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_CHILD | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 121, 19, 204, 155 
    CONTROL "OK", 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 227, 189, 50, 14 
    CONTROL "Cancel", 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 282, 189, 50, 14 
-   CONTROL "Setup", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 7, 326, 176 
-   CONTROL "Input string data using the following format:\r\n\r\n(Target CC#),(Replacement CC#)\r\n(Target CC#),(Replacement CC#)\r\n(Target CC#),(Replacement CC#)\r\nand so on... \r\n\r\nClick the [OK] button to add the pattern in the replacement list.", -1, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 121, 19, 204, 155 
+   CONTROL "Setuo", -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 7, 326, 176 
    CONTROL "", 1107, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 15, 19, 101, 155 
+   CONTROL "Input string data using the following format:\r\n\r\n(Target CC#),(Replacement CC#)\r\n(Target CC#),(Replacement CC#)\r\n(Target CC#),(Replacement CC#)\r\nand so on... \r\n\r\nClick the [OK] button to add the pattern in the replacement list.", 1108, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 121, 19, 204, 155 , 0x00020000
 }
 

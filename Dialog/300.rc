@@ -4,7 +4,7 @@ CAPTION "pref graph panel pg 2"
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 FONT 9, "MS Sans Serif"
 {
-   CONTROL "&Graph line depth: ", -1, STATIC, SS_RIGHT | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 138, 12 
+   CONTROL "&Graph line width: ", -1, STATIC, SS_RIGHT | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 138, 12 
    CONTROL "", 1301, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 138, 0, 110, 78 
-   CONTROL "&Move event selection to the controlled anchor's corresponding event", 1396, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 22, 257, 10 
+   CONTROL "&Move event selection to the controlled anchor's event", 1396, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 22, 253, 10 
 }
