@@ -1,10 +1,10 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  1000, 	"Displays tempo value, and current time of the slider position.\nTime Panel"
+  1000, 	"Displays tempo value, and current time of the playhead.\nTime Panel"
   1001, 	"Shows current track and works as a track selector.\nTracklist"
-  1002, 	"Shows the Default Velocity value of the current track, which can be adjusted.\nDefault Velocity"
-  1003, 	"Shows the Default Gate value of the current track, which can be adjusted.\nDefault Gate"
+  1002, 	"Shows the the default velocity  value of the current track, which can be adjusted.\nDefault Velocity"
+  1003, 	"Shows the the default quantization of the current track, which can be adjusted.\nDefault Gate"
   1004, 	"Shows the Quantization mode for tools and piano roll, which can be switched.\nQuantization"
   1005, 	" Meas : Tick "
   1006, 	" C 4                "

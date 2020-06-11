@@ -11,10 +11,10 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33111, 	"Filters low pass filter frequency events.\nFilter LPF Cutoff Frequency"
   33112, 	"Filters resonance events.\nFilter LPF Resonance"
   33113, 	"Filters master volume events.\nFilter Master Volume"
-  33114, 	"Filters exclusive events.\nFilter Exclusive"
+  33114, 	"Filters Exclusive events.\nFilter Exclusive"
   33115, 	"Filters comments.\nFilter Comments"
-  33116, 	"Filters variables.\nFilter Variables"
-  33117, 	"Filters tempi.\nFilter Tempi"
+  33116, 	"Filters variable expressions.\nFilter Variables"
+  33117, 	"Filters tempo.\nFilter Tempi"
   33118, 	"Filters lyrics.\nFilter Lyrics"
   33119, 	"Filters cue points.\nFilter Cue Points"
 }

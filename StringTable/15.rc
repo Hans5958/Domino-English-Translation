@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  32976, 	"Moves the slider to the last event (End of Track).\nto End of Track"
+  32976, 	"Moves the playhead to the last event (End of Track).\nto End of Track"
   32977, 	"Shows the Pitch Bend graph within the Graph Panel 2.\nGraph Panel 2: Pitch Bend"
   32979, 	"Shows the Modulation graph within the Graph Panel 2.\nGraph Panel 2: Modulation"
   32980, 	"Shows the Expression graph within the Graph Panel 2.\nGraph Panel 2: Expression"

@@ -14,6 +14,6 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33323, 	"Exports and overwrites as a MIDI file to the current project's SMF location.\nSave MIDI"
   33324, 	"Flips selected notes horizontally.\nFlip"
   33325, 	"Compresses velocity values of the selected notes and scales its upper/lower ratio and threshold.\nVelocity Compressor"
-  33326, 	"Moves the slider one step backward relative to current quantization.\nto One quantized space backward"
-  33327, 	"Moves the slider one step forward relative to current quantization.\nto One quantized space forward"
+  33326, 	"Moves the playhead one step backward relative to current quantization.\nto One quantized space backward"
+  33327, 	"Moves the playhead one step forward relative to current quantization.\nto One quantized space forward"
 }

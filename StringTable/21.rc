@@ -1,14 +1,14 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  33072, 	"Changes Default Gate to 1/24.\nDefault Gate: 1/24"
-  33073, 	"Changes Default Gate to 3/64.\nDefault Gate: 3/64"
-  33074, 	"Changes Default Gate to 1/32.\nDefault Gate: 1/32"
-  33075, 	"Changes Default Gate to 1/48.\nDefault Gate: 1/48"
+  33072, 	"Changes the default quantization to 1/24.\nDefault Gate: 1/24"
+  33073, 	"Changes the default quantization to 3/64.\nDefault Gate: 3/64"
+  33074, 	"Changes the default quantization to 1/32.\nDefault Gate: 1/32"
+  33075, 	"Changes the default quantization to 1/48.\nDefault Gate: 1/48"
   33076, 	"Shows/hides this toolbar.\nToggle Toolbar"
   33077, 	"Sends a GM Reset to current track.\nGM Reset"
   33078, 	"Fixes the toolbars in place.\nLock Toolbars"
-  33079, 	"Synchronizes Event List selection and playback slider\nToggle Event List selection & Playback slider Sync"
+  33079, 	"Synchronizes Event List selection and playhead selection\nToggle Event List selection & Playback Playhead Sync"
   33081, 	"Remembers Default Gate/Velocity for each individual tracks.\nRemember Default Values for each Track"
   33082, 	"Remembers Onion Skin setting for each individual tracks. (Turning this off sets up every track to this setting)\nApply current Onion Skin setting to this track only"
   33086, 	"Reverts each column's width to default.\nReset Column Width"

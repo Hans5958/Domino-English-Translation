@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  33090, 	"Shows the chord analysis from slider position (includes current and onion skin track) on the status bar.\nInspect Chord"
+  33090, 	"Shows the chord analysis from playhead position (includes current and onion skin track) on the status bar.\nInspect Chord"
   33094, 	"Add tracks from specified port's pre-configured track set.\nAdd Track Set"
   33095, 	"Duplicates current Onion Skin notes to the current track.\nMirror Onion Skin Note(s)"
   33096, 	"Sets up MIDI Device Synchronization to individual tracks.\nPer Track Sync"

@@ -3,7 +3,7 @@
 Default
 1345
 1027
-Note Edit
+Note edit
 1345
 1027
-Multiple Channels
+Multiple channels

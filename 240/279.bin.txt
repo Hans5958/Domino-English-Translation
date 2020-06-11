@@ -15,10 +15,10 @@ Hidden
 Shown
 1296
 1027
-all tracks
+All tracks
 1296
 1027
-each track
+Each track
 1298
 1027
 Hidden
@@ -30,25 +30,25 @@ Shown
 Do not scroll
 1299
 1027
-Fixed to slider
+Fixed to playhead
 1299
 1027
-Fixed to slider (left edge)
+Fixed to playhead (left edge)
 1299
 1027
-Fixed to slider (left-margined)
+Fixed to playhead (left-margined)
 1299
 1027
-Fixed to slider (center)
+Fixed to playhead (center)
 1300
 1027
 Do nothing
 1300
 1027
-Velocity Adjustment
+Adjust velocity 
 1300
 1027
-Gate Adjustment
+Adjust gate
 1301
 1027
 Hidden

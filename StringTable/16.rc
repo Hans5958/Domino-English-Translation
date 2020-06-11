@@ -7,7 +7,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   32995, 	"Shows the Resonance graph within the Graph Panel 1.\nGraph Panel 1: Resonance"
   32996, 	"Shows the Master Volume graph within the Graph Panel 1.\nGraph Panel 1: Master Volume"
   32997, 	"Inserts a Tempo event. (Conductor Track only)\nInsert Tempo"
-  32998, 	"Moves the slider to two measures prior.\nto Two bars backward"
+  32998, 	"Moves the playhead to two measures prior.\nto Two bars backward"
   32999, 	"Utilizes all CPU power for an optimized live playback. Primarily for Wave file format recording.\nOptimized Playback"
   33000, 	"Swiches quantization to whole note.\nQuantization: Whole"
   33001, 	"Swiches quantization to 3/4 or half note dotted.\nQuantization: 3/4"

@@ -2,12 +2,12 @@ STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
   33344, 	"Generates harmonic parts based on the current key scale to the current track's note selection.\nHarmonize"
-  33345, 	"Increase 1 point to the highlighted event's Velocity/Value.\nOne Small Unit Up"
-  33346, 	"Decrease 1 point from the highlighted event's Velocity/Value.\nOne Small Unit Down"
-  33347, 	"Increase 10 points to the highlighted event's Velocity/Value.\nOne Medium Unit Up"
-  33348, 	"Decrease 10 points from the highlighted event's Velocity/Value.\nOne Medium Unit Down"
-  33349, 	"Increase 100 points to the highlighted event's Velocity/Value.\nOne Large Unit Up"
-  33350, 	"Decrease 100 points from the highlighted event's Velocity/Value.\nOne Large Unit Down"
+  33345, 	"Increase 1 point to the highlighted event's velocity/value.\nOne Small Unit Up"
+  33346, 	"Decrease 1 point from the highlighted event's velocity/value.\nOne Small Unit Down"
+  33347, 	"Increase 10 points to the highlighted event's velocity/value.\nOne Medium Unit Up"
+  33348, 	"Decrease 10 points from the highlighted event's velocity/value.\nOne Medium Unit Down"
+  33349, 	"Increase 100 points to the highlighted event's velocity/value.\nOne Large Unit Up"
+  33350, 	"Decrease 100 points from the highlighted event's velocity/value.\nOne Large Unit Down"
   33351, 	"Filters time signatures.\nFilter Time Signatures"
   33352, 	"Filters key signatures.\nFilter Key Signatures"
   33353, 	"Filters scale eventss.\nFilter Scales"

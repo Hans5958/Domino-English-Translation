@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  32896, 	"Moves the slider to next measure.\nto Next bar"
+  32896, 	"Moves the playhead to next measure.\nto Next bar"
   32897, 	"Switches the current track on/off.\nToggle Current Track"
   32898, 	"Switches the current track to solo mode.\nSolo Current Track"
   32899, 	"Turns on all tracks.\nEnable All Tracks"

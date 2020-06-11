@@ -2,8 +2,8 @@ STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
   32832, 	"Choose a template by inserting various events.\nInsert Template"
-  32838, 	"Divides note(s) on slider.\nSlice"
-  32839, 	"Divides note(s) on slider and removes its remains. Nobody will sense any traces.\nTrim"
+  32838, 	"Divides note(s) on the playhead.\nSlice"
+  32839, 	"Divides note(s) on the playhead and removes its remains. Nobody will sense any traces.\nTrim"
   32840, 	"Changes the selection data in bulk.\nBulk Changes"
   32841, 	"Transposes notes (except from Rhythm Tracks).\nTranspose"
   32842, 	"Controls the note tick and gate using specified quantization values.\nQuantizer"

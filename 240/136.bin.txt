@@ -6,37 +6,37 @@ Measure : Tick
 Measure : Beat : Tick
 1264
 1027
-Note #60 = C4
+Note 60 = C4
 1264
 1027
-Note #60 = C3
+Note 60 = C3
 1263
 1027
 Do nothing
 1263
 1027
-Tie Notes
+Tie notes
 1329
 1027
 Right side
 1329
 1027
-Below Event List
+Below Event list
 1329
 1027
 Left side
 1300
 1027
-1 dot
+1 pixel
 1300
 1027
-2 dots
+2 pixels
 1304
 1027
-0~127
+0-127
 1304
 1027
-1~128
+1-128
 1305
 1027
 Pause
@@ -63,7 +63,7 @@ On selected event
 Restart without scrolling back
 1307
 1027
-On current slider position
+On current playhead
 1307
 1027
 On initial pause position
@@ -72,4 +72,4 @@ On initial pause position
 Show labels only
 1308
 1027
-Show labels with its measure #
+Show labels with its measure number

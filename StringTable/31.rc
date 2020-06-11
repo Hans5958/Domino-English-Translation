@@ -13,8 +13,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33337, 	"Graphs an S-shaped curved within the Graph Panel.\nS Curve"
   33338, 	"Expands or contracts the selected event's time(Tick and Gate).\nStretch"
   33339, 	"Prioritizes loop playback on current selection.\nToggle Selection Loop"
-  33340, 	"Sets up the slider position.\nMove slider to"
-  33341, 	"Moves slider to the next marker.\nto Next Mark"
-  33342, 	"Moves slider to the previous marker.\nto Previous Mark"
+  33340, 	"Sets up the playhead position.\nMove Playhead To"
+  33341, 	"Moves playhead to the next marker.\nto Next Mark"
+  33342, 	"Moves playhead to the previous marker.\nto Previous Mark"
   33343, 	"Sets up multiple lines of specified lyrics.\nLyric Bucket"
 }

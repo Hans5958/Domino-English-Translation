@@ -27,5 +27,5 @@ FONT 9, "MS Sans Serif"
    CONTROL "Show monitor", 1282, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 120, 352, 59, 14 
    CONTROL "Monitor:", 1285, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 297, 94, 8 
    CONTROL "", 1283, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 7, 307, 301, 37 
-   CONTROL "Reset project's Gate && Velocity/Value values when selecting new Control Change", 1290, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 15, 273, 279, 10 
+   CONTROL "Reset project's Gate && velocity/value values when selecting new Control Change", 1290, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 15, 273, 279, 10 
 }

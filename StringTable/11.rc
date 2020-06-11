@@ -14,6 +14,6 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   32891, 	"Sets playback speed to 150%.\n150%"
   32892, 	"Sets playback speed to 200%.\n200%"
   32893, 	"Sets playback speed to 300%.\n300%"
-  32894, 	"Moves the slider to the beginning.\nto Beginning"
-  32895, 	"Moves the slider to the previous measure.\nto Previous bar"
+  32894, 	"Moves the playhead to the beginning.\nto Beginning"
+  32895, 	"Moves the playhead to the previous measure.\nto Previous bar"
 }

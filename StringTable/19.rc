@@ -13,8 +13,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33049, 	"Sets up key scale/chord highlight guide to Piano Roll.\nKey Scale/Chord Highlight"
   33050, 	"Shows/hides the Track Monitor Bar.\nToggle Track Monitor Bar"
   33051, 	"Customize the Track Monitor Bar.\nTrack Monitor Bar Customization"
-  33052, 	"Changes Default Velocity to molto pianissimo.\nmolto pianissimo"
-  33053, 	"Changes Default Velocity to pianissimo.\npianissimo"
-  33054, 	"Changes Default Velocity to piano.\npiano"
-  33055, 	"Changes Default Velocity to mezzo piano.\nmezzo piano"
+  33052, 	"Changes the default velocity  to molto pianissimo.\nmolto pianissimo"
+  33053, 	"Changes the default velocity  to pianissimo.\npianissimo"
+  33054, 	"Changes the default velocity  to piano.\npiano"
+  33055, 	"Changes the default velocity  to mezzo piano.\nmezzo piano"
 }

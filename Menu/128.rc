@@ -660,7 +660,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "Ne&xt Quantize Unit", 33327
 		MENUITEM "&Next Bar", 32896
 		MENUITEM "End of the Song (&F)", 32976
-		MENUITEM "Playing Position (&1)...", 33340
+		MENUITEM "Playback Position (&1)...", 33340
 		MENUITEM SEPARATOR
 		MENUITEM "&Track Performance", 32897
 		MENUITEM "&Solo Performance", 32898

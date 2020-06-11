@@ -12,4 +12,4 @@ Always
 From device input
 1018
 1027
-From track's Default Velocity
+From track's default velocity

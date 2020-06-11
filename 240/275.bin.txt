@@ -1,9 +1,9 @@
 1413
 1027
-Left-click adds value. Right-click deducts value.
+Left-click adds value. Right-click subtracts value.
 1413
 1027
-Left-click deducts value. Right-click adds value.
+Left-click subtracts value. Right-click adds value.
 1413
 1027
 Right-click + drag adjusts value up/down. Double right-click resets. Double left-click inserts event from panel.

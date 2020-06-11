@@ -2,7 +2,7 @@ STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
   32848, 	"Shows the properties of the selected event.\nEvent Properties"
-  32849, 	"Sets up every track's length by placing the End of Track mark to current slider position.\nSet End of Track mark"
+  32849, 	"Sets up every track's length by placing the End of Track mark to current playhead position.\nSet End of Track mark"
   32850, 	"Places notes on the Piano Roll.\nPen Tool"
   32851, 	"Selects data by holding left-click.\nSelect Tool"
   32852, 	"Selects data and deletes them by holding left-click.\nEraser"
