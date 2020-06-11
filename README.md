@@ -17,7 +17,10 @@ This repository is made to unify the translations made by community, while tryin
 
     <a href="https://github.com/Hans5958/Domino-English-Translation/releases/latest"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square" alt="Download the latest stable release"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square" alt="Download the latest nightly release"></a>
 
-2. Run the executable.
+2. Recommended: Download the [dominohook](https://github.com/khang06/dominohook/releases) .dll file and bind it to the executable.
+   Read how to bind it [here](https://github.com/khang06/dominohook/blob/master/README.md#usage). In the future, I will find a way so I could distribute it with the hook.
+
+3. Run the executable.
     - If you downloaded the .zip, just run `Domino.exe`.
     - If you downloaded the .exe, after placing it on the directory, run `Domino_Translated.exe` (make sure you rename it so you know which one's the new version!).
 
@@ -65,7 +68,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 ## Completion Checklist
 
-### Dialog
+### [x] Dialog
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -90,47 +93,47 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [x] 153
 - [x] 154
 - [x] 155
-- [ ] 156
-- [ ] 157
-- [ ] 158
+- [x] 156
+- [x] 157
+- [x] 158
 - [x] 159
 - [x] 160
 - [x] 161
 - [x] 162
 - [x] 163
 - [x] 164
-- [ ] 165
+- [x] 165
 - [x] 166
 - [x] 167
 - [x] 168
 - [x] 169
-- [ ] 170
-- [ ] 171
+- [x] 170
+- [x] 171
 - [x] 172
 - [x] 173
-- [ ] 174
-- [ ] 187
+- [x] 174
+- [x] 187
 - [x] 188
-- [ ] 213
-- [ ] 216
-- [ ] 217
-- [ ] 219
-- [ ] 240
-- [ ] 266
+- [x] 213
+- [x] 216
+- [x] 217
+- [x] 219
+- [x] 240
+- [x] 266
 - [x] 267
 - [x] 268
 - [x] 269
-- [ ] 270
-- [ ] 272
+- [x] 270
+- [x] 272
 - [x] 273
-- [ ] 275
-- [ ] 276
-- [ ] 277
-- [ ] 278
-- [ ] 279
+- [x] 275
+- [x] 276
+- [x] 277
+- [x] 278
+- [x] 279
 - [x] 280
 - [x] 281
-- [ ] 282
+- [x] 282
 - [x] 283
 - [x] 284
 - [x] 285
@@ -141,53 +144,53 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [x] 291
 - [x] 292
 - [x] 293
-- [ ] 294
-- [ ] 295
+- [x] 294
+- [x] 295
 - [x] 296
-- [ ] 297
+- [x] 297
 - [x] 298
-- [ ] 299
+- [x] 299
 - [x] 300
-- [ ] 301
-- [ ] 302
-- [ ] 303
-- [ ] 304
-- [ ] 305
-- [ ] 306
-- [ ] 307
-- [ ] 308
-- [ ] 309
-- [ ] 310
-- [ ] 311
-- [ ] 312
-- [ ] 313
-- [ ] 314
-- [ ] 315
-- [ ] 316
-- [ ] 317
-- [ ] 318
-- [ ] 319
-- [ ] 320
-- [ ] 321
-- [ ] 322
-- [ ] 323
-- [ ] 324
-- [ ] 325
-- [ ] 326
+- [x] 301
+- [x] 302
+- [x] 303
+- [x] 304
+- [x] 305
+- [x] 306
+- [x] 307
+- [x] 308
+- [x] 309
+- [x] 310
+- [x] 311
+- [x] 312
+- [x] 313
+- [x] 314
+- [x] 315
+- [x] 316
+- [x] 317
+- [x] 318
+- [x] 319
+- [x] 320
+- [x] 321
+- [x] 322
+- [x] 323
+- [x] 324
+- [x] 325
+- [x] 326
 - [x] 327
 
 </details>
 
-### Menu
+### [x] Menu
 
 <details><summary>Expand to view the checklist.</summary>
 
-- [ ] 128
+- [x] 128
 - [x] 130
 
 </details>
 
-### String Tables
+### [x] String Tables
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -207,9 +210,9 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [x] 14
 - [x] 15
 - [x] 16
-- [ ] 17
+- [x] 17
 - [x] 18
-- [ ] 19
+- [x] 19
 - [x] 20
 - [x] 21
 - [x] 22
@@ -218,11 +221,11 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [x] 25
 - [x] 26
 - [x] 27
-- [ ] 28
-- [ ] 29
-- [ ] 30
-- [ ] 31
-- [ ] 32
+- [x] 28
+- [x] 29
+- [x] 30
+- [x] 31
+- [x] 32
 - [x] 33
 - [x] 34
 - [x] 35
@@ -247,7 +250,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### Manual
+### [ ] Manual
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -260,11 +263,11 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### Module
+### [ ] Module
 
 <details><summary>Expand to view the checklist.</summary>
 
-- [ ] GMLevel1.xml
+- [x] GMLevel1.xml
 - [ ] ok_GSm.xml
 - [ ] ok_XG2k.xml
 - [ ] ok_XGb.xml
@@ -273,50 +276,50 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### System
+### [x] System
 
 <details><summary>Expand to view the checklist.</summary>
 
-- [ ] CurveCustom.txt
-- [ ] Exclusive.txt
-- [ ] Formula.txt
-- [ ] ParamMap.txt
+- [x] CurveCustom.txt
+- [x] Exclusive.txt
+- [x] Formula.txt
+- [x] ParamMap.txt
 
 </details>
 
-### 240
+### [x] 240
 
 <details><summary>Expand to view the checklist.</summary>
 
-- [ ] 134
-- [ ] 136
-- [ ] 156
-- [ ] 165
-- [ ] 174
-- [ ] 217
-- [ ] 275
-- [ ] 277
-- [ ] 279
-- [ ] 280
-- [ ] 281
-- [ ] 290
-- [ ] 293
-- [ ] 295
-- [ ] 297
-- [ ] 299
-- [ ] 300
-- [ ] 301
-- [ ] 306
-- [ ] 307
-- [ ] 319
-- [ ] 322
+- [x] 134
+- [x] 136
+- [x] 156
+- [x] 165
+- [x] 174
+- [x] 217
+- [x] 275
+- [x] 277
+- [x] 279
+- [x] 280
+- [x] 281
+- [x] 290
+- [x] 293
+- [x] 295
+- [x] 297
+- [x] 299
+- [x] 300
+- [x] 301
+- [x] 306
+- [x] 307
+- [x] 319
+- [x] 322
 
 </details>
 
-### Other
+### [x] Other
 
 <details><summary>Expand to view the checklist.</summary>
 
-- [ ] readme.txt
+- [x] readme.txt
 
 </details>
