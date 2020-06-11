@@ -68,7 +68,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 ## Completion Checklist
 
-### [x] Dialog
+### ✅ Dialog
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -181,7 +181,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [x] Menu
+### ✅ Menu
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -190,7 +190,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [x] String Tables
+### ✅ String Tables
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -250,7 +250,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [ ] Manual
+### ⬜️ Manual
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -263,7 +263,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [ ] Module
+### ⬜️ Module
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -276,7 +276,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [x] System
+### ✅ System
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -287,7 +287,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [x] 240
+### ✅ 240
 
 <details><summary>Expand to view the checklist.</summary>
 
@@ -316,7 +316,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 </details>
 
-### [x] Other
+### ✅ Other
 
 <details><summary>Expand to view the checklist.</summary>
 
