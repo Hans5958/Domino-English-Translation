@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  33280, 	"Appends MIDI input note to selection. (or hold [Ctrl] to toggle)\nEvent List MIDI Input: Append Mode"
+  33280, 	"Appends MIDI input note to the selection. (or hold [Ctrl] to toggle)\nEvent List MIDI Input: Append Mode"
   33281, 	"Processes one note at a time.\nEvent List MIDI Input: Toggle Chord/Single-note Conversion"
   33282, 	"Mirrors Velocity from MIDI input.\nEvent List MIDI Input: Toggle Velocity Conversion"
   33283, 	"Mirrors Note(s) from MIDI input.\nEvent List MIDI Input: Toggle Note Property Conversion"
@@ -10,7 +10,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33286, 	"Moves slider to the beginning of loop marker.\ngo to Beginning of marker"
   33288, 	"Moves slider to the end of loop marker.\ngo to End of marker"
   33289, 	"Calculates tempo from a percussive track, then fixes tempo event position and note arrangement.\nTempo Tap && Fit"
-  33290, 	"Ripple cuts selection range and saves it to clipboard. (Event List selection and highlight only)\nRipple Cut"
+  33290, 	"Ripple cuts the selection range and saves it to clipboard. (Event List selection and highlight only)\nRipple Cut"
   33291, 	"Selects events from the current selection until the next bar or measure.\nFrom current to next bar"
   33292, 	"Selects events from the current selection until the previous bar or measure.\nFrom current to previous bar"
   33293, 	"Resets the Track Monitor Bar and Playback Monitor Bar to initial values.\nReset Playback Monitor"

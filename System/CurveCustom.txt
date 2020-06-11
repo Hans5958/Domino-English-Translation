@@ -1,36 +1,36 @@
 Input an expression for the 2 connecting points.
 
-<< Available Functions >>
-* abs() absolute function. Returns the absolute value of a number.
-* sin() sine function. Argument is expressed in radians.
-* cos() cosine function
-* tan() tangent function
-* log() logarithmic function
-* exp() exponential function
-* sqrt() square root function
-* squ() square wave function
-* tri() triangular function
-* saw() sawtooth wave
+Available Functions: 
+- abs() absolute function. Returns the absolute value of a number.
+- sin() sine function. Argument is expressed in radians.
+- cos() cosine function
+- tan() tangent function
+- log() logarithmic function
+- exp() exponential function
+- sqrt() square root function
+- squ() square wave function
+- tri() triangular function
+- saw() sawtooth wave
 
 The squ, tri, and saw functions have a period of 1 and a result of -1 to +1.
 
-<< Pre-defined Variables >>
-* pi... apprx. 3.14159
-* rnd... random value between 0 and 1 (fractional)
-* xf... abcissa's relative value. 0.0 ~ 1.0.
-* x... current x value.
-* x1... x(=tick) start point.
-* x2... x(=tick) end point.
-* y1... y start point.
-* y2... y end point.
-* oy... current data value (CC only).
-* res... resolution.
-* ymin... minimum possible value of y.
-* ymax... maximum possible value of y.
-* tempo... current tempo value.
+Pre-defined Variables: 
+- pi... apprx. 3.14159
+- rnd... random value between 0 and 1 (fractional)
+- xf... abcissa's relative value. 0.0 ~ 1.0.
+- x... current x value.
+- x1... x(=tick) start point.
+- x2... x(=tick) end point.
+- y1... y start point.
+- y2... y end point.
+- oy... current data value (CC only).
+- res... resolution.
+- ymin... minimum possible value of y.
+- ymax... maximum possible value of y.
+- tempo... current tempo value.
 
-<< Example >>
+Example: 
 Linear graph expression:
-y1 + xf * (y2 - y1)
+y1 + xf - (y2 - y1)
 
 In the expression above, y is calculated while xf gradually changes from 0 to 1

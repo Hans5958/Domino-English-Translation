@@ -54,7 +54,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "&Redo", 57644
 		MENUITEM SEPARATOR
 		MENUITEM "Cu&t", 57635
-		MENUITEM "Batch Cut (&W)", 33290
+		MENUITEM "Ripple Cut (&W)", 33290
 		MENUITEM SEPARATOR
 		MENUITEM "&Copy", 57634
 		MENUITEM SEPARATOR
@@ -63,9 +63,9 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "Su&bstitute Paste", 33318
 		MENUITEM SEPARATOR
 		MENUITEM "&Delete", 32795
-		MENUITEM "Batch Delete (&Q)", 33136
+		MENUITEM "Ripple Delete (&Q)", 33136
 		MENUITEM "Delete Previous Event (&2)", 33128
-		MENUITEM "Batch Delete Previous Event (&3)", 33129
+		MENUITEM "Ripple Delete Previous Event (&3)", 33129
 		MENUITEM SEPARATOR
 		POPUP "Select Range..."
 		{
@@ -327,7 +327,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "Replace Control Change/s (&Y)...", 33317
 		MENUITEM "Replicate O&nion Skin...", 33095
 		MENUITEM "Tap Tempo and Fit (&U)...", 33289
-		MENUITEM "Fi&x Overlapping Notes..." 33313
+		MENUITEM "Fi&x Overlapping Notes...", 33313
 		MENUITEM "Restore Major Link Events (&Z)...", 33315
 		MENUITEM "Generate Harmony Parts (&6)...", 33344
 		MENUITEM SEPARATOR
@@ -696,7 +696,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 			MENUITEM "&Green", 33301
 			MENUITEM "&Water", 33302
 			MENUITEM "&Violet", 33303
-			MENUITEM "&Peach", 33304
+			MENUITEM "&Purple", 33304
 		}
 		MENUITEM SEPARATOR
 		POPUP "Switch Track (&V)"

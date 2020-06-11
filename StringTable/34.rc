@@ -3,6 +3,6 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
   57600, 	"Creates a new project.\nNew"
   57601, 	"Opens a specified Domino project or MIDI file.\nOpen"
-  57603, 	"Saves progress to current project.\nSave project"
+  57603, 	"Saves progress to the current project file.\nSave project"
   57604, 	"Saves progress as another project.\nSave project as"
 }

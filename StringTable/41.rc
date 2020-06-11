@@ -1,11 +1,11 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  61184, 	"Adjusts window size."
-  61185, 	"Adjusts window position."
-  61186, 	"Minimizes window."
-  61187, 	"Maximizes window."
-  61188, 	"Switches to next window."
-  61189, 	"Switches to previous window."
+  61184, 	"Adjusts the window size."
+  61185, 	"Adjusts the window position."
+  61186, 	"Minimizes the window."
+  61187, 	"Maximizes the window."
+  61188, 	"Switches to the next window."
+  61189, 	"Switches to the previous window."
   61190, 	"Prompts unsaved changes and exits the program."
 }

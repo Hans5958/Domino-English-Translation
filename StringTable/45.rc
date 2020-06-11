@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  61472, 	"No error message."
+  61472, 	"No error message available."
   61473, 	"An unsupported operation was executed."
   61474, 	"The required resources could not be used."
   61475, 	"Out of memory."

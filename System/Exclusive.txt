@@ -20,6 +20,6 @@ Operations addition [+] and subtraction [-] are supported.
 Valid: f0h 20+30 10h . . .
 Invalid: f0h 20+30-50 10h . . .
 
-<< Example >>
+Example:
 Shows a string to the GS Sound Source display:
 f0h 41h 10h 45h 12h [ 10h 0 0 "test" ] f7h

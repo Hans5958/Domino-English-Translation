@@ -1,5 +1,5 @@
 
-  「Domino」 MIDI Music Editing Software
+  "Domino" MIDI/Music Editor Software
   Copyright (C) 2007-2013 Takabo Soft (http://takabosoft.com/)
 
 Thank you very much for downloading Domino!

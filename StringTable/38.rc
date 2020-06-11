@@ -1,6 +1,6 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  57680, 	"Switches to next window.\nNext Pane"
-  57681, 	"Switches to previous window.\nPrevious Pane"
+  57680, 	"Switches to the next window.\nNext Pane"
+  57681, 	"Switches to the previous window.\nPrevious Pane"
 }

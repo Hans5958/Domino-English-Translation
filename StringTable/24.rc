@@ -4,7 +4,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33120, 	"Shows/hides this toolbar.\nToggle Toolbar"
   33121, 	"Filters all control changes.\nFilter All CCs"
   33122, 	"Shows/hides the Track Selection Panel\nToggle Track Selection Panel"
-  33123, 	"Inserts a Key Signature event. (Conductor Track only)\nInsert Key Signature"
+  33123, 	"Inserts a key signature event. (Conductor Track only)\nInsert Key Signature"
   33124, 	"Filters out events within the selected range except for the notes.\nSelect notes only"
   33125, 	"Shows/hides the Playback Monitor\nToggle Playback Monitor Mode"
   33126, 	"Insert notes based on input information from MIDI devices such as keyboard, etc.\nInsert note from MIDI-IN"

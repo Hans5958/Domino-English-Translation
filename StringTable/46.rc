@@ -1,7 +1,7 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-61696, 	"Invalid filename."
+61696, 	"Invalid file name."
 61697, 	"Failed to open document."
 61698, 	"Failed to save document."
 61699, 	"Save changes to %1?"

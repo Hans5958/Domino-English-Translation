@@ -1,15 +1,15 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  57632, 	"Erases selection.\nErase"
-  57633, 	"Erases all.\nErase all"
-  57634, 	"Copies selection to clipboard.\nCopy"
-  57635, 	"Cuts selection and saves it to clipboard.\nCut"
-  57636, 	"Searches specified string.\nSearch"
-  57637, 	"Pastes clipboard contents.\nPaste"
-  57640, 	"Repeats previous action.\nRepeat"
-  57641, 	"Replaces specified string with another.\nReplace"
-  57642, 	"Selects every event.\nSelect All"
+  57632, 	"Erases the selection.\nErase"
+  57633, 	"Erases everything.\nErase all"
+  57634, 	"Copies the selection to the clipboard.\nCopy"
+  57635, 	"Cuts the selection and saves it to the clipboard.\nCut"
+  57636, 	"Searches a specified string.\nSearch"
+  57637, 	"Pastes the clipboard contents.\nPaste"
+  57640, 	"Repeats the previous action.\nRepeat"
+  57641, 	"Replaces a specified string with another.\nReplace"
+  57642, 	"Selects everything.\nSelect All"
   57643, 	"Reverts the recent change.\nUndo"
   57644, 	"Restores the recent change.\nRedo"
 }

@@ -4,7 +4,7 @@ You may input data using the format [variable name = value] like so:
 aaa = 100
 bbb = 120
 
-* There are no limitations to the variable entry count.
-* Variable names can be full-width or half-width and are not case sensitive.
+- There are no limitations to the variable entry count.
+- Variable names can be full-width or half-width and are not case sensitive.
 
-These variables can be assigned to Tempo event & Control Change event values.
+These variables can be assigned to tempo event & Control Change event values.

@@ -6,7 +6,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33042, 	"Shows/hides this toolbar.\nToggle Toolbar"
   33043, 	"Focuses operation in the Event List.\nFocus navigation to Event List"
   33044, 	"Shows/hides this toolbar.\nToggle Toolbar"
-  33045, 	"Refines selection range.\nFilter Selection Range"
+  33045, 	"Refines the selection range.\nFilter Selection Range"
   33046, 	"Inserts a specified batch of Control Changes.\nInsert CCs"
   33047, 	"Preview/play selected note/CC event."
   33048, 	"Pauses/Resumes playback.\nPause/Resume Playback"
