@@ -37,7 +37,7 @@ jobs:
           fetch-depth: 100
       - name: Check changes
         run: |
-          FROM_COMMIT=$(git rev-list origin/master@{yesterday} --before 24.hours.ago | tail -n1)
+          FROM_COMMIT=$(git rev-list -n1 --before="24 hours" --first-parent HEAD)
           git diff $FROM_COMMIT..HEAD --name-only
           if ! git diff $FROM_COMMIT..HEAD --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)\/)'; then
             echo "No files translated. Aborting!"
