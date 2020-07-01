@@ -1,7 +1,7 @@
 
 # Domino English Translation
 
-<a href="https://github.com/Hans5958/Domino-English-Translation/actions/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square" alt="GitHub Actions build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square" alt="Version number"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square" alt="Download counter"></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"> <a href="https://discord.gg/s42aft8"><img src="https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square" alt="Discord"></a>
+<a href="https://github.com/Hans5958/Domino-English-Translation/actions/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square" alt="GitHub Actions build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/actions/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Site Deployment?style=flat-square&label=site" alt="GitHub Actions site build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square" alt="Version number"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square" alt="Download counter"></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"> <a href="https://discord.gg/s42aft8"><img src="https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square" alt="Discord"></a>
 
 Domino is a MIDI editor that is used for creating MIDI songs/musics. Domino is used by various blackers in the Black MIDI ecosystem.
 
@@ -12,17 +12,19 @@ This repository is made to unify the translations made by community, while tryin
 ## Usage
 
 1. Download either the Domino `.zip` or the `.exe`.  
-    - The `.zip` contains everything you need to run Domino. __Download this if you are not sure or this is your first time using this program.__  
-    - You can also download the `.exe` if you want to use your configured settings. Place it inside your Domino directly, where "`Domino.exe`" placed.
+	- The `.zip` contains everything you need to run Domino. __Download this if you are not sure or this is your first time using this program.__  
+	- You can also download the `.exe` if you want to use your configured settings. Place it inside your Domino directly, where "`Domino.exe`" placed.
 
-    <a href="https://github.com/Hans5958/Domino-English-Translation/releases/latest"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square" alt="Download the latest stable release"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square" alt="Download the latest nightly release"></a>
+<a href="https://github.com/Hans5958/Domino-English-Translation/releases/latest"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square" alt="Download the latest stable release"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square" alt="Download the latest nightly release"></a>
 
 2. Recommended: Download the [dominohook](https://github.com/khang06/dominohook/releases) .dll file and bind it to the executable.
    Read how to bind it [here](https://github.com/khang06/dominohook/blob/master/README.md#usage). In the future, I will find a way so I could distribute it with the hook.
 
 3. Run the executable.
-    - If you downloaded the .zip, just run `Domino.exe`.
-    - If you downloaded the .exe, after placing it on the directory, run `Domino_Translated.exe` (make sure you rename it so you know which one's the new version!).
+	- If you downloaded the .zip, just run `Domino.exe`.
+	- If you downloaded the .exe, after placing it on the directory, run `Domino_Translated.exe` (make sure you rename it so you know which one's the new version!).
+
+4. Optional: Read the manual from https://hans5958.me/Domino-English-Translation or the supplied manual.
 
 ## Building
 
@@ -254,11 +256,95 @@ After that, you can create a pull request by clicking the "New pull request" but
 
 <details><summary>Expand to view the checklist.</summary>
 
-- [ ] index.html
-- [ ] install.html
-- [ ] module.html
-- [ ] other.html
-- [ ] use.html
+- [x] Index (index.html)
+- [x] Installation (install.html)
+	- [x] System Requirements
+	- [x] License
+	- [x] Installing
+	- [x] Updating
+	- [x] Uninstalling
+	- [x] Port Settings (important)
+- [ ] Usage (use.html)
+	- [ ] Area Names
+	- [ ] Previewing Notes
+	- [ ] Placing a Note
+	- [ ] Playing
+	- [ ] Playing in the Middle
+	- [ ] Changing Note Length (Gate)
+	- [ ] Changing Note Strength (Velocity)
+	- [ ] Moving a Note
+	- [ ] Undoing
+	- [ ] Adjusting Snapping
+	- [ ] Removing a Note
+	- [ ] Changing Initial Gate and Velocity Values
+	- [ ] Changing Initial Gate and Velocity Values Based on Other Notes
+	- [ ] Moving Multiple Notes
+	- [ ] Removing Multiple Notes
+	- [ ] Duplicating Multiple Notes (Copy/Paste)
+	- [ ] Duplicating Multiple Notes (Move Duplicate)
+	- [ ] Changing Velocity Values of Multiple Notes
+	- [ ] Changing Gate and Velocity Values of Multiple Notes
+	- [ ] Slicing a Note
+	- [ ] Gradually Shifting the Timing of Multiple Notes (Stroke)
+	- [ ] Filtering Selection
+	- [ ] Transposing Between Octaves
+	- [ ] Switching Between Pen and Select Tools
+	- [ ] Changing Instrument
+	- [ ] Changing Volume and Pan of a Part
+	- [ ] Changing Volume and Pan Live
+	- [ ] Changing Pitch Bend and Expression Continuously (Mouse)
+	- [ ] Changing Pitch Bend and Expression Continuously (Selection)
+	- [ ] Copying Pitch Bend and Expression Curves
+	- [ ] Changing Current Track
+	- [ ] Displaying Notes Other Tracks at the Same Time (Onion Skin)
+	- [ ] Changing Tempo
+	- [ ] Editing Rhythm Track
+	- [ ] Changing Note Strength on Rhythm Track
+	- [ ] Converting a Track to a Rhythm Track
+	- [ ] Naming a Track
+	- [ ] Adding a Track
+	- [ ] Adding a Track Set for a Port
+	- [ ] Removing a Track
+	- [ ] Rearranging a Track
+	- [ ] Editing Multiple Tracks
+	- [ ] Playing a Specific Track
+	- [ ] Setting a Marker
+	- [ ] Setting the Time Signature
+	- [ ] Setting the Title and Other Project Properties
+	- [ ] Inserting a Comment Event
+	- [ ] Inserting an Exclusive Event
+	- [ ] Inserting a Control Change Event
+	- [ ] Inserting Multiple Control Change Events
+	- [ ] Playing in a Loop
+	- [ ] Syncing Playback Position with MIDI Devices
+	- [ ] Using Variables
+	- [ ] Recording in Real Time
+	- [ ] Recording in Steps
+	- [ ] Receiving Exclusive Events
+	- [ ] Saving a Project
+	- [ ] Opening a Project
+	- [ ] Adjusting End of Track
+	- [ ] Exporting as a MIDI File
+	- [ ] Backing Up
+	- [ ] Customizing Shortcut Keys
+	- [ ] Customizing the Toolbar
+	- [ ] Customizing Mouse Operations
+	- [ ] Customizing Curves and Lines
+- [ ] Sound Source Definition File Specifications (module.html)
+	- [ ] Overview
+	- [ ] Main Structure
+	- [ ] Sound Source Basic Information
+	- [ ] Option
+	- [ ] Instrument List Information
+	- [ ] Drum Set List Information
+	- [ ] Control Change Macro List Information
+	- [ ] Template List Information
+	- [ ] Default Data Information
+- [ ] Other (other.html)
+	- [ ] Bug Report
+	- [ ] Feature Request
+	- [ ] Acknowledgments
+	- [ ] FAQ
 - [ ] assets...
 
 </details>
