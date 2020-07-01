@@ -1,0 +1,19 @@
+on: push
+
+name: Site Deployment
+
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build site
+        run: bash build-site.sh
+      - name: Deploy site
+        uses: peaceiris/actions-gh-pages@v1.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./Website

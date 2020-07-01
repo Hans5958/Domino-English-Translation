@@ -1,0 +1,111 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MIDI音楽編集ソフト「Domino」 取扱説明書</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+	<h1>MIDI音楽編集ソフト「Domino」 取扱説明書</h1>
+	<div class=w>
+		この資料はDominoの取扱説明書です。とりあえず上から順番に読んでいただければ良いと思います。<br>
+		あくまでソフトウェアの使い方を説明するためのドキュメントですので、MIDIの仕様や作曲の仕方などは書いていません。
+		そういった部分に関しては、他のウェブサイトなどで勉強してください。<br>
+		<br>
+		なお、全ての機能を説明することは困難ですので、ある程度端折っていますが、何か不明な点などがありましたら、掲示板等でご質問ください。<br>
+		<br>
+	</div>
+	<h3>目次</h3>
+	<div class=w>
+		<ul style="margin-left:20px;">
+			<li><a href="install.html">導入について</a></li>
+			<ul>
+				<li><a href="install.html#dousa">動作環境</a></li>
+				<li><a href="install.html#kyodaku">著作権表示・使用許諾</a></li>
+				<li><a href="install.html#inst">インストール方法</a></li>
+				<li><a href="install.html#verup">バージョンアップ時のインストール方法</a></li>
+				<li><a href="install.html#uninst">アンインストール方法</a></li>
+				<li><a href="install.html#port">ポートの設定 【重要】</a></li>
+			</ul>
+			<li><a href="use.html">使い方</a></li>
+			<ul>
+				<li><a href="use.html#areaname">各エリアの名称</a></li>
+				<li><a href="use.html#note_preview">ノートを試聴するには</a></li>
+				<li><a href="use.html#note_put">ノートを置くには</a></li>
+				<li><a href="use.html#play">演奏するには</a></li>
+				<li><a href="use.html#play2">途中から演奏するには</a></li>
+				<li><a href="use.html#gate">置いたノートの長さ(Gate)を変えるには</a></li>
+				<li><a href="use.html#velo">置いたノートの強さ(Velocity)を変えるには</a></li>
+				<li><a href="use.html#note_move">置いたノートを移動するには</a></li>
+				<li><a href="use.html#undo">編集した内容を元に戻すには</a></li>
+				<li><a href="use.html#snap">置く時のスナップを調節するには</a></li>
+				<li><a href="use.html#note_del">置いたノートを削除するには</a></li>
+				<li><a href="use.html#note_def">ノートのGate&Velocityの初期値を変えるには</a></li>
+				<li><a href="use.html#dropper">他のノートを元にGate&Velocityの初期値を変えるには</a></li>
+				<li><a href="use.html#sel_move">複数のノートを移動するには</a></li>
+				<li><a href="use.html#sel_del">複数のノートを削除するには</a></li>
+				<li><a href="use.html#sel_copy">複数のノートを複製するには（コピー＆ペースト）</a></li>
+				<li><a href="use.html#sel_copy_ctrl">複数のノートを複製するには（複製の移動）</a></li>
+				<li><a href="use.html#sel_velo">一部のノートだけVelocityを変えるには</a></li>
+				<li><a href="use.html#batch">複数のノートのGateやVelocityを一括変更するには</a></li>
+				<li><a href="use.html#slice">複数のノートを指定位置で分断するには</a></li>
+				<li><a href="use.html#stroke">同じ位置にある複数ノートのタイミングを徐々にずらすには（ストローク）</a></li>
+				<li><a href="use.html#sel_filter">選択したノートを更に絞り込むには</a></li>
+				<li><a href="use.html#sel_oct">複数のノートのオクターブを変えるには</a></li>
+				<li><a href="use.html#sel_pen">ペンツールと選択ツールを簡単に切り替えるには</a></li>
+				<li><a href="use.html#pc">パートの楽器を変えるには</a></li>
+				<li><a href="use.html#volume">パートの音量やパンポットを変えるには</a></li>
+				<li><a href="use.html#volume2">曲の途中でパートの音量を変えるには</a></li>
+				<li><a href="use.html#pbcurve">ピッチベンドやエクスプレッションを連続的に変えるには（マウス編）</a></li>
+				<li><a href="use.html#pbcurve_sel">ピッチベンドやエクスプレッションを連続的に変えるには（選択範囲編）</a></li>
+				<li><a href="use.html#pbcurve_copy">ピッチベンドカーブなどをコピーするには</a></li>
+				<li><a href="use.html#track_cur">編集するトラックを変えるには</a></li>
+				<li><a href="use.html#onionskin">他のトラックのノートを同時に表示するには（オニオンスキン）</a></li>
+				<li><a href="use.html#tempo">テンポを変えるには</a></li>
+				<li><a href="use.html#rhythm">リズムトラックを編集するには</a></li>
+				<li><a href="use.html#ryhthm_velo">リズムトラックで特定の楽器だけVelocityを変えるには</a></li>
+				<li><a href="use.html#ryhthm_trset">既存のトラックをリズムトラックに変えるには</a></li>
+				<li><a href="use.html#tr_name">トラックに名前を付けるには</a></li>
+				<li><a href="use.html#tr_add">トラックを追加するには</a></li>
+				<li><a href="use.html#tr_add_port">１ポート分のトラックを一気に追加するには</a></li>
+				<li><a href="use.html#tr_del">トラックを削除するには</a></li>
+				<li><a href="use.html#tr_move">トラックを並べ替えるには</a></li>
+				<li><a href="use.html#mtr_edit">複数トラックの内容を一度に削除・複製するには</a></li>
+				<li><a href="use.html#track_solo">特定のトラックだけ演奏するには</a></li>
+				<li><a href="use.html#mark">マークを設定するには</a></li>
+				<li><a href="use.html#ts">拍子を設定するには</a></li>
+				<li><a href="use.html#title">曲名などを設定するには</a></li>
+				<li><a href="use.html#comment">コメントイベントを挿入するには</a></li>
+				<li><a href="use.html#exc">エクスクルーシブイベントを挿入するには</a></li>
+				<li><a href="use.html#cc">コントロールチェンジイベントを挿入するには</a></li>
+				<li><a href="use.html#cc2">一度に複数のコントロールチェンジマクロを挿入するには（EFXなど）</a></li>
+				<li><a href="use.html#loop">ループ演奏するには</a></li>
+				<li><a href="use.html#sync">演奏位置とMIDI音源の状態を合わせるには</a></li>
+				<li><a href="use.html#param">変数を使うには</a></li>
+				<li><a href="use.html#rtrec">リアルタイム録音するには</a></li>
+				<li><a href="use.html#strec">ステップ録音するには</a></li>
+				<li><a href="use.html#sysex_rec">エクスクルーシブを受信するには</a></li>
+				<li><a href="use.html#save">保存するには</a></li>
+				<li><a href="use.html#open">保存したファイルを読み込むには</a></li>
+				<li><a href="use.html#eot">曲の終端位置を調節するには</a></li>
+				<li><a href="use.html#smf">midファイルとして書き出すには</a></li>
+				<li><a href="use.html#backup">バックアップ機能を使うには</a></li>
+				<li><a href="use.html#key_custom">ショートカットキーをカスタマイズするには</a></li>
+				<li><a href="use.html#tb_custom">ツールバーをカスタマイズするには</a></li>
+				<li><a href="use.html#mouse_custom">マウス操作をカスタマイズするには</a></li>
+				<li><a href="use.html#curve_custom">曲線や直線をカスタマイズするには</a></li>
+			</ul>
+			<li><a href="module.html">音源定義ファイルの仕様</a></li>
+			<li><a href="other.html">その他</a></li>
+			<ul>
+				<li><a href="other.html#bug">不具合について</a></li>
+				<li><a href="other.html#request">要望について</a></li>
+				<li><a href="other.html#thanx">お礼</a></li>
+				<li><a href="other.html#faq">FAQ</a></li>
+			</ul>
+		</ul>
+	</div>
+</body>
+
+</html>

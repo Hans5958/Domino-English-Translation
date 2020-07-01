@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Domino User Manual</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<style>
+		main {
+			height: 100vh;
+			width: 100vw;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script>
+		$.getJSON("https://api.github.com/repos/Hans5958/Domino-English-Translation/commits/master", response => {
+			document.querySelector("code").textContent = response.sha.slice(0,6)
+		})
+	</script>
+</head>
+
+<body>
+	<main>
+		<h1 class="display-4">Domino User Manual</h1>
+		<br>
+		<h3>Select your language</h3>
+		<a href="en/index.html" class="btn btn-primary">English</a>
+		<a href="jp/index.html" class="btn btn-danger">Japanese</a>
+		<br><br>
+		<p><i>Last commit: </i><code></code></p>
+	</main>
+</body>
+
+</html>
+
