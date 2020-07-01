@@ -1,0 +1,1 @@
+Index and Installation on the manual has been translated. I also did the online manual that hosts both English and Japanese versions.
