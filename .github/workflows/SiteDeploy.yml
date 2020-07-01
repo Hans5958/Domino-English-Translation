@@ -10,10 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build site
-        run: bash build-site.sh
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+          jekyll_src: Website
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./Website
+          PUBLISH_DIR: ./Website/_site

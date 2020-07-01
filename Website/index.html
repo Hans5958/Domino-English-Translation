@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 
 <html lang="en">
@@ -19,22 +21,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<script>
-		$.getJSON("https://api.github.com/repos/Hans5958/Domino-English-Translation/commits/master", response => {
-			document.querySelector("code").textContent = response.sha.slice(0,6)
-		})
-	</script>
 </head>
 
 <body>
 	<main>
 		<h1 class="display-4">Domino User Manual</h1>
 		<br>
-		<h3>Select your language</h3>
+		<h4>Select your language</h4>
 		<a href="en/index.html" class="btn btn-primary">English (WIP)</a>
 		<a href="jp/index.html" class="btn btn-danger">Japanese</a>
 		<br><br>
-		<p><i>Last commit: </i><code></code></p>
+		<p><i>Revision: <code>{{site.git.last_commit.short_sha }}</code> on <code>{{ site.git.last_commit.commit_date }}</code></i></p>
 	</main>
 </body>
 
