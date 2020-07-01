@@ -1,13 +1,29 @@
 <script>
-	fetch("https://api.github.com/repos/Hans5958/Domino-English-Translation/commits/master")
-		.then(() => document.location = "https://hans5958.github.io/Domino-English-Translation/en/index.html")
-		.catch(() => document.location = "index.html")
+	if (navigator.onLine) {
+		var request = new XMLHttpRequest();
+		request.open("GET", "http://api.github.com/repos/Hans5958/Domino-English-Translation/commits/master", true);
+		request.onreadystatechange = function() {
+			if (this.readyState === 4) {
+				if (this.status >= 200 && this.status < 400) {
+					document.location = "https://hans5958.github.io/Domino-English-Translation/en/index.html"
+				} else {
+					document.location = "index.html"
+				}
+			}
+		};
+		request.send();
+		request = null;
+	} else {
+		document.location = "index.html"
+	}
 </script>
+
 <style>
 	* {
 		font-family: sans-serif
 	}
 </style>
+
 <p>You will be redirected to your destination. If you are not, follow these instructions.</p>
 <p>If you are online, you can go to <a href="https://hans5958.github.io/Domino-English-Translation/en/index.html">https://hans5958.github.io/Domino-English-Translation/en/index.html</a> to see the latest version manual.</p>
 <p>If you are offline, open the <a href="index.html">index.html</a> file inside the "Manual" folder.</p>
