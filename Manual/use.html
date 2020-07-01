@@ -1,14 +1,13 @@
 <html>
 
 <head>
-	<META HTTP-EQUIV="Content-type" CONTENT="text/html">
+	<meta charset="utf-8">
 	<title>Usage</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 
 <body>
 	<h1>Usage</h1>
-
 	<h3><a name="areaname">Area Names</a></h3>
 	<div class=w>
 		画面の名称は次の通りです。<br>
@@ -34,11 +33,7 @@
 			<dt>アウトプットペイン</dt>
 			<dd>何かエラーなどが発生すると、ここに表示される場合があります。通常は閉じておいても構いません。</dd>
 		</dl>
-
-
-
 	</div>
-
 	<h3><a name="note_preview">Previewing Notes</a></h3>
 	<div class=w>
 		それではここから順番に使い方を説明したいと思います。<br>
@@ -52,11 +47,9 @@
 		<div class=memo>絶対音感が無い人にとっては必要不可欠な機能ですね（＾＾；<br>
 			ちなみにこの枠内で書いていることはどうでも良いことばかりなので、無視しても大丈夫です。</div>
 	</div>
-
 	<h3><a name="note_put">Placing a Note</a></h3>
 	<div class=w>
-		ノートを置く場合は、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96"
-			height="33">）を使って置きたい場所を左クリックしてください。<br>
+		ノートを置く場合は、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96" height="33">）を使って置きたい場所を左クリックしてください。<br>
 		デフォルトの強さ（Velocity）と長さ（Gate）でノートが配置されます。<br>
 		<img src="assets/use_002.png" width="185" height="121"><br>
 		<br>
@@ -66,7 +59,6 @@
 		<br>
 		なお、１小節目にはMIDI機器を初期化するためのイベントが存在しますので、12:47 2010/10/19ノートを配置するのは２小節目以降にしてください。
 	</div>
-
 	<h3><a name="play">Playing</a></h3>
 	<div class=w>
 		ノートを適当に配置できたら、演奏してみましょう。<br>
@@ -83,7 +75,6 @@
 		なお、演奏中にもう一度[再生]ボタンをクリック、または[スペース]キーを押すと、
 		演奏が止まります。<br>
 	</div>
-
 	<h3><a name="play2">Playing in the Middle</a></h3>
 	<div class=w>
 		曲の途中から演奏したい場合は、演奏したい位置のヘッダー部分を左クリックしてください。<br>
@@ -91,7 +82,6 @@
 		<br>
 		演奏位置を表す縦線が移動しますので、この状態で再生を行えば、ここから演奏が始まります。
 	</div>
-
 	<h3><a name="gate">Changing the Length (Gate) of a Note</a></h3>
 	<div class=w>
 		既に置いたノートの長さ（Gate）を変えるには、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96" height="33">）で
@@ -111,7 +101,6 @@
 		ちなみに、このイベントリスト部分へ直接入力する場合は、「480*4*4」のように四則演算（カッコも使えます）が出来ますので、
 		暗算苦手だ！って人は利用してください。<br>
 	</div>
-
 	<h3><a name="velo">Changing the Strength (Velocity) of a Note</a></h3>
 	<div class=w>
 		ベロシティを変えるにはイベントグラフペインを利用します。<br>
@@ -142,19 +131,16 @@
 		<br>
 		状況に合わせて使い分けてみてください。
 	</div>
-
 	<h3><a name="note_move">Moving a Note</a></h3>
 	<div class=w>
 		置いたノートを後で移動させたい場合は、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96" height="33">）を使って
 		移動させたいノート上へカーソルを移動させてください。<br>
 		すると、マウスカーソルが左右上下矢印に変わりますので、この状態で左右上下へ左ドラッグしてください。
-
 		ドラッグを終えると、確定します。<br>
 		<img src="assets/use_014.png" width="110" height="81"><br>
 		<br>
 		なお、ドラッグ中に右クリックすると、移動をキャンセルできます。<br>
 	</div>
-
 	<h3><a name="undo">Undoing</a></h3>
 	<div class=w>
 		誤って編集してしまった場合などには、ツールバーの[元に戻す]ボタン（またはキーボードのCtrl+Z）を押すことで、編集内容を１段階元に戻すことができます。<br>
@@ -164,9 +150,7 @@
 		<br>
 		元に戻した編集内容を、やり直すにはツールバーの[やり直し]ボタン（またはキーボードのCtrl+Y）を押してください。<br>
 		<img src="assets/use_016.png" width="127" height="62">
-
 	</div>
-
 	<h3><a name="snap">Adjusting Snapping</a></h3>
 	<div class=w>
 		マウス操作でノートを置いたり移動したり、Gateを調節したりする際には、ある程度の間隔でスナップ（クォンタイズ）していたかと思います。<br>
@@ -184,17 +168,14 @@
 		<br>
 		なお、ドラッグ操作中に[Ctrl]キーを押すことで一時的にクォンタイズのオン/オフを切り替えることもできます。<br>
 	</div>
-
 	<h3><a name="note_del">Removing a Note</a></h3>
 	<div class=w>
-		置いたノートを削除するには、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96"
-			height="33">）で削除したいノートを左ダブルクリックしてください。<br>
+		置いたノートを削除するには、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96" height="33">）で削除したいノートを左ダブルクリックしてください。<br>
 		<img src="assets/use_019.png" width="187" height="106"><br>
 		<br>
 		また、イベントリストペインの、該当するノートイベントをクリックして[Delete]キーを押すことでも削除することができます。<br>
 		<img src="assets/use_020.png" width="298" height="93"><br>
 	</div>
-
 	<h3><a name="note_def">Changing Initial Gate and Velocity Values</a></h3>
 	<div class=w>
 		ピアノロールでノートを置くと、GateとVelocityが勝手に設定されていましたが、
@@ -205,7 +186,6 @@
 		このデフォルト値を意図的に変えたい場合は、ツールバー上のVel欄、Gate欄を調節してください。<br>
 		<img src="assets/use_021.png" width="227" height="58"><br>
 	</div>
-
 	<h3><a name="dropper">Changing Initial Gate and Velocity Values Based on Other Notes</a></h3>
 	<div class=w>
 		編集中、「このノートと同じGateとVelocityで新しいノートをいくつか追加したい」という場面に出くわした場合は、
@@ -219,14 +199,12 @@
 		<br>
 		あとはノートを配置していくだけです。<br>
 	</div>
-
 	<h3><a name="sel_move">Moving Multiple Notes</a></h3>
 	<div class=w>
 		今まで、一個のノートを対象にした編集（移動・削除など）方法を説明してきましたが、
 		ここからは複数のノートを対象にした編集方法を説明します。<br>
 		<br>
-		複数のノートを一度に移動させるには、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90"
-			height="37">）を使ってピアノロールを左ドラッグし、ノートを選択します。<br>
+		複数のノートを一度に移動させるには、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90" height="37">）を使ってピアノロールを左ドラッグし、ノートを選択します。<br>
 		<img src="assets/use_025.png" width="260" height="208"><br>
 		<br>
 		選択後、選択範囲内へマウスカーソルを持って行くと、カーソルが左右上下矢印になりますので、
@@ -237,24 +215,19 @@
 		<br>
 		なお、ドラッグ中に右クリックすると、移動をキャンセルできます。<br>
 	</div>
-
 	<h3><a name="sel_del">Removing Multiple Notes</a></h3>
 	<div class=w>
-		複数のノートを削除するには、消しゴムツール（<img src="assets/use_027.png" align="absmiddle" width="87"
-			height="35">）を使って消したい部分を左ドラッグします。<br>
+		複数のノートを削除するには、消しゴムツール（<img src="assets/use_027.png" align="absmiddle" width="87" height="35">）を使って消したい部分を左ドラッグします。<br>
 		<img src="assets/use_028.png" width="211" height="113"><br>
 		<br>
 		削除されました。<br>
 		<img src="assets/use_029.png" width="211" height="113"><br>
 		<br>
-		なお、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90"
-			height="37">）を使って消したい部分を選択した後で[Delete]キーを押しても同様に削除できます。
+		なお、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90" height="37">）を使って消したい部分を選択した後で[Delete]キーを押しても同様に削除できます。
 	</div>
-
 	<h3><a name="sel_copy">Duplicating Multiple Notes (Copy/Paste)</a></h3>
 	<div class=w>
-		複数のノートを複製するには、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90"
-			height="37">）で複製したい場所を左ドラッグし、選択します。<br>
+		複数のノートを複製するには、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90" height="37">）で複製したい場所を左ドラッグし、選択します。<br>
 		<img src="assets/use_030.png" width="119" height="147"><br>
 		<br>
 		キーボードの[Ctrl+C]キーを押してください。<br>
@@ -272,7 +245,6 @@
 		ちなみに、選択ツールで選択範囲上を左ダブルクリックすると[コピー]、
 		選択範囲外を左ダブルクリックすると[貼り付け]が行われますので、キーボードが面倒だという人はこちらの操作もお試しください。
 	</div>
-
 	<h3><a name="sel_copy">Duplicating Multiple Notes (Move Duplicate)</a></h3>
 	<div class=w>
 		近い場所へ複製する場合には、コピー＆ペーストよりも効率の良い方法があります。<br>
@@ -284,7 +256,6 @@
 		<br>
 		複製を移動することができます。
 	</div>
-
 	<h3><a name="sel_velo">Changing Velocity Values of Multiple Notes</a></h3>
 	<div class=w>
 		イベントグラフでVelocityを調節する際、同じタイミングで置かれているノートがあると
@@ -292,22 +263,18 @@
 		<img src="assets/use_033.png" width="143" height="230"><br>
 		<br>
 		「このノートのVelocityだけを変えたい！」という場合、
-		もしそのノートの数が少ない場合（１～２個？）は、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96"
-			height="33">）でそのノートを右クリックしてください。<br>
+		もしそのノートの数が少ない場合（１～２個？）は、ペンツール（<img src="assets/use_005.png" align=absmiddle width="96" height="33">）でそのノートを右クリックしてください。<br>
 		すると、イベントリストでそのノートのVelocity欄にカーソルが移動しますので、この状態でキーボードから数値を直接入力してください。<br>
 		<img src="assets/use_034.png" width="292" height="55"><br>
 		<br>
-		もし対象のノートが多数ある場合は、変えたいノートだけを選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90"
-			height="37">）を使って選択してください。<br>
+		もし対象のノートが多数ある場合は、変えたいノートだけを選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90" height="37">）を使って選択してください。<br>
 		<img src="assets/use_035.png" width="240" height="149"><br>
 		<br>
-		次にペンツール（<img src="assets/use_005.png" align=absmiddle width="96"
-			height="33">）を使ってイベントグラフへVelocityを書き込んでみてください。<br>
+		次にペンツール（<img src="assets/use_005.png" align=absmiddle width="96" height="33">）を使ってイベントグラフへVelocityを書き込んでみてください。<br>
 		<br>
 		選択したノートのVelocityだけが変わります。<br>
 		<img src="assets/use_036.png" width="227" height="333"><br>
 	</div>
-
 	<h3><a name="batch">Changing Gate and Velocity Values of Multiple Notes</a></h3>
 	<div class=w>
 		複数のノートのGateやVelocityを+10したい、というような場合には、
@@ -332,7 +299,6 @@
 		<br>
 		このように値の直指定から相対指定まで様々な調節ができます。<br>
 	</div>
-
 	<h3><a name="slice">Slicing a Note</a></h3>
 	<div class=w>
 		「長いノートをいくつか置いたけど、この位置で止まって欲しい」という場合には、止めたい位置へ演奏位置を移動させ（ヘッダーを左クリック）、<br>
@@ -345,16 +311,12 @@
 		<img src="assets/use_042.png" width="220" height="150"><br>
 		<br>
 		なお、[スライス]機能の方は、１つのノートを演奏位置で２つに分断する機能です。<br>
-
 		また、矩形選択で範囲を指定してから実行すると、指定した音階範囲のみを処理対象にする事ができます。<br>
 		さらには、[環境設定]の[全般]にて[スライスされた左側ノートのGate]を調節することで、分断された左側ノートのGateを短くすることも可能です。
-
 	</div>
-
 	<h3><a name="stroke">Gradually Shifting the Timing of Multiple Notes (Stroke)</a></h3>
 	<div class=w>
-		ギターストロークのような事をやりたい場合には、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90"
-			height="37">）でストロークさせたいノートを選択します。<br>
+		ギターストロークのような事をやりたい場合には、選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90" height="37">）でストロークさせたいノートを選択します。<br>
 		<br>
 		次に、選択範囲上を右クリックして[ストローク]を選んでください。<br>
 		<img src="assets/use_043.png" width="347" height="385"><br>
@@ -366,7 +328,6 @@
 		ノートのタイミングがずれます。<br>
 		<img src="assets/use_045.png" width="230" height="295"><br>
 	</div>
-
 	<h3><a name="sel_filter">Filtering Selection</a></h3>
 	<div class=w>
 		例えば、長いGate、短いGateのノートが連続して置かれている状態で、長いGateのノートだけを一括して変更したい場合があるとします。<br>
@@ -382,15 +343,12 @@
 		<br>
 		（この後で[一括変更]機能なりコピペなりをすれば、選択されているノートだけが処理されます）<br>
 	</div>
-
 	<h3><a name="sel_oct">Transposing Between Octaves</a></h3>
 	<div class=w>
 		複数のノートをまとめて１オクターブ下げたり上げたりするには、
-		選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90"
-			height="37">）でノートを選択し、選択範囲上を右クリックして[1オクターブ下げる][1オクターブ上げる]を選んでください。<br>
+		選択ツール（<img src="assets/use_022.png" align="absmiddle" width="90" height="37">）でノートを選択し、選択範囲上を右クリックして[1オクターブ下げる][1オクターブ上げる]を選んでください。<br>
 		<img src="assets/use_049.png" width="313" height="471"><br>
 	</div>
-
 	<h3><a name="sel_pen">Switching Between Pen and Select Tools</a></h3>
 	<div class=w>
 		ペンツールと選択ツールは、ピアノロール上を右ダブルクリックすることで相互に切り替えることができます。<br>
@@ -403,7 +361,6 @@
 	<div class=w>
 		Changing Instrument、イベントリスト上にあるプログラムチェンジイベント（紫色のイベント）をダブルクリックします。<br>
 		このイベントは「ProgramChange」と表示されていたり、「PC:（楽器名）」というように表示されていたりします。<br>
-
 		<img src="assets/use_052.png" width="305" height="117"><br>
 		<br>
 		[プログラムチェンジイベントのプロパティ]画面が表示されます。<br>
@@ -423,7 +380,6 @@
 		<br>
 		※ 音源定義ファイルによって表記や色は異なります。
 	</div>
-
 	<h3><a name="volume2">Changing Volume and Pan Live</a></h3>
 	<div class=w>
 		先ほどは曲の先頭で一度だけパートの音量などを変えるだけでしたが、Changing Volume and Pan Live、
@@ -440,7 +396,6 @@
 		<br>
 		これでパートの音量を変えるイベントがその位置へ挿入されました。<br>
 		<img src="assets/use_057.png" width="226" height="169"><br>
-
 		<br><br>
 		ちなみに、[アンカー表示]ボタンを押してアンカーを表示しておくと、<br>
 		<img src="assets/use_059.png" width="213" height="104"><br>
@@ -481,7 +436,6 @@
 		元の最適なサイズに戻すには、「つまみ」を左ダブルクリックしてください。<br>
 		<img src="assets/use_067.png" width="136" height="77"><br>
 		<br>
-
 		なお、挿入する間隔は直線ツールの右側の[▼]ボタンを押して出てくるメニュー内の[間隔設定]から変更できます。<br>
 		<img src="assets/use_068.png" width="185" height="244"><br>
 	</div>
@@ -514,7 +468,6 @@
 		なお、ピッチベンド入力の際には、値による指定だけでなく、キー（半音）単位で指定する欄が表示されます。<br>
 		<img src="assets/use_075.png" width="97" height="108"><br>
 	</div>
-
 	<h3><a name="pbcurve_copy">Copying Pitch Bend and Expression Curves</a></h3>
 	<div class=w>
 		既に入力してあるCopying Pitch Bend and Expression Curves、コピーしたいイベントをイベントグラフへ表示させ、
@@ -532,7 +485,6 @@
 		ちなみに、選択ツールで選択範囲上を左ダブルクリックすると[コピー]、
 		選択範囲外を左ダブルクリックすると[貼り付け]が行われますので、キーボードが面倒だという人はこちらの操作もお試しください。
 	</div>
-
 	<h3><a name="track_cur">Changing Current Track</a></h3>
 	<div class=w>
 		編集するトラック（カレントトラック）を変えるには、ツールバーのトラック切り替えコンボボックスをクリックしてトラックを指定します。<br>
@@ -557,7 +509,6 @@
 	<div class=w>
 		ピアノロールエリアへ他のトラックの内容を同時に表示させることができます。<br>
 		<img src="assets/use_084.png" width="269" height="292"><br>
-
 		他のトラックのノートを表示させるには、ツールバー上の[オニオンスキン]ボタンの右側にある[▼]ボタンをクリックし、
 		表示したいトラックを選びます。<br>
 		<img src="assets/use_082.png" width="345" height="218"><br>
@@ -589,7 +540,6 @@
 		Ctrl+左クリックで、そのトラックの表示/非表示を切り替えることができます。<br>
 		<img src="assets/use_176.png" width="144" height="219"><br>
 	</div>
-
 	<h3><a name="tempo">Changing Tempo</a></h3>
 	<div class=w>
 		テンポは、通常のトラックではなく、「コンダクタートラック」と呼ばれる特別なトラックにのみ
@@ -609,7 +559,6 @@
 		もちろん直線ツールなどで徐々に早くしたり遅くしたりすることもできます。<br>
 		<img src="assets/use_089.png" width="219" height="137"><br>
 	</div>
-
 	<h3><a name="rhythm">Editing Rhythm Track</a></h3>
 	<div class=w>
 		ほとんどの機器は10チャンネルがリズムトラックになっているはずですのでDominoでも10チャンネルはあらかじめリズムトラックになっています。<br>
@@ -629,7 +578,6 @@
 		[モード]を[ドラムセットリスト]にしてから音色を選択してください。<br>
 		<img src="assets/use_093.png" width="366" height="254"><br>
 	</div>
-
 	<h3><a name="ryhthm_velo">Changing Note Strength on Rhythm Track</a></h3>
 	<div class=w>
 		イベントグラフ部分にてVelocityを調節したい場合、同じタイミングで置かれているノートは
@@ -645,7 +593,6 @@
 		この状態でイベントグラフ部分へVelocityを書き込めば、選択した音階のVelocityのみが変わります。<br>
 		<img src="assets/use_095.png" width="260" height="244"><br>
 	</div>
-
 	<h3><a name="ryhthm_trset">Converting a Track to a Rhythm Track</a></h3>
 	<div class=w>
 		<div class=caution>
@@ -676,7 +623,6 @@
 		マクロ部分からPartEdit→Part Modeを選んでください。<br>
 		<img src="assets/use_100.png" width="567" height="517"><br>
 		<br>
-
 		<img src="assets/use_101.png" width="297" height="78"><br>
 		これでMIDI機器側の設定はＯＫです。<br>
 		<br>
@@ -694,7 +640,6 @@
 		これでカレントトラックの音色が設定でき、ついでにトラックがリズムトラックとして設定されます。<br>
 		<img src="assets/use_104.png" width="234" height="54"><br>
 	</div>
-
 	<h3><a name="tr_name">Naming a Track</a></h3>
 	<div class=w>
 		カレントトラックのトラック名を変更するには、ツールバーの[トラックのプロパティ]ボタンを押してください。<br>
@@ -703,7 +648,6 @@
 		[トラックのプロパティ]画面が表示されますので、トラック名を入力して[OK]ボタンを押してください。<br>
 		<img src="assets/use_106.png" width="476" height="393"><br>
 	</div>
-
 	<h3><a name="tr_add">Adding a Track</a></h3>
 	<div class=w>
 		ピアノロールを表示しているモードでは、カレントトラックの内容しか見られないため、全体のトラックの見通しが悪いです。<br>
@@ -726,7 +670,6 @@
 		トラックの中身は空っぽですので、初期化イベント等を入れる必要があります。<br>
 		もし、初期化用のイベント込みでトラックを追加したい場合は↓の「１ポート分のトラックを一気に追加するには」を参照してください。
 	</div>
-
 	<h3><a name="tr_add_port">Adding a Track Set for a Port</a></h3>
 	<div class=w>
 		新規作成状態では、あらかじめポートA分の約１６トラックが用意され、初期化用のイベントなども全て含まれています。<br>
@@ -744,15 +687,12 @@
 		一番下にトラックが追加されます。<br>
 		<img src="assets/use_172.png" width="245" height="229"><br>
 	</div>
-
-
 	<h3><a name="tr_del">Removing a Track</a></h3>
 	<div class=w>
 		トラックを削除するには、[トラックリスト]モード([Tab]キーで切り替え)にしてから削除したいトラック名部分を右クリックし、
 		[トラックの削除]を選んでください。<br>
 		<img src="assets/use_110.png" width="323" height="125"><br>
 	</div>
-
 	<h3><a name="tr_move">Rearranging a Track</a></h3>
 	<div class=w>
 		トラックの順番を変えるには、[トラックリスト]モード([Tab]キーで切り替え)にしてから、並べ替えたいトラックのトラック名部分を上下に左ドラッグしてください。<br>
@@ -761,7 +701,6 @@
 		ドラッグ操作が完了すると確定します。<br>
 		（ドラッグ操作中に右クリックすると、キャンセルできます。）<br>
 	</div>
-
 	<h3><a name="mtr_edit">Editing Multiple Tracks</a></h3>
 	<div class=w>
 		複数のトラックにまたがって、各イベントの内容をコピー・削除・貼り付けするには、
@@ -771,9 +710,7 @@
 		<br>
 		なお、全トラックを処理したい場合は、ヘッダー部分を選択すると便利です。<br>
 		<img src="assets/use_113.png" width="242" height="231"><br>
-
 	</div>
-
 	<h3><a name="track_solo">Playing a Specific Track</a></h3>
 	<div class=w>
 		まずは[トラックリスト]モード([Tab]キーで切り替え)にしてください。<br>
@@ -788,8 +725,6 @@
 		なお、通常のピアノロール画面でも、ツールバー上で[ソロ演奏（Sマーク）]、[全トラック演奏(Aマーク)]を指定する事ができます。<br>
 		<img src="assets/use_115.png" width="328" height="75"><br>
 	</div>
-
-
 	<h3><a name="mark">Setting a Marker</a></h3>
 	<div class=w>
 		拍子にマークを設定することで、演奏位置の変更が楽にできるようになります。<br>
@@ -810,7 +745,6 @@
 		マークの削除やマークのラベルを変えるには、マークバー上のマークを右クリックしてください。<br>
 		<img src="assets/use_179.png" width="321" height="94"><br>
 	</div>
-
 	<h3><a name="ts">Setting the Time Signature</a></h3>
 	<div class=w>
 		デフォルトの状態では４／４拍子になっていますが、これを変えるにはコンダクタートラックの拍子イベントをダブルクリックします。<br>
@@ -827,7 +761,6 @@
 		<br>
 		なお、ここで挿入した拍子情報はコンダクタートラックに挿入されますので、再編集や削除はコンダクタートラックで行ってください。
 	</div>
-
 	<h3><a name="title">Setting the Title and Other Project Properties</a></h3>
 	<div class=w>
 		Setting the Title and Other Project Properties、ツールバーの[曲のプロパティ]ボタンを押してください。<br>
@@ -841,7 +774,6 @@
 		<img src="assets/use_124.png" width="570" height="68"><br>
 		（SMF書き出しの際にこの曲名や著作権情報が保存されます。）<br>
 	</div>
-
 	<h3><a name="comment">Inserting a Comment Event</a></h3>
 	<div class=w>
 		イベントリストのイベントをクリックして、イベントリストにフォーカスがある状態（四角カーソルが黒い状態）で
@@ -854,7 +786,6 @@
 		コメントイベントのイベント欄をクリックしてキーボードから文字を入力すると、コメント内容を変更できます。<br>
 		<img src="assets/use_126.png" width="305" height="61"><br>
 	</div>
-
 	<h3><a name="exc">Inserting an Exclusive Event</a></h3>
 	<div class=w>
 		イベントリストのイベントをクリックして、イベントリストにフォーカスがある状態（四角カーソルが黒い状態）で
@@ -872,12 +803,10 @@
 		<br>
 		内容を設定して[OK]ボタンを押してください。<br>
 	</div>
-
 	<h3><a name="cc">Inserting a Control Change Event</a></h3>
 	<div class=w>
 		通常のコントロールチェンジと言えば、コントロールチェンジ番号０～１２７があって、その番号によってボリュームやパンポットを設定するメッセージですが、
-		Dominoではこのコントロールチェンジを更に拡張して、１２８番以降を自由に定義し、使用することが可能になっています（番号の上限は<a
-			href="module.html">Sound Source Definition File Specifications</a>を参照してください）。<br>
+		Dominoではこのコントロールチェンジを更に拡張して、１２８番以降を自由に定義し、使用することが可能になっています（番号の上限は<a href="module.html">Sound Source Definition File Specifications</a>を参照してください）。<br>
 		<br>
 		これにより、通常のコントロールチェンジと同じ手軽さでマスターボリュームやEFX等、
 		機器固有のパラメータを調節することができます。<br>
@@ -893,7 +822,6 @@
 		[コントロールチェンジイベントのプロパティ]画面が表示されますので、設定したいマクロと値を設定して[OK]ボタンを押してください。<br>
 		<img src="assets/use_130.png" width="567" height="517"><br>
 	</div>
-
 	<h3><a name="cc2">Inserting Multiple Control Change Events</a></h3>
 	<div class=w>
 		複数のコントロールチェンジマクロを一気に挿入するには、挿入したい位置を演奏位置として設定し、
@@ -910,7 +838,6 @@
 		イベントが挿入されました。<br>
 		<img src="assets/use_133.png" width="297" height="328"><br>
 	</div>
-
 	<h3><a name="loop">Playing in a Loop</a></h3>
 	<div class=w>
 		特定の部分だけをPlaying in a Loop、ループさせたい範囲を選択してください。<br>
@@ -930,9 +857,7 @@
 		<br>
 		ループマーカーの始点と終点はマウス左ドラッグで動かすことができます。<br>
 		ループ範囲として、選択範囲とループマーカーのどちらを優先させるかは[演奏]メニューの[ループ]→[選択範囲優先]オン/オフで切り替えられます。<br>
-
 	</div>
-
 	<h3><a name="sync">Syncing Playback Position with MIDI Devices</a></h3>
 	<div class=w>
 		MIDI音源は内部でいろいろな値を保持しています。<br>
@@ -957,7 +882,6 @@
 		<img src="assets/use_137.png" width="290" height="536"><br>
 		すると、演奏位置を動かした時点で、自動的に[MIDI機器の状態を合わせる]処理が実行されます。<br>
 	</div>
-
 	<h3><a name="param">Using Variables</a></h3>
 	<div class=w>
 		コントロールチェンジイベントのGate欄やVel/Value欄、およびテンポには、変数を使用する事が可能です。<br>
@@ -999,7 +923,6 @@
 			ただし、[MIDI機器の状態を合わせる]機能との相性が良くないので、そちらの機能を使う場合は、変数イベントを使うのは避けた方が良いでしょう。
 		</div>
 	</div>
-
 	<h3><a name="rtrec">Recording in Real Time</a></h3>
 	<div class=w>
 		MIDIキーボードなどからリアルタイムに演奏した内容を、データとして取り込むことができます。<br>
@@ -1015,7 +938,6 @@
 		<br>
 		演奏が終わるか、[停止]ボタンを押すと、入力された内容が画面上に反映されます。<br>
 	</div>
-
 	<h3><a name="strec">Recording in Steps</a></h3>
 	<div class=w>
 		ステップ録音とは、MIDIキーボードから入力された内容をデータとして取り込む機能です。<br>
@@ -1039,7 +961,6 @@
 		試しに音を鳴らしたい場合は[Ctrl]キーを押しながら入力を行ってください。<br>
 		（[Ctrl]キーを押している間はイベントは挿入されません。）<br>
 	</div>
-
 	<h3><a name="sysex_rec">Recieving Exclusive Events</a></h3>
 	<div class=w>
 		MIDI機器などから送信されたエクスクルーシブデータをDominoで取り込むには、ツールバー上の[エクスクルーシブ受信]ボタンをクリックします。<br>
@@ -1050,9 +971,7 @@
 		<img src="assets/use_146.png" width="294" height="99"><br>
 		<br>
 		受信に成功すると、画面へエクスクルーシブイベントが挿入されます。
-
 	</div>
-
 	<h3><a name="save">Saving a Project</a></h3>
 	<div class=w>
 		編集した内容を保存しておくには、ツールバー上の[保存]ボタンを押します。<br>
@@ -1065,7 +984,6 @@
 		このまま他のプレイヤなどで再生することはできません。<br>
 		全ての編集内容を大事にとっておくための保存です。<br>
 	</div>
-
 	<h3><a name="open">Opening a Project</a></h3>
 	<div class=w>
 		過去に保存したファイルやmidiファイルを開くには、ツールバー上の[開く]ボタンを押します。<br>
@@ -1081,7 +999,6 @@
 		ちなみに、最近使ったファイルを開くには、[開く]ボタンの右側にある[▼]ボタンを押してください。<br>
 		<img src="assets/use_151.png" width="440" height="202"><br>
 	</div>
-
 	<h3><a name="eot">Adjusting End of Track</a></h3>
 	<div class=w>
 		トラック毎にトラックの終端位置を示すイベント（End of Track）が存在するのですが、
@@ -1099,7 +1016,6 @@
 		これで演奏位置に全トラックのEnd of Trackイベントが再配置されます。<br>
 		（もちろん、後ろにイベントがあれば再配置できませんが＾＾；）<br>
 	</div>
-
 	<h3><a name="smf">Exporting as a MIDI File</a></h3>
 	<div class=w>
 		編集中の音楽データをmidファイル(Standard MIDI File)として書き出すには、
@@ -1111,7 +1027,6 @@
 		<br>
 		midファイルとして書き出されます。
 	</div>
-
 	<h3><a name="backup">Backing Up</a></h3>
 	<div class=w>
 		編集中Dominoがヌルポインターアクセスして落ちるだとか、
@@ -1131,7 +1046,6 @@
 		<br>
 		これで指定した時間おきにファイルの保存が行われます。
 	</div>
-
 	<h3><a name="key_custom">Customizing Shortcut Keys</a></h3>
 	<div class=w>
 		メインメニューに表示されている全てのコマンドに対して、ショートカットキーを割り当てることができます。<br>
@@ -1150,9 +1064,7 @@
 		<br>
 		[ＯＫ]ボタンを押すと、設定内容が反映されます。<br>
 		<img src="assets/use_158.png" width="276" height="133"><br>
-
 	</div>
-
 	<h3><a name="tb_custom">Customizing the Toolbar</a></h3>
 	<div class=w>
 		メインウィンドウに乗っているツールバーは、内容を自由にカスタマイズする事ができます。<br>
@@ -1178,7 +1090,6 @@
 			もし、アイコンの付いていないコマンドをツールバーに配置したい場合には、そのコマンドにアイコンを付けて！という感じで要望を出してください（＾＾；
 		</div>
 	</div>
-
 	<h3><a name="mouse_custom">Customizing Mouse Operations</a></h3>
 	<div class=w>
 		ペンツールや選択ツールのマウス操作は自由にカスタマイズする事ができます。<br>
@@ -1199,7 +1110,6 @@
 			マウスドライバ側の設定を変えることで中クリックが使用可能になることがあります。<br>
 		</div>
 	</div>
-
 	<h3><a name="curve_custom">Customizing Curves and Lines</a></h3>
 	<div class=w>
 		イベントグラフ上へ[直線]や[早い曲線]を使って直線や曲線を入力することができますが、
@@ -1239,7 +1149,6 @@
 		あとは直線などと同様にイベントグラフペインでマウスをドラッグすれば、その曲線で入力できます。<br>
 		<img src="assets/use_168.png" width="417" height="196"><br>
 	</div>
-
 </body>
 
 </html>

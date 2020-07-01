@@ -1,12 +1,10 @@
 <html>
 
 <head>
-	<META HTTP-EQUIV="Content-type" CONTENT="text/html">
+	<meta charset="utf-8">
 	<title>Sound Source Definition File Specifications</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
-
-	<style TYPE="text/css">
-		<!--
+	<style type="text/css">
 		div.src {
 			font-size: 80%;
 			padding: 3px 3px 3px 3px;
@@ -37,13 +35,11 @@
 			padding: 3px 3px 2px 3px;
 			white-space: nowrap;
 		}
-		-->
 	</style>
 </head>
 
 <body>
 	<h1>Sound Source Definition File Specifications</h1>
-
 	<h3><a name="gaiyou">概要</a></h3>
 	<div class=w>
 		音源定義ファイルとは、その音源の持つ音色名や、各種設定方法などを定義するファイルです。<br>
@@ -56,7 +52,6 @@
 		（１ファイルで複数の音源を定義する、という事は通常はしません）<br>
 		<br>
 	</div>
-
 	<h3><a name="struct">主な構造</a></h3>
 	<div class=w>
 		音源定義ファイルはXML（Extensible Markup Language）という形式で記述します。<br>
@@ -66,7 +61,6 @@
 		<div class=src>
 			<pre>
 &lt;?xml version="1.0" encoding="Shift_JIS"?&gt;
-
 &lt;ModuleData （<a href="#ModuleData">音源の基本情報を記述</a>）&gt;
 	（<a href="#option">オプションを記述</a>）
 	&lt;InstrumentList&gt;
@@ -92,9 +86,7 @@
 		あとはカッコで書かれている部分を書き込めば定義ファイルとなります。<br>
 		各部分について説明いたします。<br>
 		<br>
-
 	</div>
-
 	<h3><a name="ModuleData">音源の基本情報</a></h3>
 	<div class=w>
 		ModuleDataタグの属性として、音源および定義ファイルの基本情報を記述します。<br>
@@ -149,7 +141,6 @@
 		<br>
 		定義ファイルの作成者名やバージョン情報は、[ヘルプ]メニューの[音源定義ファイル]情報から確認できます。
 	</div>
-
 	<h3><a name="option">オプション</a></h3>
 	<div class=w>
 		ModuleDataタグの要素としていくつかオプションを指定する事ができます。<br>
@@ -178,7 +169,6 @@
 		なお、XMLのルールにより、タグを閉じる必要がない（一つのタグだけで完結する）ものは、
 		タグの最後にスペースとスラッシュを必ず入れてください。<br>
 	</div>
-
 	<h3><a name="InstrumentList">音色情報</a></h3>
 	<div class=w>
 		音色情報は、[マップ]、[PC]、[バンク]の三階層になっています。<br>
@@ -204,7 +194,6 @@
 &lt;/Map&gt;
 </pre>
 		</div>
-
 		<h4>Mapタグ</h4>
 		Mapタグはマップを定義します。<br>
 		Mapタグは複数定義する事ができます。<br>
@@ -223,7 +212,6 @@
 				<td>マップ名を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>PCタグ</h4>
 		PCタグはPC情報を定義します。<br>
 		PCタグは複数定義する事ができます（必ず128個定義する必要はありません）。<br>
@@ -247,7 +235,6 @@
 				<td>PC番号を1～128の範囲で指定します。</td>
 			</tr>
 		</table>
-
 		<h4>Bankタグ</h4>
 		Bankタグはバンク情報を定義します。<br>
 		Bankタグは複数定義する事ができます（PC１つにつきバンク１つは必須です）。<br>
@@ -275,11 +262,8 @@
 				<td>Bank Select MSBとして送信する値を指定します。省略、または255を指定した場合は送信しません。</td>
 			</tr>
 		</table>
-
 		</dl>
-
 	</div>
-
 	<h3><a name="DrumSetList">ドラムセット情報</a></h3>
 	<div class=w>
 		ドラムセット情報は、「<a href="#InstrumentList">音色情報</a>」とほとんど同じですが、Bankタグの要素として複数のToneタグを定義する事ができます。<br>
@@ -306,7 +290,6 @@
 &lt;/Map&gt;
 </pre>
 		</div>
-
 		<h4>Toneタグ</h4>
 		ToneタグはBankタグで定義されたドラムセットの、各キーにおける楽器名を定義します。<br>
 		Toneタグは複数定義する事ができます（省略可）。<br>
@@ -329,9 +312,7 @@
 				<td>音階（ノート番号）を0～127の範囲で指定します。</td>
 			</tr>
 		</table>
-
 	</div>
-
 	<h3><a name="ControlChangeMacroList">コントロールチェンジマクロ情報</a></h3>
 	<div class=w>
 		コントロールチェンジマクロ機能は、コントロールチェンジ機能を擬似的に拡張した機能です。<br>
@@ -354,7 +335,6 @@
 		&lt;Memo&gt;&lt;/Memo&gt;
 		&lt;Data&gt;@NRPN 1AH #GL #VL #NONE&lt;/Data&gt;
 	&lt;/CCM&gt;
-
 	&lt;CCM ID="259" Name="Part Mode"&gt;
 		&lt;Value Max="2"&gt;
 			&lt;Entry Label="Normal" Value="0" /&gt;
@@ -364,16 +344,13 @@
 		&lt;Memo&gt;通常の楽器パートか、ドラムセットパートかを設定します。&lt;/Memo&gt;
 		&lt;Data&gt;@SYSEX F0H 41H 10H 42H 12H [ 40H #1RCH 15H #VL ] F7H&lt;/Data&gt;
 	&lt;/CCM&gt;
-
 	&lt;CCM ID="500" Name="TableTest" Color="#0fa806"&gt;
 		&lt;Value Min="0" Max="3" TableID="1" /&gt;
 		&lt;Memo&gt;テーブル参照サンプルです。&lt;/Memo&gt;
 		&lt;Data&gt;@SYSEX （省略）&lt;/Data&gt;
 	&lt;/CCM&gt;
-
 	&lt;CCMLink ID="500" Value="1" /&gt;
 &lt;/Folder&gt;
-
 &lt;Table ID="1"&gt;
 	&lt;Entry Label="0ms" Value="0" /&gt;
 	&lt;Entry Label="0.1ms" Value="1" /&gt;
@@ -382,7 +359,6 @@
 &lt;/Table&gt;
 </pre>
 		</div>
-
 		<h4>Folderタグ</h4>
 		各CCMタグは、自由にフォルダを作成でき、その中へ入れることができます。<br>
 		こうすることにより、ユーザーが目的のマクロを探しやすくするようにできます。<br>
@@ -407,7 +383,6 @@
 				<td>FolderLinkとしてリンクを貼る必要がある場合に0以上のIDを指定しておきます。</td>
 			</tr>
 		</table>
-
 		<h4>CCMタグ</h4>
 		CCMタグはコントロールチェンジマクロ（ControlChangeMacro）を定義します。<br>
 		CCMタグは複数定義する事ができます。
@@ -447,7 +422,6 @@
 				<td>[トラックの演奏]がオフの際、このコントロールチェンジマクロも送信したくない場合は、"1"を指定してください。</td>
 			</tr>
 		</table>
-
 		<h4>Vauleタグ、Gateタグ</h4>
 		Valueタグ、Gateタグの属性などは同一です。<br>
 		ValueタグはイベントのValue値の範囲などを定義します。<br>
@@ -500,7 +474,6 @@
 				<td>共通テーブルを使用する場合にはテーブルIDをここで指定します。</td>
 			</tr>
 		</table>
-
 		<h4>Entryタグ</h4>
 		Entryタグはテーブルの１データを定義します。<br>
 		EntryタグはGateタグやValueタグ、Tableタグの要素として複数定義します。<br>
@@ -526,7 +499,6 @@
 		<br>
 		こうしてテーブルを定義すると、ユーザーは値だけでなく、表から選ぶことができるようになります。<br>
 		<img src="assets/module_000.png" width="567" height="517"><br>
-
 		<h4>Memoタグ</h4>
 		Memoタグは、コントロールチェンジマクロのメモを定義します。<br>
 		コントロールチェンジイベントのプロパティ画面などで利用されます。<br>
@@ -548,7 +520,6 @@
 		「@命令コマンド 値 値 ・・・ @命令コマンド 値 値 ・・・」のようにいくつも定義することができます。<br>
 		（ただし、実際に処理されるのは同時期ですので、重たい処理をいくつも同時に送信させるのはよくありません。）<br>
 		<br>
-
 		命令コマンドの一覧は次の通りです。<br>
 		<table>
 			<tr>
@@ -690,7 +661,6 @@
 		</table>
 		<br>
 		他にも必要な値がある場合は、使い道を添えて要望を出してください。
-
 		<h4>CCMLinkタグ</h4>
 		CCMLinkタグは、他のCCMタグと内容がほぼ同じで、ValueやGateのデフォルト値だけ変えてその位置に配置したいときに利用します。<br>
 		（SC-8850の場合は、EFXマクロで多用しています。）<br>
@@ -718,8 +688,6 @@
 				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
 			</tr>
 		</table>
-
-
 		<h4>FolderLinkタグ</h4>
 		FolderLinkタグは、他ののフォルダと内容がほぼ同じで、ValueやGateのデフォルト値だけ変えてその位置に配置したいときに利用します。<br>
 		（SD-80等のようなMFXが複数系統ある機種で利用されます。）<br>
@@ -752,9 +720,6 @@
 				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
 			</tr>
 		</table>
-
-
-
 		<h4>Tableタグ</h4>
 		通常テーブルは、ValueタグやGateタグの要素としてEntryタグを用いて定義しますが、
 		共通テーブルとしてテーブルを定義しておくと、同じテーブルを複数のマクロで使い回すことができます。<br>
@@ -776,7 +741,6 @@
 			</tr>
 		</table>
 	</div>
-
 	<h3><a name="TemplateList">テンプレート情報</a></h3>
 	<div class=w>
 		テンプレート機能は、CCイベントなどを複数まとめて１テンプレートとして定義しておき、ユーザーによって挿入ができる機能です。<br>
@@ -803,7 +767,6 @@
 &lt;/Template&gt;
 </pre>
 		</div>
-
 		<h4>Folderタグ</h4>
 		各Templateタグは、自由にフォルダを作成でき、その中へ入れることができます。<br>
 		こうすることにより、ユーザーが目的のテンプレートを探しやすくするようにできます。<br>
@@ -823,12 +786,10 @@
 				<td>フォルダ名を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>Templateタグ</h4>
 		要素としてMemoタグ、CCタグ、PCタグ、Commentタグを持つことができます。<br>
 		これによって、テンプレートにどんなイベントを含めるかを指示します。<br>
 		<br>
-
 		Folderタグの属性は以下の通りです。<br>
 		<table>
 			<tr>
@@ -847,12 +808,9 @@
 				<td>テンプレート名を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>Memoタグ</h4>
-
 		テンプレートのメモ（説明）を記入します。<br>
 		メモは[テンプレート]画面で表示されます。<br>
-
 		<h4>CCタグ</h4>
 		コントロールチェンジイベントの挿入を指示します。<br>
 		<br>
@@ -879,7 +837,6 @@
 				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
 			</tr>
 		</table>
-
 		<h4>PCタグ</h4>
 		プログラムチェンジイベントの挿入を指示します。<br>
 		<br>
@@ -911,10 +868,8 @@
 				<td>Drumset・・・ドラムセットの音色モードということを指定します。<br>Auto・・・トラックの種類が「リズム」になっている場合はドラムセットの音色モードにします。</td>
 			</tr>
 		</table>
-
 		<h4>Commentタグ</h4>
 		コメントイベントの挿入を指示します。
-
 		Commentタグの属性は以下の通りです。
 		<table>
 			<tr>
@@ -928,9 +883,7 @@
 				<td>コメントデータを指定します。</td>
 			</tr>
 		</table>
-
 	</div>
-
 	<h3><a name="DefaultData">デフォルトデータ情報</a></h3>
 	<div class=w>
 		デフォルトデータとは、Dominoを起動した時や新規作成した際に、あらかじめ用意されているデータの事です。<br>
@@ -963,7 +916,6 @@
 （省略）
 </pre>
 		</div>
-
 		<h4>Trackタグ</h4>
 		Trackタグは１つのトラック情報を定義します。<br>
 		（実際は、置かれている順番どおりにトラックが作成されます。）<br>
@@ -994,7 +946,6 @@
 				<td>「Conductor」を指定すると、コンダクタートラックになります（１つのみ指定可能）。<br>「Rhythm」を指定すると、リズムトラックとして扱われます。</td>
 			</tr>
 		</table>
-
 		<h4>Markタグ</h4>
 		マークイベントの挿入を指示します。<br>
 		<br>
@@ -1021,7 +972,6 @@
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>TimeSignatureタグ</h4>
 		拍子イベントの挿入を指示します。<br>
 		<br>
@@ -1048,7 +998,6 @@
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>KeySignatureタグ</h4>
 		調号イベントの挿入を指示します。<br>
 		<br>
@@ -1075,7 +1024,6 @@
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>CCタグ</h4>
 		コントロールチェンジイベントの挿入を指示します。<br>
 		<br>
@@ -1111,9 +1059,7 @@
 				<td> </td>
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
-
 		</table>
-
 		<h4>PCタグ</h4>
 		プログラムチェンジイベントの挿入を指示します。
 		<table>
@@ -1153,10 +1099,8 @@
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>Commentタグ</h4>
 		コメントイベントの挿入を指示します。
-
 		Commentタグの属性は以下の通りです。
 		<table>
 			<tr>
@@ -1180,7 +1124,6 @@
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>Templateタグ</h4>
 		定義済みのテンプレートを利用してイベントの挿入を指示します。<br>
 		定義ファイルのサイズ節約（＝メモリ節約）にもなります。<br>
@@ -1208,7 +1151,6 @@
 				<td>このイベント以降の配置間隔を指定します。</td>
 			</tr>
 		</table>
-
 		<h4>EOTタグ</h4>
 		End of Trackの位置を指示します（無ければ自動的に追加されます）。<br>
 		<br>
@@ -1225,7 +1167,6 @@
 				<td>挿入する絶対Tickを指定します。</td>
 			</tr>
 		</table>
-
 	</div>
 </body>
 
