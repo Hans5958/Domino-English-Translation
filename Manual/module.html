@@ -40,7 +40,7 @@
 
 <body>
 	<h1>Sound Source Definition File Specifications</h1>
-	<h3><a name="gaiyou">概要</a></h3>
+	<h3><a name="gaiyou">Overview</a></h3>
 	<div class=w>
 		音源定義ファイルとは、その音源の持つ音色名や、各種設定方法などを定義するファイルです。<br>
 		Dominoはこの定義ファイルにもとづいて音源を操作します。<br>
@@ -52,7 +52,7 @@
 		（１ファイルで複数の音源を定義する、という事は通常はしません）<br>
 		<br>
 	</div>
-	<h3><a name="struct">主な構造</a></h3>
+	<h3><a name="struct">Main Structure</a></h3>
 	<div class=w>
 		音源定義ファイルはXML（Extensible Markup Language）という形式で記述します。<br>
 		（HTMLのようにタグを用います。）<br>
@@ -61,22 +61,22 @@
 		<div class=src>
 			<pre>
 &lt;?xml version="1.0" encoding="Shift_JIS"?&gt;
-&lt;ModuleData （<a href="#ModuleData">音源の基本情報を記述</a>）&gt;
-	（<a href="#option">オプションを記述</a>）
+&lt;ModuleData (<a href="#ModuleData">Description</a>)&gt;
+	（<a href="#option">Description</a>)
 	&lt;InstrumentList&gt;
-		（<a href="#InstrumentList">音色情報を記述</a>）
+		（<a href="#InstrumentList">Description</a>)
 	&lt;/InstrumentList&gt;
 	&lt;DrumSetList&gt;
-		（<a href="#DrumSetList">ドラムセット情報を記述</a>）
+		（<a href="#DrumSetList">Description</a>)
 	&lt;/DrumSetList&gt;
 	&lt;ControlChangeMacroList&gt;
-		（<a href="#ControlChangeMacroList">コントロールチェンジマクロ情報を記述</a>）
+		（<a href="#ControlChangeMacroList">Description</a>)
 	&lt;/ControlChangeMacroList&gt;
 	&lt;TemplateList&gt;
-		（<a href="#TemplateList">テンプレート情報を記述</a>）
+		（<a href="#TemplateList">Description</a>)
 	&lt;/TemplateList&gt;
 	&lt;DefaultData&gt;
-		（<a href="#DefaultData">デフォルトデータ情報を記述</a>）
+		（<a href="#DefaultData">Description</a>)
 	&lt;/DefaultData&gt;
 &lt;/ModuleData&gt;
 </pre>
@@ -87,7 +87,7 @@
 		各部分について説明いたします。<br>
 		<br>
 	</div>
-	<h3><a name="ModuleData">音源の基本情報</a></h3>
+	<h3><a name="ModuleData">Sound Source Basic Information</a></h3>
 	<div class=w>
 		ModuleDataタグの属性として、音源および定義ファイルの基本情報を記述します。<br>
 		<br>
@@ -141,7 +141,7 @@
 		<br>
 		定義ファイルの作成者名やバージョン情報は、[ヘルプ]メニューの[音源定義ファイル]情報から確認できます。
 	</div>
-	<h3><a name="option">オプション</a></h3>
+	<h3><a name="option">Option</a></h3>
 	<div class=w>
 		ModuleDataタグの要素としていくつかオプションを指定する事ができます。<br>
 		<br>
@@ -169,7 +169,7 @@
 		なお、XMLのルールにより、タグを閉じる必要がない（一つのタグだけで完結する）ものは、
 		タグの最後にスペースとスラッシュを必ず入れてください。<br>
 	</div>
-	<h3><a name="InstrumentList">音色情報</a></h3>
+	<h3><a name="InstrumentList">Instrument List Information</a></h3>
 	<div class=w>
 		音色情報は、[マップ]、[PC]、[バンク]の三階層になっています。<br>
 		音源自体にバンクが存在しなくとも、PC１つにつき１つのバンクが必要です。<br>
@@ -264,9 +264,9 @@
 		</table>
 		</dl>
 	</div>
-	<h3><a name="DrumSetList">ドラムセット情報</a></h3>
+	<h3><a name="DrumSetList">Drum Set List Information</a></h3>
 	<div class=w>
-		ドラムセット情報は、「<a href="#InstrumentList">音色情報</a>」とほとんど同じですが、Bankタグの要素として複数のToneタグを定義する事ができます。<br>
+		ドラムセット情報は、「<a href="#InstrumentList">Instrument List Information</a>」とほとんど同じですが、Bankタグの要素として複数のToneタグを定義する事ができます。<br>
 		<br>例）
 		<br>
 		<div class=src>
@@ -313,7 +313,7 @@
 			</tr>
 		</table>
 	</div>
-	<h3><a name="ControlChangeMacroList">コントロールチェンジマクロ情報</a></h3>
+	<h3><a name="ControlChangeMacroList">Control Change Macro List Information</a></h3>
 	<div class=w>
 		コントロールチェンジマクロ機能は、コントロールチェンジ機能を擬似的に拡張した機能です。<br>
 		マクロを定義する事で、ユーザーはコントロールチェンジと同じ感覚で様々な設定を行うことができるようになります。<br>
@@ -741,7 +741,7 @@
 			</tr>
 		</table>
 	</div>
-	<h3><a name="TemplateList">テンプレート情報</a></h3>
+	<h3><a name="TemplateList">Template List Information</a></h3>
 	<div class=w>
 		テンプレート機能は、CCイベントなどを複数まとめて１テンプレートとして定義しておき、ユーザーによって挿入ができる機能です。<br>
 		そうしたテンプレートを情報をここで定義します。<br>
@@ -884,7 +884,7 @@
 			</tr>
 		</table>
 	</div>
-	<h3><a name="DefaultData">デフォルトデータ情報</a></h3>
+	<h3><a name="DefaultData">Default Data Information</a></h3>
 	<div class=w>
 		デフォルトデータとは、Dominoを起動した時や新規作成した際に、あらかじめ用意されているデータの事です。<br>
 		このデータを定義する事ができます。<br>
