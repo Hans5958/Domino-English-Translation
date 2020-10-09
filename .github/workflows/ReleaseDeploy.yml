@@ -1,0 +1,50 @@
+on: workflow_dispatch
+
+name: Release Deployment
+
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: windows-latest
+    if: github.actor == github.event.repository.owner.login
+    defaults:
+      run:
+        shell: bash
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install required packages
+        run: choco install reshack python3
+
+      - name: Build
+        id: build
+        run: |
+          cd _script
+          bash build-1.43-release.sh
+          bash build-1.44-release.sh
+
+      - name: Write release body
+        run: |
+          echo "\
+
+          ----
+
+          *Built on ${{steps.build.outputs.BUILD_DATE_FULL}}.*" >> release.txt
+          
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:
+          tag_name: en.${{steps.build.outputs.VERSION_NUM}}
+          name: Build ${{steps.build.outputs.VERSION_NUM}} (Release)
+          prerelease: true
+          files: |
+            Domino143_Translated.zip
+            Domino143_Translated.exe
+            Domino144_Translated.zip
+            Domino144_Translated.exe
+          body_path: release.txt
+          draft: true

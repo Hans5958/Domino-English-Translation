@@ -1,6 +1,10 @@
-on: push
-
 name: Site Deployment
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - Website/*
 
 jobs:
   deploy:
@@ -18,7 +22,7 @@ jobs:
           ruby-version: 2.6.6
       - name: Prepare site
         run: | 
-            bash build-site.sh
+            bash _script/build-site.sh
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:
