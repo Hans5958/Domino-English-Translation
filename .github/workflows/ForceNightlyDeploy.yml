@@ -25,30 +25,6 @@ jobs:
           bash build-1.43-nightly.sh
           bash build-1.44-nightly.sh
 
-      - name: Upload artifact 1
-        uses: actions/upload-artifact@v1
-        with:
-          name: Domino143_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.zip
-          path: Domino143_Translated.zip
-
-      - name: Upload artifact 2
-        uses: actions/upload-artifact@v1
-        with:
-          name: Domino143_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.exe
-          path: Domino143_Translated.exe
-
-      - name: Upload artifact 3
-        uses: actions/upload-artifact@v1
-        with:
-          name: Domino144_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.zip
-          path: Domino144_Translated.zip
-
-      - name: Upload artifact 4
-        uses: actions/upload-artifact@v1
-        with:
-          name: Domino144_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.exe
-          path: Domino144_Translated.exe
-
       - name: Write release body
         run: |
           echo "\
@@ -80,9 +56,9 @@ jobs:
           name: Build ${{steps.build.outputs.VERSION_NUM}} (Nightly ${{steps.build.outputs.BUILD_DATE_TIDY}})
           prerelease: true
           files: |
-            Domino143_Translated.zip
-            Domino143_Translated.exe
-            Domino144_Translated.zip
-            Domino144_Translated.exe
+            _script/dist/Domino143_Translated.zip
+            _script/dist/Domino143_Translated.exe
+            _script/dist/Domino144_Translated.zip
+            _script/dist/Domino144_Translated.exe
           body_path: release.txt
           draft: true

@@ -42,9 +42,9 @@ jobs:
           name: Build ${{steps.build.outputs.VERSION_NUM}} (Release)
           prerelease: true
           files: |
-            Domino143_Translated.zip
-            Domino143_Translated.exe
-            Domino144_Translated.zip
-            Domino144_Translated.exe
+            _script/dist/Domino143_Translated.zip
+            _script/dist/Domino143_Translated.exe
+            _script/dist/Domino144_Translated.zip
+            _script/dist/Domino144_Translated.exe
           body_path: release.txt
           draft: true
