@@ -4,28 +4,28 @@ on:
     branches:
       - master
     paths:
-      - Dialog/*
-      - Manual/*
-      - Menu/*
-      - Module/*
-      - Other/*
-      - StringTable/*
-      - System/*
-      - VersionInfo/*
-      - 240/*
+      - "**/Dialog/*"
+      - "**/Manual/*"
+      - "**/Menu/*"
+      - "**/Module/*"
+      - "**/Other/*"
+      - "**/StringTable/*"
+      - "**/System/*"
+      - "**/VersionInfo/*"
+      - "**/240/*"
   pull_request:
     branches:
       - master
     paths:
-      - Dialog/*
-      - Manual/*
-      - Menu/*
-      - Module/*
-      - Other/*
-      - StringTable/*
-      - System/*
-      - VersionInfo/*
-      - 240/*
+      - "**/Dialog/*"
+      - "**/Manual/*"
+      - "**/Menu/*"
+      - "**/Module/*"
+      - "**/Other/*"
+      - "**/StringTable/*"
+      - "**/System/*"
+      - "**/VersionInfo/*"
+      - "**/240/*"
 
 jobs:
   deploy:
