@@ -13,6 +13,8 @@ on:
       - "**/System/*"
       - "**/VersionInfo/*"
       - "**/240/*"
+      - ".github/workflows/*"
+      - "_script/*"
   pull_request:
     branches:
       - master
@@ -26,6 +28,8 @@ on:
       - "**/System/*"
       - "**/VersionInfo/*"
       - "**/240/*"
+      - ".github/workflows/*"
+      - "_script/*"
 
 jobs:
   deploy:
