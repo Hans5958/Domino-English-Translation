@@ -21,4 +21,5 @@ FONT 9, "MS Sans Serif"
    CONTROL "&Automatically insert a Rest event to the start of each measure if necessary", 1386, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 136, 257, 10 
    CONTROL "&Match key signature to the note's notation (#,b)", 1387, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 148, 257, 10 
    CONTROL "Insert note by pressing L/R arrow keys when the &End of Track event is selected", 1465, BUTTON, BS_CHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE, 0, 160, 257, 19 
+   CONTROL "Interpret \"+\" as \"#\" and \"-\" as \"b\" in the event list of &a note event", 1579, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 172, 257, 10 
 }
