@@ -1,7 +1,7 @@
 Domino English Translation 
-Build **-nightly.**** (1.43-en.**-nightly.****)
+Build BUILD_VERSION (FULL_VERSION)
 
-Thank you using the Domino English Translation.
+Thank you for using the Domino English Translation.
 
 Domino is a MIDI editor that is used for creating MIDI songs/musics. Domino is used by various blackers in the Black MIDI ecosystem.
 
