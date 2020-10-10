@@ -15,6 +15,11 @@ echo ::set-output name=BUILD_DATE::"$(date +%Y%m%d)"
 echo ::set-output name=BUILD_DATE_TIDY::"$(date +'%Y/%m/%d')"
 echo ::set-output name=BUILD_DATE_FULL::"$(date +'%Y/%m/%d %H:%M:%S')"
 echo ::set-output name=VERSION_NUM::"$(cat version.txt)"
+if [[ "$(python -V)" =~ "Python 3" ]]; then
+	PYTHON_EXECUTABLE="python"
+else
+	PYTHON_EXECUTABLE="python3"
+fi
 cat >temp/compile-config.json <<EOL
 {
 	"resourceVersion": "1,43,$VERSION_NUM,0",
@@ -22,9 +27,11 @@ cat >temp/compile-config.json <<EOL
 	"buildVersion": "$VERSION_NUM-artifact.$BUILD_DATE",
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
-	"supplyTranslationReadme": "true"
+	"supplyTranslationReadme": "true",
+	"pythonExecutable": "$PYTHON_EXECUTABLE"
 }
 EOL
+cat temp/compile-config.json
 
 echo "Preparation done!"
 echo "::endgroup::"

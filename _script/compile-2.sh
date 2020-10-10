@@ -10,6 +10,7 @@ export BUILD_VERSION=$(jq_config '.buildVersion')
 export EXECUTABLE_NAME=$(jq_config '.executableName')
 export COMPILE_PATH=$(jq_config '.compilePath')
 export SUPPLY_TRANSLATION_README=$(jq_config '.supplyTranslationReadme')
+export PYTHON_EXECUTABLE=$(jq_config '.pythonExecutable')
 
 cd $COMPILE_PATH
 
@@ -23,7 +24,7 @@ mkdir 240
 cp ../240/_240.rc 240
 for file in ../240/*.bin.txt; do
 	f="$(basename -s .txt $file)"
-	python3 "../parsecombo.py" pack $file 240/$f
+	$PYTHON_EXECUTABLE "../parsecombo.py" pack $file 240/$f
 done
 sed -i '2s/.*/FILEVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
 sed -i '3s/.*/PRODUCTVERSION '$RESOURCE_VERSION'/' VersionInfo.rc

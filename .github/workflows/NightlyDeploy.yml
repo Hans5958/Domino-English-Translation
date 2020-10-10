@@ -41,6 +41,7 @@ jobs:
           fetch-depth: 100
 
       - name: Check changes
+        id: changes
         run: |
           FROM_COMMIT=$(git rev-list -n1 --before="24 hours" --first-parent HEAD)
           git diff $FROM_COMMIT..HEAD --name-only
@@ -53,19 +54,19 @@ jobs:
           fi
 
       - name: Install required packages
-        if: steps.build.outputs.IS_CHANGED == true
+        if: steps.changes.outputs.IS_CHANGED == true
         run: choco install reshack python3
 
       - name: Build
         id: build
-        if: steps.build.outputs.IS_CHANGED == true
+        if: steps.changes.outputs.IS_CHANGED == true
         run: |
           cd _script
           bash build-1.43-nightly.sh
           bash build-1.44-nightly.sh
           
       - name: Write release body
-        if: steps.build.outputs.IS_CHANGED == true
+        if: steps.changes.outputs.IS_CHANGED == true
         # run: |
         #   echo "\
         #   ### Release Notes
@@ -108,7 +109,7 @@ jobs:
           *Built on ${{steps.build.outputs.BUILD_DATE_FULL}}.*" >> release.txt
 
       - name: Create release
-        if: steps.build.outputs.IS_CHANGED == true
+        if: steps.changes.outputs.IS_CHANGED == true
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
