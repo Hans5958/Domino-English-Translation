@@ -7,6 +7,8 @@ echo "Removing temporary files..."
 rm -rf temp
 echo "Copying translations and other required files..."
 bash modules/copy-base.sh
+echo "Extracting 1.43 original files..."
+7z x ../_deploy/Domino143.7z -otemp/_compile
 
 echo "Creating compile config file..."
 BUILD_DATE="$(date +%Y%m%d)"

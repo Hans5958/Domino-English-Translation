@@ -1,4 +1,4 @@
-echo "Building 1.44 (release version)..."
+echo "Building 1.44 (nightly version)..."
 
 echo "::group::Prepare for compilation"
 echo "Preparing..."
@@ -9,11 +9,14 @@ echo "Copying 1.43 translations and other required files..."
 bash modules/copy-base.sh
 echo "Copying 1.44-specific translations..."
 bash modules/copy-1.44.sh
+echo "Extracting 1.44 original files..."
+7z x ../_deploy/Domino144.7z -otemp/_compile
 
 echo "Creating compile config file..."
+BUILD_DATE="$(date +%Y%m%d)"
 VERSION_NUM="$(cat ../version.txt)"
-BUILD_DATE=$(date +'%Y%m%d%H%M%S')
 echo "::set-output name=BUILD_DATE::$BUILD_DATE"
+echo "::set-output name=BUILD_DATE_TIDY::$(date +'%Y/%m/%d')"
 echo "::set-output name=BUILD_DATE_FULL::$(date +'%Y/%m/%d %H:%M:%S')"
 echo "::set-output name=VERSION_NUM::$VERSION_NUM"
 if [[ "$(python -V)" =~ "Python 3" ]]; then
@@ -24,8 +27,8 @@ fi
 cat >temp/compile-config.json <<EOL
 {
 	"resourceVersion": "1,44,$VERSION_NUM,0",
-	"fullVersion": "1.44-en.$VERSION_NUM",
-	"buildVersion": "$VERSION_NUM",
+	"fullVersion": "1.44-en.$VERSION_NUM-nightly.$BUILD_DATE",
+	"buildVersion": "$VERSION_NUM-nightly.$BUILD_DATE",
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",

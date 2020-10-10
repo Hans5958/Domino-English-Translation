@@ -8,6 +8,8 @@ echo "Copying 1.43 translations and other required files..."
 bash modules/copy-base.sh
 echo "Copying 1.44-specific translations..."
 bash modules/copy-1.44.sh
+echo "Extracting 1.44 original files..."
+7z x ../_deploy/Domino144.7z -otemp/_compile
 
 echo "Creating compile config file..."
 VERSION_NUM="$(cat ../version.txt)"

@@ -7,6 +7,8 @@ echo "Removing temporary files..."
 rm -rf temp
 echo "Copying translations and other required files..."
 bash modules/copy-base.sh
+echo "Extracting 1.43 original files..."
+7z x ../_deploy/Domino143.7z -otemp/_compile
 
 echo "Creating compile config file..."
 VERSION_NUM="$(cat ../version.txt)"
@@ -22,7 +24,7 @@ fi
 cat >temp/compile-config.json <<EOL
 {
 	"resourceVersion": "1,43,$VERSION_NUM,0",
-	"fullVersion": "1.43-en.$VERSION_NUM-dev.$BUILD_DATE",
+	"fullVersion": "1.43-en.$VERSION_NUM",
 	"buildVersion": "$VERSION_NUM",
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",

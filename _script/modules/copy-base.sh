@@ -12,4 +12,3 @@ cp -r ../System temp/System
 cp -r ../VersionInfo temp/VersionInfo
 cp -r ../_deploy/parsecombo.py temp
 cp -r ../_deploy/readme-translation.txt temp
-7z x ../_deploy/Domino144.7z -otemp/_compile

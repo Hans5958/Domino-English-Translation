@@ -6,6 +6,8 @@ echo "Removing temporary files..."
 bash modules/clean.sh
 echo "Copying translations and other required files..."
 bash modules/copy-base.sh
+echo "Extracting 1.43 original files..."
+7z x ../_deploy/Domino143.7z -otemp/_compile
 
 echo "Creating compile config file..."
 VERSION_NUM="$(cat ../version.txt)"

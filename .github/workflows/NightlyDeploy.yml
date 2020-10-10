@@ -62,8 +62,7 @@ jobs:
         if: steps.changes.outputs.IS_CHANGED == true
         run: |
           cd _script
-          bash build-1.43-nightly.sh
-          bash build-1.44-nightly.sh
+          bash workflow/build-all-nightly.sh
           
       - name: Write release body
         if: steps.changes.outputs.IS_CHANGED == true

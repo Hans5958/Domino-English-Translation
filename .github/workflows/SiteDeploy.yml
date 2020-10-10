@@ -22,7 +22,7 @@ jobs:
           ruby-version: 2.6.6
       - name: Prepare site
         run: | 
-            bash _script/build-site.sh
+            bash _script/workflow/build-site.sh
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:

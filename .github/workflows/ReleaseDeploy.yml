@@ -22,8 +22,7 @@ jobs:
         id: build
         run: |
           cd _script
-          bash build-1.43-release.sh
-          bash build-1.44-release.sh
+          bash workflow/build-all-release.sh
 
       - name: Write release body
         run: |
