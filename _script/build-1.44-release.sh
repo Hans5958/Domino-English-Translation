@@ -13,9 +13,9 @@ bash modules/copy-1.44.sh
 echo "Creating compile config file..."
 VERSION_NUM="$(cat ../version.txt)"
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
-echo ::set-output name=BUILD_DATE::"$(date +%Y%m%d)"
-echo ::set-output name=BUILD_DATE_FULL::"$(date +'%Y/%m/%d %H:%M:%S')"
-echo ::set-output name=VERSION_NUM::"$(cat version.txt)"
+echo "::set-output name=BUILD_DATE::$BUILD_DATE"
+echo "::set-output name=BUILD_DATE_FULL::$(date +'%Y/%m/%d %H:%M:%S')"
+echo "::set-output name=VERSION_NUM::$VERSION_NUM"
 if [[ "$(python -V)" =~ "Python 3" ]]; then
 	PYTHON_EXECUTABLE="python"
 else
