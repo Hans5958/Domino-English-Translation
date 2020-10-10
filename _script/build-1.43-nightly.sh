@@ -4,7 +4,7 @@ echo "::group::Prepare for compilation"
 echo "Preparing..."
 
 echo "Removing temporary files..."
-bash modules/clean.sh
+rm -rf temp
 echo "Copying translations and other required files..."
 bash modules/copy-base.sh
 
