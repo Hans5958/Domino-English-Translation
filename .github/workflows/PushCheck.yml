@@ -67,8 +67,8 @@ jobs:
         id: build
         run: |
           cd _script
-          bash build-1.43.sh
-          bash build-1.44.sh
+          bash build-1.43-artifact.sh
+          bash build-1.44-artifact.sh
 
       - name: Upload artifact 1
         uses: actions/upload-artifact@v1
