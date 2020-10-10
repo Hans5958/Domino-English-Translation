@@ -8,19 +8,8 @@
 	<title>Domino User Manual</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-	<style>
-		main {
-			height: 100vh;
-			width: 100vw;
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-		}
-	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/style.css" />
+	<style></style>
 </head>
 
 <body>
@@ -31,7 +20,7 @@
 		<a href="en/index.html" class="btn btn-primary">English (WIP)</a>
 		<a href="jp/index.html" class="btn btn-danger">Japanese</a>
 		<br><br>
-		<p><i>Revision: <code>{{site.git.last_commit.short_sha }}</code> on <code>{{ site.git.last_commit.commit_date }}</code></i></p>
+		<p>Revision: <code>{{site.git.last_commit.short_sha }}</code> on <code>{{ site.git.last_commit.commit_date }}</code></p>
 	</main>
 </body>
 

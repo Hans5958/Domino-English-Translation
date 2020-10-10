@@ -1,3 +1,2 @@
-theme: minima
 plugins:
   - jekyll-git_metadata
