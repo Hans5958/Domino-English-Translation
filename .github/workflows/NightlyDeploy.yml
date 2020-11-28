@@ -45,12 +45,12 @@ jobs:
         run: |
           FROM_COMMIT=$(git rev-list -n1 --before="24 hours" --first-parent HEAD)
           git diff $FROM_COMMIT..HEAD --name-only
-          if ! git diff $FROM_COMMIT..HEAD --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)\/)'; then
+          if ! git diff $FROM_COMMIT..HEAD --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)|(1\.44)\/)'; then
             echo "No files translated. Aborting!"
-            echo ::set-env name=IS_CHANGED::false
+            echo ::set-output name=IS_CHANGED::false
           else
             echo "Some files translated. Continuing."
-            echo ::set-env name=IS_CHANGED::true
+            echo ::set-output name=IS_CHANGED::true
           fi
 
       - name: Install required packages
