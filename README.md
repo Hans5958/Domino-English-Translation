@@ -24,7 +24,7 @@ This repository is made to unify the translations made by community, while tryin
 	- If you downloaded the .zip, just run `Domino.exe`.
 	- If you downloaded the .exe, after placing it on the directory, run `Domino_Translated.exe` (make sure you rename it so you know which one's the new version!).
 
-4. Optional: Read the manual from https://hans5958.me/Domino-English-Translation or the supplied manual.
+4. Optional: Read the manual from https://hans5958.github.io/Domino-English-Translation or the supplied manual.
 
 ## Building
 

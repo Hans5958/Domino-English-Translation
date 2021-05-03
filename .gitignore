@@ -1,6 +1,9 @@
 _local
 _compile
 _dist
-Website/en
-Website/_site
-Website/.git-metadata
+Website/en/
+Website/_site/
+Website/**/.jekyll-metadata
+Website/.git-metadata/
+Website/.sass-cache/
+Website/.jekyll-cache/
