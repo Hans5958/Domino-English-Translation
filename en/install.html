@@ -1,0 +1,139 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Installation</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+			border: 1px solid #0a5ca0;
+		}
+
+		td {
+			border: 1px solid #888888;
+			padding: 3px 3px 2px 3px;
+		}
+
+		th {
+			border: 1px solid #555555;
+			background-color: #e1f0ff;
+			padding: 3px 3px 2px 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Installation</h1>
+	<h3><a name="dousa">System Requirements</a></h3>
+	<div class=w>
+		The system requirements and the recommended requirements for this software are as follows.
+		<table border=1>
+			<tr>
+				<th>-</th>
+				<th>System Requirements</th>
+				<th>Recommended Requirements</th>
+			</tr>
+			<tr>
+				<th>OS</th>
+				<td>Microsoft Windows 2000/XP/Vista/7/8 *</td>
+				<td>-</td>
+				</td>
+			<tr>
+				<th>CPU</th>
+				<td>-</td>
+				<td>Intel Pentium 4, 1.5 GHz or above</td>
+				</td>
+			<tr>
+				<th>Memory</th>
+				<td>-</td>
+				<td>At least 512MB</td>
+				</td>
+			<tr>
+				<th>Display Resolution</th>
+				<td>At least 1024x768</td>
+				<td>At least 1280x1024</td>
+				</td>
+			<tr>
+				<th>Other</th>
+				<td>At least one MIDI device</td>
+				<td>-</td>
+				</td>
+		</table><br>
+		<ul>
+			<li>Not yet tested in Windows 95/98/ME. Theoretically, it will work, but it is uncertain if it can play the song stably.<br>
+		</ul>
+	</div>
+	<h3><a name="kyodaku">License</a></h3>
+	<div class=w>
+		When using the software, you are agreeing to the following contents.
+		<ul>
+			<li>Domino is free software.<br>It can be used free of charge for both commercial and non-commercial purposes.</li>
+			<li>Copyright of Domino belongs to Takabo, who is the author.</li>
+			<li>Secondary distribution to friends and acquaintances or to your company is acceptable.<br>However, if you want to distribute it to the general public on the website or magazines, please contact the author beforehand.</li>
+			<li>The author is not responsible for any damage caused by using Domino. Please use the backup function etc. under the responsibility of the user.</li>
+			<li>The copyright of music created with Domino belongs to the music author.
+				It can be shared freely for both commercial and non-commercial purposes.</li>
+			<li>Reverse engineering, decompilation, analysis, etc. of this software is prohibited.</li>
+			<li>Software specifications are subject to change without notice.</li>
+			<li>The author will try to address any bug fixes or requests as soon as possible, but the author is under no obligation to do so.</li>
+	</div>
+	<h3><a name="inst">Installing</a></h3>
+	<div class=w>
+		All you need to do is extract the software from the archive.
+	</div>
+	<h3><a name="verup">Updating</a></h3>
+	<div class=w>
+		If you have not modified or added any Sound Source Definition Files, extract the latest version and overwrite all files to the old version folder.<br>
+		<br>
+		If you have, launch the old version first and click "Export Preferences" from the "File" menu.<br>
+		Then, on the new version, you can import the settings by clicking "Import Preferences" from the "File" menu.
+	</div>
+	<h3><a name="uninst">Uninstalling</a></h3>
+	<div class=w>
+		It doesn't use the registry, so you can just delete the Domino folder.
+	</div>
+	<h3><a name="port">Port Settings (important)</a></h3>
+	<div class=w>
+		When you start Domino for the first time, you first need to set the MIDI port.<br>
+		Click the "Preferences" button on the toolbar to open the "Preferences" screen.<br>
+		<img src="assets/inst_000.png" width="177" height="74"><br>
+		<br>
+		Click "MIDI-OUT" on the left to display the current output port settings screen.<br>
+		<img src="assets/inst_001.png" width="704" height="420"><br>
+		<br>
+		For the time being, click the MIDI device part of the A port and select the MIDI device you want to use.<br>
+		<img src="assets/inst_002.png" width="312" height="166"><br>
+		<br>
+		Next, click the "Sound Source Used" part of the A port and select the Sound Source (Sound Source Definition File) connected to the MIDI device you selected earlier.<br>
+		<img src="assets/inst_003.png" width="299" height="173"><br>
+		<br>
+		<div class=caution>
+			If you don't have an external sound source and don't know what to set, you can use "Microsoft GS Wavetable Synth" as the MIDI-OUT device for port A and "GSm (Microsoft GS Wavetable SW Synth)" respectively. (Please leave the port B as it is.)
+		</div>
+		<br>
+		<div class=caution>
+			Although it is easy to miss, the sound source "SC-8850" or "GM Level 1" is not automatically attached to the Domino.<br>
+			<br>
+			* "SC-8850" is a hardware sound source released by Roland.<br>
+			Product information: <a href="https://web.archive.org/web/20140904084658/http://www.roland.co.jp/products/dtm/SC-8850.html">http://www.roland.co.jp/products/dtm/SC-8850.html</a></li>
+		</div>
+		<br>
+		If the Sound Source that you want to use does not exist, you can solve it by following these methods.
+		<ul>
+			<li>Find the Sound Source Definition File from <a href="http://takabosoft.com/domino/module">the collection on the official website</a>.
+			<li>Make your own. (refer to "<a href="module.html">Sound Source Definition File Specifications</a>")
+			<li><s>Make a request with the subject "please create the definition file of the sound source"</s><br>(If you don't have the sound source, you cannot create it's definition file, so I think it is best to make it yourself.)
+		</ul>
+		<br>
+		If you want to use more than 16 channels, or if you want to use multiple sources at the same time,
+		do the same for ports B and up.<br>
+		<br>
+		If you have a MIDI keyboard, select "MIDI-IN" on the left and set the MIDI-IN device for that MIDI keyboard.<br>
+		<img src="assets/inst_004.png" width="631" height="226"><br>
+		<br>
+		Preparation is now complete.<br>
+	</div>
+</body>
+
+</html>

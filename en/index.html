@@ -1,0 +1,110 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>"Domino" MIDI/Music Editor Software User Manual</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+	<h1>"Domino" MIDI/Music Editor Software User Manual</h1>
+	<div class=w>
+		This is the manual for Domino. It is preferred to read them in order from the top.<br>
+		Since this manual explains how to use the software, the specifications of MIDI and how to compose are not written. You may check other websites about that.<br>
+		<br>
+		It is difficult to explain all the functions, so the manual have been broken down between multiple parts, but if you have any questions, please ask on the bulletin board, etc.<br>
+		<br>
+	</div>
+	<h3>Table of Contents</h3>
+	<div class=w>
+		<ul style="margin-left:20px;">
+			<li><a href="install.html">Installation</a></li>
+			<ul>
+				<li><a href="install.html#dousa">System Requirements</a></li>
+				<li><a href="install.html#kyodaku">License</a></li>
+				<li><a href="install.html#inst">Installing</a></li>
+				<li><a href="install.html#verup">Updating</a></li>
+				<li><a href="install.html#uninst">Uninstalling</a></li>
+				<li><a href="install.html#port">Port Settings (important)</a></li>
+			</ul>
+			<li><a href="use.html">Usage</a></li>
+			<ul>
+				<li><a href="use.html#areaname">Area Names</a></li>
+				<li><a href="use.html#note_preview">Previewing Notes</a></li>
+				<li><a href="use.html#note_put">Placing a Note</a></li>
+				<li><a href="use.html#play">Playing</a></li>
+				<li><a href="use.html#play2">Playing in the Middle</a></li>
+				<li><a href="use.html#gate">Changing Note Length (Gate)</a></li>
+				<li><a href="use.html#velo">Changing Note Strength (Velocity)</a></li>
+				<li><a href="use.html#note_move">Moving a Note</a></li>
+				<li><a href="use.html#undo">Undoing</a></li>
+				<li><a href="use.html#snap">Adjusting Snapping</a></li>
+				<li><a href="use.html#note_del">Removing a Note</a></li>
+				<li><a href="use.html#note_def">Changing Initial Gate and Velocity Values</a></li>
+				<li><a href="use.html#dropper">Changing Initial Gate and Velocity Values Based on Other Notes</a></li>
+				<li><a href="use.html#sel_move">Moving Multiple Notes</a></li>
+				<li><a href="use.html#sel_del">Removing Multiple Notes</a></li>
+				<li><a href="use.html#sel_copy">Duplicating Multiple Notes (Copy/Paste)</a></li>
+				<li><a href="use.html#sel_copy_ctrl">Duplicating Multiple Notes (Move Duplicate)</a></li>
+				<li><a href="use.html#sel_velo">Changing Velocity Values of Multiple Notes</a></li>
+				<li><a href="use.html#batch">Changing Gate and Velocity Values of Multiple Notes</a></li>
+				<li><a href="use.html#slice">Slicing a Note</a></li>
+				<li><a href="use.html#stroke">Gradually Shifting the Timing of Multiple Notes (Stroke)</a></li>
+				<li><a href="use.html#sel_filter">Filtering Selection</a></li>
+				<li><a href="use.html#sel_oct">Transposing Between Octaves</a></li>
+				<li><a href="use.html#sel_pen">Switching Between Pen and Select Tools</a></li>
+				<li><a href="use.html#pc">Changing Instrument</a></li>
+				<li><a href="use.html#volume">Changing Volume and Pan of a Part</a></li>
+				<li><a href="use.html#volume2">Changing Volume and Pan Live</a></li>
+				<li><a href="use.html#pbcurve">Changing Pitch Bend and Expression Continuously (Mouse)</a></li>
+				<li><a href="use.html#pbcurve_sel">Changing Pitch Bend and Expression Continuously (Selection)</a></li>
+				<li><a href="use.html#pbcurve_copy">Copying Pitch Bend and Expression Curves</a></li>
+				<li><a href="use.html#track_cur">Changing Current Track</a></li>
+				<li><a href="use.html#onionskin">Displaying Notes Other Tracks at the Same Time (Onion Skin)</a></li>
+				<li><a href="use.html#tempo">Changing Tempo</a></li>
+				<li><a href="use.html#rhythm">Editing Rhythm Track</a></li>
+				<li><a href="use.html#ryhthm_velo">Changing Note Strength on Rhythm Track</a></li>
+				<li><a href="use.html#ryhthm_trset">Converting a Track to a Rhythm Track</a></li>
+				<li><a href="use.html#tr_name">Naming a Track</a></li>
+				<li><a href="use.html#tr_add">Adding a Track</a></li>
+				<li><a href="use.html#tr_add_port">Adding a Track Set for a Port</a></li>
+				<li><a href="use.html#tr_del">Removing a Track</a></li>
+				<li><a href="use.html#tr_move">Rearranging a Track</a></li>
+				<li><a href="use.html#mtr_edit">Editing Multiple Tracks</a></li>
+				<li><a href="use.html#track_solo">Playing a Specific Track</a></li>
+				<li><a href="use.html#mark">Setting a Marker</a></li>
+				<li><a href="use.html#ts">Setting the Time Signature</a></li>
+				<li><a href="use.html#title">Setting the Title and Other Project Properties</a></li>
+				<li><a href="use.html#comment">Inserting a Comment Event</a></li>
+				<li><a href="use.html#exc">Inserting an Exclusive Event</a></li>
+				<li><a href="use.html#cc">Inserting a Control Change Event</a></li>
+				<li><a href="use.html#cc2">Inserting Multiple Control Change Events</a></li>
+				<li><a href="use.html#loop">Playing in a Loop</a></li>
+				<li><a href="use.html#sync">Syncing Playback Position with MIDI Devices</a></li>
+				<li><a href="use.html#param">Using Variables</a></li>
+				<li><a href="use.html#rtrec">Recording in Real Time</a></li>
+				<li><a href="use.html#strec">Recording in Steps</a></li>
+				<li><a href="use.html#sysex_rec">Receiving Exclusive Events</a></li>
+				<li><a href="use.html#save">Saving a Project</a></li>
+				<li><a href="use.html#open">Opening a Project</a></li>
+				<li><a href="use.html#eot">Adjusting End of Track</a></li>
+				<li><a href="use.html#smf">Exporting as a MIDI File</a></li>
+				<li><a href="use.html#backup">Backing Up</a></li>
+				<li><a href="use.html#key_custom">Customizing Shortcut Keys</a></li>
+				<li><a href="use.html#tb_custom">Customizing the Toolbar</a></li>
+				<li><a href="use.html#mouse_custom">Customizing Mouse Operations</a></li>
+				<li><a href="use.html#curve_custom">Customizing Curves and Lines</a></li>
+			</ul>
+			<li><a href="module.html">Sound Source Definition File Specifications</a></li>
+			<li><a href="other.html">Other</a></li>
+			<ul>
+				<li><a href="other.html#bug">Bug Report</a></li>
+				<li><a href="other.html#request">Feature Request</a></li>
+				<li><a href="other.html#thanx">Acknowledgments</a></li>
+				<li><a href="other.html#faq">FAQ</a></li>
+			</ul>
+		</ul>
+	</div>
+</body>
+
+</html>
