@@ -40,7 +40,6 @@ jobs:
         with:
           tag_name: en.${{steps.build.outputs.VERSION_NUM}}
           name: Build ${{steps.build.outputs.VERSION_NUM}} (Release)
-          prerelease: true
           files: |
             _script/dist/Domino143_Translated.zip
             _script/dist/Domino143_Translated.exe
