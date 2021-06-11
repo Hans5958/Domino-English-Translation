@@ -27,6 +27,7 @@ jobs:
       - name: Write release body
         run: |
           echo "\
+          ## Release Notes
 
           ----
 

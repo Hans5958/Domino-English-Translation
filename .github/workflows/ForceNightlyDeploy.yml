@@ -27,6 +27,7 @@ jobs:
       - name: Write release body
         run: |
           echo "\
+          ## Release Notes 
           " >> release.txt
           if [ ! -s _deploy/release-notes.md ]; then
             echo "*No release notes supplied.*" >> release.txt

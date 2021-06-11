@@ -68,7 +68,7 @@ jobs:
         if: steps.changes.outputs.IS_CHANGED == true
         # run: |
         #   echo "\
-        #   ### Release Notes
+        #   ## Release Notes
         #   " >> release.txt
         #   if [ ! -s _deploy/release-notes.md ]; then
         #     echo '${{github.event.head_commit.message}}' >> release.txt
@@ -77,7 +77,7 @@ jobs:
         #   fi
         #   echo "\
 
-        #   ### Commits
+        #   ## Commits
         #   " >> release.txt
         #   for row in $(echo '${{toJSON(github.event.commits)}}' | jq -r '.[] | @base64'); do
         #       _jq() {
@@ -94,7 +94,7 @@ jobs:
         
         run: |
           echo "\
-          ### Release Notes 
+          ## Release Notes 
           " >> release.txt
           if [ ! -s _deploy/release-notes.md ]; then
             echo "*No release notes supplied.*" >> release.txt
