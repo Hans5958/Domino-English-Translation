@@ -42,30 +42,30 @@ jobs:
 
       - name: Check changes
         id: changes
+        continue-on-error: true
         run: |
           FROM_COMMIT=$(git rev-list -n1 --before="24 hours" --first-parent HEAD)
           git diff $FROM_COMMIT..HEAD --name-only
           if ! git diff $FROM_COMMIT..HEAD --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)|(1\.44)\/)'; then
             echo "No files translated. Aborting!"
-            echo ::set-output name=IS_CHANGED::false
+            set -e 1
           else
             echo "Some files translated. Continuing."
-            echo ::set-output name=IS_CHANGED::true
           fi
 
       - name: Install required packages
-        if: steps.changes.outputs.IS_CHANGED == true
+        if: steps.changes.outcome == 'success'
         run: choco install reshack python3
 
       - name: Build
         id: build
-        if: steps.changes.outputs.IS_CHANGED == true
+        if: steps.changes.outcome == 'success'
         run: |
           cd _script
           bash workflow/build-all-nightly.sh
           
       - name: Write release body
-        if: steps.changes.outputs.IS_CHANGED == true
+        if: steps.changes.outcome == 'success'
         # run: |
         #   echo "\
         #   ## Release Notes
@@ -108,7 +108,7 @@ jobs:
           *Built on ${{steps.build.outputs.BUILD_DATE_FULL}}.*" >> release.txt
 
       - name: Create release
-        if: steps.changes.outputs.IS_CHANGED == true
+        if: steps.changes.outcome == 'success'
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
