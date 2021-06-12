@@ -48,7 +48,7 @@ jobs:
           git diff $FROM_COMMIT..HEAD --name-only
           if ! git diff $FROM_COMMIT..HEAD --name-only | grep -E '^((Dialog)|(Manual)|(Menu)|(Module)|(Other)|(StringTable)|(System)|(VersionInfo)|(240)|(1\.44)\/)'; then
             echo "No files translated. Aborting!"
-            set -e 1
+            exit 1
           else
             echo "Some files translated. Continuing."
           fi
