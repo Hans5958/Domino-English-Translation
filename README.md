@@ -33,11 +33,18 @@ This repository is made to unify the translations made by community, while tryin
 - Windows operating system. This is a Win32 application.
 - Windows Subsystem for Linux (WSL)
 - Resource Hacker
-- Python 3
+- Python 3 (on WSL)
+- 7zip (on WSL)
+- jq (on WSL)
+
+```bash
+choco install reshack
+sudo apt install p7zip-full jq python3.10
+```
 
 ### Howto
 
-Just run `compile.sh`, and the binaries (the `.exe` files) will be compiled and placed inside the `_compile` folder.
+Just run either `build-1.43.sh` or `build-1.44.sh` inside the `_script` folder. The binaries (the `.exe` files) will be compiled and placed inside the `_script/dist` folder.
 
 ## Contributing
 

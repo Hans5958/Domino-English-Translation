@@ -61,7 +61,7 @@ jobs:
       #     fi
 
       - name: Install required packages
-        run: choco install reshack python3
+        run: choco install reshack
 
       - name: Build
         id: build

@@ -55,7 +55,7 @@ jobs:
 
       - name: Install required packages
         if: steps.changes.outcome == 'success'
-        run: choco install reshack python3
+        run: choco install reshack
 
       - name: Build
         id: build
