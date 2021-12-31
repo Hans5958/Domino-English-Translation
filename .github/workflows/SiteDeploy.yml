@@ -19,7 +19,7 @@ jobs:
       - name: Setup ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.6
+          ruby-version: 2.7.5
       - name: Prepare site
         run: | 
             bash _script/workflow/build-site.sh

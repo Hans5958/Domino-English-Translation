@@ -22,6 +22,7 @@ GEM
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
+    execjs (2.7.0)
     ffi (1.15.4)
     ffi (1.15.4-x64-mingw32)
     forwardable-extended (2.6.0)
@@ -86,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   eventmachine (= 1.2.7)!
+  execjs (= 2.7.0)
   jekyll (~> 4.2.0)
   jekyll-git_metadata!
   tzinfo (~> 1.2)
