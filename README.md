@@ -1,7 +1,12 @@
 
 # Domino English Translation
 
-<a href="https://github.com/Hans5958/Domino-English-Translation/actions/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square" alt="GitHub Actions build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/actions/"><img src="https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Site Deployment?style=flat-square&label=site" alt="GitHub Actions site build status"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square" alt="Version number"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases/"><img src="https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square" alt="Download counter"></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"> <a href="https://discord.gg/s42aft8"><img src="https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square" alt="Discord"></a>
+[![GitHub Actions build status](https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/actions/)
+[![GitHub Actions site build status](https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Site%20Deployment?style=flat-square&label=site)](https://github.com/Hans5958/Domino-English-Translation/actions/)
+[![Version number](https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/releases/)
+[![Download counter](https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/releases/)
+![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
+<!-- [![Discord](https://img.shields.io/discord/139268201803546624.svg?color=7289DA&style=flat-square)](https://discord.gg/s42aft8) -->
 
 Domino is a MIDI editor that is used for creating MIDI songs/musics. Domino is used by various blackers in the Black MIDI ecosystem.
 
@@ -15,7 +20,10 @@ This repository is made to unify the translations made by community, while tryin
 	- The `.zip` contains everything you need to run Domino. __Download this if you are not sure or this is your first time using this program.__  
 	- You can also download the `.exe` if you want to use your configured settings. Place it inside your Domino directly, where "`Domino.exe`" placed.
 
-<a href="https://github.com/Hans5958/Domino-English-Translation/releases/latest"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square" alt="Download the latest stable release"></a> <a href="https://github.com/Hans5958/Domino-English-Translation/releases"><img src="https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square" alt="Download the latest nightly release"></a>
+	| Type | Download |
+	| - | - |
+	| Stable (Release) | [![Download the latest stable release](https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?label=download&style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/releases/latest)
+	| Nightly (Pre-Release) | [![Download the latest nightly release](https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?include_prereleases&label=download&style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/releases)
 
 2. Recommended: Download the [dominohook](https://github.com/khang06/dominohook/releases) .dll file and bind it to the executable.
    Read how to bind it [here](https://github.com/khang06/dominohook/blob/master/README.md#usage). In the future, I will find a way so I could distribute it with the hook.
@@ -416,3 +424,9 @@ After that, you can create a pull request by clicking the "New pull request" but
 - [x] readme.txt
 
 </details>
+
+## License
+
+This project is licensed under the terms of [MIT license](LICENSE), except contributions made by outside contributors before the licensing (10/09/2022). Permission have been granted for the usage of their code on this repository, but not under the license.
+
+Translations are made with reference of previous translations. These are used under good faith, but no permissions have been given by the translators. The list of the used previous translations can be viewed [in this page](https://hans5958.github.io/Black-MIDI-Meta/domino-translations/). 
