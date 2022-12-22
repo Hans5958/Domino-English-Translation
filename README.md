@@ -1,8 +1,8 @@
 
 # Domino English Translation
 
-[![GitHub Actions build status](https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Deploy?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/actions/)
-[![GitHub Actions site build status](https://img.shields.io/github/workflow/status/Hans5958/Domino-English-Translation/Site%20Deployment?style=flat-square&label=site)](https://github.com/Hans5958/Domino-English-Translation/actions/)
+[![GitHub Actions build status](https://img.shields.io/github/actions/workflow/status/Hans5958/Domino-English-Translation/PushCheck.yml?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/actions/)
+[![GitHub Actions site build status](https://img.shields.io/github/actions/workflow/status/Hans5958/Domino-English-Translation/SiteDeploy.yml?style=flat-square&label=site)](https://github.com/Hans5958/Domino-English-Translation/actions/)
 [![Version number](https://img.shields.io/github/v/release/Hans5958/Domino-English-Translation?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/releases/)
 [![Download counter](https://img.shields.io/github/downloads/Hans5958/Domino-English-Translation/total.svg?style=flat-square)](https://github.com/Hans5958/Domino-English-Translation/releases/)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
