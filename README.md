@@ -335,7 +335,7 @@ After that, you can create a pull request by clicking the "New pull request" but
 	- [ ] Using Variables
 	- [ ] Recording in Real Time
 	- [ ] Recording in Steps
-	- [ ] Receiving Exclusive Events
+	- [ ] Receiving System Exclusive events
 	- [ ] Saving a Project
 	- [ ] Opening a Project
 	- [ ] Adjusting End of Track

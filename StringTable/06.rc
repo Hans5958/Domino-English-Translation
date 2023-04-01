@@ -3,7 +3,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 { 
   32800, 	"Record MIDI events from MIDI-IN in realtime.\nReal-Time Recording"
   32801, 	"Step record MIDI events from MIDI-IN.\nStep Recording"
-  32802, 	"Receive Exclusive events from MIDI-IN.\nExclusive Reception"
+  32802, 	"Receive System Exclusive events from MIDI-IN.\nSystem Exclusive Reception"
   32803, 	"Inserts a Rhythmic Signature event. (Conductor Track only)\nInsert Rhythmic Signature"
   32804, 	"Shows/hides this toolbar.\nToggle Toolbar"
   32805, 	"Sets up the measure location from which its content's step values will not be affected by any operation.\nLock Steps"

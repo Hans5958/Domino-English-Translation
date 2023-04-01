@@ -1,10 +1,10 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  33056, 	"Changes the default velocity  to mezzo forte.\nmezzo forte"
-  33057, 	"Changes the default velocity  to forte.\nforte"
-  33058, 	"Changes the default velocity  to fortissimo.\nfortissimo"
-  33059, 	"Changes the default velocity  to molto fortissimo.\nmolto fortissimo"
+  33056, 	"Changes the default velocity to mezzo forte.\nmezzo forte"
+  33057, 	"Changes the default velocity to forte.\nforte"
+  33058, 	"Changes the default velocity to fortissimo.\nfortissimo"
+  33059, 	"Changes the default velocity to molto fortissimo.\nmolto fortissimo"
   33060, 	"Changes the default quantization to Whole.\nDefault Gate: Whole"
   33061, 	"Changes the default quantization to 3/4.\nDefault Gate: 3/4"
   33062, 	"Changes the default quantization to 1/2.\nDefault Gate: 1/2"
