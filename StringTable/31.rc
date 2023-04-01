@@ -3,7 +3,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
   33328, 	"Capture patterns from specified measure or slice another measure's note arrangement using patterns.\nPattern Slice"
   33329, 	"Connects selected note events on the same key regardless of distance between each other.\nMerge"
-  33330, 	"Stops all incoming sounds from each port. Used when the sounds refuse to stop. I always use this to the voices in my head.\nPanic"
+  33330, 	"Stops all incoming sounds from each port. Used when the sounds are not stopping.\nPanic"
   33331, 	"Enables rectangular selections freely within the Graph Panel 1.\nGraph Panel 1: Enable rectangular selection"
   33332, 	"Enables rectangular selections freely within the Graph Panel 2.\nGraph Panel 2: Enable rectangular selection"
   33333, 	"Automatically page break during playback. Page break behaviour can be modified in the Preferences (Piano Roll (pg. 2)) window.\nAuto-scroll on playback"

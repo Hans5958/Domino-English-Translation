@@ -249,7 +249,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "&Program Change", 32827
 		MENUITEM "&Control Change", 32828
 		MENUITEM "Control Chan&ge/s", 33046
-		MENUITEM "&Exclusive Event", 32829
+		MENUITEM "System &Exclusive", 32829
 		MENUITEM "Co&mments", 32830
 		MENUITEM "&Lyrics", 33036
 		MENUITEM "C&ue Points", 33037
