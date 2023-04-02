@@ -1,0 +1,1173 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>音源定義ファイルの仕様</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<style type="text/css">
+		div.src {
+			font-size: 80%;
+			padding: 3px 3px 3px 3px;
+			margin: 5px 0px 5px 0px;
+			border: 1px solid #30bb17;
+			background-color: #e4fce4;
+			color: #074107;
+			line-height: 110%;
+		}
+
+		pre {
+			margin: 0px 0px;
+		}
+
+		table {
+			border-collapse: collapse;
+			border: 1px solid #0a5ca0;
+		}
+
+		td {
+			border: 1px solid #888888;
+			padding: 3px 3px 2px 3px;
+		}
+
+		th {
+			border: 1px solid #555555;
+			background-color: #e1f0ff;
+			padding: 3px 3px 2px 3px;
+			white-space: nowrap;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>音源定義ファイルの仕様</h1>
+	<h3><a name="gaiyou">概要</a></h3>
+	<div class=w>
+		音源定義ファイルとは、その音源の持つ音色名や、各種設定方法などを定義するファイルです。<br>
+		Dominoはこの定義ファイルにもとづいて音源を操作します。<br>
+		<br>
+		音源定義ファイルはDomino.exeと同じ位置にある「Module」フォルダ内に格納されています。<br>
+		音源定義ファイルを自作する場合や、他から貰ってきた場合はこのフォルダに作成・コピーしてください。<br>
+		<br>
+		音源定義ファイルは１音源につき、１ファイル作成します。<br>
+		（１ファイルで複数の音源を定義する、という事は通常はしません）<br>
+		<br>
+	</div>
+	<h3><a name="struct">主な構造</a></h3>
+	<div class=w>
+		音源定義ファイルはXML（Extensible Markup Language）という形式で記述します。<br>
+		（HTMLのようにタグを用います。）<br>
+		<br>
+		定義ファイルの主な構造は次のようになっています。<br>
+		<div class=src>
+			<pre>
+&lt;?xml version="1.0" encoding="Shift_JIS"?&gt;
+&lt;ModuleData （<a href="#ModuleData">音源の基本情報を記述</a>）&gt;
+	（<a href="#option">オプションを記述</a>）
+	&lt;InstrumentList&gt;
+		（<a href="#InstrumentList">音色情報を記述</a>）
+	&lt;/InstrumentList&gt;
+	&lt;DrumSetList&gt;
+		（<a href="#DrumSetList">ドラムセット情報を記述</a>）
+	&lt;/DrumSetList&gt;
+	&lt;ControlChangeMacroList&gt;
+		（<a href="#ControlChangeMacroList">コントロールチェンジマクロ情報を記述</a>）
+	&lt;/ControlChangeMacroList&gt;
+	&lt;TemplateList&gt;
+		（<a href="#TemplateList">テンプレート情報を記述</a>）
+	&lt;/TemplateList&gt;
+	&lt;DefaultData&gt;
+		（<a href="#DefaultData">デフォルトデータ情報を記述</a>）
+	&lt;/DefaultData&gt;
+&lt;/ModuleData&gt;
+</pre>
+		</div>
+		（タブや空行などは自由に入れられます。）<br>
+		<br>
+		あとはカッコで書かれている部分を書き込めば定義ファイルとなります。<br>
+		各部分について説明いたします。<br>
+		<br>
+	</div>
+	<h3><a name="ModuleData">音源の基本情報</a></h3>
+	<div class=w>
+		ModuleDataタグの属性として、音源および定義ファイルの基本情報を記述します。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;ModuleData Name="SC-8850" Folder="Roland" Priority="100" FileCreator="Takabo Soft" FileVersion="1.00" WebSite="http://takabosoft.com/"&gt;
+</pre>
+		</div>
+		<br>
+		ModuleDataタグの属性は次の通りです。<br>
+		（属性名やタグ名は大文字・小文字を区別しません。また、属性の順番は自由です。）<br>
+		<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>音源名を指定します。</td>
+			</tr>
+			<tr>
+				<td>Folder</td>
+				<td> </td>
+				<td>Domino上で音源を選ぶ際の画面で、ここで指定したフォルダに入ります。</td>
+			</tr>
+			<tr>
+				<td>Priority</td>
+				<td>100</td>
+				<td>同じフォルダ内の優先度（順番）を指定します。値が小さいほど、早い順番になります。</td>
+			</tr>
+			<tr>
+				<td>FileCreator</td>
+				<td> </td>
+				<td>定義ファイルの作成者名を指定します。</td>
+			</tr>
+			<tr>
+				<td>FileVersion</td>
+				<td> </td>
+				<td>定義ファイルのバージョンを指定します。定義ファイルを修正した場合にはバージョン番号を上げておくと良いでしょう。</td>
+			</tr>
+			<tr>
+				<td>WebSite</td>
+				<td> </td>
+				<td>定義ファイルの配布サイトもしくはホームページを指定します。</td>
+			</tr>
+		</table>
+		<br>
+		定義ファイルの作成者名やバージョン情報は、[ヘルプ]メニューの[音源定義ファイル]情報から確認できます。
+	</div>
+	<h3><a name="option">オプション</a></h3>
+	<div class=w>
+		ModuleDataタグの要素としていくつかオプションを指定する事ができます。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;RhythmTrackDefault Gate="1" /&gt;
+&lt;ExclusiveEventDefault Data="f0h 41h 10h 42h f7h" /&gt;
+&lt;ProgramChangeEventPropertyDlg AutoPreviewDelay="0" /&gt;
+&lt;ControlChangeEventDefault ID="0" /&gt;
+</pre>
+		</div>
+		<br>
+		<dl>
+			<dt>RhythmTrackDefaultタグ</dt>
+			<dd>Gate属性で、リズムトラックにおけるノートのゲート値を指定します。</dd>
+			<dt>ExclusiveEventDefaultタグ</dt>
+			<dd>Data属性で、エクスクルーシブイベントのデフォルトデータを指定します。</dd>
+			<dt>ProgramChangeEventPropertyDlgタグ</dt>
+			<dd>AutoPreviewDelay属性で、[プログラムチェンジイベントのプロパティ]画面の自動プレビューまでの遅延時間を指定します（ミリ秒単位、デフォルトは0）。<br>MIDI機器によっては、プログラムチェンジを送信してから実際に音色が切り替わるまで時間の掛かるものがあります。その場合、この遅延時間を指定しておけば、自動プレビュー時に正しい音色が発音されるようになります。
+			</dd>
+			<dt>ControlChangeEventDefaultタグ</dt>
+			<dd>ID属性で、CCイベント挿入時のデフォルトIDを指定します。</dd>
+		</dl>
+		なお、XMLのルールにより、タグを閉じる必要がない（一つのタグだけで完結する）ものは、
+		タグの最後にスペースとスラッシュを必ず入れてください。<br>
+	</div>
+	<h3><a name="InstrumentList">音色情報</a></h3>
+	<div class=w>
+		音色情報は、[マップ]、[PC]、[バンク]の三階層になっています。<br>
+		音源自体にバンクが存在しなくとも、PC１つにつき１つのバンクが必要です。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;Map Name="55Map"&gt;
+	&lt;PC Name="Piano 1" PC="1"&gt;
+		&lt;Bank Name="Piano 1" LSB="1" MSB="0" /&gt;
+		&lt;Bank Name="Piano 1w" LSB="1" MSB="8" /&gt;
+		&lt;Bank Name="Piano 1d" LSB="1" MSB="16" /&gt;
+		&lt;Bank Name="Piano 2" LSB="1" MSB="126" /&gt;
+		&lt;Bank Name="Acou Piano1" LSB="1" MSB="127" /&gt;
+	&lt;/PC&gt;
+	&lt;PC Name="Piano 2" PC="2"&gt;
+		&lt;Bank Name="Piano 2" LSB="1" MSB="0" /&gt;
+		&lt;Bank Name="Piano 2w" LSB="1" MSB="8" /&gt;
+		&lt;Bank Name="Piano 2" LSB="1" MSB="126" /&gt;
+		&lt;Bank Name="Acou Piano2" LSB="1" MSB="127" /&gt;
+	&lt;/PC&gt;
+&lt;/Map&gt;
+</pre>
+		</div>
+		<h4>Mapタグ</h4>
+		Mapタグはマップを定義します。<br>
+		Mapタグは複数定義する事ができます。<br>
+		Mapタグは複数のPCタグを要素として持つことができます。<br>
+		<br>
+		Mapタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>マップ名を指定します。</td>
+			</tr>
+		</table>
+		<h4>PCタグ</h4>
+		PCタグはPC情報を定義します。<br>
+		PCタグは複数定義する事ができます（必ず128個定義する必要はありません）。<br>
+		PCタグは複数のBankタグを要素として持つことができます。<br>
+		<br>
+		PCタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>PC名（楽器名）を指定します。</td>
+			</tr>
+			<tr>
+				<td>PC</td>
+				<td>必須</td>
+				<td>PC番号を1～128の範囲で指定します。</td>
+			</tr>
+		</table>
+		<h4>Bankタグ</h4>
+		Bankタグはバンク情報を定義します。<br>
+		Bankタグは複数定義する事ができます（PC１つにつきバンク１つは必須です）。<br>
+		<br>
+		Bankタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>バンク名（楽器名）を指定します。</td>
+			</tr>
+			<tr>
+				<td>LSB</td>
+				<td> </td>
+				<td>Bank Select LSBとして送信する値を指定します。省略、または255を指定した場合は送信しません。</td>
+			</tr>
+			<tr>
+				<td>MSB</td>
+				<td> </td>
+				<td>Bank Select MSBとして送信する値を指定します。省略、または255を指定した場合は送信しません。</td>
+			</tr>
+		</table>
+		</dl>
+	</div>
+	<h3><a name="DrumSetList">ドラムセット情報</a></h3>
+	<div class=w>
+		ドラムセット情報は、「<a href="#InstrumentList">音色情報</a>」とほとんど同じですが、Bankタグの要素として複数のToneタグを定義する事ができます。<br>
+		<br>例）
+		<br>
+		<div class=src>
+			<pre>
+&lt;Map Name="55Map"&gt;
+	&lt;PC Name="STANDARD" PC="1"&gt;
+		&lt;Bank Name="STANDARD" LSB="1" MSB="0"&gt;
+			&lt;Tone Name="High Q" Key="27" /&gt;
+			&lt;Tone Name="Slap" Key="28" /&gt;
+			&lt;Tone Name="Scr.Push" Key="29" /&gt;
+			&lt;Tone Name="Scr.Pull" Key="30" /&gt;
+			&lt;Tone Name="Sticks" Key="31" /&gt;
+			&lt;Tone Name="Sq.Click" Key="32" /&gt;
+			&lt;Tone Name="Mt.Click" Key="33" /&gt;
+			&lt;Tone Name="Mt. Bell" Key="34" /&gt;
+			&lt;Tone Name="Kick 2" Key="35" /&gt;
+			&lt;Tone Name="Kick 1" Key="36" /&gt;
+			（省略）
+		&lt;/Bank&gt;
+	&lt;/PC&gt;
+&lt;/Map&gt;
+</pre>
+		</div>
+		<h4>Toneタグ</h4>
+		ToneタグはBankタグで定義されたドラムセットの、各キーにおける楽器名を定義します。<br>
+		Toneタグは複数定義する事ができます（省略可）。<br>
+		<br>
+		Toneタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>楽器名を指定します。</td>
+			</tr>
+			<tr>
+				<td>Key</td>
+				<td>必須</td>
+				<td>音階（ノート番号）を0～127の範囲で指定します。</td>
+			</tr>
+		</table>
+	</div>
+	<h3><a name="ControlChangeMacroList">コントロールチェンジマクロ情報</a></h3>
+	<div class=w>
+		コントロールチェンジマクロ機能は、コントロールチェンジ機能を擬似的に拡張した機能です。<br>
+		マクロを定義する事で、ユーザーはコントロールチェンジと同じ感覚で様々な設定を行うことができるようになります。<br>
+		そうしたマクロ情報を、ここで定義します。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;Folder Name="Sample"&gt;
+	&lt;CCM ID="1" Name="PitchBend" Color="#0fa806" Sync="Last"&gt;
+		&lt;Value Min="-8192" Max="8191" Offset="8192" /&gt;
+		&lt;Memo&gt;音程を変化させます。&lt;/Memo&gt;
+		&lt;Data&gt;@PB #VH #VL&lt;/Data&gt;
+	&lt;/CCM&gt;
+	
+	&lt;CCM ID="161" Name="Dr:Level"&gt;
+		&lt;Value /&gt;
+		&lt;Gate Type="Key" /&gt;
+		&lt;Memo&gt;&lt;/Memo&gt;
+		&lt;Data&gt;@NRPN 1AH #GL #VL #NONE&lt;/Data&gt;
+	&lt;/CCM&gt;
+	&lt;CCM ID="259" Name="Part Mode"&gt;
+		&lt;Value Max="2"&gt;
+			&lt;Entry Label="Normal" Value="0" /&gt;
+			&lt;Entry Label="Drum1" Value="1" /&gt;
+			&lt;Entry Label="Drum2" Value="2" /&gt;
+		&lt;/Value&gt;
+		&lt;Memo&gt;通常の楽器パートか、ドラムセットパートかを設定します。&lt;/Memo&gt;
+		&lt;Data&gt;@SYSEX F0H 41H 10H 42H 12H [ 40H #1RCH 15H #VL ] F7H&lt;/Data&gt;
+	&lt;/CCM&gt;
+	&lt;CCM ID="500" Name="TableTest" Color="#0fa806"&gt;
+		&lt;Value Min="0" Max="3" TableID="1" /&gt;
+		&lt;Memo&gt;テーブル参照サンプルです。&lt;/Memo&gt;
+		&lt;Data&gt;@SYSEX （省略）&lt;/Data&gt;
+	&lt;/CCM&gt;
+	&lt;CCMLink ID="500" Value="1" /&gt;
+&lt;/Folder&gt;
+&lt;Table ID="1"&gt;
+	&lt;Entry Label="0ms" Value="0" /&gt;
+	&lt;Entry Label="0.1ms" Value="1" /&gt;
+	&lt;Entry Label="0.2ms" Value="2" /&gt;
+	&lt;Entry Label="0.3ms" Value="3" /&gt;
+&lt;/Table&gt;
+</pre>
+		</div>
+		<h4>Folderタグ</h4>
+		各CCMタグは、自由にフォルダを作成でき、その中へ入れることができます。<br>
+		こうすることにより、ユーザーが目的のマクロを探しやすくするようにできます。<br>
+		Folderタグはそのフォルダを定義します（必要ではありません）。<br>
+		FolderタグはCCMタグ、Folderタグを要素として複数持つことができます（１つも無いとフォルダは表示されません＾＾；）。<br>
+		<br>
+		Folderタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>フォルダ名を指定します。</td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>-1</td>
+				<td>FolderLinkとしてリンクを貼る必要がある場合に0以上のIDを指定しておきます。</td>
+			</tr>
+		</table>
+		<h4>CCMタグ</h4>
+		CCMタグはコントロールチェンジマクロ（ControlChangeMacro）を定義します。<br>
+		CCMタグは複数定義する事ができます。
+		CCMタグはValueタグ、Gateタグ、Memoタグ、Dataタグを要素として持つことができます。<br>
+		<br>
+		CCMタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>必須</td>
+				<td>マクロIDを指定します。IDは0～1300の範囲で、重複しないでください。</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>マクロ名を指定します。</td>
+			</tr>
+			<tr>
+				<td>Color</td>
+				<td>#000000</td>
+				<td>イベントリスト上の表示色を指定します。</td>
+			</tr>
+			<tr>
+				<td>Sync</td>
+				<td> </td>
+				<td>[MIDI機器と状態を合わせる]機能を使う際、この属性を利用します。<br>未指定・・・何も処理しません。<br>Last・・・イベントリスト上で、最後のイベントだけを処理します。単独でいつ実行しても効果があるイベントに付けておくと良いでしょう。<br>LastEachGate・・・Lastはイベント毎の処理ですが、LastEachGateはイベント＆Gate毎に処理します。Gateを音階として利用しているドラムパラメーター変更系イベントで用います。
+				</td>
+			</tr>
+			<tr>
+				<td>MuteSync</td>
+				<td> </td>
+				<td>[トラックの演奏]がオフの際、このコントロールチェンジマクロも送信したくない場合は、"1"を指定してください。</td>
+			</tr>
+		</table>
+		<h4>Vauleタグ、Gateタグ</h4>
+		Valueタグ、Gateタグの属性などは同一です。<br>
+		ValueタグはイベントのValue値の範囲などを定義します。<br>
+		GateタグはイベントのGate値の範囲などを定義します。<br>
+		定義しない場合は、Value欄/Gate欄は無効となります。<br>
+		<br>
+		Valueタグ、GateタグはテーブルのデータとしてEntryタグを複数持つことができます（無くても構いません）。<br>
+		<br>
+		Valueタグ、Gateタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Default</td>
+				<td>0</td>
+				<td>デフォルト値を指定します。</td>
+			</tr>
+			<tr>
+				<td>Min</td>
+				<td>0</td>
+				<td>最小値を指定します。</td>
+			</tr>
+			<tr>
+				<td>Max</td>
+				<td>127</td>
+				<td>最大値を指定します。</td>
+			</tr>
+			<tr>
+				<td>Offset</td>
+				<td>0</td>
+				<td>実際にデータを送信する際にプラスする値を指定します。<br>例えばパンポットは-64から+63の範囲で指定しますが、midi機器に送信する際にはこの値に+64してから送信しないといけません。こうした場合にはOffsetを64に指定します。
+				</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td> </td>
+				<td>値の名前を指定します（あまり画面には出てきません）。</td>
+			</tr>
+			<tr>
+				<td>Type</td>
+				<td> </td>
+				<td>「Key」を指定するとプロパティ画面でキーボードを参照するボタンが出ます。</td>
+			</tr>
+			<tr>
+				<td>TableID</td>
+				<td> </td>
+				<td>共通テーブルを使用する場合にはテーブルIDをここで指定します。</td>
+			</tr>
+		</table>
+		<h4>Entryタグ</h4>
+		Entryタグはテーブルの１データを定義します。<br>
+		EntryタグはGateタグやValueタグ、Tableタグの要素として複数定義します。<br>
+		<br>
+		Entryタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Label</td>
+				<td>必須</td>
+				<td>表示するテキストを指定します。</td>
+			</tr>
+			<tr>
+				<td>Value</td>
+				<td>必須</td>
+				<td>値を指定します。</td>
+			</tr>
+		</table>
+		<br>
+		こうしてテーブルを定義すると、ユーザーは値だけでなく、表から選ぶことができるようになります。<br>
+		<img src="assets/module_000.png" width="567" height="517"><br>
+		<h4>Memoタグ</h4>
+		Memoタグは、コントロールチェンジマクロのメモを定義します。<br>
+		コントロールチェンジイベントのプロパティ画面などで利用されます。<br>
+		文中に改行を入れたい場合は「\n」と記入してください。<br>
+		<br>
+		<h4>Dataタグ</h4>
+		DataタグはMIDI機器にどんな情報を送信するのかを定義します。<br>
+		<br>
+		Dataタグの内容は、アットマークの付いた命令コマンドと、値（固定値・変動値）を組み合わせて定義します。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;Data&gt;@NRPN 1AH #GL #VL #NONE&lt;/Data&gt;
+</pre>
+		</div>
+		<br>
+		命令や値はスペースで区切ってください。<br>
+		「@命令コマンド 値 値 ・・・ @命令コマンド 値 値 ・・・」のようにいくつも定義することができます。<br>
+		（ただし、実際に処理されるのは同時期ですので、重たい処理をいくつも同時に送信させるのはよくありません。）<br>
+		<br>
+		命令コマンドの一覧は次の通りです。<br>
+		<table>
+			<tr>
+				<th>構文</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>@PB [HighValue] [LowValue]</td>
+				<td>ピッチベンドを送信します。</td>
+			</tr>
+			<tr>
+				<td>@CP [Value]</td>
+				<td>チャネルプレッシャーを送信します。</td>
+			</tr>
+			<tr>
+				<td>@PKP [Key] [Value]</td>
+				<td>ポリフォニックキープレッシャーを送信します。</td>
+			</tr>
+			<tr>
+				<td>@CC [ControlChangeNumber] [Value]</td>
+				<td>コントロールチェンジを送信します。</td>
+			</tr>
+			<tr>
+				<td>@SYSEX F0H ..... F7H</td>
+				<td>システムエクスクルーシブを送信します。<br>[ と ] を使用すると、囲った部分のチェックサムを ] 部分へ自動的に挿入してから送信します。</td>
+			</tr>
+			<tr>
+				<td>@RPN [RPN MSB] [RPN LSB] [Data MSB] [Data LSB]</td>
+				<td>RPNを送信します。</td>
+			</tr>
+			<tr>
+				<td>@NRPN [NRPN MSB] [NRPN LSB] [Data MSB] [Data LSB]</td>
+				<td>NRPNを送信します。
+			</tr>
+		</table>
+		<br>
+		命令コマンドに引き続いて決まった数だけ値を指定する必要があります。<br>
+		１０進数の固定値を指定するには「1」や「10」のように記入します。<br>
+		１６進数の固定値を指定するには「1h」や「10H」、「0x20」のように記入します。<br>
+		<br>
+		固定値だけでなく、変動する値も利用することができます。<br>
+		<br>
+		変動する値（および特殊な値）一覧は次の通りです。<br>
+		<table>
+			<tr>
+				<th>構文</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>#NONE</td>
+				<td>値そのものを持ちません。@RPNの[Data LSB]部分で利用できます。</td>
+			</tr>
+			<tr>
+				<td>#VL</td>
+				<td>Value値の下位7bitを参照します。</td>
+			</tr>
+			<tr>
+				<td>#VH</td>
+				<td>Value値の上位7bitを参照します。</td>
+			</tr>
+			<tr>
+				<td>#GL</td>
+				<td>Gate値の下位7bitを参照します。</td>
+			</tr>
+			<tr>
+				<td>#GH</td>
+				<td>Gate値の上位7bitを参照します。</td>
+			</tr>
+			<tr>
+				<td>#CH</td>
+				<td>チャンネルを元に00H～0FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#1CH</td>
+				<td>チャンネルを元に10H～1FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#2CH</td>
+				<td>チャンネルを元に20H～2FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#3CH</td>
+				<td>チャンネルを元に30H～3FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#PCH</td>
+				<td>Aポートの場合、チャンネルを元に00H～1FHまでの値を作ります。<br>同様にBポートは10H～1FH、Cポートは20H～2FH、Dポートは30H～3FHの値を作ります。<br>Eポート以降は常に00Hとなります。<br>汎用的な音源定義ファイルでは使用しないでください（ポートの影響を受けるため）。
+				</td>
+			</tr>
+			<tr>
+				<td>#1RCH</td>
+				<td>ローランド社の音源マニュアルで「1x」（xはブロックナンバー≒チャンネル）と表記されている部分の値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#2RCH</td>
+				<td>ローランド社の音源マニュアルで「2x」（xはブロックナンバー≒チャンネル）と表記されている部分の値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#4RCH</td>
+				<td>ローランド社の音源マニュアルで「4x」（xはブロックナンバー≒チャンネル）と表記されている部分の値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#VF1</td>
+				<td>Value値の1～4bitを元に00H～0FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#VF2</td>
+				<td>Value値の5～8bitを元に00H～0FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#VF3</td>
+				<td>Value値の9～12bitを元に00H～0FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#VF4</td>
+				<td>Value値の13～16bitを元に00H～0FHまでの値を作ります。</td>
+			</tr>
+			<tr>
+				<td>#RSCTRT1<br>(#RSCTRT1P)<br>#RSCTRT2<br>#RSCTRT3</td>
+				<td>Roland社のSonicCell音源等で、Temporary Rhythm
+					Toneを調節する際に必要な24bit値をチャンネルとGate値（Note番号21～108）から生成します。<br>生成範囲は11h 10h 10hから14h 71h
+					3Ehです。<br>実際に音源定義ファイルに記述する際は #RSCTRT3 #RSCTRT2 #RSCTRT1 の順になります。<br>#RSCTRT1Pは#RSCTRT1に1を足したものです。
+				</td>
+			</tr>
+			<tr>
+				<td>#RSCTPT1<br>(#RSCTPT1P)<br>#RSCTPT2<br>#RSCTPT3</td>
+				<td>Roland社のSonicCell音源等で、Temporary Patch Toneを調節する際に必要な24bit値をチャンネルとGate値（Patch
+					Tone番号1～4）から生成します。<br>実際に音源定義ファイルに記述する際は #RSCTPT3 #RSCTPT2 #RSCTPT1
+					の順になります。<br>#RSCTPT1Pは#RSCTPT1に1を足したものです。</td>
+			</tr>
+			<tr>
+				<td>#VPGL</td>
+				<td>Value+Gate値の下位7bitを参照します（SMFから復元されません）。</td>
+			</tr>
+			<tr>
+				<td>#VPGH</td>
+				<td>Value+Gate値の上位7bitを参照します（SMFから復元されません）。</td>
+			</tr>
+		</table>
+		<br>
+		他にも必要な値がある場合は、使い道を添えて要望を出してください。
+		<h4>CCMLinkタグ</h4>
+		CCMLinkタグは、他のCCMタグと内容がほぼ同じで、ValueやGateのデフォルト値だけ変えてその位置に配置したいときに利用します。<br>
+		（SC-8850の場合は、EFXマクロで多用しています。）<br>
+		<br>
+		CCMLinkタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>必須</td>
+				<td>リンク先のマクロIDを指定します。</td>
+			</tr>
+			<tr>
+				<td>Value</td>
+				<td> </td>
+				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+			<tr>
+				<td>Gate</td>
+				<td> </td>
+				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+		</table>
+		<h4>FolderLinkタグ</h4>
+		FolderLinkタグは、他ののフォルダと内容がほぼ同じで、ValueやGateのデフォルト値だけ変えてその位置に配置したいときに利用します。<br>
+		（SD-80等のようなMFXが複数系統ある機種で利用されます。）<br>
+		<br>
+		FolderLinkタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>フォルダ名を指定します。リンク先と同じである必要はありません。</td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>必須</td>
+				<td>リンク先のFolderのIDを指定します。</td>
+			</tr>
+			<tr>
+				<td>Value</td>
+				<td> </td>
+				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+			<tr>
+				<td>Gate</td>
+				<td> </td>
+				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+		</table>
+		<h4>Tableタグ</h4>
+		通常テーブルは、ValueタグやGateタグの要素としてEntryタグを用いて定義しますが、
+		共通テーブルとしてテーブルを定義しておくと、同じテーブルを複数のマクロで使い回すことができます。<br>
+		<br>
+		TableタグはControlChangeMacroListタグの直下もしくはFolderタグの直下で定義できます。<br>
+		Tableタグは複数のEntryタグを要素に持つことができます。<br>
+		<br>
+		Tableタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>必須</td>
+				<td>テーブルIDを指定します。0以上を指定し、重複してはいけません。</td>
+			</tr>
+		</table>
+	</div>
+	<h3><a name="TemplateList">テンプレート情報</a></h3>
+	<div class=w>
+		テンプレート機能は、CCイベントなどを複数まとめて１テンプレートとして定義しておき、ユーザーによって挿入ができる機能です。<br>
+		そうしたテンプレートを情報をここで定義します。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;Template ID="0" Name="トラック初期化"&gt;
+	&lt;Memo&gt;トラック初期化用テンプレートです。&lt;/Memo&gt;
+	&lt;CC ID="7" Value="100" /&gt;
+	&lt;CC ID="10" Value="0" /&gt;
+	&lt;PC Mode="Auto" /&gt;
+	&lt;CC ID="91" Value="40" /&gt;
+	&lt;CC ID="93" Value="0" /&gt;
+	&lt;CC ID="94" Value="0" /&gt;
+	&lt;CC ID="74" Value="0" /&gt;
+	&lt;CC ID="71" Value="0" /&gt;
+	&lt;CC ID="130" Value="0" /&gt;
+	&lt;CC ID="11" Value="127" /&gt;
+	&lt;CC ID="76" Value="0" /&gt;
+	&lt;CC ID="77" Value="0" /&gt;
+	&lt;CC ID="78" Value="0" /&gt;			
+&lt;/Template&gt;
+</pre>
+		</div>
+		<h4>Folderタグ</h4>
+		各Templateタグは、自由にフォルダを作成でき、その中へ入れることができます。<br>
+		こうすることにより、ユーザーが目的のテンプレートを探しやすくするようにできます。<br>
+		Folderタグはそのフォルダを定義します（必要ではありません）。<br>
+		Folderタグは複数のTemplateタグを要素として持つことができます（１つも無いとフォルダは表示されません＾＾；）。<br>
+		<br>
+		Folderタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>フォルダ名を指定します。</td>
+			</tr>
+		</table>
+		<h4>Templateタグ</h4>
+		要素としてMemoタグ、CCタグ、PCタグ、Commentタグを持つことができます。<br>
+		これによって、テンプレートにどんなイベントを含めるかを指示します。<br>
+		<br>
+		Folderタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td> </td>
+				<td>テンプレートIDを指定します。0以上を指定してください。デフォルトデータから参照する際に使用します。</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>必須</td>
+				<td>テンプレート名を指定します。</td>
+			</tr>
+		</table>
+		<h4>Memoタグ</h4>
+		テンプレートのメモ（説明）を記入します。<br>
+		メモは[テンプレート]画面で表示されます。<br>
+		<h4>CCタグ</h4>
+		コントロールチェンジイベントの挿入を指示します。<br>
+		<br>
+		CCタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>必須</td>
+				<td>マクロIDを指定します。</td>
+			</tr>
+			<tr>
+				<td>Value</td>
+				<td> </td>
+				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+			<tr>
+				<td>Gate</td>
+				<td> </td>
+				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+		</table>
+		<h4>PCタグ</h4>
+		プログラムチェンジイベントの挿入を指示します。<br>
+		<br>
+		PCタグの属性は以下の通りです。
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>PC</td>
+				<td>1</td>
+				<td>PC番号を1～128の範囲で指定します。</td>
+			</tr>
+			<tr>
+				<td>MSB</td>
+				<td> </td>
+				<td>Bank Select MSB値を指定します。</td>
+			</tr>
+			<tr>
+				<td>LSB</td>
+				<td> </td>
+				<td>Bank Select LSB値を指定します。</td>
+			</tr>
+			<tr>
+				<td>Mode</td>
+				<td> </td>
+				<td>Drumset・・・ドラムセットの音色モードということを指定します。<br>Auto・・・トラックの種類が「リズム」になっている場合はドラムセットの音色モードにします。</td>
+			</tr>
+		</table>
+		<h4>Commentタグ</h4>
+		コメントイベントの挿入を指示します。
+		Commentタグの属性は以下の通りです。
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Text</td>
+				<td> </td>
+				<td>コメントデータを指定します。</td>
+			</tr>
+		</table>
+	</div>
+	<h3><a name="DefaultData">デフォルトデータ情報</a></h3>
+	<div class=w>
+		デフォルトデータとは、Dominoを起動した時や新規作成した際に、あらかじめ用意されているデータの事です。<br>
+		このデータを定義する事ができます。<br>
+		<br>
+		例）<br>
+		<div class=src>
+			<pre>
+&lt;Mark Meas="2" Name="Start" /&gt;
+&lt;Track Mode="Conductor"&gt;
+	&lt;Mark Tick="0" Name="Setup" /&gt;
+	&lt;Tempo Tick="0" Tempo="120.0" /&gt;
+	&lt;Mark Tick="1920" Name="Start" /&gt;
+	&lt;EOT Tick="1920" /&gt;
+&lt;/Track&gt;
+&lt;Track Name="Setup" Ch="1"&gt;
+	&lt;CC Tick="0" ID="200" /&gt;
+	&lt;CC Tick="240" ID="201" /&gt;
+	&lt;EOT Tick="1920" /&gt;
+&lt;/Track&gt;
+&lt;Track Ch="1" Current="1"&gt;
+	&lt;Template ID="0" Tick="480" /&gt;
+	&lt;EOT Tick="1920" /&gt;
+&lt;/Track&gt;
+（省略）
+&lt;Track Name="Rhythm" Ch="10" Mode="Rhythm"&gt;
+	&lt;Template ID="0" Tick="480" /&gt;
+	&lt;EOT Tick="1920" /&gt;
+&lt;/Track&gt;
+（省略）
+</pre>
+		</div>
+		<h4>Trackタグ</h4>
+		Trackタグは１つのトラック情報を定義します。<br>
+		（実際は、置かれている順番どおりにトラックが作成されます。）<br>
+		<br>
+		要素としてMarkタグ、TimeSignatureタグ、KeySignatureタグ、CCタグ、PCタグ、Commentタグ、Templateタグ、EOTタグを持つことができます。<br>
+		これによって、トラックにどんなイベントを含めるかを指示します。<br>
+		<br>
+		Trackタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td> </td>
+				<td>トラック名を指定します。</td>
+			</tr>
+			<tr>
+				<td>Ch</td>
+				<td>1</td>
+				<td>チャンネル番号を指定します。1～16の範囲で指定してください。</td>
+			</tr>
+			<tr>
+				<td>Mode</td>
+				<td> </td>
+				<td>「Conductor」を指定すると、コンダクタートラックになります（１つのみ指定可能）。<br>「Rhythm」を指定すると、リズムトラックとして扱われます。</td>
+			</tr>
+		</table>
+		<h4>Markタグ</h4>
+		マークイベントの挿入を指示します。<br>
+		<br>
+		Markタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td> </td>
+				<td>マーク名を指定します。</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>TimeSignatureタグ</h4>
+		拍子イベントの挿入を指示します。<br>
+		<br>
+		TimeSignatureタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>TimeSignature</td>
+				<td>必須</td>
+				<td>拍子を指定します。例）4/4</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>KeySignatureタグ</h4>
+		調号イベントの挿入を指示します。<br>
+		<br>
+		KeySignatureタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>KeySignature</td>
+				<td>必須</td>
+				<td>調号を指定します。例）C Maj</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>CCタグ</h4>
+		コントロールチェンジイベントの挿入を指示します。<br>
+		<br>
+		CCタグの属性は以下の通りです。<br>
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>必須</td>
+				<td>マクロIDを指定します。</td>
+			</tr>
+			<tr>
+				<td>Value</td>
+				<td> </td>
+				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+			<tr>
+				<td>Gate</td>
+				<td> </td>
+				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>PCタグ</h4>
+		プログラムチェンジイベントの挿入を指示します。
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>PC</td>
+				<td>1</td>
+				<td>PC番号を1～128の範囲で指定します。</td>
+			</tr>
+			<tr>
+				<td>MSB</td>
+				<td> </td>
+				<td>Bank Select MSB値を指定します。</td>
+			</tr>
+			<tr>
+				<td>LSB</td>
+				<td> </td>
+				<td>Bank Select LSB値を指定します。</td>
+			</tr>
+			<tr>
+				<td>Mode</td>
+				<td> </td>
+				<td>Drumset・・・ドラムセットの音色モードということを指定します。<br>Auto・・・トラックの種類が「リズム」になっている場合はドラムセットの音色モードにします。</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>Commentタグ</h4>
+		コメントイベントの挿入を指示します。
+		Commentタグの属性は以下の通りです。
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Text</td>
+				<td> </td>
+				<td>コメントデータを指定します。</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>Templateタグ</h4>
+		定義済みのテンプレートを利用してイベントの挿入を指示します。<br>
+		定義ファイルのサイズ節約（＝メモリ節約）にもなります。<br>
+		<br>
+		Templateタグの属性は以下の通りです。
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td> </td>
+				<td>参照するテンプレートIDを指定します。</td>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+			</tr>
+			<tr>
+				<td>Step</td>
+				<td> </td>
+				<td>このイベント以降の配置間隔を指定します。</td>
+			</tr>
+		</table>
+		<h4>EOTタグ</h4>
+		End of Trackの位置を指示します（無ければ自動的に追加されます）。<br>
+		<br>
+		EOTタグの属性は以下の通りです。
+		<table>
+			<tr>
+				<th>属性</th>
+				<th>省略時</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Tick</td>
+				<td> </td>
+				<td>挿入する絶対Tickを指定します。</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

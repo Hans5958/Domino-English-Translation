@@ -1,0 +1,144 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>導入について</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+			border: 1px solid #0a5ca0;
+		}
+
+		td {
+			border: 1px solid #888888;
+			padding: 3px 3px 2px 3px;
+		}
+
+		th {
+			border: 1px solid #555555;
+			background-color: #e1f0ff;
+			padding: 3px 3px 2px 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>導入について</h1>
+	<h3><a name="dousa">動作環境</a></h3>
+	<div class=w>
+		このソフトウェアの動作環境および推奨環境は以下の通りです。
+		<table border=1>
+			<tr>
+				<th>-</th>
+				<th>動作環境</th>
+				<th>推奨環境</th>
+			</tr>
+			<tr>
+				<th>OS</th>
+				<td>Microsoft Windows 2000/XP/Vista/7/8 *</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<th>CPU</th>
+				<td>各OSが動作するメモリ量</td>
+				<td>iPentium4 1.5GHz相当以上</td>
+			</tr>
+			<tr>
+				<th>メモリ</th>
+				<td>各OSが動作するメモリ量</td>
+				<td>512MB以上</td>
+			</tr>
+			<tr>
+				<th>モニタ</th>
+				<td>1024×768以上</td>
+				<td>1280×1024以上</td>
+			</tr>
+			<tr>
+				<th>その他</th>
+				<td>MIDI出力デバイスが１つ以上必要</td>
+				<td>-</td>
+			</tr>
+		</table><br>
+		<ul>
+			<li>Windows 95/98/MEでの動作は不明です。ソフトウェア自体は動作すると思いますが、</li>
+			安定して曲を再生出来るかどうかは解りません。<br>
+		</ul>
+	</div>
+	<h3><a name="kyodaku">著作権表示・使用許諾</a></h3>
+	<div class=w>
+		以下の内容に同意した上でソフトウェアを利用してください。
+		<ul>
+			<li>Dominoはフリーソフトウェアです。<br>営利/非営利を問わず無料で使用する事ができます。</li>
+			<li>Dominoの著作権は作者である私、たかぼーに帰属します。</li>
+			<li>二次配布につきましては、友人や知り合いまたは社内に配布する場合は構いません。<br>ただし、ホームページや雑誌などで不特定多数に配布する場合には、あらかじめ私に確認をしてください。</li>
+			<li>Dominoを使用した事によって起こる全ての被害に対して、私は一切の責を負いません。バックアップ機能などをお使い、使用者の責任の元でお使いください。</li>
+			<li>Dominoで作成した音楽データの著作権は、そのデータの作者にあります。</li>
+			営利/非営利を問わず自由に取り扱うことが出来ます。
+			<li>このソフトウェアのリバースエンジニアリング、逆コンパイル、解析等を禁止します。</li>
+			<li>ソフトウェアの仕様は将来予告無しに変更することがあります。</li>
+			<li>不具合修正や要望につきましてはできるだけ早急に対処したいと思いますが、作者はその義務を負いません。</li>
+	</div>
+	<h3><a name="inst">インストール方法</a></h3>
+	<div class=w>
+		圧縮ファイルを解凍するだけで使用可能です。
+	</div>
+	<h3><a name="verup">バージョンアップ時のインストール方法</a></h3>
+	<div class=w>
+		音源定義ファイルの修正や追加を行っていない場合は、最新バージョンを解凍して、全ファイルを旧バージョンのフォルダへ上書きしてください。<br>
+		<br>
+		音源定義ファイルの修正や追加を行っている場合は、旧バージョンを実行し、[ファイル]メニューの[環境設定のエクスポート]を実行してください。<br>
+		その後、新しいバージョンにおいて、[ファイル]メニューの[環境設定のインポート]を行えば、設定を引き継ぐことができます。
+	</div>
+	<h3><a name="uninst">アンインストール方法</a></h3>
+	<div class=w>
+		レジストリは使用していませんので、Dominoのフォルダを削除するだけです。
+	</div>
+	<h3><a name="port">ポートの設定 【重要】</a></h3>
+	<div class=w>
+		Dominoを初めて起動する際には、まずMIDIポートの設定が必要です。<br>
+		ツールバーの[環境設定]ボタンをクリックし、[環境設定]画面を開いてください。<br>
+		<img src="assets/inst_000.png" width="177" height="74"><br>
+		<br>
+		左のMIDI-OUTをクリックすると、現在の出力ポート設定画面が表示されます。<br>
+		<img src="assets/inst_001.png" width="704" height="420"><br>
+		<br>
+		とりあえず、AポートのMIDIデバイス部分をクリックし、使用したいMIDIデバイスを選んでください。<br>
+		<img src="assets/inst_002.png" width="312" height="166"><br>
+		<br>
+		次に、Aポートの使用音源部分をクリックし、先ほど選んだMIDIデバイスに接続されている音源（音源定義ファイル）を選んでください。<br>
+		<img src="assets/inst_003.png" width="299" height="173"><br>
+		<br>
+		<div class=caution>
+			外部音源を持っておらず、何を設定して良いのか全く解らない人は、AポートのMIDI OUT デバイスに「Microsoft GS Wavetable SW Synth」を、音源（音源定義ファイル）に「GSm
+			（Microsoft GS Wavetable SW Synth）」をそれぞれ指定してください。
+			（Bポート以降はそのままにしてください。）
+		</div>
+		<br>
+		<div class=caution>
+			勘違いされやすいのですが、Dominoに「SC-8850」や「GM Level1」という音源が付属しているわけではありません。<br>
+			例えば「SC-8850」という製品をお持ちの方が、音源欄に「SC-8850」を指定することで、DominoからSC-8850独自の音色や機能を利用できるようになります。<br>
+			<br>
+			※ 「SC-8850」はローランド社から発売されたハードウェア音源です。<br>
+			製品情報：<a href="http://www.roland.co.jp/products/dtm/SC-8850.html">http://www.roland.co.jp/products/dtm/SC-8850.html</a>
+		</div>
+		<br>
+		なお、ここに使用している音源が存在しない場合は、
+		<ul>
+			<li>公式サイトの<a href="http://takabosoft.com/domino/module">音源定義ファイルリンク集</a>から音源定義ファイルを探す</li>
+			<li>自作する（「<a href="module.html">音源定義ファイルの仕様</a>」を参考にしてください）</li>
+			<li><s>「・・・音源の定義ファイルを作ってください」という感じで要望を出す</s><br>（音源の持ち主でないと音源定義ファイルは作れませんので、やはり自作して頂くのが一番かと思います。）</li>
+		</ul>
+		と言った方法で解決できます（＾＾；<br>
+		<br>
+		もし、１６チャンネルを超えるチャンネル数を使いたい場合、または複数の音源を同時に使いたい場合には、
+		Bポート以降を同様に設定してください。<br>
+		<br>
+		あとは、もしMIDIキーボードをお持ちの場合は、左の「MIDI-IN」を選び、そのMIDIキーボードのMIDI-INデバイスを設定してください。<br>
+		<img src="assets/inst_004.png" width="631" height="226"><br>
+		<br>
+		これで準備は完了です。<br>
+	</div>
+</body>
+
+</html>
