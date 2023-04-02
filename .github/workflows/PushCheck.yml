@@ -70,25 +70,25 @@ jobs:
           bash workflow/build-all-artifact.sh
 
       - name: Upload artifact 1
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: Domino143_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.zip
           path: _script/dist/Domino143_Translated.zip
 
       - name: Upload artifact 2
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: Domino143_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.exe
           path: _script/dist/Domino143_Translated.exe
 
       - name: Upload artifact 3
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: Domino144_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.zip
           path: _script/dist/Domino144_Translated.zip
 
       - name: Upload artifact 4
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: Domino144_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}.exe
           path: _script/dist/Domino144_Translated.exe
