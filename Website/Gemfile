@@ -14,6 +14,7 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Hotfix to avoid using "eventmachine (1.2.7-x64-mingw32)" which makes errors on Windows.
+# https://github.com/eventmachine/eventmachine/issues/820
 gem "eventmachine", "1.2.7", git: "https://github.com/eventmachine/eventmachine.git", tag: "v1.2.7"
 
 # Hotfix to avoid execjs going to 2.8 to make it work on CI (Linux).
