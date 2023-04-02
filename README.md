@@ -50,13 +50,13 @@ choco install reshack
 sudo apt install p7zip-full jq python3.10
 ```
 
-### Howto
+### Instructions
 
 Just run either `build-1.43.sh` or `build-1.44.sh` inside the `_script` folder. The binaries (the `.exe` files) will be compiled and placed inside the `_script/dist` folder.
 
 ## Contributing
 
-You can contribute by translating various files. The `.rc` files contains the most of the program's strings. There is also `.html` files for the manuals, `.xml` for the modules, and some `.txt`'s.
+Contributions are welcome. You can contribute by translating various files. The `.rc` files contains the most of the program's strings. There is also `.html` files for the manuals, `.xml` for the modules, and some `.txt`'s.
 
 Read [Building](#building) to get the binary files.
 
@@ -71,7 +71,7 @@ TL;DR, here's how.
 3. Do your edits there and commit (and push) the changes.
 4. Create a pull request by clicking the "New pull request" button.
 
-If you are still confused, you can ask me on [the issue board](https://github.com/Hans5958/Domino-English-Translation/issues) or on Discord (`Hans5958#0969`). 
+If you are still confused, or you don't want to tinker with the technicalities, you can [write an issue](https://github.com/Hans5958/Domino-English-Translation/issues) or ask me on Discord (`Hans5958#0969`). 
 <!-- You can contribute by following these steps.
 
 1. Fork the master repository.  
