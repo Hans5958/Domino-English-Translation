@@ -28,8 +28,8 @@ for file in ../240/*.bin.txt; do
 done
 sed -i '2s/.*/FILEVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
 sed -i '3s/.*/PRODUCTVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
-sed -i '12s/.*/		VALUE "FileVersion", "'$FULL_VERSION'"/' VersionInfo.rc
-sed -i '17s/.*/		VALUE "ProductVersion", "'$FULL_VERSION'"/' VersionInfo.rc
+sed -i "12s/.*/		VALUE \"FileVersion\", \"$FULL_VERSION\"/" VersionInfo.rc
+sed -i "17s/.*/		VALUE \"ProductVersion\", \"$FULL_VERSION\"/" VersionInfo.rc
 
 echo "Compiling using Resource Hacker..."
 

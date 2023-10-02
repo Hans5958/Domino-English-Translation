@@ -11,7 +11,7 @@ BLOCK "StringFileInfo"
 		VALUE "FileDescription", "Domino MIDI/Music Editor" 
 		VALUE "FileVersion", "FULL_VERSION" // Do not edit this!
 		VALUE "InternalName", "Domino"
-		VALUE "LegalCopyright", "Software (c) 2007-2013 Takabo Soft, Translation (c) 2019-2021"
+		VALUE "LegalCopyright", "Software (c) 2007-2013 Takabo Soft, Translation (c) 2019-2023"
 		VALUE "OriginalFilename", "Domino.exe"
 		VALUE "ProductName", "Domino"
 		VALUE "ProductVersion", "FULL_VERSION" // Do not edit this!

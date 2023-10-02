@@ -1,5 +1,6 @@
 echo "Building 1.44 (development version)..."
 
+# Preparation
 echo "Preparing..."
 
 echo "Removing temporary files..."
@@ -33,12 +34,17 @@ EOL
 cat temp/compile-config.json
 
 echo "Preparation done!"
+# End of preparation
 
+# Compilation
 echo "Compiling..."
 bash compile-2.sh temp/compile-config.json
 echo "Compile done!"
+# End of compilation
 
+# Packing
 echo "Copying compilation results..."
 cp -r temp/_compile dist
+# End of packing
 
 echo "Building done!"

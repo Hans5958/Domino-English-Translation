@@ -1,14 +1,17 @@
-echo "Building 1.43 (development version)..."
+echo "Building 1.45 dev003 (64-bit) (development version)..."
 
 # Preparation
 echo "Preparing..."
 
 echo "Removing temporary files..."
 bash modules/clean.sh
-echo "Copying translations and other required files..."
+echo "Copying 1.43 translations and other required files..."
 bash modules/copy-base.sh
-echo "Extracting 1.43 original files..."
-7z x ../_deploy/Domino143.7z -otemp/_compile
+echo "Copying 1.45-specific translations..."
+bash modules/copy-1.45.sh
+echo "Extracting 1.45 original files..."
+7z x ../_deploy/Domino145_dev003_x86.7z -otemp/_compile
+7z x ../_deploy/Domino145_dev003_x64.7z -otemp/_compile
 
 echo "Creating compile config file..."
 VERSION_NUM="$(cat ../version.txt)"
@@ -20,8 +23,8 @@ else
 fi
 cat >temp/compile-config.json <<EOL
 {
-	"resourceVersion": "1,43,$VERSION_NUM,0",
-	"fullVersion": "1.43-en.$VERSION_NUM-dev.$BUILD_DATE",
+	"resourceVersion": "1,45,$VERSION_NUM,0",
+	"fullVersion": "1.45 dev003-en.$VERSION_NUM-dev.$BUILD_DATE",
 	"buildVersion": "$VERSION_NUM-dev.$BUILD_DATE",
 	"executableName": "Domino_Translated_$BUILD_DATE.exe",
 	"compilePath": "temp/_compile",
