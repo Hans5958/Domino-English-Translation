@@ -60,13 +60,12 @@ cd..
 cmd.exe /c tmp.bat
 touch $EXECUTABLE_NAME
 
-echo "Compile done!"
+echo "Compilation done!"
 
 echo "Copying other translated files..."
-rm -rf Manual
-cp -r ../Manual .
-cp -r ../Module .
-cp -r ../System .
+[ -d "Manual" ] && rm -rf Manual && cp -r ../Manual .
+[ -d "Module" ] && cp -r ../Module .
+[ -d "System" ] && cp -r ../System .
 cp -r ../Other/* .
 
 echo "Removing temporary files..."

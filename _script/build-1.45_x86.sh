@@ -1,10 +1,22 @@
+VERSION_NUM="$(cat ../version.txt)"
+BUILD_DATE=$(date +'%Y%m%d%H%M%S')
+if [[ "$(python -V)" =~ "Python 3" ]]; then
+	PYTHON_EXECUTABLE="python"
+else
+	PYTHON_EXECUTABLE="python3"
+fi
+
+echo "Cleaning folders..."
+bash modules/clean.sh
+mkdir dist
+
 echo "Building 1.45 dev003 (32-bit) (development version)..."
 
 # Preparation
 echo "Preparing..."
 
 echo "Removing temporary files..."
-bash modules/clean.sh
+rm -rf temp/
 echo "Copying 1.43 translations and other required files..."
 bash modules/copy-base.sh
 echo "Copying 1.45-specific translations..."
@@ -13,13 +25,6 @@ echo "Extracting 1.45 original files..."
 7z x ../_deploy/Domino145_dev003_x86.7z -otemp/_compile
 
 echo "Creating compile config file..."
-VERSION_NUM="$(cat ../version.txt)"
-BUILD_DATE=$(date +'%Y%m%d%H%M%S')
-if [[ "$(python -V)" =~ "Python 3" ]]; then
-	PYTHON_EXECUTABLE="python"
-else
-	PYTHON_EXECUTABLE="python3"
-fi
 cat >temp/compile-config.json <<EOL
 {
 	"resourceVersion": "1,45,$VERSION_NUM,0",
@@ -39,7 +44,7 @@ echo "Preparation done!"
 # Compilation
 echo "Compiling..."
 bash compile-2.sh temp/compile-config.json
-echo "Compile done!"
+echo "Compilation done!"
 # End of compilation
 
 # Packing
