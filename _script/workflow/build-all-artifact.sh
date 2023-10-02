@@ -1,7 +1,7 @@
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
 VERSION_NUM="$(cat ../version.txt)"
-echo "::set-output name=BUILD_DATE::$BUILD_DATE"
-echo "::set-output name=VERSION_NUM::$VERSION_NUM"
+echo "BUILD_DATE=$BUILD_DATE" >> $GITHUB_OUTPUT
+echo "VERSION_NUM=$VERSION_NUM" >> $GITHUB_OUTPUT
 if [[ "$(python -V)" =~ "Python 3" ]]; then
 	PYTHON_EXECUTABLE="python"
 else
