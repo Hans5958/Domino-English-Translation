@@ -60,5 +60,9 @@ jobs:
             _script/dist/Domino143_Translated.exe
             _script/dist/Domino144_Translated.zip
             _script/dist/Domino144_Translated.exe
+            _script/dist/Domino145_x86_Translated.zip
+            _script/dist/Domino145_x86_Translated.exe
+            _script/dist/Domino145_x64_Translated.zip
+            _script/dist/Domino145_x64_Translated.exe
           body_path: release.txt
           draft: true
