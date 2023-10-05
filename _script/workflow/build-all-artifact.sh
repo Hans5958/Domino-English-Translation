@@ -58,9 +58,8 @@ echo "::group::Pack distributable"
 # Packing
 echo "Packing distributable..."
 cd temp/_compile/
-7z a ../../dist/Domino143_Translated.zip *
 cd ../../
-mv -v temp/_compile/Domino.exe dist/Domino143_Translated.exe
+cp -rv temp/_compile/ dist/Domino143_Translated
 echo "Packing done!"
 # End of packing
 echo "::endgroup::"
@@ -115,9 +114,8 @@ echo "::group::Pack distributable"
 # Packing
 echo "Packing distributable..."
 cd temp/_compile/
-7z a ../../dist/Domino144_Translated.zip *
 cd ../../
-mv -v temp/_compile/Domino.exe dist/Domino144_Translated.exe
+cp -rv temp/_compile/ dist/Domino144_Translated
 echo "Packing done!"
 # End of packing
 echo "::endgroup::"
@@ -172,9 +170,8 @@ echo "::group::Pack distributable"
 # Packing
 echo "Packing distributable..."
 cd temp/_compile/
-7z a ../../dist/Domino145_dev003_x86_Translated.zip *
 cd ../../
-mv -v temp/_compile/Domino.exe dist/Domino145_dev003_x86_Translated.exe
+cp -rv temp/_compile/ dist/Domino145_dev003_x86_Translated
 echo "Packing done!"
 # End of packing
 echo "::endgroup::"
@@ -228,9 +225,8 @@ echo "::group::Pack distributable"
 # Packing
 echo "Packing distributable..."
 cd temp/_compile/
-7z a ../../dist/Domino145_dev003_x64_Translated.zip *
 cd ../../
-mv -v temp/_compile/Domino.exe dist/Domino145_dev003_x64_Translated.exe
+cp -rv temp/_compile/ dist/Domino145_dev003_x64_Translated
 echo "Packing done!"
 # End of packing
 echo "::endgroup::"
