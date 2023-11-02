@@ -28,8 +28,8 @@ for file in ../240/*.bin.txt; do
 done
 sed -i '2s/.*/FILEVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
 sed -i '3s/.*/PRODUCTVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
-sed -i '12s/.*/		VALUE "FileVersion", "'$FULL_VERSION'"/' VersionInfo.rc
-sed -i '17s/.*/		VALUE "ProductVersion", "'$FULL_VERSION'"/' VersionInfo.rc
+sed -i "12s/.*/		VALUE \"FileVersion\", \"$FULL_VERSION\"/" VersionInfo.rc
+sed -i "17s/.*/		VALUE \"ProductVersion\", \"$FULL_VERSION\"/" VersionInfo.rc
 
 echo "Compiling using Resource Hacker..."
 
@@ -60,13 +60,12 @@ cd..
 cmd.exe /c tmp.bat
 touch $EXECUTABLE_NAME
 
-echo "Compile done!"
+echo "Compilation done!"
 
 echo "Copying other translated files..."
-rm -rf Manual
-cp -r ../Manual .
-cp -r ../Module .
-cp -r ../System .
+[ -d "Manual" ] && rm -rf Manual && cp -r ../Manual .
+[ -d "Module" ] && cp -r ../Module .
+[ -d "System" ] && cp -r ../System .
 cp -r ../Other/* .
 
 echo "Removing temporary files..."

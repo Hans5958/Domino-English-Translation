@@ -1,0 +1,6 @@
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  61888, 	"ピクセル"
+}
+
