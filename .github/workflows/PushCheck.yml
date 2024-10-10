@@ -84,12 +84,12 @@ jobs:
       - name: Upload artifact (v1.45, 32-bit)
         uses: actions/upload-artifact@v4
         with:
-          name: Domino145_dev003_x86_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}
-          path: _script/dist/Domino145_dev003_x86_Translated/
+          name: Domino145_dev007_x86_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}
+          path: _script/dist/Domino145_dev007_x86_Translated/
 
       - name: Upload artifact (v1.45, 64-bit)
         uses: actions/upload-artifact@v4
         with:
-          name: Domino145_dev003_x64_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}
-          path: _script/dist/Domino145_dev003_x64_Translated/
+          name: Domino145_dev007_x64_Translated_v${{steps.build.outputs.VERSION_NUM}}-artifact.${{steps.build.outputs.BUILD_DATE}}
+          path: _script/dist/Domino145_dev007_x64_Translated/
 
