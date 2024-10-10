@@ -33,7 +33,8 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino_Translated_$BUILD_DATE.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/mnt/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json

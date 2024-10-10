@@ -11,6 +11,7 @@ export EXECUTABLE_NAME=$(jq_config '.executableName')
 export COMPILE_PATH=$(jq_config '.compilePath')
 export SUPPLY_TRANSLATION_README=$(jq_config '.supplyTranslationReadme')
 export PYTHON_EXECUTABLE=$(jq_config '.pythonExecutable')
+export RESHACK_EXECUTABLE=$(jq_config '.reshackExecutable')
 
 cd $COMPILE_PATH
 
@@ -49,15 +50,16 @@ Log=    CON
 -add     VersionInfo.res, VERSIONINFO,,
 -add     240.res, 240,,
 " > tmp.txt
-echo '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Dialog.rc -save Dialog.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Menu.rc -save Menu.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open StringTable.rc -save StringTable.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
+
+$RESHACK_EXECUTABLE -open Dialog.rc -save Dialog.res -action compile -log CON
+$RESHACK_EXECUTABLE -open Menu.rc -save Menu.res -action compile -log CON
+$RESHACK_EXECUTABLE -open StringTable.rc -save StringTable.res -action compile -log CON
+$RESHACK_EXECUTABLE -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
 cd 240
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open _240.rc -save ../240.res -action compile -log CON
-cd..
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -script tmp.txt' > tmp.bat
-cmd.exe /c tmp.bat
+$RESHACK_EXECUTABLE -open _240.rc -save ../240.res -action compile -log CON
+cd ..
+$RESHACK_EXECUTABLE -script tmp.txt
+
 touch $EXECUTABLE_NAME
 
 echo "Compilation done!"

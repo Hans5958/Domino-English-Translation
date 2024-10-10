@@ -37,7 +37,8 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json
@@ -93,7 +94,8 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json
@@ -149,7 +151,8 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json
@@ -204,7 +207,8 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json
