@@ -11,6 +11,7 @@ export EXECUTABLE_NAME=$(jq_config '.executableName')
 export COMPILE_PATH=$(jq_config '.compilePath')
 export SUPPLY_TRANSLATION_README=$(jq_config '.supplyTranslationReadme')
 export PYTHON_EXECUTABLE=$(jq_config '.pythonExecutable')
+export RESHACK_EXECUTABLE=$(jq_config '.reshackExecutable')
 
 cd $COMPILE_PATH
 
@@ -28,8 +29,8 @@ for file in ../240/*.bin.txt; do
 done
 sed -i '2s/.*/FILEVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
 sed -i '3s/.*/PRODUCTVERSION '$RESOURCE_VERSION'/' VersionInfo.rc
-sed -i '12s/.*/		VALUE "FileVersion", "'$FULL_VERSION'"/' VersionInfo.rc
-sed -i '17s/.*/		VALUE "ProductVersion", "'$FULL_VERSION'"/' VersionInfo.rc
+sed -i "12s/.*/		VALUE \"FileVersion\", \"$FULL_VERSION\"/" VersionInfo.rc
+sed -i "17s/.*/		VALUE \"ProductVersion\", \"$FULL_VERSION\"/" VersionInfo.rc
 
 echo "Compiling using Resource Hacker..."
 
@@ -49,24 +50,24 @@ Log=    CON
 -add     VersionInfo.res, VERSIONINFO,,
 -add     240.res, 240,,
 " > tmp.txt
-echo '"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Dialog.rc -save Dialog.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open Menu.rc -save Menu.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open StringTable.rc -save StringTable.res -action compile -log CON
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
+
+$RESHACK_EXECUTABLE -open Dialog.rc -save Dialog.res -action compile -log CON
+$RESHACK_EXECUTABLE -open Menu.rc -save Menu.res -action compile -log CON
+$RESHACK_EXECUTABLE -open StringTable.rc -save StringTable.res -action compile -log CON
+$RESHACK_EXECUTABLE -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
 cd 240
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -open _240.rc -save ../240.res -action compile -log CON
-cd..
-"C:\Program Files (x86)\Resource Hacker\ResourceHacker.exe" -script tmp.txt' > tmp.bat
-cmd.exe /c tmp.bat
+$RESHACK_EXECUTABLE -open _240.rc -save ../240.res -action compile -log CON
+cd ..
+$RESHACK_EXECUTABLE -script tmp.txt
+
 touch $EXECUTABLE_NAME
 
-echo "Compile done!"
+echo "Compilation done!"
 
 echo "Copying other translated files..."
-rm -rf Manual
-cp -r ../Manual .
-cp -r ../Module .
-cp -r ../System .
+[ -d "Manual" ] && rm -rf Manual && cp -r ../Manual .
+[ -d "Module" ] && cp -r ../Module .
+[ -d "System" ] && cp -r ../System .
 cp -r ../Other/* .
 
 echo "Removing temporary files..."
