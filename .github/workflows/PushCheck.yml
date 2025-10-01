@@ -47,7 +47,7 @@ jobs:
       #     echo ::set-output name=DEPTH::$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       #   with:
       #     fetch-depth: ${{steps.depth.outputs.DEPTH}}
       # - name: Check changes
