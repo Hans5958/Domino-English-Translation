@@ -1,0 +1,7 @@
+STRINGTABLE
+LANGUAGE LANG_JAPANESE, 0x1
+{
+  61744, 	"%1: %2\nスクリプトの実行を続行しますか?"
+  61745, 	"ディスパッチの例外: %1"
+}
+

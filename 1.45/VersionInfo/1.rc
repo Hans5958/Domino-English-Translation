@@ -1,6 +1,6 @@
 1 VERSIONINFO
-FILEVERSION 1,44,*,0 // Do not edit this! (RESOURCE_VERSION)
-PRODUCTVERSION 1,44,*,0 // Do not edit this! (RESOURCE_VERSION)
+FILEVERSION 1,45,*,0 // Do not edit this! (RESOURCE_VERSION)
+PRODUCTVERSION 1,45,*,0 // Do not edit this! (RESOURCE_VERSION)
 FILEOS VOS__WINDOWS32
 FILETYPE VFT_APP
 {
@@ -11,7 +11,7 @@ BLOCK "StringFileInfo"
 		VALUE "FileDescription", "Domino MIDI/Music Editor" 
 		VALUE "FileVersion", "FULL_VERSION" // Do not edit this!
 		VALUE "InternalName", "Domino"
-		VALUE "LegalCopyright", "Software (c) 2007-2020 Takabo Soft, Translation (c) 2019-2023"
+		VALUE "LegalCopyright", "Software (c) 2007-2023 Takabo Soft, Translation (c) 2019-2023"
 		VALUE "OriginalFilename", "Domino.exe"
 		VALUE "ProductName", "Domino"
 		VALUE "ProductVersion", "FULL_VERSION" // Do not edit this!

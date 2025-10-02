@@ -1,20 +1,28 @@
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
 VERSION_NUM="$(cat ../version.txt)"
-echo "::set-output name=BUILD_DATE::$BUILD_DATE"
-echo "::set-output name=VERSION_NUM::$VERSION_NUM"
+echo "BUILD_DATE=$BUILD_DATE" >> $GITHUB_OUTPUT
+echo "VERSION_NUM=$VERSION_NUM" >> $GITHUB_OUTPUT
 if [[ "$(python -V)" =~ "Python 3" ]]; then
 	PYTHON_EXECUTABLE="python"
 else
 	PYTHON_EXECUTABLE="python3"
 fi
 
+echo "Cleaning folders..."
+bash modules/clean.sh
+mkdir dist
+
+# ----------------------------------------
+# 1.43
+
 echo "Building 1.43 (artifact/push check version)..."
 
 echo "::group::Prepare for compilation"
+# Preparation
 echo "Preparing..."
 
 echo "Removing temporary files..."
-bash modules/clean.sh
+rm -rf temp/
 echo "Copying translations and other required files..."
 bash modules/copy-base.sh
 echo "Extracting 1.43 original files..."
@@ -29,39 +37,49 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json
 
 echo "Preparation done!"
+# End of preparation
 echo "::endgroup::"
 
 echo "::group::Compilation"
+# Compilation
 echo "Compiling..."
 bash compile-2.sh temp/compile-config.json
-echo "Compile done!"
+echo "Compilation done!"
+# End of compilation
 echo "::endgroup::"
 
 echo "::group::Pack distributable"
+# Packing
 echo "Packing distributable..."
-mkdir dist
 cd temp/_compile/
-7z a ../../dist/Domino143_Translated.zip *
 cd ../../
-mv -v temp/_compile/Domino.exe dist/Domino143_Translated.exe
+cp -rv temp/_compile/ dist/Domino143_Translated
 echo "Packing done!"
+# End of packing
 echo "::endgroup::"
 
 echo "Building done!"
 
+# ----------------------------------------
+# 1.44
+
 echo "Building 1.44 (artifact/push check version)..."
 
 echo "::group::Prepare for compilation"
+# Preparation
 echo "Preparing..."
 
 echo "Removing temporary files..."
-rm -rf temp/_compile
+rm -rf temp/
+echo "Copying 1.43 translations and other required files..."
+bash modules/copy-base.sh
 echo "Copying 1.44-specific translations..."
 bash modules/copy-1.44.sh
 echo "Extracting 1.44 original files..."
@@ -76,28 +94,143 @@ cat >temp/compile-config.json <<EOL
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
 	"supplyTranslationReadme": "true",
-	"pythonExecutable": "$PYTHON_EXECUTABLE"
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
 }
 EOL
 cat temp/compile-config.json
 
 echo "Preparation done!"
+# End of preparation
 echo "::endgroup::"
 
 echo "::group::Compilation"
+# Compilation
 echo "Compiling..."
 bash compile-2.sh temp/compile-config.json
-echo "Compile done!"
+echo "Compilation done!"
+# End of compilation
 echo "::endgroup::"
 
 echo "::group::Pack distributable"
+# Packing
 echo "Packing distributable..."
-mkdir dist
 cd temp/_compile/
-7z a ../../dist/Domino144_Translated.zip *
 cd ../../
-mv -v temp/_compile/Domino.exe dist/Domino144_Translated.exe
+cp -rv temp/_compile/ dist/Domino144_Translated
 echo "Packing done!"
+# End of packing
 echo "::endgroup::"
 
 echo "Building done!"
+
+# ----------------------------------------
+# 1.45 dev007 (32-bit)
+
+echo "Building 1.45 dev007 (32-bit) (artifact/push check version)..."
+
+echo "::group::Prepare for compilation"
+# Preparation
+echo "Preparing..."
+
+echo "Removing temporary files..."
+rm -rf temp/
+echo "Copying 1.43 translations and other required files..."
+bash modules/copy-base.sh
+echo "Copying 1.45-specific translations..."
+bash modules/copy-1.45.sh
+echo "Extracting 1.45 original files..."
+7z x ../_deploy/Domino145_dev007_x86.7z -otemp/_compile
+
+echo "Creating compile config file..."
+cat >temp/compile-config.json <<EOL
+{
+	"resourceVersion": "1,45,$VERSION_NUM,0",
+	"fullVersion": "1.45 dev007-en.$VERSION_NUM-artifact.$BUILD_DATE",
+	"buildVersion": "$VERSION_NUM-artifact.$BUILD_DATE",
+	"executableName": "Domino.exe",
+	"compilePath": "temp/_compile",
+	"supplyTranslationReadme": "true",
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
+}
+EOL
+cat temp/compile-config.json
+
+echo "Preparation done!"
+# End of preparation
+echo "::endgroup::"
+
+echo "::group::Compilation"
+# Compilation
+echo "Compiling..."
+bash compile-2.sh temp/compile-config.json
+echo "Compilation done!"
+# End of compilation
+echo "::endgroup::"
+
+echo "::group::Pack distributable"
+# Packing
+echo "Packing distributable..."
+cd temp/_compile/
+cd ../../
+cp -rv temp/_compile/ dist/Domino145_dev007_x86_Translated
+echo "Packing done!"
+# End of packing
+echo "::endgroup::"
+
+# ----------------------------------------
+# 1.45 dev007 (64-bit)
+
+echo "Building 1.45 dev007 (64-bit) (artifact/push check version)..."
+
+echo "::group::Prepare for compilation"
+# Preparation
+echo "Preparing..."
+
+echo "Removing temporary files..."
+rm -rf temp/
+echo "Copying 1.43 translations and other required files..."
+bash modules/copy-base.sh
+echo "Copying 1.45-specific translations..."
+bash modules/copy-1.45.sh
+echo "Extracting 1.45 original files..."
+7z x ../_deploy/Domino145_dev007_x86.7z -otemp/_compile
+7z x ../_deploy/Domino145_dev007_x64.7z -otemp/_compile -y
+
+echo "Creating compile config file..."
+cat >temp/compile-config.json <<EOL
+{
+	"resourceVersion": "1,45,$VERSION_NUM,0",
+	"fullVersion": "1.45 dev007-en.$VERSION_NUM-artifact.$BUILD_DATE",
+	"buildVersion": "$VERSION_NUM-artifact.$BUILD_DATE",
+	"executableName": "Domino.exe",
+	"compilePath": "temp/_compile",
+	"supplyTranslationReadme": "true",
+	"pythonExecutable": "$PYTHON_EXECUTABLE",
+	"reshackExecutable": "/c/Program Files (x86)/Resource Hacker/ResourceHacker.exe"
+}
+EOL
+cat temp/compile-config.json
+
+echo "Preparation done!"
+# End of preparation
+echo "::endgroup::"
+
+echo "::group::Compilation"
+# Compilation
+echo "Compiling..."
+bash compile-2.sh temp/compile-config.json
+echo "Compilation done!"
+# End of compilation
+echo "::endgroup::"
+
+echo "::group::Pack distributable"
+# Packing
+echo "Packing distributable..."
+cd temp/_compile/
+cd ../../
+cp -rv temp/_compile/ dist/Domino145_dev007_x64_Translated
+echo "Packing done!"
+# End of packing
+echo "::endgroup::"
