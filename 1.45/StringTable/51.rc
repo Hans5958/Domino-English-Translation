@@ -1,8 +1,7 @@
 STRINGTABLE
-LANGUAGE LANG_JAPANESE, 0x1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  61840, 	"メール システム サポートを読み込めません。"
-  61841, 	"メール システム DLL が無効です。"
-  61842, 	"メールの送信に失敗しました。"
+  61840, 	"Unable to load mail system support."
+  61841, 	"Mail system DLL is invalid."
+  61842, 	"Send Mail failed to send message."
 }
-

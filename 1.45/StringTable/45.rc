@@ -1,11 +1,10 @@
 STRINGTABLE
-LANGUAGE LANG_JAPANESE, 0x1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  61472, 	"エラー メッセージはありません。"
-  61473, 	"サポートされていない操作を実行しようとしました。"
-  61474, 	"必要なリソースを利用できませんでした。"
-  61475, 	"メモリが不足しています。"
-  61476, 	"不明なエラーが発生しました。"
-  61477, 	"引数が正しくありません。"
+  61472, 	"No error message available."
+  61473, 	"An unsupported operation was executed."
+  61474, 	"The required resources could not be used."
+  61475, 	"Out of memory."
+  61476, 	"An unknown error has occurred."
+  61477, 	"The argument is not correct."
 }
-

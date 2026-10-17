@@ -1,20 +1,19 @@
 STRINGTABLE
-LANGUAGE LANG_JAPANESE, 0x1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  61856, 	"エラーはありませんでした。"
-  61857, 	"%1 へのアクセス中に不明なエラーが発生しました。"
-  61858, 	"%1 が見つかりませんでした。"
-  61859, 	"%1 に正しくないパスが含まれています。"
-  61860, 	"開いているファイルが多すぎるため、%1 を開けませんでした。"
-  61861, 	"%1 へのアクセスは拒否されました。"
-  61862, 	"正しくないファイル ハンドルが %1 に関連付けられていました。"
-  61863, 	"現在のディレクトリ %1 は削除できませんでした。"
-  61864, 	"%1 を作成できませんでした。そのディレクトリはいっぱいです。"
-  61865, 	"%1 のシークに失敗しました。"
-  61866, 	"%1 へのアクセス中にハードウェア I/O エラーが報告されました。"
-  61867, 	"%1 へのアクセス中に共有違反が発生しました。"
-  61868, 	"%1 へのアクセス中にロック違反が発生しました。"
-  61869, 	"%1 へのアクセス中にディスクがいっぱいになりました。"
-  61870, 	"%1 の末尾以降にアクセスしようとしました。"
+  61856, 	"No error occurred."
+  61857, 	"An unknown error occurred while accessing %1."
+  61858, 	"%1 was not found."
+  61859, 	"%1 contains an invalid path."
+  61860, 	"%1 could not be opened because there are too many open files."
+  61861, 	"Access to %1 was denied."
+  61862, 	"An invalid file handle was associated with %1."
+  61863, 	"%1 could not be removed because it is the current directory."
+  61864, 	"%1 could not be created because the directory is full."
+  61865, 	"Seek failed on %1."
+  61866, 	"A hardware I/O error was reported while accessing %1."
+  61867, 	"A sharing violation occurred while accessing %1."
+  61868, 	"A locking violation occurred while accessing %1."
+  61869, 	"Disk full while accessing %1."
+  61870, 	"An attempt was made to access %1 past its end."
 }
-

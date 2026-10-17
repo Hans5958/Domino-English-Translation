@@ -1,15 +1,14 @@
 STRINGTABLE
-LANGUAGE LANG_JAPANESE, 0x1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  62177, 	"オフ"
-  62178, 	"オン"
-  62179, 	"混合"
-  62180, 	"1 つ以上の自動保存されたドキュメントが見つかりました。"
-  62181, 	"これらのドキュメントは、現在開いているドキュメントより後に保存されています。また、アプリケーションの終了前に編集された変更内容も含まれています。"
-  62182, 	"これらの自動保存されたドキュメントを復元しますか?"
-  62183, 	"自動保存されたドキュメントを復元する場合、これらのドキュメントを手動で保存して元のドキュメントを上書きする必要があります。復元操作を実行しない場合、自動保存されたドキュメントは削除されます。"
-  62184, 	"自動保存されたドキュメントを復元する\n手動で保存したドキュメントではなく、自動保存されたドキュメントを開きます。"
-  62185, 	"自動保存されたドキュメントを復元しない\n最後に手動で保存したドキュメントを使用します。"
-  62186, 	"%Ts [復元済み]"
+  62177, 	"Off"
+  62178, 	"On"
+  62179, 	"Mixed"
+  62180, 	"One or more auto-saved projects were found."
+  62181, 	"These projects were saved after the currently open project. They also contain changes edited before the application was closed."
+  62182, 	"Restore these auto-saved projects?"
+  62183, 	"If you restore the auto-saved projects, you must manually save them to overwrite the original projects. If you do not perform the restore operation, the auto-saved projects will be deleted."
+  62184, 	"Restore auto-saved projects\nOpens the auto-saved projects instead of manually saved projects."
+  62185, 	"Do not restore auto-saved projects\nUses the last manually saved project."
+  62186, 	"%Ts [Restored]"
 }
-

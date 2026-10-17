@@ -1,18 +1,17 @@
 STRINGTABLE
-LANGUAGE LANG_JAPANESE, 0x1
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  61712, 	"整数を入力してください。"
-  61713, 	"数字を入力してください。"
-  61714, 	"%1 から %2 までの整数を入力してください。"
-  61715, 	"%1 から %2 までの数字を入力してください。"
-  61716, 	"%1 文字以内で入力してください。"
-  61717, 	"ボタンを選択してください。"
-  61718, 	"0 から 255 までの整数を入力してください。"
-  61719, 	"正の整数を入力してください。"
-  61720, 	"日付/時刻を入力してください。"
-  61721, 	"通貨型を入力してください。"
-  61722, 	"GUID を入力してください。"
-  61723, 	"時刻を入力してください。"
-  61724, 	"日付を入力してください。"
+  61712, 	"Please enter an integer."
+  61713, 	"Please enter a number."
+  61714, 	"Please enter an integer between %1 and %2."
+  61715, 	"Please enter a number between %1 and %2."
+  61716, 	"Please enter no more than %1 characters."
+  61717, 	"Please select a button."
+  61718, 	"Please enter an integer between 0 and 255."
+  61719, 	"Please enter a positive integer."
+  61720, 	"Please enter a date and/or time."
+  61721, 	"Please enter a currency."
+  61722, 	"Please enter a GUID."
+  61723, 	"Please enter a time."
+  61724, 	"Please enter a date."
 }
-
