@@ -125,9 +125,9 @@ echo "::endgroup::"
 echo "Building done!"
 
 # ----------------------------------------
-# 1.45 dev007 (32-bit)
+# 1.45 dev009 (32-bit)
 
-echo "Building 1.45 dev007 (32-bit) (artifact/push check version)..."
+echo "Building 1.45 dev009 (32-bit) (artifact/push check version)..."
 
 echo "::group::Prepare for compilation"
 # Preparation
@@ -140,13 +140,13 @@ bash modules/copy-base.sh
 echo "Copying 1.45-specific translations..."
 bash modules/copy-1.45.sh
 echo "Extracting 1.45 original files..."
-7z x ../_deploy/Domino145_dev007_x86.7z -otemp/_compile
+7z x ../_deploy/Domino145_dev009_x86.7z -otemp/_compile
 
 echo "Creating compile config file..."
 cat >temp/compile-config.json <<EOL
 {
 	"resourceVersion": "1,45,$VERSION_NUM,0",
-	"fullVersion": "1.45 dev007-en.$VERSION_NUM-artifact.$BUILD_DATE",
+	"fullVersion": "1.45 dev009-en.$VERSION_NUM-artifact.$BUILD_DATE",
 	"buildVersion": "$VERSION_NUM-artifact.$BUILD_DATE",
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
@@ -174,15 +174,15 @@ echo "::group::Pack distributable"
 echo "Packing distributable..."
 cd temp/_compile/
 cd ../../
-cp -rv temp/_compile/ dist/Domino145_dev007_x86_Translated
+cp -rv temp/_compile/ dist/Domino145_dev009_x86_Translated
 echo "Packing done!"
 # End of packing
 echo "::endgroup::"
 
 # ----------------------------------------
-# 1.45 dev007 (64-bit)
+# 1.45 dev009 (64-bit)
 
-echo "Building 1.45 dev007 (64-bit) (artifact/push check version)..."
+echo "Building 1.45 dev009 (64-bit) (artifact/push check version)..."
 
 echo "::group::Prepare for compilation"
 # Preparation
@@ -195,14 +195,14 @@ bash modules/copy-base.sh
 echo "Copying 1.45-specific translations..."
 bash modules/copy-1.45.sh
 echo "Extracting 1.45 original files..."
-7z x ../_deploy/Domino145_dev007_x86.7z -otemp/_compile
-7z x ../_deploy/Domino145_dev007_x64.7z -otemp/_compile -y
+7z x ../_deploy/Domino145_dev009_x86.7z -otemp/_compile
+7z x ../_deploy/Domino145_dev009_x64.7z -otemp/_compile -y
 
 echo "Creating compile config file..."
 cat >temp/compile-config.json <<EOL
 {
 	"resourceVersion": "1,45,$VERSION_NUM,0",
-	"fullVersion": "1.45 dev007-en.$VERSION_NUM-artifact.$BUILD_DATE",
+	"fullVersion": "1.45 dev009-en.$VERSION_NUM-artifact.$BUILD_DATE",
 	"buildVersion": "$VERSION_NUM-artifact.$BUILD_DATE",
 	"executableName": "Domino.exe",
 	"compilePath": "temp/_compile",
@@ -230,7 +230,7 @@ echo "::group::Pack distributable"
 echo "Packing distributable..."
 cd temp/_compile/
 cd ../../
-cp -rv temp/_compile/ dist/Domino145_dev007_x64_Translated
+cp -rv temp/_compile/ dist/Domino145_dev009_x64_Translated
 echo "Packing done!"
 # End of packing
 echo "::endgroup::"
