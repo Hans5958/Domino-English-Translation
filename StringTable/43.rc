@@ -2,7 +2,7 @@ STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
 61440, 	"Open"
-61441, 	"Save As"
+61441, 	"Save Project As"
 61442, 	"All files (*.*)"
 61443, 	"Untitled"
 61446, 	"Untitled file"

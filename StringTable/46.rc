@@ -2,10 +2,10 @@ STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
 61696, 	"Invalid file name."
-61697, 	"Failed to open document."
-61698, 	"Failed to save document."
+61697, 	"Failed to open project."
+61698, 	"Failed to save project."
 61699, 	"Save changes to %1?"
-61700, 	"Failed to create empty document."
+61700, 	"Failed to create empty project."
 61701, 	"The file is too large to open."
 61702, 	"Could not start print job."
 61703, 	"Failed to launch help."
