@@ -42,110 +42,110 @@
 	<h1>Sound Source Definition File Specifications</h1>
 	<h3><a name="gaiyou">Overview</a></h3>
 	<div class=w>
-		音源定義ファイルとは、その音源の持つ音色名や、各種設定方法などを定義するファイルです。<br>
-		Dominoはこの定義ファイルにもとづいて音源を操作します。<br>
+		A sound source definition file is a file that defines the tone names and various setting methods of the sound source.<br>
+		Domino operates the sound source based on this definition file.<br>
 		<br>
-		音源定義ファイルはDomino.exeと同じ位置にある「Module」フォルダ内に格納されています。<br>
-		音源定義ファイルを自作する場合や、他から貰ってきた場合はこのフォルダに作成・コピーしてください。<br>
+		Sound source definition files are stored in the "Module" folder in the same location as Domino.exe.<br>
+		When creating your own sound source definition file or when you have received one from elsewhere, please create or copy it into this folder.<br>
 		<br>
-		音源定義ファイルは１音源につき、１ファイル作成します。<br>
-		（１ファイルで複数の音源を定義する、という事は通常はしません）<br>
+		Create one file per sound source.<br>
+		(Usually, multiple sound sources are not defined in a single file.)<br>
 		<br>
 	</div>
 	<h3><a name="struct">Main Structure</a></h3>
 	<div class=w>
-		音源定義ファイルはXML（Extensible Markup Language）という形式で記述します。<br>
-		（HTMLのようにタグを用います。）<br>
+		The sound source definition file is written in XML (Extensible Markup Language) format.<br>
+		(Tags are used like in HTML.)<br>
 		<br>
-		定義ファイルの主な構造は次のようになっています。<br>
+		The main structure of the definition file is as follows.<br>
 		<div class=src>
 			<pre>
 &lt;?xml version="1.0" encoding="Shift_JIS"?&gt;
 &lt;ModuleData (<a href="#ModuleData">Description</a>)&gt;
-	（<a href="#option">Description</a>)
+	(<a href="#option">Description</a>)
 	&lt;InstrumentList&gt;
-		（<a href="#InstrumentList">Description</a>)
+		(<a href="#InstrumentList">Description</a>)
 	&lt;/InstrumentList&gt;
 	&lt;DrumSetList&gt;
-		（<a href="#DrumSetList">Description</a>)
+		(<a href="#DrumSetList">Description</a>)
 	&lt;/DrumSetList&gt;
 	&lt;ControlChangeMacroList&gt;
-		（<a href="#ControlChangeMacroList">Description</a>)
+		(<a href="#ControlChangeMacroList">Description</a>)
 	&lt;/ControlChangeMacroList&gt;
 	&lt;TemplateList&gt;
-		（<a href="#TemplateList">Description</a>)
+		(<a href="#TemplateList">Description</a>)
 	&lt;/TemplateList&gt;
 	&lt;DefaultData&gt;
-		（<a href="#DefaultData">Description</a>)
+		(<a href="#DefaultData">Description</a>)
 	&lt;/DefaultData&gt;
 &lt;/ModuleData&gt;
 </pre>
 		</div>
-		（タブや空行などは自由に入れられます。）<br>
+		(Tabs and blank lines may be freely inserted.)<br>
 		<br>
-		あとはカッコで書かれている部分を書き込めば定義ファイルとなります。<br>
-		各部分について説明いたします。<br>
+		Simply fill in the parts written in parentheses to complete the definition file.<br>
+		Each part will be explained below.<br>
 		<br>
 	</div>
 	<h3><a name="ModuleData">Sound Source Basic Information</a></h3>
 	<div class=w>
-		ModuleDataタグの属性として、音源および定義ファイルの基本情報を記述します。<br>
+		The basic information of the sound source and the definition file is written as attributes of the ModuleData tag.<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
 &lt;ModuleData Name="SC-8850" Folder="Roland" Priority="100" FileCreator="Takabo Soft" FileVersion="1.00" WebSite="http://takabosoft.com/"&gt;
 </pre>
 		</div>
 		<br>
-		ModuleDataタグの属性は次の通りです。<br>
-		（属性名やタグ名は大文字・小文字を区別しません。また、属性の順番は自由です。）<br>
+		The attributes of the ModuleData tag are as follows.<br>
+		(Attribute names and tag names are case-insensitive. Also, the order of attributes is arbitrary.)<br>
 		<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>音源名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the sound source name.</td>
 			</tr>
 			<tr>
 				<td>Folder</td>
 				<td> </td>
-				<td>Domino上で音源を選ぶ際の画面で、ここで指定したフォルダに入ります。</td>
+				<td>On the screen for selecting a sound source in Domino, enters the folder specified here.</td>
 			</tr>
 			<tr>
 				<td>Priority</td>
 				<td>100</td>
-				<td>同じフォルダ内の優先度（順番）を指定します。値が小さいほど、早い順番になります。</td>
+				<td>Specifies the priority (order) within the same folder. The smaller the value, the earlier the order.</td>
 			</tr>
 			<tr>
 				<td>FileCreator</td>
 				<td> </td>
-				<td>定義ファイルの作成者名を指定します。</td>
+				<td>Specifies the name of the creator of the definition file.</td>
 			</tr>
 			<tr>
 				<td>FileVersion</td>
 				<td> </td>
-				<td>定義ファイルのバージョンを指定します。定義ファイルを修正した場合にはバージョン番号を上げておくと良いでしょう。</td>
+				<td>Specifies the version of the definition file. If you modify the definition file, it is recommended to increase the version number.</td>
 			</tr>
 			<tr>
 				<td>WebSite</td>
 				<td> </td>
-				<td>定義ファイルの配布サイトもしくはホームページを指定します。</td>
+				<td>Specifies the distribution site or home page of the definition file.</td>
 			</tr>
 		</table>
 		<br>
-		定義ファイルの作成者名やバージョン情報は、[ヘルプ]メニューの[音源定義ファイル]情報から確認できます。
+		The creator name and version information of the definition file can be confirmed from [Sound Source File Definition Info] in the [Help] menu.
 	</div>
 	<h3><a name="option">Option</a></h3>
 	<div class=w>
-		ModuleDataタグの要素としていくつかオプションを指定する事ができます。<br>
+		Several options can be specified as elements of the ModuleData tag.<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
 &lt;RhythmTrackDefault Gate="1" /&gt;
@@ -156,25 +156,24 @@
 		</div>
 		<br>
 		<dl>
-			<dt>RhythmTrackDefaultタグ</dt>
-			<dd>Gate属性で、リズムトラックにおけるノートのゲート値を指定します。</dd>
-			<dt>ExclusiveEventDefaultタグ</dt>
-			<dd>Data属性で、エクスクルーシブイベントのデフォルトデータを指定します。</dd>
-			<dt>ProgramChangeEventPropertyDlgタグ</dt>
-			<dd>AutoPreviewDelay属性で、[プログラムチェンジイベントのプロパティ]画面の自動プレビューまでの遅延時間を指定します（ミリ秒単位、デフォルトは0）。<br>MIDI機器によっては、プログラムチェンジを送信してから実際に音色が切り替わるまで時間の掛かるものがあります。その場合、この遅延時間を指定しておけば、自動プレビュー時に正しい音色が発音されるようになります。
+			<dt>RhythmTrackDefault tag</dt>
+			<dd>Specifies the gate value of notes in the rhythm track with the Gate attribute.</dd>
+			<dt>ExclusiveEventDefault tag</dt>
+			<dd>Specifies the default data of the exclusive event with the Data attribute.</dd>
+			<dt>ProgramChangeEventPropertyDlg tag</dt>
+			<dd>Specifies the delay time until automatic preview on the [Program Change Event Properties] screen with the AutoPreviewDelay attribute (in milliseconds, default is 0).<br>Some MIDI devices take time to actually switch the tone after transmitting a program change. In that case, by specifying this delay time, the correct tone will sound during automatic preview.
 			</dd>
-			<dt>ControlChangeEventDefaultタグ</dt>
-			<dd>ID属性で、CCイベント挿入時のデフォルトIDを指定します。</dd>
+			<dt>ControlChangeEventDefault tag</dt>
+			<dd>Specifies the default ID at CC event insertion with the ID attribute.</dd>
 		</dl>
-		なお、XMLのルールにより、タグを閉じる必要がない（一つのタグだけで完結する）ものは、
-		タグの最後にスペースとスラッシュを必ず入れてください。<br>
+		Also, according to XML rules, for tags that do not need to be closed (those completed with a single tag), be sure to enter a space and a slash at the end of the tag.<br>
 	</div>
 	<h3><a name="InstrumentList">Instrument List Information</a></h3>
 	<div class=w>
-		音色情報は、[マップ]、[PC]、[バンク]の三階層になっています。<br>
-		音源自体にバンクが存在しなくとも、PC１つにつき１つのバンクが必要です。<br>
+		Tone information has a three-level hierarchy of [Map], [PC], and [Bank].<br>
+		Even if the sound source itself does not have banks, one bank is required per PC.<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
 &lt;Map Name="55Map"&gt;
@@ -194,80 +193,80 @@
 &lt;/Map&gt;
 </pre>
 		</div>
-		<h4>Mapタグ</h4>
-		Mapタグはマップを定義します。<br>
-		Mapタグは複数定義する事ができます。<br>
-		Mapタグは複数のPCタグを要素として持つことができます。<br>
+		<h4>Map tag</h4>
+		The Map tag defines a map.<br>
+		Multiple Map tags can be defined.<br>
+		The Map tag can have multiple PC tags as elements.<br>
 		<br>
-		Mapタグの属性は以下の通りです。<br>
+		The attributes of the Map tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>マップ名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the map name.</td>
 			</tr>
 		</table>
-		<h4>PCタグ</h4>
-		PCタグはPC情報を定義します。<br>
-		PCタグは複数定義する事ができます（必ず128個定義する必要はありません）。<br>
-		PCタグは複数のBankタグを要素として持つことができます。<br>
+		<h4>PC tag</h4>
+		The PC tag defines PC information.<br>
+		Multiple PC tags can be defined (it is not always necessary to define all 128).<br>
+		The PC tag can have multiple Bank tags as elements.<br>
 		<br>
-		PCタグの属性は以下の通りです。<br>
+		The attributes of the PC tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>PC名（楽器名）を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the PC name (instrument name).</td>
 			</tr>
 			<tr>
 				<td>PC</td>
-				<td>必須</td>
-				<td>PC番号を1～128の範囲で指定します。</td>
+				<td>Required</td>
+				<td>Specifies the PC number in the range of 1 to 128.</td>
 			</tr>
 		</table>
-		<h4>Bankタグ</h4>
-		Bankタグはバンク情報を定義します。<br>
-		Bankタグは複数定義する事ができます（PC１つにつきバンク１つは必須です）。<br>
+		<h4>Bank tag</h4>
+		The Bank tag defines bank information.<br>
+		Multiple Bank tags can be defined (one bank per PC is required).<br>
 		<br>
-		Bankタグの属性は以下の通りです。<br>
+		The attributes of the Bank tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>バンク名（楽器名）を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the bank name (instrument name).</td>
 			</tr>
 			<tr>
 				<td>LSB</td>
 				<td> </td>
-				<td>Bank Select LSBとして送信する値を指定します。省略、または255を指定した場合は送信しません。</td>
+				<td>Specifies the value to transmit as Bank Select LSB. If omitted, or 255 is specified, it will not be transmitted.</td>
 			</tr>
 			<tr>
 				<td>MSB</td>
 				<td> </td>
-				<td>Bank Select MSBとして送信する値を指定します。省略、または255を指定した場合は送信しません。</td>
+				<td>Specifies the value to transmit as Bank Select MSB. If omitted, or 255 is specified, it will not be transmitted.</td>
 			</tr>
 		</table>
 		</dl>
 	</div>
 	<h3><a name="DrumSetList">Drum Set List Information</a></h3>
 	<div class=w>
-		ドラムセット情報は、「<a href="#InstrumentList">Instrument List Information</a>」とほとんど同じですが、Bankタグの要素として複数のToneタグを定義する事ができます。<br>
-		<br>例）
+		Drum set information is almost the same as "<a href="#InstrumentList">Instrument List Information</a>", but multiple Tone tags can be defined as elements of the Bank tag.<br>
+		<br>Example)
 		<br>
 		<div class=src>
 			<pre>
@@ -284,48 +283,48 @@
 			&lt;Tone Name="Mt. Bell" Key="34" /&gt;
 			&lt;Tone Name="Kick 2" Key="35" /&gt;
 			&lt;Tone Name="Kick 1" Key="36" /&gt;
-			（省略）
+			(Omitted)
 		&lt;/Bank&gt;
 	&lt;/PC&gt;
 &lt;/Map&gt;
 </pre>
 		</div>
-		<h4>Toneタグ</h4>
-		ToneタグはBankタグで定義されたドラムセットの、各キーにおける楽器名を定義します。<br>
-		Toneタグは複数定義する事ができます（省略可）。<br>
+		<h4>Tone tag</h4>
+		The Tone tag defines the instrument name for each key of the drum set defined in the Bank tag.<br>
+		Multiple Tone tags can be defined (optional).<br>
 		<br>
-		Toneタグの属性は以下の通りです。<br>
+		The attributes of the Tone tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>楽器名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the instrument name.</td>
 			</tr>
 			<tr>
 				<td>Key</td>
-				<td>必須</td>
-				<td>音階（ノート番号）を0～127の範囲で指定します。</td>
+				<td>Required</td>
+				<td>Specifies the scale (note number) in the range of 0 to 127.</td>
 			</tr>
 		</table>
 	</div>
 	<h3><a name="ControlChangeMacroList">Control Change Macro List Information</a></h3>
 	<div class=w>
-		コントロールチェンジマクロ機能は、コントロールチェンジ機能を擬似的に拡張した機能です。<br>
-		マクロを定義する事で、ユーザーはコントロールチェンジと同じ感覚で様々な設定を行うことができるようになります。<br>
-		そうしたマクロ情報を、ここで定義します。<br>
+		The control change macro function is a function that pseudo-expands the control change function.<br>
+		By defining macros, the user can perform various settings with the same sense as control change.<br>
+        Such macro information is defined here.<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
 &lt;Folder Name="Sample"&gt;
 	&lt;CCM ID="1" Name="PitchBend" Color="#0fa806" Sync="Last"&gt;
 		&lt;Value Min="-8192" Max="8191" Offset="8192" /&gt;
-		&lt;Memo&gt;音程を変化させます。&lt;/Memo&gt;
+		&lt;Memo&gt;Changes the pitch.&lt;/Memo&gt;
 		&lt;Data&gt;@PB #VH #VL&lt;/Data&gt;
 	&lt;/CCM&gt;
 	
@@ -341,13 +340,13 @@
 			&lt;Entry Label="Drum1" Value="1" /&gt;
 			&lt;Entry Label="Drum2" Value="2" /&gt;
 		&lt;/Value&gt;
-		&lt;Memo&gt;通常の楽器パートか、ドラムセットパートかを設定します。&lt;/Memo&gt;
+		&lt;Memo&gt;Sets whether it is a normal instrument part or a drum set part.&lt;/Memo&gt;
 		&lt;Data&gt;@SYSEX F0H 41H 10H 42H 12H [ 40H #1RCH 15H #VL ] F7H&lt;/Data&gt;
 	&lt;/CCM&gt;
 	&lt;CCM ID="500" Name="TableTest" Color="#0fa806"&gt;
 		&lt;Value Min="0" Max="3" TableID="1" /&gt;
-		&lt;Memo&gt;テーブル参照サンプルです。&lt;/Memo&gt;
-		&lt;Data&gt;@SYSEX （省略）&lt;/Data&gt;
+		&lt;Memo&gt;Table reference sample.&lt;/Memo&gt;
+		&lt;Data&gt;@SYSEX (Omitted)&lt;/Data&gt;
 	&lt;/CCM&gt;
 	&lt;CCMLink ID="500" Value="1" /&gt;
 &lt;/Folder&gt;
@@ -359,398 +358,392 @@
 &lt;/Table&gt;
 </pre>
 		</div>
-		<h4>Folderタグ</h4>
-		各CCMタグは、自由にフォルダを作成でき、その中へ入れることができます。<br>
-		こうすることにより、ユーザーが目的のマクロを探しやすくするようにできます。<br>
-		Folderタグはそのフォルダを定義します（必要ではありません）。<br>
-		FolderタグはCCMタグ、Folderタグを要素として複数持つことができます（１つも無いとフォルダは表示されません＾＾；）。<br>
+		<h4>Folder tag</h4>
+		Each CCM tag can freely create folders and put them into them.<br>
+		By doing so, it makes it easier for users to find the macro they are looking for.<br>
+		The Folder tag defines that folder (not required).<br>
+		The Folder tag can have multiple CCM tags and Folder tags as elements (if there are none at all, the folder will not be displayed ^^;).<br>
 		<br>
-		Folderタグの属性は以下の通りです。<br>
+		The attributes of the Folder tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>フォルダ名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the folder name.</td>
 			</tr>
 			<tr>
 				<td>ID</td>
 				<td>-1</td>
-				<td>FolderLinkとしてリンクを貼る必要がある場合に0以上のIDを指定しておきます。</td>
+				<td>Specify an ID of 0 or above when it is necessary to post a link as FolderLink.</td>
 			</tr>
 		</table>
-		<h4>CCMタグ</h4>
-		CCMタグはコントロールチェンジマクロ（ControlChangeMacro）を定義します。<br>
-		CCMタグは複数定義する事ができます。
-		CCMタグはValueタグ、Gateタグ、Memoタグ、Dataタグを要素として持つことができます。<br>
+		<h4>CCM tag</h4>
+		The CCM tag defines a control change macro (ControlChangeMacro).<br>
+		Multiple CCM tags can be defined.<br>
+		The CCM tag can have Value tags, Gate tags, Memo tags, and Data tags as elements.<br>
 		<br>
-		CCMタグの属性は以下の通りです。<br>
+		The attributes of the CCM tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
-				<td>必須</td>
-				<td>マクロIDを指定します。IDは0～1300の範囲で、重複しないでください。</td>
+				<td>Required</td>
+				<td>Specifies the macro ID. The ID should not overlap, within the range of 0 to 1300.</td>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>マクロ名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the macro name.</td>
 			</tr>
 			<tr>
 				<td>Color</td>
 				<td>#000000</td>
-				<td>イベントリスト上の表示色を指定します。</td>
+				<td>Specifies the display color on the event list.</td>
 			</tr>
 			<tr>
 				<td>Sync</td>
 				<td> </td>
-				<td>[MIDI機器と状態を合わせる]機能を使う際、この属性を利用します。<br>未指定・・・何も処理しません。<br>Last・・・イベントリスト上で、最後のイベントだけを処理します。単独でいつ実行しても効果があるイベントに付けておくと良いでしょう。<br>LastEachGate・・・Lastはイベント毎の処理ですが、LastEachGateはイベント＆Gate毎に処理します。Gateを音階として利用しているドラムパラメーター変更系イベントで用います。
+				<td>Used when using the [Synchronize state with MIDI device] function.<br>Unspecified...Does nothing.<br>Last...Processes only the last event on the event list. It is good to attach this to events that are effective whenever executed alone.<br>LastEachGate...Last is processed per event, but LastEachGate is processed per event & gate. Used for drum parameter change-type events that use the gate as a scale.
 				</td>
 			</tr>
 			<tr>
 				<td>MuteSync</td>
 				<td> </td>
-				<td>[トラックの演奏]がオフの際、このコントロールチェンジマクロも送信したくない場合は、"1"を指定してください。</td>
+				<td>When [track playback] is off, specify "1" if you do not want to send this control change macro either.</td>
 			</tr>
 		</table>
-		<h4>Vauleタグ、Gateタグ</h4>
-		Valueタグ、Gateタグの属性などは同一です。<br>
-		ValueタグはイベントのValue値の範囲などを定義します。<br>
-		GateタグはイベントのGate値の範囲などを定義します。<br>
-		定義しない場合は、Value欄/Gate欄は無効となります。<br>
+		<h4>Value tag, Gate tag</h4>
+		The attributes of the Value tag and Gate tag are the same.<br>
+		The Value tag defines the range of the Value value of the event, etc.<br>
+		The Gate tag defines the range of the Gate value of the event, etc.<br>
+		If not defined, the Value field / Gate field becomes invalid.<br>
 		<br>
-		Valueタグ、GateタグはテーブルのデータとしてEntryタグを複数持つことができます（無くても構いません）。<br>
+		The Value tag and Gate tag can have multiple Entry tags as table data (it is okay even if there are none).<br>
 		<br>
-		Valueタグ、Gateタグの属性は以下の通りです。<br>
+		The attributes of the Value tag and Gate tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Default</td>
 				<td>0</td>
-				<td>デフォルト値を指定します。</td>
+				<td>Specifies the default value.</td>
 			</tr>
 			<tr>
 				<td>Min</td>
 				<td>0</td>
-				<td>最小値を指定します。</td>
+				<td>Specifies the minimum value.</td>
 			</tr>
 			<tr>
 				<td>Max</td>
 				<td>127</td>
-				<td>最大値を指定します。</td>
+				<td>Specifies the maximum value.</td>
 			</tr>
 			<tr>
 				<td>Offset</td>
 				<td>0</td>
-				<td>実際にデータを送信する際にプラスする値を指定します。<br>例えばパンポットは-64から+63の範囲で指定しますが、midi機器に送信する際にはこの値に+64してから送信しないといけません。こうした場合にはOffsetを64に指定します。
+				<td>Specifies the value to add when actually transmitting data.<br>For example, pan pot is specified in the range of -64 to +63, but when transmitting to a MIDI device, this value must be added by +64 before transmitting. In such a case, specify 64 for Offset.
 				</td>
 			</tr>
 			<tr>
 				<td>Name</td>
 				<td> </td>
-				<td>値の名前を指定します（あまり画面には出てきません）。</td>
+				<td>Specifies the name of the value (it does not appear much on the screen).</td>
 			</tr>
 			<tr>
 				<td>Type</td>
 				<td> </td>
-				<td>「Key」を指定するとプロパティ画面でキーボードを参照するボタンが出ます。</td>
+				<td>Specifying "Key" displays a button to reference the keyboard on the property screen.</td>
 			</tr>
 			<tr>
 				<td>TableID</td>
 				<td> </td>
-				<td>共通テーブルを使用する場合にはテーブルIDをここで指定します。</td>
+				<td>When using a common table, specify the table ID here.</td>
 			</tr>
 		</table>
-		<h4>Entryタグ</h4>
-		Entryタグはテーブルの１データを定義します。<br>
-		EntryタグはGateタグやValueタグ、Tableタグの要素として複数定義します。<br>
+		<h4>Entry tag</h4>
+		The Entry tag defines one data of the table.<br>
+		The Entry tag is defined multiple times as an element of the Gate tag, Value tag, or Table tag.<br>
 		<br>
-		Entryタグの属性は以下の通りです。<br>
+		The attributes of the Entry tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Label</td>
-				<td>必須</td>
-				<td>表示するテキストを指定します。</td>
+				<td>Required</td>
+				<td>Specifies the text to display.</td>
 			</tr>
 			<tr>
 				<td>Value</td>
-				<td>必須</td>
-				<td>値を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the value.</td>
 			</tr>
 		</table>
 		<br>
-		こうしてテーブルを定義すると、ユーザーは値だけでなく、表から選ぶことができるようになります。<br>
+		By defining the table this way, the user can select from the table, not just the value.<br>
 		<img src="assets/module_000.png" width="567" height="517"><br>
-		<h4>Memoタグ</h4>
-		Memoタグは、コントロールチェンジマクロのメモを定義します。<br>
-		コントロールチェンジイベントのプロパティ画面などで利用されます。<br>
-		文中に改行を入れたい場合は「\n」と記入してください。<br>
+		<h4>Memo tag</h4>
+		The Memo tag defines the memo of the control change macro.<br>
+		It is used on the control change event property screen, etc.<br>
+		To insert a line break in the text, write "\\n".<br>
 		<br>
-		<h4>Dataタグ</h4>
-		DataタグはMIDI機器にどんな情報を送信するのかを定義します。<br>
+		<h4>Data tag</h4>
+		The Data tag defines what information to transmit to the MIDI device.<br>
 		<br>
-		Dataタグの内容は、アットマークの付いた命令コマンドと、値（固定値・変動値）を組み合わせて定義します。<br>
+		The content of the Data tag is defined by combining at-mark instruction commands and values (fixed values / variable values).<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
 &lt;Data&gt;@NRPN 1AH #GL #VL #NONE&lt;/Data&gt;
 </pre>
 		</div>
 		<br>
-		命令や値はスペースで区切ってください。<br>
-		「@命令コマンド 値 値 ・・・ @命令コマンド 値 値 ・・・」のようにいくつも定義することができます。<br>
-		（ただし、実際に処理されるのは同時期ですので、重たい処理をいくつも同時に送信させるのはよくありません。）<br>
+		Please separate instructions and values with spaces.<br>
+		Multiple can be defined like "@instruction command value value ... @instruction command value value ...".<br>
+		(However, since they are actually processed at the same time, it is not good to transmit multiple heavy processes at the same time.)<br>
 		<br>
-		命令コマンドの一覧は次の通りです。<br>
+		The list of instruction commands is as follows.<br>
 		<table>
 			<tr>
-				<th>構文</th>
-				<th>意味</th>
+				<th>Syntax</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>@PB [HighValue] [LowValue]</td>
-				<td>ピッチベンドを送信します。</td>
+				<td>Transmits pitch bend.</td>
 			</tr>
 			<tr>
 				<td>@CP [Value]</td>
-				<td>チャネルプレッシャーを送信します。</td>
+				<td>Transmits channel pressure.</td>
 			</tr>
 			<tr>
 				<td>@PKP [Key] [Value]</td>
-				<td>ポリフォニックキープレッシャーを送信します。</td>
+				<td>Transmits polyphonic key pressure.</td>
 			</tr>
 			<tr>
 				<td>@CC [ControlChangeNumber] [Value]</td>
-				<td>コントロールチェンジを送信します。</td>
+				<td>Transmits control change.</td>
 			</tr>
 			<tr>
 				<td>@SYSEX F0H ..... F7H</td>
-				<td>システムエクスクルーシブを送信します。<br>[ と ] を使用すると、囲った部分のチェックサムを ] 部分へ自動的に挿入してから送信します。</td>
+				<td>Transmits system exclusive.<br>Using [ and ] automatically inserts the checksum of the enclosed part into the ] part before transmitting.</td>
 			</tr>
 			<tr>
 				<td>@RPN [RPN MSB] [RPN LSB] [Data MSB] [Data LSB]</td>
-				<td>RPNを送信します。</td>
+				<td>Transmits RPN.</td>
 			</tr>
 			<tr>
 				<td>@NRPN [NRPN MSB] [NRPN LSB] [Data MSB] [Data LSB]</td>
-				<td>NRPNを送信します。
+				<td>Transmits NRPN.
 			</tr>
 		</table>
 		<br>
-		命令コマンドに引き続いて決まった数だけ値を指定する必要があります。<br>
-		１０進数の固定値を指定するには「1」や「10」のように記入します。<br>
-		１６進数の固定値を指定するには「1h」や「10H」、「0x20」のように記入します。<br>
+		A fixed number of values must be specified following the instruction command.<br>
+		To specify a decimal fixed value, write like "1" or "10".<br>
+		To specify a hexadecimal fixed value, write like "1h" or "10H" or "0x20".<br>
 		<br>
-		固定値だけでなく、変動する値も利用することができます。<br>
+		Not only fixed values, but variable values can also be used.<br>
 		<br>
-		変動する値（および特殊な値）一覧は次の通りです。<br>
+		The list of variable values (and special values) is as follows.<br>
 		<table>
 			<tr>
-				<th>構文</th>
-				<th>意味</th>
+				<th>Syntax</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>#NONE</td>
-				<td>値そのものを持ちません。@RPNの[Data LSB]部分で利用できます。</td>
+				<td>Does not hold the value itself. Can be used in the [Data LSB] part of @RPN.</td>
 			</tr>
 			<tr>
 				<td>#VL</td>
-				<td>Value値の下位7bitを参照します。</td>
+				<td>References the lower 7 bits of the Value value.</td>
 			</tr>
 			<tr>
 				<td>#VH</td>
-				<td>Value値の上位7bitを参照します。</td>
+				<td>References the upper 7 bits of the Value value.</td>
 			</tr>
 			<tr>
 				<td>#GL</td>
-				<td>Gate値の下位7bitを参照します。</td>
+				<td>References the lower 7 bits of the Gate value.</td>
 			</tr>
 			<tr>
 				<td>#GH</td>
-				<td>Gate値の上位7bitを参照します。</td>
+				<td>References the upper 7 bits of the Gate value.</td>
 			</tr>
 			<tr>
 				<td>#CH</td>
-				<td>チャンネルを元に00H～0FHまでの値を作ります。</td>
+				<td>Creates a value from 00H to 0FH based on the channel.</td>
 			</tr>
 			<tr>
 				<td>#1CH</td>
-				<td>チャンネルを元に10H～1FHまでの値を作ります。</td>
+				<td>Creates a value from 10H to 1FH based on the channel.</td>
 			</tr>
 			<tr>
 				<td>#2CH</td>
-				<td>チャンネルを元に20H～2FHまでの値を作ります。</td>
+				<td>Creates a value from 20H to 2FH based on the channel.</td>
 			</tr>
 			<tr>
 				<td>#3CH</td>
-				<td>チャンネルを元に30H～3FHまでの値を作ります。</td>
+				<td>Creates a value from 30H to 3FH based on the channel.</td>
 			</tr>
 			<tr>
 				<td>#PCH</td>
-				<td>Aポートの場合、チャンネルを元に00H～1FHまでの値を作ります。<br>同様にBポートは10H～1FH、Cポートは20H～2FH、Dポートは30H～3FHの値を作ります。<br>Eポート以降は常に00Hとなります。<br>汎用的な音源定義ファイルでは使用しないでください（ポートの影響を受けるため）。
-				</td>
+				<td>For port A, creates a value from 00H to 1FH based on the channel.<br>Similarly, port B is 10H to 1FH, port C is 20H to 2FH, port D is 30H to 3FH.<br>Port E and beyond are always 00H.<br>Do not use in general-purpose sound source definition files (because they are affected by the port).</td>
 			</tr>
 			<tr>
 				<td>#1RCH</td>
-				<td>ローランド社の音源マニュアルで「1x」（xはブロックナンバー≒チャンネル）と表記されている部分の値を作ります。</td>
+				<td>Creates the value of the part written as "1x" (x is block number ≈ channel) in Roland's sound source manual.</td>
 			</tr>
 			<tr>
 				<td>#2RCH</td>
-				<td>ローランド社の音源マニュアルで「2x」（xはブロックナンバー≒チャンネル）と表記されている部分の値を作ります。</td>
+				<td>Creates the value of the part written as "2x" (x is block number ≈ channel) in Roland's sound source manual.</td>
 			</tr>
 			<tr>
 				<td>#4RCH</td>
-				<td>ローランド社の音源マニュアルで「4x」（xはブロックナンバー≒チャンネル）と表記されている部分の値を作ります。</td>
+				<td>Creates the value of the part written as "4x" (x is block number ≈ channel) in Roland's sound source manual.</td>
 			</tr>
 			<tr>
 				<td>#VF1</td>
-				<td>Value値の1～4bitを元に00H～0FHまでの値を作ります。</td>
+				<td>Creates a value from 00H to 0FH based on bits 1 to 4 of the Value value.</td>
 			</tr>
 			<tr>
 				<td>#VF2</td>
-				<td>Value値の5～8bitを元に00H～0FHまでの値を作ります。</td>
+				<td>Creates a value from 00H to 0FH based on bits 5 to 8 of the Value value.</td>
 			</tr>
 			<tr>
 				<td>#VF3</td>
-				<td>Value値の9～12bitを元に00H～0FHまでの値を作ります。</td>
+				<td>Creates a value from 00H to 0FH based on bits 9 to 12 of the Value value.</td>
 			</tr>
 			<tr>
 				<td>#VF4</td>
-				<td>Value値の13～16bitを元に00H～0FHまでの値を作ります。</td>
+				<td>Creates a value from 00H to 0FH based on bits 13 to 16 of the Value value.</td>
 			</tr>
 			<tr>
 				<td>#RSCTRT1<br>(#RSCTRT1P)<br>#RSCTRT2<br>#RSCTRT3</td>
-				<td>Roland社のSonicCell音源等で、Temporary Rhythm
-					Toneを調節する際に必要な24bit値をチャンネルとGate値（Note番号21～108）から生成します。<br>生成範囲は11h 10h 10hから14h 71h
-					3Ehです。<br>実際に音源定義ファイルに記述する際は #RSCTRT3 #RSCTRT2 #RSCTRT1 の順になります。<br>#RSCTRT1Pは#RSCTRT1に1を足したものです。
+				<td>For Roland's SonicCell sound source, etc., generates the 24-bit value necessary to adjust Temporary Rhythm Tone from the channel and Gate value (Note number 21 to 108).<br>The generation range is from 11h 10h 10h to 14h 71h 3Eh.<br>When actually writing in the sound source definition file, the order is #RSCTRT3 #RSCTRT2 #RSCTRT1.<br>#RSCTRT1P is #RSCTRT1 plus 1.
 				</td>
 			</tr>
 			<tr>
 				<td>#RSCTPT1<br>(#RSCTPT1P)<br>#RSCTPT2<br>#RSCTPT3</td>
-				<td>Roland社のSonicCell音源等で、Temporary Patch Toneを調節する際に必要な24bit値をチャンネルとGate値（Patch
-					Tone番号1～4）から生成します。<br>実際に音源定義ファイルに記述する際は #RSCTPT3 #RSCTPT2 #RSCTPT1
-					の順になります。<br>#RSCTPT1Pは#RSCTPT1に1を足したものです。</td>
+				<td>For Roland's SonicCell sound source, etc., generates the 24-bit value necessary to adjust Temporary Patch Tone from the channel and Gate value (Patch Tone number 1 to 4).<br>When actually writing in the sound source definition file, the order is #RSCTPT3 #RSCTPT2 #RSCTPT1.<br>#RSCTPT1P is #RSCTPT1 plus 1.</td>
 			</tr>
 			<tr>
 				<td>#VPGL</td>
-				<td>Value+Gate値の下位7bitを参照します（SMFから復元されません）。</td>
+				<td>References the lower 7 bits of the Value + Gate value (cannot be restored from SMF).</td>
 			</tr>
 			<tr>
 				<td>#VPGH</td>
-				<td>Value+Gate値の上位7bitを参照します（SMFから復元されません）。</td>
+				<td>References the upper 7 bits of the Value + Gate value (cannot be restored from SMF).</td>
 			</tr>
 		</table>
 		<br>
-		他にも必要な値がある場合は、使い道を添えて要望を出してください。
-		<h4>CCMLinkタグ</h4>
-		CCMLinkタグは、他のCCMタグと内容がほぼ同じで、ValueやGateのデフォルト値だけ変えてその位置に配置したいときに利用します。<br>
-		（SC-8850の場合は、EFXマクロで多用しています。）<br>
+		If there are other necessary values, please submit a request with the usage.
+		<h4>CCMLink tag</h4>
+		The CCMLink tag is used when you want to place content that is almost the same as other CCM tags, but with only the default values of Value or Gate changed.<br>
+		(It is used extensively for EFX macros in the case of SC-8850.)<br>
 		<br>
-		CCMLinkタグの属性は以下の通りです。<br>
+		The attributes of the CCMLink tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
-				<td>必須</td>
-				<td>リンク先のマクロIDを指定します。</td>
+				<td>Required</td>
+				<td>Specifies the macro ID of the link destination.</td>
 			</tr>
 			<tr>
 				<td>Value</td>
 				<td> </td>
-				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Value.</td>
 			</tr>
 			<tr>
 				<td>Gate</td>
 				<td> </td>
-				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Gate.</td>
 			</tr>
 		</table>
-		<h4>FolderLinkタグ</h4>
-		FolderLinkタグは、他ののフォルダと内容がほぼ同じで、ValueやGateのデフォルト値だけ変えてその位置に配置したいときに利用します。<br>
-		（SD-80等のようなMFXが複数系統ある機種で利用されます。）<br>
+		<h4>FolderLink tag</h4>
+		The FolderLink tag is used when you want to place content that is almost the same as another folder, but with only the default values of Value or Gate changed.<br>
+		(Used for models with multiple MFX systems such as SD-80.)<br>
 		<br>
-		FolderLinkタグの属性は以下の通りです。<br>
+		The attributes of the FolderLink tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>フォルダ名を指定します。リンク先と同じである必要はありません。</td>
+				<td>Required</td>
+				<td>Specifies the folder name. It does not need to be the same as the link destination.</td>
 			</tr>
 			<tr>
 				<td>ID</td>
-				<td>必須</td>
-				<td>リンク先のFolderのIDを指定します。</td>
+				<td>Required</td>
+				<td>Specifies the ID of the Folder of the link destination.</td>
 			</tr>
 			<tr>
 				<td>Value</td>
 				<td> </td>
-				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Value.</td>
 			</tr>
 			<tr>
 				<td>Gate</td>
 				<td> </td>
-				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Gate.</td>
 			</tr>
 		</table>
-		<h4>Tableタグ</h4>
-		通常テーブルは、ValueタグやGateタグの要素としてEntryタグを用いて定義しますが、
-		共通テーブルとしてテーブルを定義しておくと、同じテーブルを複数のマクロで使い回すことができます。<br>
+		<h4>Table tag</h4>
+		Normally, tables are defined using Entry tags as elements of Value tags or Gate tags, but by defining tables as common tables, the same table can be reused across multiple macros.<br>
 		<br>
-		TableタグはControlChangeMacroListタグの直下もしくはFolderタグの直下で定義できます。<br>
-		Tableタグは複数のEntryタグを要素に持つことができます。<br>
+		The Table tag can be defined directly under the ControlChangeMacroList tag or directly under the Folder tag.<br>
+		The Table tag can have multiple Entry tags as elements.<br>
 		<br>
-		Tableタグの属性は以下の通りです。<br>
+		The attributes of the Table tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
-				<td>必須</td>
-				<td>テーブルIDを指定します。0以上を指定し、重複してはいけません。</td>
+				<td>Required</td>
+				<td>Specifies the table ID. Specify 0 or above, and it must not overlap.</td>
 			</tr>
 		</table>
 	</div>
 	<h3><a name="TemplateList">Template List Information</a></h3>
 	<div class=w>
-		テンプレート機能は、CCイベントなどを複数まとめて１テンプレートとして定義しておき、ユーザーによって挿入ができる機能です。<br>
-		そうしたテンプレートを情報をここで定義します。<br>
+		The template function is a function that defines multiple CC events, etc., together as one template in advance, and allows the user to insert them.<br>
+		Information about such templates is defined here.<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
-&lt;Template ID="0" Name="トラック初期化"&gt;
-	&lt;Memo&gt;トラック初期化用テンプレートです。&lt;/Memo&gt;
+&lt;Template ID="0" Name="Track Initialization"&gt;
+	&lt;Memo&gt;This is a template for track initialization.&lt;/Memo&gt;
 	&lt;CC ID="7" Value="100" /&gt;
 	&lt;CC ID="10" Value="0" /&gt;
 	&lt;PC Mode="Auto" /&gt;
@@ -767,129 +760,129 @@
 &lt;/Template&gt;
 </pre>
 		</div>
-		<h4>Folderタグ</h4>
-		各Templateタグは、自由にフォルダを作成でき、その中へ入れることができます。<br>
-		こうすることにより、ユーザーが目的のテンプレートを探しやすくするようにできます。<br>
-		Folderタグはそのフォルダを定義します（必要ではありません）。<br>
-		Folderタグは複数のTemplateタグを要素として持つことができます（１つも無いとフォルダは表示されません＾＾；）。<br>
+		<h4>Folder tag</h4>
+		Each Template tag can freely create folders and put them into them.<br>
+		By doing so, it makes it easier for users to find the template they are looking for.<br>
+		The Folder tag defines that folder (not required).<br>
+		The Folder tag can have multiple Template tags as elements (if there are none at all, the folder will not be displayed ^^;).<br>
 		<br>
-		Folderタグの属性は以下の通りです。<br>
+		The attributes of the Folder tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>フォルダ名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the folder name.</td>
 			</tr>
 		</table>
-		<h4>Templateタグ</h4>
-		要素としてMemoタグ、CCタグ、PCタグ、Commentタグを持つことができます。<br>
-		これによって、テンプレートにどんなイベントを含めるかを指示します。<br>
+		<h4>Template tag</h4>
+		It can have Memo tags, CC tags, PC tags, and Comment tags as elements.<br>
+		This indicates what events to include in the template.<br>
 		<br>
-		Folderタグの属性は以下の通りです。<br>
+		The attributes of the Template tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
 				<td> </td>
-				<td>テンプレートIDを指定します。0以上を指定してください。デフォルトデータから参照する際に使用します。</td>
+				<td>Specifies the template ID. Specify 0 or above. Used when referencing from default data.</td>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>必須</td>
-				<td>テンプレート名を指定します。</td>
+				<td>Required</td>
+				<td>Specifies the template name.</td>
 			</tr>
 		</table>
-		<h4>Memoタグ</h4>
-		テンプレートのメモ（説明）を記入します。<br>
-		メモは[テンプレート]画面で表示されます。<br>
-		<h4>CCタグ</h4>
-		コントロールチェンジイベントの挿入を指示します。<br>
+		<h4>Memo tag</h4>
+		Enter the memo (description) of the template.<br>
+		The memo is displayed on the [Template] screen.<br>
+		<h4>CC tag</h4>
+		Indicates the insertion of a control change event.<br>
 		<br>
-		CCタグの属性は以下の通りです。<br>
+		The attributes of the CC tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
-				<td>必須</td>
-				<td>マクロIDを指定します。</td>
+				<td>Required</td>
+				<td>Specifies the macro ID.</td>
 			</tr>
 			<tr>
 				<td>Value</td>
 				<td> </td>
-				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Value.</td>
 			</tr>
 			<tr>
 				<td>Gate</td>
 				<td> </td>
-				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Gate.</td>
 			</tr>
 		</table>
-		<h4>PCタグ</h4>
-		プログラムチェンジイベントの挿入を指示します。<br>
+		<h4>PC tag</h4>
+		Indicates the insertion of a program change event.<br>
 		<br>
-		PCタグの属性は以下の通りです。
+		The attributes of the PC tag are as follows.
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>PC</td>
 				<td>1</td>
-				<td>PC番号を1～128の範囲で指定します。</td>
+				<td>Specifies the PC number in the range of 1 to 128.</td>
 			</tr>
 			<tr>
 				<td>MSB</td>
 				<td> </td>
-				<td>Bank Select MSB値を指定します。</td>
+				<td>Specifies the Bank Select MSB value.</td>
 			</tr>
 			<tr>
 				<td>LSB</td>
 				<td> </td>
-				<td>Bank Select LSB値を指定します。</td>
+				<td>Specifies the Bank Select LSB value.</td>
 			</tr>
 			<tr>
 				<td>Mode</td>
 				<td> </td>
-				<td>Drumset・・・ドラムセットの音色モードということを指定します。<br>Auto・・・トラックの種類が「リズム」になっている場合はドラムセットの音色モードにします。</td>
+				<td>Drumset...Specifies that it is the drum set tone mode.<br>Auto...If the track type is "Rhythm", it becomes the drum set tone mode.</td>
 			</tr>
 		</table>
-		<h4>Commentタグ</h4>
-		コメントイベントの挿入を指示します。
-		Commentタグの属性は以下の通りです。
+		<h4>Comment tag</h4>
+		Indicates the insertion of a comment event.<br>
+		The attributes of the Comment tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Text</td>
 				<td> </td>
-				<td>コメントデータを指定します。</td>
+				<td>Specifies the comment data.</td>
 			</tr>
 		</table>
 	</div>
 	<h3><a name="DefaultData">Default Data Information</a></h3>
 	<div class=w>
-		デフォルトデータとは、Dominoを起動した時や新規作成した際に、あらかじめ用意されているデータの事です。<br>
-		このデータを定義する事ができます。<br>
+		Default data refers to data that is prepared in advance when Domino is started or when a new project is created.<br>
+		This data can be defined.<br>
 		<br>
-		例）<br>
+		Example)<br>
 		<div class=src>
 			<pre>
 &lt;Mark Meas="2" Name="Start" /&gt;
@@ -908,263 +901,263 @@
 	&lt;Template ID="0" Tick="480" /&gt;
 	&lt;EOT Tick="1920" /&gt;
 &lt;/Track&gt;
-（省略）
+(Omitted)
 &lt;Track Name="Rhythm" Ch="10" Mode="Rhythm"&gt;
 	&lt;Template ID="0" Tick="480" /&gt;
 	&lt;EOT Tick="1920" /&gt;
 &lt;/Track&gt;
-（省略）
+(Omitted)
 </pre>
 		</div>
-		<h4>Trackタグ</h4>
-		Trackタグは１つのトラック情報を定義します。<br>
-		（実際は、置かれている順番どおりにトラックが作成されます。）<br>
+		<h4>Track tag</h4>
+		The Track tag defines one track's information.<br>
+		(In actuality, tracks are created in the order they are placed.)<br>
 		<br>
-		要素としてMarkタグ、TimeSignatureタグ、KeySignatureタグ、CCタグ、PCタグ、Commentタグ、Templateタグ、EOTタグを持つことができます。<br>
-		これによって、トラックにどんなイベントを含めるかを指示します。<br>
+		It can have Mark tags, TimeSignature tags, KeySignature tags, CC tags, PC tags, Comment tags, Template tags, and EOT tags as elements.<br>
+		This indicates what events to include in the track.<br>
 		<br>
-		Trackタグの属性は以下の通りです。<br>
+		The attributes of the Track tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
 				<td> </td>
-				<td>トラック名を指定します。</td>
+				<td>Specifies the track name.</td>
 			</tr>
 			<tr>
 				<td>Ch</td>
 				<td>1</td>
-				<td>チャンネル番号を指定します。1～16の範囲で指定してください。</td>
+				<td>Specifies the channel number. Specify in the range of 1 to 16.</td>
 			</tr>
 			<tr>
 				<td>Mode</td>
 				<td> </td>
-				<td>「Conductor」を指定すると、コンダクタートラックになります（１つのみ指定可能）。<br>「Rhythm」を指定すると、リズムトラックとして扱われます。</td>
+				<td>Specifying "Conductor" makes it a conductor track (only one can be specified).<br>Specifying "Rhythm" treats it as a rhythm track.</td>
 			</tr>
 		</table>
-		<h4>Markタグ</h4>
-		マークイベントの挿入を指示します。<br>
+		<h4>Mark tag</h4>
+		Indicates the insertion of a mark event.<br>
 		<br>
-		Markタグの属性は以下の通りです。<br>
+		The attributes of the Mark tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Name</td>
 				<td> </td>
-				<td>マーク名を指定します。</td>
+				<td>Specifies the mark name.</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>TimeSignatureタグ</h4>
-		拍子イベントの挿入を指示します。<br>
+		<h4>TimeSignature tag</h4>
+		Indicates the insertion of a time signature event.<br>
 		<br>
-		TimeSignatureタグの属性は以下の通りです。<br>
+		The attributes of the TimeSignature tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>TimeSignature</td>
-				<td>必須</td>
-				<td>拍子を指定します。例）4/4</td>
+				<td>Required</td>
+				<td>Specifies the time signature. Example) 4/4</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>KeySignatureタグ</h4>
-		調号イベントの挿入を指示します。<br>
+		<h4>KeySignature tag</h4>
+		Indicates the insertion of a key signature event.<br>
 		<br>
-		KeySignatureタグの属性は以下の通りです。<br>
+		The attributes of the KeySignature tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>KeySignature</td>
-				<td>必須</td>
-				<td>調号を指定します。例）C Maj</td>
+				<td>Required</td>
+				<td>Specifies the key signature. Example) C Maj</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>CCタグ</h4>
-		コントロールチェンジイベントの挿入を指示します。<br>
+		<h4>CC tag</h4>
+		Indicates the insertion of a control change event.<br>
 		<br>
-		CCタグの属性は以下の通りです。<br>
+		The attributes of the CC tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
-				<td>必須</td>
-				<td>マクロIDを指定します。</td>
+				<td>Required</td>
+				<td>Specifies the macro ID.</td>
 			</tr>
 			<tr>
 				<td>Value</td>
 				<td> </td>
-				<td>Valueのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Value.</td>
 			</tr>
 			<tr>
 				<td>Gate</td>
 				<td> </td>
-				<td>Gateのデフォルト値を変えたい場合に指定します。</td>
+				<td>Specifies this when you want to change the default value of Gate.</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>PCタグ</h4>
-		プログラムチェンジイベントの挿入を指示します。
+		<h4>PC tag</h4>
+		Indicates the insertion of a program change event.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>PC</td>
 				<td>1</td>
-				<td>PC番号を1～128の範囲で指定します。</td>
+				<td>Specifies the PC number in the range of 1 to 128.</td>
 			</tr>
 			<tr>
 				<td>MSB</td>
 				<td> </td>
-				<td>Bank Select MSB値を指定します。</td>
+				<td>Specifies the Bank Select MSB value.</td>
 			</tr>
 			<tr>
 				<td>LSB</td>
 				<td> </td>
-				<td>Bank Select LSB値を指定します。</td>
+				<td>Specifies the Bank Select LSB value.</td>
 			</tr>
 			<tr>
 				<td>Mode</td>
 				<td> </td>
-				<td>Drumset・・・ドラムセットの音色モードということを指定します。<br>Auto・・・トラックの種類が「リズム」になっている場合はドラムセットの音色モードにします。</td>
+				<td>Drumset...Specifies that it is the drum set tone mode.<br>Auto...If the track type is "Rhythm", it becomes the drum set tone mode.</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>Commentタグ</h4>
-		コメントイベントの挿入を指示します。
-		Commentタグの属性は以下の通りです。
+		<h4>Comment tag</h4>
+		Indicates the insertion of a comment event.<br>
+		The attributes of the Comment tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Text</td>
 				<td> </td>
-				<td>コメントデータを指定します。</td>
+				<td>Specifies the comment data.</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>Templateタグ</h4>
-		定義済みのテンプレートを利用してイベントの挿入を指示します。<br>
-		定義ファイルのサイズ節約（＝メモリ節約）にもなります。<br>
+		<h4>Template tag</h4>
+		Indicates the insertion of events using a predefined template.<br>
+		It also saves the size of the definition file (= saves memory).<br>
 		<br>
-		Templateタグの属性は以下の通りです。
+		The attributes of the Template tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>ID</td>
 				<td> </td>
-				<td>参照するテンプレートIDを指定します。</td>
+				<td>Specifies the template ID to reference.</td>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。無い場合は最後の指定されたStep値によって自動的に配置されます。</td>
+				<td>Specifies the absolute tick to insert. If not specified, it is automatically placed based on the last specified Step value.</td>
 			</tr>
 			<tr>
 				<td>Step</td>
 				<td> </td>
-				<td>このイベント以降の配置間隔を指定します。</td>
+				<td>Specifies the placement interval after this event.</td>
 			</tr>
 		</table>
-		<h4>EOTタグ</h4>
-		End of Trackの位置を指示します（無ければ自動的に追加されます）。<br>
+		<h4>EOT tag</h4>
+		Indicates the position of End of Track (if not present, it is automatically added).<br>
 		<br>
-		EOTタグの属性は以下の通りです。
+		The attributes of the EOT tag are as follows.<br>
 		<table>
 			<tr>
-				<th>属性</th>
-				<th>省略時</th>
-				<th>意味</th>
+				<th>Attribute</th>
+				<th>Default</th>
+				<th>Meaning</th>
 			</tr>
 			<tr>
 				<td>Tick</td>
 				<td> </td>
-				<td>挿入する絶対Tickを指定します。</td>
+				<td>Specifies the absolute tick to insert.</td>
 			</tr>
 		</table>
 	</div>
