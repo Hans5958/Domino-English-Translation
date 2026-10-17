@@ -12,7 +12,7 @@ echo "Extracting 1.43 original files..."
 
 echo "Creating compile config file..."
 BUILD_DATE="$(date +%Y%m%d)"
-VERSION_NUM="$(cat ../version.txt)"
+VERSION_NUM="$(< ../version.txt)"
 echo "::set-output name=BUILD_DATE::$BUILD_DATE"
 echo "::set-output name=BUILD_DATE_TIDY::$(date +'%Y/%m/%d')"
 echo "::set-output name=BUILD_DATE_FULL::$(date +'%Y/%m/%d %H:%M:%S')"

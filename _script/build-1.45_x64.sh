@@ -1,4 +1,5 @@
-VERSION_NUM="$(cat ../version.txt)"
+[ -f "compile-2.sh" ] || cd _script
+VERSION_NUM="$(< ../version.txt)"
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
 if [[ "$(python -V)" =~ "Python 3" ]]; then
 	PYTHON_EXECUTABLE="python"

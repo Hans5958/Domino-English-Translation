@@ -1,4 +1,4 @@
-VERSION_NUM="$(cat version.txt)"
+VERSION_NUM="$(< version.txt)"
 BUILD_DATE=$(date +'%Y%m%d%H%M%S')
 rm -rf _compile
 mkdir _compile

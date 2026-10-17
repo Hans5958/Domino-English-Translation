@@ -1,6 +1,6 @@
 echo "Compile process started."
 
-export CONFIG="$(cat $1)"
+export CONFIG="$(< "$1")"
 jq_config() {
     echo $(echo $CONFIG | jq -r $1)
 }
@@ -51,14 +51,14 @@ Log=    CON
 -add     240.res, 240,,
 " > tmp.txt
 
-$RESHACK_EXECUTABLE -open Dialog.rc -save Dialog.res -action compile -log CON
-$RESHACK_EXECUTABLE -open Menu.rc -save Menu.res -action compile -log CON
-$RESHACK_EXECUTABLE -open StringTable.rc -save StringTable.res -action compile -log CON
-$RESHACK_EXECUTABLE -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
+"$RESHACK_EXECUTABLE" -open Dialog.rc -save Dialog.res -action compile -log CON
+"$RESHACK_EXECUTABLE" -open Menu.rc -save Menu.res -action compile -log CON
+"$RESHACK_EXECUTABLE" -open StringTable.rc -save StringTable.res -action compile -log CON
+"$RESHACK_EXECUTABLE" -open VersionInfo.rc -save VersionInfo.res -action compile -log CON
 cd 240
-$RESHACK_EXECUTABLE -open _240.rc -save ../240.res -action compile -log CON
+"$RESHACK_EXECUTABLE" -open _240.rc -save ../240.res -action compile -log CON
 cd ..
-$RESHACK_EXECUTABLE -script tmp.txt
+"$RESHACK_EXECUTABLE" -script tmp.txt
 
 touch $EXECUTABLE_NAME
 
