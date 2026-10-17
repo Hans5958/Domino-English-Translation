@@ -1,0 +1,6 @@
+STRINGTABLE
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+{
+  61836, 	"Unable to read a write-only property."
+  61837, 	"Unable to write a read-only property."
+}

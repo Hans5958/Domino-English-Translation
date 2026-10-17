@@ -20,7 +20,7 @@ jobs:
       #     echo ::set-output name=DEPTH::$(($(echo '${{toJSON(github.event.commits)}}' | jq '. | length') + 1))
 
       # - name: Checkout code
-      #   uses: actions/checkout@v6
+      #   uses: actions/checkout@v7
       #   with:
       #     fetch-depth: ${{steps.depth.outputs.DEPTH}}
 
@@ -36,7 +36,7 @@ jobs:
       #     fi
       
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 100
 
@@ -121,6 +121,10 @@ jobs:
             _script/dist/Domino143_Translated.exe
             _script/dist/Domino144_Translated.zip
             _script/dist/Domino144_Translated.exe
+            _script/dist/Domino145_dev009_x86_Translated.zip
+            _script/dist/Domino145_dev009_x86_Translated.exe
+            _script/dist/Domino145_dev009_x64_Translated.zip
+            _script/dist/Domino145_dev009_x64_Translated.exe
           body_path: release.txt
           
       # - name: Create release

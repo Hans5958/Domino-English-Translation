@@ -1,0 +1,6 @@
+STRINGTABLE
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+{
+  61744, 	"%1: %2\nDo you want to continue executing the script?"
+  61745, 	"Dispatch exception: %1"
+}
