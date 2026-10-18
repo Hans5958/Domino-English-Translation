@@ -38,10 +38,10 @@ This repository is made to unify the translations made by community, while tryin
 
 ### Requirements
 
-- Windows operating system. This is a Win32 application.
-- Windows Subsystem for Linux (WSL)
+- Windows operating system. This is a Windows application.
+- Windows Subsystem for Linux (WSL) (tested in Ubuntu 24.04)
 - Resource Hacker
-- Python 3 (on WSL)
+- Python 3 (on WSL, tested in Python 3.10)
 - 7zip (on WSL)
 - jq (on WSL)
 
@@ -52,7 +52,7 @@ sudo apt install p7zip-full jq python3.10
 
 ### Instructions
 
-Just run either `build-1.43.sh` or `build-1.44.sh` inside the `_script` folder. The binaries (the `.exe` files) will be compiled and placed inside the `_script/dist` folder.
+Just run either `build-*.sh` inside the `_script` folder. The binaries (the `.exe` files) will be compiled and placed inside the `_script/dist` folder.
 
 ## Contributing
 
