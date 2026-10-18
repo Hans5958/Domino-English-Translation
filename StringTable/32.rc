@@ -16,5 +16,5 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
   33356, 	"Edits the selected marker label.\nEdit Marker"
   33357, 	"Deletes the selected marker.\nDelete Marker"
   33358, 	"Find events that meet the following conditions.\nFind"
-  33359, 	"Switches quantization to a bar.\nQuantization: Bar"
+  33359, 	"Switches quantization to a measure.\nQuantization: Measure"
 } 

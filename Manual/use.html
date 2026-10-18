@@ -370,7 +370,7 @@
 	</div>
 	<h3><a name="volume">Changing Volume and Pan of a Part</a></h3>
 	<div class=w>
-		To change the volume or panpot of a part, click the Vel/Value field of an event such as "Volume" or "Panpot" near the beginning of the event list,<br>
+		To change the volume or pan of a part, click the Vel/Value field of an event such as "Volume" or "Panpot" near the beginning of the event list,<br>
 		<img src="assets/use_054.png" width="302" height="147"><br>
 		<br>
 		Please enter the value from the keyboard.<br>
@@ -804,7 +804,7 @@
 	</div>
 	<h3><a name="cc">Inserting a Control Change Event</a></h3>
 	<div class=w>
-		Normally, control change refers to control change numbers 0 to 127, which are messages to set volume and panpot by number,<br>
+		Normally, control change refers to control change numbers 0 to 127, which are messages to set volume and pan by number,<br>
 		but in Domino, this control change is further extended, allowing you to freely define and use numbers 128 and above (see <a href="module.html">Sound Source Definition File Specifications</a> for the upper limit of numbers).<br>
 		<br>
 		This allows you to adjust device-specific parameters such as master volume and EFX with the same ease as normal control change.<br>
@@ -865,7 +865,7 @@
 		and then start playback again from another location, the pitch bend value inside the sound source remains 4000,<br>
 		so it will be played at an unintended pitch.<br>
 		<br>
-		Of course, the same applies to volume and panpot, not just pitch bend,<br>
+		Of course, the same applies to volume and pan, not just pitch bend,<br>
 		and there are many cases where you cannot play as intended.<br>
 		<br>
 		In Domino, it has become possible to match the current playback position and the state of the MIDI sound source to some extent.<br>
@@ -874,7 +874,7 @@
 		<img src="assets/use_136.png" width="296" height="519"><br>
 		<br>
 		The parameters that match the state vary depending on the sound source definition file,<br>
-		but program change events, volume, panpot, expression, etc. are valid.<br>
+		but program change events, volume, pan, expression, etc. are valid.<br>
 		<br>
 		Also, you can automatically match the state.<br>
 		To automate, please select [Auto-Sync to MIDI Devices] from the [Playback] menu.<br>

@@ -1,14 +1,14 @@
 STRINGTABLE
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 {
-  33008, 	"Swiches quantization to 1/8 or 8th note.\nQuantization: 1/8"
-  33009, 	"Swiches quantization to 1/12 or 8th note triplet.\nQuantization: 1/12"
-  33010, 	"Swiches quantization to 3/32 or 16th note dotted.\nQuantization: 3/32"
-  33011, 	"Swiches quantization to 1/16 or 16th note.\nQuantization: 1/16"
-  33012, 	"Swiches quantization to 1/24 or 16th note triplet.\nQuantization: 1/24"
-  33013, 	"Swiches quantization to 3/64 or 32nd note dotted.\nQuantization: 3/64"
-  33014, 	"Swiches quantization to 1/32 or 32nd note.\nQuantization: 1/32"
-  33015, 	"Swiches quantization to 1/48 or 32nd note triplet.\nQuantization: 1/48"
+  33008, 	"Switches quantization to 1/8 or 8th note.\nQuantization: 1/8"
+  33009, 	"Switches quantization to 1/12 or 8th note triplet.\nQuantization: 1/12"
+  33010, 	"Switches quantization to 3/32 or 16th note dotted.\nQuantization: 3/32"
+  33011, 	"Switches quantization to 1/16 or 16th note.\nQuantization: 1/16"
+  33012, 	"Switches quantization to 1/24 or 16th note triplet.\nQuantization: 1/24"
+  33013, 	"Switches quantization to 3/64 or 32nd note dotted.\nQuantization: 3/64"
+  33014, 	"Switches quantization to 1/32 or 32nd note.\nQuantization: 1/32"
+  33015, 	"Switches quantization to 1/48 or 32nd note triplet.\nQuantization: 1/48"
   33016, 	"Customize the toolbars.\nCustomize Toolbars"
   33017, 	"Shows/hides this toolbar.\nToggle Toolbar"
   33018, 	"Reverts Event List and Graph Panel to default sizes.\nDefault Panel Sizes"

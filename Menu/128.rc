@@ -8,13 +8,13 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "&Save Project...", 57603
 		MENUITEM "Save Project &As...", 57604
 		MENUITEM SEPARATOR
-		MENUITEM "Project Properties...", 32792
+		MENUITEM "&Project Properties...", 32792
 		MENUITEM SEPARATOR
 		MENUITEM "Export As SMF (MIDI) (&M)...", 32794
 		MENUITEM "Re-Export As SMF (MIDI) (&W)...", 33323
 		MENUITEM SEPARATOR
 		MENUITEM "Import Parts (&T)...", 33322
-		MENUITEM "Export &Highligted Parts (&V)...", 33321
+		MENUITEM "Export Highlighted Parts (&V)...", 33321
 		MENUITEM SEPARATOR
 		MENUITEM "Pr&eferences...", 32793
 		MENUITEM "&Import Preferences...", 33310
@@ -70,12 +70,12 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		POPUP "Select Range..."
 		{
 			MENUITEM "Select &All", 57642
-			MENUITEM "&Selection Range...", 33087
+			MENUITEM "Selection Range (&J)...", 33087
 			MENUITEM "Select Until The Ne&xt Bar", 33291
 			MENUITEM "Select Until The &Previous Bar", 33292
 			MENUITEM SEPARATOR
 			MENUITEM "&Filter...", 33045
-			MENUITEM "&Note Selection", 33124
+			MENUITEM "Note Selection (&Z)", 33124
 			MENUITEM SEPARATOR
 			MENUITEM "&Deselect", 32797
 		}
@@ -107,11 +107,11 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM SEPARATOR
 		POPUP "&Toolbar"
 		{
-			MENUITEM "Main Toolba&r", 32804
-			MENUITEM "Editing Toolba&r", 33017
-			MENUITEM "Default Gate/Velocity Toolba&r", 33076
-			MENUITEM "Event List Filter Toolba&r", 33120
-			MENUITEM "Event List MIDI Input Toolba&r", 33284
+			MENUITEM "Main &Toolbar", 32804
+			MENUITEM "Editing T&oolbar", 33017
+			MENUITEM "&Default Gate/Velocity Toolbar", 33076
+			MENUITEM "Event List &Filter Toolbar", 33120
+			MENUITEM "Event &List MIDI Input Toolbar", 33284
 			MENUITEM SEPARATOR
 			MENUITEM "User Toolbar &1", 33042
 			MENUITEM "User Toolbar &2", 33044
@@ -176,8 +176,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 					MENUITEM "&Modulation", 33106
 					MENUITEM "&Expression", 33107
 					MENUITEM "V&olume", 33108
-					MENUITEM "Pa&npot", 33109
-					MENUITEM "&Hold", 33110
+					MENUITEM "Pa&n", 33109
+					MENUITEM "Sustain (&H)", 33110
 					MENUITEM "&LPF Cutoff Frequency", 33111
 					MENUITEM "LPF &Resonance", 33112
 					MENUITEM "Ma&ster Volume", 33113
@@ -187,7 +187,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 				MENUITEM "&Formulas", 33116
 				MENUITEM "&Lyrics", 33118
 				MENUITEM "C&ue Points", 33119
-				MENUITEM "Measure Link&s", 33316
+				MENUITEM "Measure Lin&ks", 33316
 				MENUITEM "Te&mpo", 33117
 				MENUITEM "Rhythm&ic Signatures", 33351
 				MENUITEM "Ke&y Signatures", 33352
@@ -210,7 +210,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 			MENUITEM "&Expression", 32990
 			MENUITEM "V&olume", 32991
 			MENUITEM "Pa&npot", 32992
-			MENUITEM "&Hold", 32993
+			MENUITEM "Sustain (&H)", 32993
 			MENUITEM "&LPF Cutoff Frequency", 32994
 			MENUITEM "LPF &Resonance", 32995
 			MENUITEM "Ma&ster Volume", 32996
@@ -227,7 +227,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 			MENUITEM "&Expression", 32980
 			MENUITEM "V&olume", 32982
 			MENUITEM "Pa&npot", 32983
-			MENUITEM "&Hold", 32984
+			MENUITEM "Sustain (&H)", 32984
 			MENUITEM "&LPF Cutoff Frequency", 32985
 			MENUITEM "LPF &Resonance", 32986
 			MENUITEM "Ma&ster Volume", 32987
@@ -239,7 +239,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM "Playback Monitor (&F)", 33125
 		MENUITEM "Reset Playback Monitor (&J)", 33293
 		MENUITEM SEPARATOR
-		MENUITEM "Out&put Panel", 32814
+		MENUITEM "O&utput Panel", 32814
 		MENUITEM SEPARATOR
 		MENUITEM "Default Panel S&izes", 33018
 	}
@@ -288,7 +288,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 			}
 		}
 		MENUITEM SEPARATOR
-		MENUITEM "Graph on selection...", 32843
+		MENUITEM "Graph on select&ion...", 32843
 		MENUITEM SEPARATOR
 		POPUP "Event List MIDI &Input"
 		{
@@ -560,8 +560,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 			MENUITEM "1/32", 33074
 			MENUITEM "1/48", 33075
 			MENUITEM SEPARATOR
-			MENUITEM "Increase", 33267
-			MENUITEM "Decrease", 33268
+			MENUITEM "Incre&ase", 33267
+			MENUITEM "Decrease (&M)", 33268
 		}
 		POPUP "Default &Velocity"
 		{
@@ -610,7 +610,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 			MENUITEM "19", 32883
 		}
 		MENUITEM SEPARATOR
-		MENUITEM "&Resolution...", 32884
+		MENUITEM "Resolut&ion...", 32884
 		MENUITEM "Anchor To &Notes Only", 32885
 		MENUITEM SEPARATOR
 		POPUP "Event Graph &1"
@@ -635,8 +635,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM SEPARATOR
 		POPUP "&Loop"
 		{
-			MENUITEM "&Enable", 32887
-			MENUITEM "Selection (&K)", 33339
+			MENUITEM "Enab&le", 32887
+			MENUITEM "&Selection", 33339
 			MENUITEM SEPARATOR
 			MENUITEM "Place &Markers On Selection", 33271
 			MENUITEM "&Delete Markers", 33272
@@ -664,7 +664,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM SEPARATOR
 		MENUITEM "&Track Performance", 32897
 		MENUITEM "&Solo Performance", 32898
-		MENUITEM "&All Track Perfomance", 32899
+		MENUITEM "&All Track Performance", 32899
 		MENUITEM SEPARATOR
 		MENUITEM "Sync of MIDI Devices (&Y)", 32900
 		MENUITEM "Aut&o-Sync to MIDI Devices", 33035
@@ -675,7 +675,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM SEPARATOR
 		MENUITEM "Playing Ti&me Info...", 32901
 		MENUITEM SEPARATOR
-		MENUITEM "Inspect &Chord", 33090
+		MENUITEM "&Inspect Chord", 33090
 		MENUITEM SEPARATOR
 		MENUITEM "Optimized Playback (&U)...", 32999
 	}
@@ -701,7 +701,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 		MENUITEM SEPARATOR
 		POPUP "Switch Track (&V)"
 		{
-			MENUITEM "&Previous", 32905
+			MENUITEM "Previous (&B)", 32905
 			MENUITEM "&Next", 32906
 			MENUITEM SEPARATOR
 			MENUITEM "Previous of S&ame Color", 33306
