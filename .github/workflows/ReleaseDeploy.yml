@@ -16,13 +16,13 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Install required packages
-        run: choco install reshack
+        run: choco install 7zip reshack python
 
       - name: Build
         id: build
         run: |
           cd _script
-          bash workflow/build-all-release.sh
+          powershell -File workflow/build-all-release.ps1
 
       - name: Write release body
         run: |

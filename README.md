@@ -39,20 +39,17 @@ This repository brings those community translations together, but the combined r
 ### Requirements
 
 - Windows operating system. This is a Windows application.
-- Windows Subsystem for Linux (WSL) (tested in Ubuntu 24.04)
 - Resource Hacker
-- Python 3 (on WSL, tested in Python 3.10)
-- 7zip (on WSL)
-- jq (on WSL)
+- Python 3 (tested in Python 3.10)
+- 7zip
 
 ```bash
-choco install reshack
-sudo apt install p7zip-full jq python3.10
+choco install 7zip python reshack
 ```
 
 ### Instructions
 
-Just run either `build-*.sh` inside the `_script` folder. The binaries (the `.exe` files) will be compiled and placed inside the `_script/dist` folder.
+Just run either `build-*.ps1` inside the `_script` folder. The binaries (the `.exe` files) will be compiled and placed inside the `_script/dist` folder.
 
 ## Contributing
 

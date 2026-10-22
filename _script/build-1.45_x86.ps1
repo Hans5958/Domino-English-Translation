@@ -1,0 +1,1 @@
+& ./build.ps1 -TargetVersion "1.45_x86" -BuildType "dev"
